@@ -3,106 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meteo Alcoi - Càrrecs 2026</title>
+    <title>Meteo Alcoi 2026 - Associació de Sant Jordi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;700;900&display=swap');
-        .font-festes { font-family: 'Cinzel', serif; }
-        .bg-alcoy-dark { background-color: #020617; }
-        .card-glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
+        .font-asj { font-family: 'Crimson Pro', serif; }
+        .bg-asj { background-color: #cc0000; }
+        .text-asj { color: #cc0000; }
+        .border-asj { border-color: #cc0000; }
     </style>
 </head>
-<body class="bg-alcoy-dark text-slate-200 min-h-screen">
+<body class="text-slate-800">
 
-    <div class="max-w-md mx-auto p-4 pb-20">
+    <nav class="bg-asj py-4 shadow-lg border-b-4 border-yellow-500">
+        <div class="max-w-md mx-auto px-4 flex flex-col items-center">
+            <span class="font-asj text-white text-2xl font-bold tracking-tight">ASJ METEO</span>
+            <span class="text-[10px] text-white/80 font-bold uppercase tracking-[0.3em]">Moros i Cristians Alcoi 2026</span>
+        </div>
+    </nav>
+
+    <div class="max-w-md mx-auto p-4 space-y-6">
         
-        <header class="relative rounded-3xl overflow-hidden mb-6 shadow-2xl border-2 border-yellow-600/30">
-            <img src="https://www.asjordi.org/upload/images/asociacion/organizacion/01-Llana.jpg" class="w-full h-48 object-cover opacity-60">
-            <div class="absolute inset-0 bg-gradient-to-t from-alcoy-dark to-transparent"></div>
-            <div class="absolute bottom-4 left-0 right-0 text-center">
-                <h1 class="font-festes text-3xl text-white tracking-widest drop-shadow-lg">METEO ALCOI 2026</h1>
-                <p class="text-[10px] font-bold text-yellow-500 uppercase tracking-[0.3em]">750 Aniversari de la Aparició</p>
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            <img src="https://www.asjordi.org/upload/images/asociacion/organizacion/01-Llana.jpg" class="w-full h-40 object-cover">
+            <div class="p-3 bg-asj text-white text-center">
+                <p class="text-[10px] font-bold uppercase tracking-widest">Sant Jordiet 2026 · Filà Llana</p>
             </div>
-        </header>
+        </section>
 
-        <div class="grid grid-cols-2 gap-4 mb-8">
-            <div class="card-glass p-5 rounded-[2rem] text-center border-l-4 border-l-sky-500">
-                <span class="text-[9px] uppercase font-black text-slate-500 tracking-wider">Temperatura</span>
-                <p class="text-4xl font-black text-white italic"><span id="temp">--</span>°</p>
+        <section class="bg-white rounded-xl shadow-sm border-t-4 border-asj p-6">
+            <h2 class="text-center text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4 italic text-asj">Directe des de l'estació</h2>
+            <div class="flex justify-around items-center">
+                <div class="text-center">
+                    <span class="block text-4xl font-black text-slate-800" id="temp">--</span>
+                    <span class="text-[9px] font-bold text-slate-400 uppercase">Temperatura</span>
+                </div>
+                <div class="w-px h-10 bg-slate-100"></div>
+                <div class="text-center">
+                    <span class="block text-4xl font-black text-slate-800" id="hum">--</span>
+                    <span class="text-[9px] font-bold text-slate-400 uppercase">Humitat</span>
+                </div>
             </div>
-            <div class="card-glass p-5 rounded-[2rem] text-center border-l-4 border-l-emerald-500">
-                <span class="text-[9px] uppercase font-black text-slate-500 tracking-wider">Humitat</span>
-                <p class="text-4xl font-black text-white italic"><span id="hum">--</span>%</p>
-            </div>
-        </div>
+        </section>
 
-        <h2 class="font-festes text-center text-yellow-600 mb-6 text-xl italic uppercase tracking-widest">Previsió de la Trilogia</h2>
-        <div id="contenedor-fiestas" class="space-y-6">
-            </div>
+        <section class="space-y-4">
+            <h3 class="font-asj text-center text-2xl text-asj italic font-bold">Anàlisi de la Trilogia</h3>
+            <div id="contenedor-fiestas" class="space-y-4">
+                </div>
+        </section>
 
-        <div class="mt-10 mb-6">
-            <h3 class="text-center text-[10px] font-black text-slate-500 uppercase tracking-widest mb-4">Anàlisi d'Ensembles (Rames)</h3>
-            <div class="rounded-3xl overflow-hidden border border-slate-700 shadow-2xl">
-                <img id="mapa" src="" class="w-full">
-            </div>
-        </div>
+        <section class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+            <h4 class="text-[9px] font-bold text-slate-400 uppercase mb-3 text-center tracking-widest italic">Tendència d'Ensembles (Rames GEFS)</h4>
+            <img id="mapa" src="" class="w-full rounded border border-slate-100">
+        </section>
 
-        <footer class="text-center opacity-40 py-8">
-            <p class="text-[8px] font-bold uppercase tracking-widest">Dades actualitzades: <span id="fecha">--</span></p>
+        <section class="pt-6 border-t-2 border-slate-200">
+            <h3 class="font-asj text-center text-xl text-slate-700 mb-6 font-bold uppercase italic">Quadre d'Honor 2026</h3>
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
+                    <img src="https://www.asjordi.org/upload/images/asociacion/01-ANDALUCES.jpg" class="w-full h-24 object-cover rounded mb-2">
+                    <span class="text-[8px] font-bold uppercase block text-slate-400">Capità Cristià</span>
+                    <span class="text-[9px] text-asj font-black italic">Andaluces</span>
+                </div>
+                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
+                    <img src="https://www.asjordi.org/upload/images/filaes/02-Asturianos.jpg" class="w-full h-24 object-cover rounded mb-2">
+                    <span class="text-[8px] font-bold uppercase block text-slate-400">Alferes Cristià</span>
+                    <span class="text-[9px] text-asj font-black italic">Asturianos</span>
+                </div>
+                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
+                    <img src="https://www.asjordi.org/upload/images/filaes/MARRAKESH.jpg" class="w-full h-24 object-cover rounded mb-2">
+                    <span class="text-[8px] font-bold uppercase block text-slate-400">Capità Moro</span>
+                    <span class="text-[9px] text-asj font-black italic">Marrakesch</span>
+                </div>
+                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
+                    <img src="https://www.asjordi.org/upload/images/filaes/12-Realistes.jpg" class="w-full h-24 object-cover rounded mb-2">
+                    <span class="text-[8px] font-bold uppercase block text-slate-400">Alferes Moro</span>
+                    <span class="text-[9px] text-asj font-black italic">Realistes</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-10 opacity-50">
+            <p class="text-[9px] text-slate-400 uppercase tracking-widest font-bold">Actualitzat: <span id="fecha">--</span></p>
+            <p class="text-[7px] text-slate-400 uppercase mt-2 italic text-asj">Vítol al Patró Sant Jordi</p>
         </footer>
     </div>
 
     <script>
-        // Mapeo de fotos de cargos
-        const fotosCarrecs = {
-            "2026-04-24": "https://www.asjordi.org/upload/images/asociacion/01-ANDALUCES.jpg", // Capità C
-            "2026-04-25": "https://www.asjordi.org/upload/images/asociacion/organizacion/01-Llana.jpg", // Sant Jordiet
-            "2026-04-26": "https://www.asjordi.org/upload/images/filaes/02-Asturianos.jpg", // Alferes C
-            "2026-04-27": "https://www.asjordi.org/upload/images/filaes/MARRAKESH.jpg" // Capità M (para rellenar)
-        };
-
         async function updateApp() {
             try {
                 const res = await fetch('datos.json?v=' + Date.now());
                 const data = await res.json();
 
-                document.getElementById('temp').innerText = data.temp;
-                document.getElementById('hum').innerText = data.hum;
+                // Dades capçalera
+                document.getElementById('temp').innerText = data.temp !== 'N/D' ? data.temp + '°' : 'N/D';
+                document.getElementById('hum').innerText = data.hum !== 'N/D' ? data.hum + '%' : 'N/D';
                 document.getElementById('mapa').src = data.mapa_url;
                 document.getElementById('fecha').innerText = new Date(data.fecha).toLocaleString('es-ES');
 
+                // Dades Trilogia
                 const container = document.getElementById('contenedor-fiestas');
                 container.innerHTML = '';
                 
                 data.fiestas.forEach(f => {
                     const card = `
-                        <div class="card-glass rounded-[2rem] overflow-hidden shadow-xl border-t border-white/10">
-                            <div class="relative h-28">
-                                <img src="${fotosCarrecs[f.fecha] || ''}" class="w-full h-full object-cover opacity-80">
-                                <div class="absolute inset-0 bg-gradient-to-r from-slate-900 to-transparent"></div>
-                                <div class="absolute top-4 left-5">
-                                    <span class="block text-[10px] font-black text-yellow-500 uppercase">${f.dia.split(' - ')[0]}</span>
-                                    <span class="block text-lg font-festes text-white leading-tight">${f.dia.split(' - ')[1]}</span>
-                                </div>
-                                <div class="absolute top-4 right-5 text-right">
-                                    <span class="text-2xl">${f.icono}</span>
-                                    <span class="block text-sm font-black text-white">${f.temp_max}°C</span>
-                                </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                            <div class="bg-slate-50 px-4 py-3 border-b border-slate-100 flex justify-between items-center">
+                                <span class="font-black text-asj text-[11px] uppercase italic tracking-tighter">${f.dia}</span>
+                                <span class="text-2xl">${f.icono || '🌡️'}</span>
                             </div>
-                            <div class="p-4 bg-slate-900/40">
-                                <div class="flex justify-between text-[10px] font-bold mb-3 text-slate-400 uppercase tracking-widest border-b border-slate-700 pb-2">
-                                    <span>Prob: ${f.prob}</span>
-                                    <span>Precip: ${f.litros}</span>
+                            <div class="p-4">
+                                <div class="grid grid-cols-3 gap-2 mb-4">
+                                    <div class="text-center bg-slate-50 p-2 rounded-lg">
+                                        <span class="block text-[8px] font-bold text-slate-400 uppercase">Màx</span>
+                                        <span class="font-black text-slate-700">${f.temp_max}°C</span>
+                                    </div>
+                                    <div class="text-center bg-slate-50 p-2 rounded-lg">
+                                        <span class="block text-[8px] font-bold text-slate-400 uppercase">Prob</span>
+                                        <span class="font-black text-slate-700">${f.prob}%</span>
+                                    </div>
+                                    <div class="text-center bg-slate-50 p-2 rounded-lg">
+                                        <span class="block text-[8px] font-bold text-slate-400 uppercase">Precip</span>
+                                        <span class="font-black text-slate-700">${f.litros}mm</span>
+                                    </div>
                                 </div>
-                                <p class="text-[11px] leading-relaxed text-slate-300 italic">
-                                    <span class="text-sky-400 font-bold">Nota de l'expert:</span> ${f.analisis_tecnico}
-                                </p>
+                                <div class="bg-asj/5 p-3 rounded-lg border-l-4 border-asj">
+                                    <p class="text-[11px] leading-relaxed text-slate-600">
+                                        <b class="text-asj font-bold uppercase text-[9px]">Nota de l'expert:</b> ${f.analisis_tecnico}
+                                    </p>
+                                    <p class="text-[10px] mt-2 font-bold text-slate-500 uppercase italic">👉 ${f.consejo}</p>
+                                </div>
                             </div>
                         </div>
                     `;
                     container.innerHTML += card;
                 });
-            } catch (e) { console.error(e); }
+
+            } catch (e) { console.error("Error en la carga:", e); }
         }
         updateApp();
     </script>
