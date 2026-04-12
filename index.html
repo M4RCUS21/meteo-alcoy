@@ -324,8 +324,8 @@
       }
       .countdown-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
       }
       .countdown-card {
         position: relative;
@@ -335,6 +335,7 @@
         padding: 16px 14px;
         overflow: hidden;
         transition: transform .25s, border-color .25s, box-shadow .25s;
+        display: flex; flex-direction: column;
       }
       .countdown-card::before {
         content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
@@ -371,7 +372,7 @@
         background: rgba(22,16,10,.3);
       }
       @media (max-width: 500px) {
-        .countdown-grid { grid-template-columns: repeat(2, 1fr); }
+        .countdown-grid { grid-template-columns: 1fr; }
       }
 
       /* ═══════════════════════════════════════════════
@@ -488,6 +489,19 @@
       const { motion, AnimatePresence, useInView } = window.Motion;
 
       /* ═══════════════════════════════════════════════════════
+         DATA — ENTRAETES
+         ═══════════════════════════════════════════════════════ */
+      const ENTRAETES_INFO = {
+        "2026-04-14": [
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "23:10", fila: "Mudéjares" }, { hora: "23:30", fila: "Cruzados" }] }
+        ],
+        "2026-04-17": [
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Magenta" }, { hora: "23:30", fila: "Marrakesch", ee: true }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Muntanyesos" }, { hora: "00:00", fila: "Llana", ee: true }] }
+        ]
+      };
+
+      /* ═══════════════════════════════════════════════════════
          DATA — TIMELINE (P6)
          ═══════════════════════════════════════════════════════ */
       const TIMELINE = [
@@ -550,18 +564,18 @@
         // ── Bando Cristià ──
         { nom: "Andaluces",    tipus: "cristia", cargo: "Capità Cristià",   img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1452.jpg" },
         { nom: "Asturianos",   tipus: "cristia", cargo: "Alferes Cristià",  img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1371.jpg" },
-        { nom: "Cides",        tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1243.jpg" },
-        { nom: "Labradores",   tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1360.jpg" },
-        { nom: "Guzmanes",     tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1349.jpg" },
-        { nom: "Vascos",       tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1332.jpg" },
-        { nom: "Mozárabes",    tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1307.jpg" },
-        { nom: "Almogávares",  tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1285.jpg" },
-        { nom: "Navarros",     tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1282.jpg" },
-        { nom: "Tomasinas",    tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1269.jpg" },
-        { nom: "Muntanyesos",  tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1260.jpg" },
-        { nom: "Cruzados",     tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1243.jpg" },
-        { nom: "Alcodianos",   tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1234.jpg" },
-        { nom: "Aragoneses",   tipus: "cristia",                             img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1203.jpg" },
+        { nom: "Cides",        tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1243.jpg" },
+        { nom: "Labradores",   tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1360.jpg" },
+        { nom: "Guzmanes",     tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1349.jpg" },
+        { nom: "Vascos",       tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1332.jpg" },
+        { nom: "Mozárabes",    tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1307.jpg" },
+        { nom: "Almogávares",  tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1285.jpg" },
+        { nom: "Navarros",     tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1282.jpg" },
+        { nom: "Tomasinas",    tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1269.jpg" },
+        { nom: "Muntanyesos",  tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1260.jpg" },
+        { nom: "Cruzados",     tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1243.jpg" },
+        { nom: "Alcodianos",   tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1234.jpg" },
+        { nom: "Aragoneses",   tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1203.jpg" },
         // ── Bando Moro ──
         { nom: "Llana",           tipus: "moro", cargo: "Sant Jordiet",     img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1666.jpg" },
         { nom: "Judíos",          tipus: "moro",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1647.jpg" },
@@ -916,12 +930,22 @@
                   // ════════════════════════════════════════════════════════
                   h(FadeIn, { delay: .3 },
                     h("div", { className: "countdown-section" },
-                      h("div", { style: { display: "flex", alignItems: "center", gap: 12, marginBottom: 24 } },
-                        h("div", { style: { width: 4, height: 28, borderRadius: 2, background: "linear-gradient(180deg, rgba(201,168,76,.45), rgba(201,168,76,.12))" } }),
-                        h("div", null,
-                          h("div", { style: { fontSize: ".5rem", fontWeight: 700, letterSpacing: ".32em", textTransform: "uppercase", color: "rgba(201,168,76,.55)", marginBottom: 2 } }, "Entraetes i Preparatius"),
-                          h("div", { style: { fontFamily: "Playfair Display, serif", fontSize: "1.2rem", fontWeight: 900, color: "rgba(253,246,227,.7)" } }, "Calendari Previ"),
+                      h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 16, marginBottom: 24 } },
+                        h("div", { style: { display: "flex", alignItems: "center", gap: 12 } },
+                          h("div", { style: { width: 4, height: 28, borderRadius: 2, background: "linear-gradient(180deg, rgba(201,168,76,.45), rgba(201,168,76,.12))" } }),
+                          h("div", null,
+                            h("div", { style: { fontSize: ".5rem", fontWeight: 700, letterSpacing: ".32em", textTransform: "uppercase", color: "rgba(201,168,76,.55)", marginBottom: 2 } }, "Entraetes i Preparatius"),
+                            h("div", { style: { fontFamily: "Playfair Display, serif", fontSize: "1.2rem", fontWeight: 900, color: "rgba(253,246,227,.7)" } }, "Calendari Previ"),
+                          ),
                         ),
+                        // Botón PDF
+                        h("a", {
+                          href: "https://www.asjordi.org/upload/files/entraetes/2026/calendari-d039entradetes-2026.pdf",
+                          target: "_blank", rel: "noopener noreferrer",
+                          style: { padding: "8px 16px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.3)", borderRadius: "20px", color: "var(--gold)", fontSize: ".7rem", fontWeight: 700, textDecoration: "none", transition: "background .2s", display: "inline-block" },
+                          onMouseOver: e => e.currentTarget.style.background = "rgba(201,168,76,.2)",
+                          onMouseOut: e => e.currentTarget.style.background = "rgba(201,168,76,.1)"
+                        }, "📄 Veure Calendari Oficial (PDF)")
                       ),
                       entraetes.length > 0
                         ? h("div", { className: "countdown-grid" },
@@ -931,6 +955,8 @@
                               const dn = dayNum(f.fecha);
                               const badge = daysUntil(f.fecha);
                               const isToday = badge === 'AVUI';
+                              const agenda = ENTRAETES_INFO[f.fecha]; // Mini agenda events
+                              
                               return h(motion.div, { key: f.fecha,
                                 initial: { opacity: 0, y: 16, scale: .95 },
                                 whileInView: { opacity: 1, y: 0, scale: 1 },
@@ -946,15 +972,25 @@
                                     ),
                                     h("div", { className: "cc-icon" }, f.icono || "🌡️"),
                                   ),
-                                  // Event
-                                  h("div", { className: "cc-event", style: { marginBottom: 8 } }, info.event),
                                   // Temp + prob row
                                   h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } },
                                     h("div", { className: "cc-temp" }, f.temp_max !== "N/D" ? f.temp_max + "°" : "—"),
                                     h("div", { className: "cc-prob", style: { color: col } }, f.prob !== "N/D" ? f.prob + "% pluja" : ""),
                                   ),
-                                  // Badge
-                                  h("div", { style: { marginTop: 8, fontSize: ".42rem", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: isToday ? '#fff' : 'rgba(201,168,76,.45)', background: isToday ? 'var(--red)' : 'rgba(201,168,76,.06)', display: 'inline-block', padding: '2px 8px', borderRadius: 10 } }, badge),
+                                  // Badge (today / days left)
+                                  h("div", { style: { marginTop: 8, fontSize: ".42rem", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: isToday ? '#fff' : 'rgba(201,168,76,.45)', background: isToday ? 'var(--red)' : 'rgba(201,168,76,.06)', alignSelf: 'flex-start', padding: '2px 8px', borderRadius: 10 } }, badge),
+                                  
+                                  // Mini Agenda (if available)
+                                  agenda && h("div", { style: { marginTop: 12, paddingTop: 12, borderTop: "1px dashed rgba(201,168,76,.15)" } },
+                                    agenda.map((ag, idx) => h("div", { key: idx, style: { marginBottom: 8 } },
+                                      h("div", { style: { fontSize: ".55rem", fontWeight: 700, color: "var(--gold)", textTransform: "uppercase", letterSpacing: ".1em", marginBottom: 4 } }, "📍 " + ag.carrer),
+                                      ag.desfilades.map((df, j) => h("div", { key: j, style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 } },
+                                        h("span", { style: { fontSize: ".65rem", color: "rgba(253,246,227,.45)", fontFamily: "monospace" } }, "[" + df.hora + "]"),
+                                        h("span", { style: { fontSize: ".75rem", color: "var(--cream)", fontWeight: 600 } }, df.fila),
+                                        df.ee && h("span", { style: { fontSize: ".45rem", fontWeight: 800, background: "linear-gradient(135deg, var(--gold), var(--gold-dark))", color: "var(--dark)", padding: "2px 5px", borderRadius: 3, marginLeft: "auto", boxShadow: "0 2px 4px rgba(201,168,76,.2)" } }, "EE")
+                                      ))
+                                    ))
+                                  )
                                 )
                               );
                             })
