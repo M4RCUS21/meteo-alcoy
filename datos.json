@@ -1,6 +1,6 @@
 {
-  "temp": 11.9,
-  "hum": 83,
+  "temp": 11.4,
+  "hum": 85,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041206/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -8,7 +8,7 @@
       "fecha": "2026-04-24",
       "temp_max": 24.8,
       "icono": "🌦️",
-      "prob": 16,
+      "prob": 13,
       "litros": 1.8,
       "consejo": "👕 Manga corta, temperatura agradable",
       "analisis_tecnico": "✅ Cielo despejado. El 80% de las ramas del modelo GEFS coinciden en que no habrá precipitación. Estabilidad total para el desfile.",
@@ -19,7 +19,7 @@
       "fecha": "2026-04-25",
       "temp_max": 14.8,
       "icono": "🌦️",
-      "prob": 13,
+      "prob": 19,
       "litros": 1.5,
       "consejo": "🧣 Coge la manta (fresquito)",
       "analisis_tecnico": "✅ Cielo despejado. El 80% de las ramas del modelo GEFS coinciden en que no habrá precipitación. Estabilidad total para el desfile.",
@@ -41,10 +41,10 @@
       "fecha": "2026-04-27",
       "temp_max": 17.5,
       "icono": "🌤️",
-      "prob": 27,
+      "prob": 10,
       "litros": 0,
       "consejo": "🧣 Coge la manta (fresquito)",
-      "analisis_tecnico": "🟡 Incertidumbre moderada. Hay dispersión en las ramas; algunas marcan lluvia débil (0.0 mm esperados). Es probable que solo caigan cuatro gotas dispersas.",
+      "analisis_tecnico": "✅ Cielo despejado. El 80% de las ramas del modelo GEFS coinciden en que no habrá precipitación. Estabilidad total para el desfile.",
       "datos_disponibles": true
     }
   ],
@@ -60,5 +60,5 @@
     "mapa_ok": true,
     "openmeteo_ok": true
   },
-  "fecha": "2026-04-12T13:51:37.379Z"
+  "fecha": "2026-04-12T14:55:05.990Z"
 }
