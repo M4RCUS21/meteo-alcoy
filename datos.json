@@ -1,46 +1,58 @@
 {
   "temp": 11.9,
-  "hum": 84,
+  "hum": 83,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041206/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
-      "dia": "Viernes 24 - Entrada de Moros",
+      "dia": "Viernes 24 · Entrada de Moros",
       "fecha": "2026-04-24",
       "temp_max": 24.8,
       "icono": "🌦️",
-      "consejo": "👕 Manga corta",
-      "disponible": true
+      "prob": 16,
+      "litros": 1.8,
+      "consejo": "👕 Manga corta, temperatura agradable",
+      "analisis_tecnico": "✅ Cielo despejado. El 80% de las ramas del modelo GEFS coinciden en que no habrá precipitación. Estabilidad total para el desfile.",
+      "datos_disponibles": true
     },
     {
-      "dia": "Sábado 25 - Día de San Jorge",
+      "dia": "Sábado 25 · Día de San Jorge",
       "fecha": "2026-04-25",
       "temp_max": 14.8,
       "icono": "🌦️",
-      "consejo": "🧣 Coge la manta",
-      "disponible": true
+      "prob": 13,
+      "litros": 1.5,
+      "consejo": "🧣 Coge la manta (fresquito)",
+      "analisis_tecnico": "✅ Cielo despejado. El 80% de las ramas del modelo GEFS coinciden en que no habrá precipitación. Estabilidad total para el desfile.",
+      "datos_disponibles": true
     },
     {
-      "dia": "Domingo 26 - Entrada de Cristianos",
+      "dia": "Domingo 26 · Entrada de Cristianos",
       "fecha": "2026-04-26",
       "temp_max": 20.2,
       "icono": "🌦️",
-      "consejo": "👕 Manga corta",
-      "disponible": true
+      "prob": 17,
+      "litros": 3,
+      "consejo": "👕 Manga corta, temperatura agradable",
+      "analisis_tecnico": "✅ Cielo despejado. El 80% de las ramas del modelo GEFS coinciden en que no habrá precipitación. Estabilidad total para el desfile.",
+      "datos_disponibles": true
     },
     {
-      "dia": "Lunes 27 - Día de la Patrona",
+      "dia": "Lunes 27 · Día de la Patrona (Santa María)",
       "fecha": "2026-04-27",
       "temp_max": 17.5,
       "icono": "🌤️",
-      "consejo": "🧣 Coge la manta",
-      "disponible": true
+      "prob": 27,
+      "litros": 0,
+      "consejo": "🧣 Coge la manta (fresquito)",
+      "analisis_tecnico": "🟡 Incertidumbre moderada. Hay dispersión en las ramas; algunas marcan lluvia débil (0.0 mm esperados). Es probable que solo caigan cuatro gotas dispersas.",
+      "datos_disponibles": true
     }
   ],
-  "estacion": "Alcoi - c27m009e08",
+  "estacion": "Alcoi — Estació c27m009e08",
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
     "meteograma": "https://www.avamet.org/mx-previsio.php?id=c27m009e08",
-    "prevision": "Open-Meteo API v1"
+    "prevision": "https://api.open-meteo.com (GFS · Copernicus)"
   },
   "estado": {
     "temp_ok": true,
@@ -48,5 +60,5 @@
     "mapa_ok": true,
     "openmeteo_ok": true
   },
-  "fecha": "2026-04-12T13:43:41.507Z"
+  "fecha": "2026-04-12T13:51:37.379Z"
 }
