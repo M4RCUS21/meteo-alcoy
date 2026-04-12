@@ -1,6 +1,6 @@
 {
-  "temp": 11.4,
-  "hum": 85,
+  "temp": 11.2,
+  "hum": 88,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041212/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -9,7 +9,7 @@
       "temp_max": 13.8,
       "icono": "🌧️",
       "prob": 98,
-      "litros": 7.2,
+      "litros": 6.5,
       "consejo": "Abrigo recomendado",
       "analisis_tecnico": "Modelos de alta resolución confirman un escenario atmosférico consistente y de alta fiabilidad. Ambiente fresco por advección de aire frío en niveles bajos. Descenso térmico nocturno acusado por enfriamiento radiativo.",
       "datos_disponibles": true
@@ -17,10 +17,10 @@
     {
       "dia": "Lunes 13 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-13",
-      "temp_max": 15.2,
+      "temp_max": 15.7,
       "icono": "⛈️",
       "prob": 100,
-      "litros": 18.1,
+      "litros": 33.2,
       "consejo": "Abrigo recomendado",
       "analisis_tecnico": "Modelos de alta resolución confirman un escenario atmosférico consistente y de alta fiabilidad. Paso de un frente activo con precipitaciones persistentes. Ambiente fresco por advección de aire frío en niveles bajos. Descenso térmico nocturno acusado por enfriamiento radiativo.",
       "datos_disponibles": true
@@ -94,32 +94,32 @@
     {
       "dia": "Lunes 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
-      "temp_max": 24.2,
+      "temp_max": 25.8,
       "icono": "☀️",
       "prob": 6,
-      "litros": 0.3,
+      "litros": 1.8,
       "consejo": "Temperatura agradable",
-      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Descenso térmico nocturno acusado por enfriamiento radiativo.",
+      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Temperaturas elevadas por advección cálida en altura. Descenso térmico nocturno acusado por enfriamiento radiativo.",
       "datos_disponibles": true
     },
     {
       "dia": "Martes 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
-      "temp_max": 21.8,
+      "temp_max": 25.8,
       "icono": "☀️",
       "prob": 13,
-      "litros": 0.9,
+      "litros": 0,
       "consejo": "Temperatura agradable",
-      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Descenso térmico nocturno acusado por enfriamiento radiativo.",
+      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Temperaturas elevadas por advección cálida en altura. Descenso térmico nocturno acusado por enfriamiento radiativo.",
       "datos_disponibles": true
     },
     {
       "dia": "Miércoles 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
-      "temp_max": 14.9,
+      "temp_max": 16.4,
       "icono": "☀️",
       "prob": 19,
-      "litros": 0.6,
+      "litros": 0,
       "consejo": "Abrigo recomendado",
       "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Ambiente fresco por advección de aire frío en niveles bajos. Descenso térmico nocturno acusado por enfriamiento radiativo.",
       "datos_disponibles": true
@@ -127,32 +127,32 @@
     {
       "dia": "Jueves 23 · Día de la Víspera",
       "fecha": "2026-04-23",
-      "temp_max": 25.9,
+      "temp_max": 14.4,
       "icono": "☀️",
       "prob": 13,
       "litros": 0,
-      "consejo": "Temperatura agradable",
-      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Temperaturas elevadas por advección cálida en altura.",
+      "consejo": "Abrigo recomendado",
+      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Ambiente fresco por advección de aire frío en niveles bajos.",
       "datos_disponibles": true
     },
     {
       "dia": "Viernes 24 · Día de los Músicos",
       "fecha": "2026-04-24",
-      "temp_max": 24.8,
+      "temp_max": 15.9,
       "icono": "☀️",
       "prob": 13,
-      "litros": 1.8,
-      "consejo": "Temperatura agradable",
-      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna.",
+      "litros": 0,
+      "consejo": "Abrigo recomendado",
+      "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Ambiente fresco por advección de aire frío en niveles bajos.",
       "datos_disponibles": true
     },
     {
       "dia": "Sábado 25 · Día de las Entradas",
       "fecha": "2026-04-25",
-      "temp_max": 14.8,
+      "temp_max": 18,
       "icono": "☀️",
       "prob": 19,
-      "litros": 1.5,
+      "litros": 0,
       "consejo": "Abrigo recomendado",
       "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Ambiente fresco por advección de aire frío en niveles bajos. Condiciones favorables para el desarrollo de las Entradas.",
       "datos_disponibles": true
@@ -160,10 +160,10 @@
     {
       "dia": "Domingo 26 · Día de San Jorge",
       "fecha": "2026-04-26",
-      "temp_max": 20.2,
+      "temp_max": 20.9,
       "icono": "☀️",
       "prob": 17,
-      "litros": 3,
+      "litros": 0,
       "consejo": "Temperatura agradable",
       "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna.",
       "datos_disponibles": true
@@ -171,10 +171,10 @@
     {
       "dia": "Lunes 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
-      "temp_max": 17.5,
+      "temp_max": 13.1,
       "icono": "☀️",
       "prob": 10,
-      "litros": 0,
+      "litros": 0.3,
       "consejo": "Abrigo recomendado",
       "analisis_tecnico": "A más de 7 días vista, los modelos muestran una tendencia con alta dispersión. Fiabilidad baja. Dominio anticiclónico. Cielos despejados con fuerte insolación diurna. Ambiente fresco por advección de aire frío en niveles bajos. La elevada humedad o precipitación dificultará severamente la ignición de la pólvora.",
       "datos_disponibles": true
@@ -186,5 +186,5 @@
     "mapa_ok": true,
     "openmeteo_ok": true
   },
-  "fecha": "2026-04-12T17:21:23.963Z"
+  "fecha": "2026-04-12T18:06:41.211Z"
 }
