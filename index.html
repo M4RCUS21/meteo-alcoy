@@ -1,421 +1,261 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meteo Alcoi · Moros i Cristians 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moros i Cristians · Alcoi 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/framer-motion@11/dist/framer-motion.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-  :root {
-    --asj-red:    #cc0000;
-    --asj-gold:   #c9a84c;
-    --asj-dark:   #1a1208;
-    --asj-cream:  #fdf6e3;
-    --asj-parch:  #f5ead0;
-  }
+:root {
+  --red: #cc0000; --red-dark: #8b0000; --red-light: #ff3333;
+  --gold: #c9a84c; --gold-light: #e6c46a; --gold-dark: #8a6f28;
+  --cream: #fdf6e3; --parch: #f0e4c0; --dark: #150e05; --dark2: #2a1c0a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--dark); color: var(--cream); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+.font-serif { font-family: 'Playfair Display', serif; }
+.font-crim  { font-family: 'Crimson Pro', serif; }
 
-  * { box-sizing: border-box; }
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 2px; }
 
-  body {
-    background-color: var(--asj-cream);
-    color: var(--asj-dark);
-    font-family: 'DM Sans', sans-serif;
-    margin: 0;
-    overflow-x: hidden;
-  }
+/* ── Hero ── */
+#hero {
+  position: relative; height: 100svh; min-height: 600px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(21,14,5,.3) 0%, rgba(21,14,5,.7) 60%, rgba(21,14,5,1) 100%),
+    radial-gradient(ellipse at 60% 40%, rgba(201,168,76,.12) 0%, transparent 70%),
+    url('https://www.asjordi.org/upload/images/showroom/ano-2025/1903.jpg') center/cover no-repeat;
+}
+.hero-particles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.particle {
+  position: absolute; width: 2px; height: 2px;
+  background: var(--gold); border-radius: 50%;
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  0%   { transform: translateY(100vh) translateX(0px); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(-10vh) translateX(var(--drift-x, 30px)); opacity: 0; }
+}
 
-  /* ── Textura de pergamino ── */
-  body::before {
-    content: '';
-    position: fixed; inset: 0;
-    background-image:
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 0;
-  }
+/* ── Nav ── */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  transition: background .4s, padding .4s, backdrop-filter .4s;
+  padding: 20px 0;
+}
+#navbar.scrolled {
+  background: rgba(21,14,5,.92);
+  backdrop-filter: blur(12px);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(201,168,76,.2);
+}
+.nav-link {
+  font-size: .7rem; font-weight: 600; letter-spacing: .18em;
+  text-transform: uppercase; color: rgba(253,246,227,.7);
+  text-decoration: none; transition: color .2s;
+  cursor: pointer;
+}
+.nav-link:hover { color: var(--gold-light); }
 
-  /* ── Tipografía ── */
-  .font-display   { font-family: 'Playfair Display', serif; }
-  .font-editorial { font-family: 'Crimson Pro', serif; }
+/* ── Gold divider ── */
+.divider {
+  height: 1px; margin: 0 auto;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: .4;
+}
 
-  /* ── Nav ── */
-  .nav-bar {
-    background: var(--asj-red);
-    border-bottom: 4px solid var(--asj-gold);
-    padding: 0;
-    position: sticky; top: 0; z-index: 100;
-    box-shadow: 0 4px 20px rgba(0,0,0,.35);
-  }
-  .nav-inner {
-    max-width: 480px; margin: 0 auto;
-    display: flex; flex-direction: column; align-items: center;
-    padding: 12px 16px 10px;
-    gap: 2px;
-  }
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem; font-weight: 900;
-    color: #fff; letter-spacing: .04em;
-  }
-  .nav-logo span { color: var(--asj-gold); }
-  .nav-sub {
-    font-size: 0.52rem; font-weight: 500;
-    color: rgba(255,255,255,.75);
-    letter-spacing: .35em; text-transform: uppercase;
-  }
-  .nav-750 {
-    display: inline-block;
-    margin-top: 4px;
-    font-family: 'Crimson Pro', serif;
-    font-size: .7rem; font-style: italic;
-    color: var(--asj-gold);
-    letter-spacing: .1em;
-    border: 1px solid rgba(201,168,76,.4);
-    padding: 1px 10px; border-radius: 20px;
-  }
+/* ── Section title ── */
+.sec-label {
+  font-size: .6rem; font-weight: 600; letter-spacing: .35em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 8px;
+}
+.sec-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900; line-height: 1.1;
+  color: var(--cream);
+}
+.sec-title em { color: var(--gold); font-style: italic; }
 
-  /* ── Secciones ── */
-  .main-wrap { max-width: 480px; margin: 0 auto; padding: 20px 14px 60px; position: relative; z-index: 1; }
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem; font-weight: 700; font-style: italic;
-    color: var(--asj-red);
-    text-align: center;
-    margin: 0 0 12px;
-    display: flex; align-items: center; gap: 10px;
-  }
-  .section-title::before,
-  .section-title::after {
-    content: ''; flex: 1; height: 1px;
-    background: linear-gradient(90deg, transparent, var(--asj-gold), transparent);
-  }
+/* ── Timeline ── */
+.timeline-item { cursor: pointer; }
+.timeline-connector { width: 2px; background: rgba(201,168,76,.25); flex-shrink: 0; }
+.timeline-dot {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--dark2); border: 2px solid var(--gold-dark);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; flex-shrink: 0;
+  transition: all .3s; cursor: pointer;
+}
+.timeline-dot.active {
+  background: var(--red); border-color: var(--gold);
+  box-shadow: 0 0 0 6px rgba(201,168,76,.15);
+  transform: scale(1.1);
+}
+.timeline-card {
+  background: rgba(42,28,10,.7);
+  border: 1px solid rgba(201,168,76,.2);
+  border-left: 3px solid var(--gold);
+  border-radius: 12px; padding: 20px; flex: 1;
+  backdrop-filter: blur(6px);
+  transition: border-color .3s;
+}
+.timeline-card.active { border-left-color: var(--red); border-color: rgba(204,0,0,.4); }
 
-  /* ── Hero banner ── */
-  .hero {
-    border-radius: 12px; overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0,0,0,.25);
-    margin-bottom: 20px;
-    position: relative;
-  }
-  .hero img { width: 100%; height: 200px; object-fit: cover; display: block; }
-  .hero-caption {
-    background: linear-gradient(135deg, var(--asj-red) 0%, #8b0000 100%);
-    border-top: 3px solid var(--asj-gold);
-    padding: 10px 16px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .hero-caption-text { font-family: 'Crimson Pro', serif; font-size: .85rem; font-style: italic; color: #fff; }
-  .hero-caption-badge {
-    background: var(--asj-gold); color: var(--asj-dark);
-    font-size: .6rem; font-weight: 700; letter-spacing: .12em;
-    text-transform: uppercase; padding: 2px 8px; border-radius: 3px;
-  }
+/* ── Filaes ── */
+.fila-card {
+  background: rgba(42,28,10,.5);
+  border: 1px solid rgba(201,168,76,.15);
+  border-radius: 10px; overflow: hidden;
+  transition: transform .25s, border-color .25s, box-shadow .25s;
+  cursor: pointer;
+}
+.fila-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--gold);
+  box-shadow: 0 12px 32px rgba(0,0,0,.4), 0 0 0 1px rgba(201,168,76,.3);
+}
+.fila-card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+.fila-badge {
+  position: absolute; top: 8px; right: 8px;
+  font-size: .5rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; padding: 2px 8px; border-radius: 3px;
+}
+.badge-cristia { background: var(--red); color: #fff; }
+.badge-moro    { background: var(--dark2); color: var(--gold); border: 1px solid var(--gold-dark); }
 
-  /* ── Datos actuales ── */
-  .live-card {
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid rgba(201,168,76,.3);
-    border-top: 4px solid var(--asj-red);
-    box-shadow: 0 4px 20px rgba(0,0,0,.08);
-    padding: 20px;
-    margin-bottom: 24px;
-  }
-  .live-label {
-    font-size: .55rem; font-weight: 600; letter-spacing: .25em;
-    text-transform: uppercase; color: rgba(26,18,8,.4);
-    display: flex; align-items: center; gap: 6px; margin-bottom: 16px;
-  }
-  .live-label::before {
-    content: ''; width: 6px; height: 6px; border-radius: 50%;
-    background: #22c55e;
-    box-shadow: 0 0 0 3px rgba(34,197,94,.2);
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 3px rgba(34,197,94,.2); } 50% { box-shadow: 0 0 0 6px rgba(34,197,94,.05); } }
-  .live-grid { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0; }
-  .live-divider { background: #e5e7eb; }
-  .live-val {
-    text-align: center;
-    display: flex; flex-direction: column; align-items: center; gap: 2px;
-  }
-  .live-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem; font-weight: 900; line-height: 1;
-    color: var(--asj-dark);
-  }
-  .live-num-label {
-    font-size: .55rem; font-weight: 600; letter-spacing: .2em;
-    text-transform: uppercase; color: rgba(26,18,8,.4);
-  }
+/* ── Tab buttons ── */
+.tab-btn {
+  padding: 8px 24px; border-radius: 30px; font-size: .7rem;
+  font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+  cursor: pointer; transition: all .25s;
+  border: 1px solid rgba(201,168,76,.3);
+  background: transparent; color: rgba(253,246,227,.5);
+}
+.tab-btn.active {
+  background: var(--red); color: #fff; border-color: var(--red);
+}
 
-  /* ── Cards de fiestas ── */
-  .fiesta-card {
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid rgba(0,0,0,.07);
-    box-shadow: 0 3px 16px rgba(0,0,0,.07);
-    overflow: hidden;
-    margin-bottom: 16px;
-    animation: fadeUp .5s ease both;
-  }
-  @keyframes fadeUp { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
-  .fiesta-head {
-    background: linear-gradient(135deg, var(--asj-dark) 0%, #2d1f0a 100%);
-    padding: 10px 16px;
-    display: flex; align-items: center; justify-content: space-between;
-    border-bottom: 2px solid var(--asj-gold);
-  }
-  .fiesta-head-name {
-    font-family: 'Playfair Display', serif;
-    font-size: .85rem; font-style: italic; color: #fff; line-height: 1.2;
-  }
-  .fiesta-head-name small {
-    display: block; font-family: 'DM Sans', sans-serif;
-    font-size: .55rem; font-style: normal; letter-spacing: .15em;
-    text-transform: uppercase; color: var(--asj-gold); font-weight: 500;
-  }
-  .fiesta-icon { font-size: 2rem; }
-  .fiesta-stats {
-    display: grid; grid-template-columns: repeat(3,1fr);
-    border-bottom: 1px solid #f1f5f9;
-  }
-  .fiesta-stat {
-    text-align: center; padding: 12px 8px;
-    border-right: 1px solid #f1f5f9;
-  }
-  .fiesta-stat:last-child { border-right: none; }
-  .fiesta-stat-label { font-size: .5rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: rgba(26,18,8,.35); margin-bottom: 4px; }
-  .fiesta-stat-val { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--asj-dark); line-height: 1; }
-  .fiesta-stat-unit { font-size: .6rem; font-weight: 400; color: rgba(26,18,8,.4); }
-  .fiesta-analysis {
-    padding: 12px 16px 14px;
-    border-left: 4px solid var(--asj-red);
-    margin: 12px 16px 0;
-    background: rgba(204,0,0,.03);
-    border-radius: 0 6px 6px 0;
-  }
-  .fiesta-analysis-tag {
-    font-size: .5rem; font-weight: 700; letter-spacing: .2em;
-    text-transform: uppercase; color: var(--asj-red); margin-bottom: 5px;
-  }
-  .fiesta-analysis-text { font-family: 'Crimson Pro', serif; font-size: .95rem; line-height: 1.5; color: #374151; }
-  .fiesta-consejo { font-size: .72rem; font-weight: 500; color: #6b7280; margin: 8px 16px 14px; padding-top: 8px; border-top: 1px solid #f1f5f9; }
+/* ── Live card ── */
+.live-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: #22c55e;
+  animation: livepulse 2s infinite;
+}
+@keyframes livepulse {
+  0%,100% { box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
+  50%      { box-shadow: 0 0 0 7px rgba(34,197,94,.04); }
+}
 
-  /* ── Galería de filaes ── */
-  .filaes-section { margin-bottom: 24px; }
-  .filaes-tabs {
-    display: flex; gap: 6px; margin-bottom: 12px; overflow-x: auto;
-    padding-bottom: 4px; scrollbar-width: none;
-  }
-  .filaes-tabs::-webkit-scrollbar { display: none; }
-  .fila-tab {
-    flex-shrink: 0;
-    padding: 4px 14px; border-radius: 20px; font-size: .65rem;
-    font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-    cursor: pointer; transition: all .2s;
-    border: 1px solid rgba(0,0,0,.12); background: #fff; color: #6b7280;
-  }
-  .fila-tab.active {
-    background: var(--asj-red); color: #fff; border-color: var(--asj-red);
-  }
-  .filaes-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
-  }
-  .fila-item {
-    text-align: center; cursor: pointer;
-  }
-  .fila-img-wrap {
-    border-radius: 8px; overflow: hidden;
-    border: 2px solid transparent;
-    transition: border-color .2s, transform .2s;
-    aspect-ratio: 3/4; background: #e5e7eb;
-  }
-  .fila-item:hover .fila-img-wrap {
-    border-color: var(--asj-gold); transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,.15);
-  }
-  .fila-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .fila-name { font-size: .52rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: rgba(26,18,8,.5); margin-top: 4px; line-height: 1.2; }
+/* ── Masonry gallery ── */
+.masonry { columns: 2; gap: 8px; }
+.masonry-item { break-inside: avoid; margin-bottom: 8px; overflow: hidden; border-radius: 8px; }
+.masonry-item img { width: 100%; display: block; transition: transform .4s; }
+.masonry-item:hover img { transform: scale(1.04); }
+@media (min-width: 640px) { .masonry { columns: 3; } }
 
-  /* ── Cuadro de honor ── */
-  .honor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
-  .honor-card {
-    background: #fff; border-radius: 10px;
-    border: 1px solid rgba(0,0,0,.07);
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0,0,0,.07);
-  }
-  .honor-img { width: 100%; height: 130px; object-fit: cover; display: block; }
-  .honor-info { padding: 8px 10px 10px; border-top: 2px solid var(--asj-gold); }
-  .honor-role { font-size: .5rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: rgba(26,18,8,.4); }
-  .honor-name { font-family: 'Playfair Display', serif; font-size: .85rem; font-style: italic; color: var(--asj-red); font-weight: 700; }
+/* ── Video placeholder ── */
+.video-frame {
+  aspect-ratio: 16/9; background: var(--dark2);
+  border: 1px solid rgba(201,168,76,.2);
+  border-radius: 12px; overflow: hidden; position: relative;
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.video-play {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: rgba(204,0,0,.85); display: flex; align-items: center; justify-content: center;
+  transition: transform .2s, background .2s;
+}
+.video-frame:hover .video-play { transform: scale(1.1); background: var(--red); }
+.video-play-icon { width: 0; height: 0; border-style: solid; border-width: 14px 0 14px 26px; border-color: transparent transparent transparent #fff; margin-left: 6px; }
 
-  /* ── Meteograma ── */
-  .meteo-card {
-    background: #fff; border-radius: 12px;
-    border: 1px solid rgba(201,168,76,.25);
-    padding: 16px; margin-bottom: 24px;
-    box-shadow: 0 3px 16px rgba(0,0,0,.07);
-  }
-  .meteo-card img { width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; display: block; }
-  .meteo-caption { font-size: .58rem; color: rgba(26,18,8,.4); text-align: center; margin-top: 8px; letter-spacing: .08em; }
+/* ── Footer ── */
+footer {
+  background: var(--dark);
+  border-top: 1px solid rgba(201,168,76,.2);
+  padding: 48px 24px 32px;
+}
+.social-link {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid rgba(201,168,76,.3);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); text-decoration: none; font-size: .75rem; font-weight: 700;
+  transition: background .2s, border-color .2s;
+}
+.social-link:hover { background: rgba(201,168,76,.1); border-color: var(--gold); }
 
-  /* ── Footer ── */
-  .footer {
-    text-align: center; padding: 24px 16px;
-    border-top: 1px solid rgba(201,168,76,.3);
-    margin-top: 24px;
-  }
-  .footer-update { font-size: .58rem; color: rgba(26,18,8,.35); letter-spacing: .15em; text-transform: uppercase; }
-  .footer-lema { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1rem; color: var(--asj-red); margin-top: 6px; }
-  .footer-copy { font-size: .55rem; color: rgba(26,18,8,.25); margin-top: 4px; }
+/* ── Fiesta stat ── */
+.fs { background: rgba(201,168,76,.06); border-radius: 8px; padding: 12px 16px; border: 1px solid rgba(201,168,76,.15); }
+.fs-label { font-size: .52rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: rgba(201,168,76,.6); }
+.fs-val { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--cream); line-height: 1; }
 
-  /* ── Ornamento decorativo ── */
-  .ornament {
-    text-align: center; color: var(--asj-gold);
-    font-size: 1.1rem; margin: 4px 0 16px;
-    letter-spacing: .3em; opacity: .6;
-  }
-
-  /* ── Divisor dorado ── */
-  .gold-divider {
-    height: 1px; margin: 24px 0;
-    background: linear-gradient(90deg, transparent, var(--asj-gold) 30%, var(--asj-gold) 70%, transparent);
-    opacity: .5;
-  }
-
-  /* ── Estado de carga ── */
-  .skeleton { background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: 6px; }
-  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+/* ── Scroll reveal wrapper ── */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
 </style>
 </head>
 <body>
-
-<!-- ╔══════════════════════════════╗ -->
-<!-- ║          NAVEGACIÓN          ║ -->
-<!-- ╚══════════════════════════════╝ -->
-<nav class="nav-bar">
-  <div class="nav-inner">
-    <div class="nav-logo">ASJ <span>METEO</span></div>
-    <div class="nav-sub">Moros i Cristians · Alcoi 2026</div>
-    <div class="nav-750">✦ 750 Aniversari del Patronatge ✦</div>
-  </div>
-</nav>
-
-<div class="main-wrap">
-
-  <!-- ── Hero ── -->
-  <div class="hero">
-    <img src="https://www.asjordi.org/upload/images/asociacion/organizacion/01-Llana.jpg" alt="Filà Llana">
-    <div class="hero-caption">
-      <span class="hero-caption-text">Sant Jordiet 2026 · Filà Llana</span>
-      <span class="hero-caption-badge">Alcoi</span>
-    </div>
-  </div>
-
-  <!-- ── Datos en directo ── -->
-  <div class="live-card">
-    <div class="live-label">Directe des de l'Estació AVAMET · c27m009e08</div>
-    <div class="live-grid">
-      <div class="live-val">
-        <div class="live-num" id="temp"><span class="skeleton" style="width:80px;height:48px;display:inline-block;"></span></div>
-        <div class="live-num-label">Temperatura</div>
-      </div>
-      <div class="live-divider"></div>
-      <div class="live-val">
-        <div class="live-num" id="hum"><span class="skeleton" style="width:80px;height:48px;display:inline-block;"></span></div>
-        <div class="live-num-label">Humitat</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Análisis Trilogía ── -->
-  <div class="section-title">Anàlisi de la Trilogia</div>
-  <div class="ornament">✦ ✦ ✦</div>
-  <div id="contenedor-fiestas"></div>
-
-  <div class="gold-divider"></div>
-
-  <!-- ── Meteograma ── -->
-  <div class="section-title">Tendència d'Ensembles · GEFS</div>
-  <div class="meteo-card">
-    <img id="mapa" src="" alt="Meteograma T850+T500+Precip">
-    <div class="meteo-caption">Meteograma T850 + T500 + Precipitació · Model GFS/GEFS · Meteociel</div>
-  </div>
-
-  <div class="gold-divider"></div>
-
-  <!-- ── Cuadro de Honor ── -->
-  <div class="section-title">Quadre d'Honor 2026</div>
-  <div class="ornament">✦ ✦ ✦</div>
-  <div class="honor-grid">
-    <div class="honor-card">
-      <img class="honor-img" src="https://www.asjordi.org/upload/images/asociacion/01-ANDALUCES.jpg" alt="Andaluces" onerror="this.src='https://www.asjordi.org/upload/images/filaes/01-Alcodianos.jpg'">
-      <div class="honor-info">
-        <div class="honor-role">Capità Cristià</div>
-        <div class="honor-name">Andaluces</div>
-      </div>
-    </div>
-    <div class="honor-card">
-      <img class="honor-img" src="https://www.asjordi.org/upload/images/filaes/02-Asturianos.jpg" alt="Asturianos" onerror="this.src='https://www.asjordi.org/upload/images/showroom/ano-2025/1371.jpg'">
-      <div class="honor-info">
-        <div class="honor-role">Alferes Cristià</div>
-        <div class="honor-name">Asturianos</div>
-      </div>
-    </div>
-    <div class="honor-card">
-      <img class="honor-img" src="https://www.asjordi.org/upload/images/filaes/MARRAKESH.jpg" alt="Marrakesch" onerror="this.src='https://www.asjordi.org/upload/images/showroom/ano-2025/1775.jpg'">
-      <div class="honor-info">
-        <div class="honor-role">Capità Moro</div>
-        <div class="honor-name">Marrakesch</div>
-      </div>
-    </div>
-    <div class="honor-card">
-      <img class="honor-img" src="https://www.asjordi.org/upload/images/filaes/12-Realistes.jpg" alt="Realistes" onerror="this.src='https://www.asjordi.org/upload/images/showroom/ano-2025/1695.jpg'">
-      <div class="honor-info">
-        <div class="honor-role">Alferes Moro</div>
-        <div class="honor-name">Realistes</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="gold-divider"></div>
-
-  <!-- ── Galería de Filaes ── -->
-  <div class="section-title">Les Filaes d'Alcoi</div>
-  <div class="ornament">✦ ✦ ✦</div>
-
-  <div class="filaes-section">
-    <div class="filaes-tabs" id="filaes-tabs">
-      <div class="fila-tab active" onclick="filtrarFilaes('tot', this)">Totes</div>
-      <div class="fila-tab" onclick="filtrarFilaes('cristia', this)">Cristians</div>
-      <div class="fila-tab" onclick="filtrarFilaes('moro', this)">Moros</div>
-    </div>
-    <div class="filaes-grid" id="filaes-grid"></div>
-  </div>
-
-  <div class="gold-divider"></div>
-
-  <!-- ── Footer ── -->
-  <footer class="footer">
-    <div class="footer-update">Actualitzat: <span id="fecha">--</span></div>
-    <div class="footer-lema">Vítol al Patró Sant Jordi!</div>
-    <div class="footer-copy">Dades: AVAMET · Open-Meteo · ASJ · Meteociel</div>
-  </footer>
-
-</div><!-- /main-wrap -->
+<div id="root"></div>
 
 <script>
-// ═══════════════════════════════════════════════════════════
-// DATOS DE FILAES (todas las filaes de Alcoi con URLs de ASJ)
-// Orden desfile: Cristians primero (1-14), Moros después (15-28)
-// ═══════════════════════════════════════════════════════════
+const { useState, useEffect, useRef, useCallback } = React;
+const { motion, AnimatePresence, useInView, useScroll, useTransform } = FramerMotion;
+
+// ══════════════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════════════
+
+const TIMELINE = [
+  {
+    id: 0, dia: 24, mes: 'Abril', emoji: '🎵',
+    titol: "Dia dels Músics",
+    subtitol: "Passodoble i Himne de les Festes",
+    desc: "La diana matinera desperta Alcoi. Les bandes recorren els carrers i la nit es clou amb el Passodoble i el magnífic Himne de Festes interpretat en el teatre Calderón.",
+    color: '#c9a84c',
+    detalls: ['Diana matinera a les 06:00h', 'Concert de Passodobles', 'Himne de les Festes al Teatre Calderón', 'Acte d\'homenatge als músics veterans']
+  },
+  {
+    id: 1, dia: 25, mes: 'Abril', emoji: '⚔️',
+    titol: "Les Entrades",
+    subtitol: "Entrada Cristiana i Entrada Mora",
+    desc: "El cor de les Festes. El bando Cristià desfila al matí amb els seus guerrers als sons de les marxes. A la vesprada, el bando Moro transforma els carrers en un espectacle de color i pólvora.",
+    color: '#cc0000',
+    detalls: ['09:00h — Entrada Cristiana', 'Desfilada de les 14 filaes cristianes', '16:00h — Entrada Mora', 'Espectacle de pólvora i llum al fossar']
+  },
+  {
+    id: 2, dia: 26, mes: 'Abril', emoji: '✝️',
+    titol: "Sant Jordi",
+    subtitol: "El dia del Patró i la Reliquia",
+    desc: "El dia més solemne. La processó de la Reliquia de Sant Jordi travessa el centre d\'Alcoi entre devoció i emoció. L\'Aparició del Patró sobre les muralles és el moment màgic que la llegenda recorda.",
+    color: '#fff',
+    detalls: ['Missa pontifical a l\'Església de Sant Jordi', 'Processó de la Reliquia', 'Simulacre de la batalla', 'Aparició de Sant Jordi a les muralles']
+  },
+  {
+    id: 3, dia: 27, mes: 'Abril', emoji: '💥',
+    titol: "L'Alardo",
+    subtitol: "Dia dels Trons i la Batalla Final",
+    desc: "El tro final. Milers de trets d\'arcabús omplen l\'aire d\'Alcoi en l\'espectacular Alardo. El regnat dels Moros s\'acaba i els Cristians proclamen la victòria en honor al Patró.",
+    color: '#c9a84c',
+    detalls: ['Arcabuceria a les places principals', 'Alardo Cristià i Alardo Moro', 'Desfilada final de clausura', 'Mascletà de comiat al pont Sant Jordi']
+  }
+];
+
 const FILAES = [
-  // ── CRISTIANS ──
   { nom: 'Alcodianos',   tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1234.jpg' },
   { nom: 'Andaluces',    tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1452.jpg' },
   { nom: 'Aragonesos',   tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1203.jpg' },
@@ -432,7 +272,6 @@ const FILAES = [
   { nom: 'Tomasinas',    tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1269.jpg' },
   { nom: 'Vascos',       tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1332.jpg' },
   { nom: 'Verdes',       tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1596.jpg' },
-  // ── MOROS ──
   { nom: 'Abencerrajes', tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1531.jpg' },
   { nom: 'Benimerines',  tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1670.jpg' },
   { nom: 'Chano',        tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1606.jpg' },
@@ -445,125 +284,474 @@ const FILAES = [
   { nom: 'Realistes',    tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1695.jpg' },
 ];
 
-// ── Render galería de filaes ──────────────────────────────────
-let filaeFiltreActiu = 'tot';
+const GALLERY = [
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1481.jpg', tall: true },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1129.jpg', tall: false },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1717.jpg', tall: true },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1384.jpg', tall: false },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1778.jpg', tall: true },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1458.jpg', tall: false },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1611.jpg', tall: true },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1318.jpg', tall: false },
+  { url: 'https://www.asjordi.org/upload/images/showroom/ano-2025/0813.jpg', tall: false },
+];
 
-function renderFilaes(filtre) {
-  const grid = document.getElementById('filaes-grid');
-  const llista = filtre === 'tot' ? FILAES : FILAES.filter(f => f.tipus === filtre);
-  grid.innerHTML = llista.map((f, i) => `
-    <div class="fila-item" style="animation-delay:${i * 0.04}s">
-      <div class="fila-img-wrap">
-        <img src="${f.img}" alt="${f.nom}" loading="lazy"
-             onerror="this.parentElement.style.background='#e5e7eb'">
-      </div>
-      <div class="fila-name">${f.nom}</div>
-    </div>
-  `).join('');
+const VIDEOS = [
+  { title: 'Entrada Cristiana 2025 · Alcoi', sub: 'Desfilada completa · Filà Andaluces', thumb: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1903.jpg' },
+  { title: 'Entrada Mora 2025 · Alcoi', sub: 'Marrakesch i Realistes · L\'Alardo final', thumb: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1775.jpg' },
+];
+
+// ══════════════════════════════════════════════════════
+// COMPONENTS
+// ══════════════════════════════════════════════════════
+
+function FadeIn({ children, delay = 0, y = 24 }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-60px' });
+  return React.createElement(motion.div, {
+    ref,
+    initial: { opacity: 0, y },
+    animate: inView ? { opacity: 1, y: 0 } : {},
+    transition: { duration: 0.7, delay, ease: [0.25, 0.1, 0.25, 1] }
+  }, children);
 }
 
-function filtrarFilaes(filtre, tabEl) {
-  document.querySelectorAll('.fila-tab').forEach(t => t.classList.remove('active'));
-  tabEl.classList.add('active');
-  filaeFiltreActiu = filtre;
-  renderFilaes(filtre);
+function Navbar({ scrolled }) {
+  const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  return React.createElement('nav', { id: 'navbar', className: scrolled ? 'scrolled' : '' },
+    React.createElement('div', { style: { maxWidth: 1100, margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' } },
+      React.createElement('div', { style: { fontFamily: 'Playfair Display, serif', fontSize: '1.1rem', fontWeight: 900, color: '#fff', letterSpacing: '.04em', cursor: 'pointer' }, onClick: () => scrollTo('hero') },
+        'ASJ ', React.createElement('span', { style: { color: '#c9a84c' } }, 'METEO')
+      ),
+      React.createElement('div', { style: { display: 'flex', gap: 28 } },
+        ['Trilogia', 'Filaes', 'Galeria', 'Meteo'].map(s =>
+          React.createElement('a', { key: s, className: 'nav-link', onClick: () => scrollTo(s.toLowerCase()) }, s)
+        )
+      )
+    )
+  );
 }
 
-renderFilaes('tot');
+function HeroSection() {
+  const particles = Array.from({ length: 18 }, (_, i) => ({
+    id: i,
+    left: Math.random() * 100 + '%',
+    duration: 8 + Math.random() * 12 + 's',
+    delay: Math.random() * 10 + 's',
+    driftX: (Math.random() - 0.5) * 80 + 'px',
+  }));
 
-// ═══════════════════════════════════════════════════════════
-// CARGA DE DATOS DESDE datos.json
-// ═══════════════════════════════════════════════════════════
-async function updateApp() {
-  try {
-    const res  = await fetch('datos.json?v=' + Date.now());
-    const data = await res.json();
-
-    // ── Cabecera live ──
-    document.getElementById('temp').textContent =
-      data.temp !== 'N/D' ? data.temp + '°' : 'N/D';
-    document.getElementById('hum').textContent =
-      data.hum !== 'N/D'  ? data.hum  + '%' : 'N/D';
-
-    // ── Meteograma ──
-    if (data.mapa_url && data.mapa_url !== 'N/D') {
-      document.getElementById('mapa').src = data.mapa_url;
-    }
-
-    // ── Fecha ──
-    document.getElementById('fecha').textContent =
-      new Date(data.fecha).toLocaleString('ca-ES', {
-        day: '2-digit', month: 'long', year: 'numeric',
-        hour: '2-digit', minute: '2-digit'
-      });
-
-    // ── Cards de fiestas ──
-    const container = document.getElementById('contenedor-fiestas');
-    container.innerHTML = '';
-
-    data.fiestas.forEach((f, i) => {
-      // Color del encabezado según riesgo
-      const prob = typeof f.prob === 'number' ? f.prob : 0;
-      const borderColor = prob < 25 ? '#22c55e' : prob < 50 ? '#f59e0b' : '#cc0000';
-
-      const card = document.createElement('div');
-      card.className = 'fiesta-card';
-      card.style.animationDelay = (i * 0.1) + 's';
-      card.style.borderTopColor = borderColor;
-      card.style.borderTopWidth = '3px';
-      card.style.borderTopStyle = 'solid';
-
-      // Nombre corto del día y subtítulo
-      const partsNom = f.dia.split('·');
-      const diaNum   = partsNom[0]?.trim() ?? f.dia;
-      const diaActe  = partsNom[1]?.trim() ?? '';
-
-      const tempMax  = f.temp_max !== 'N/D' ? f.temp_max + '°' : '—';
-      const probTxt  = f.prob    !== 'N/D' ? f.prob + '%'    : '—';
-      const litrosTxt= f.litros  !== 'N/D' ? f.litros + 'mm' : '—';
-
-      card.innerHTML = `
-        <div class="fiesta-head">
-          <div class="fiesta-head-name">
-            <small>${diaNum}</small>
-            ${diaActe}
-          </div>
-          <div class="fiesta-icon">${f.icono || '🌡️'}</div>
-        </div>
-        <div class="fiesta-stats">
-          <div class="fiesta-stat">
-            <div class="fiesta-stat-label">Màx</div>
-            <div class="fiesta-stat-val">${tempMax}</div>
-          </div>
-          <div class="fiesta-stat">
-            <div class="fiesta-stat-label">Prob ☔</div>
-            <div class="fiesta-stat-val">${probTxt}</div>
-          </div>
-          <div class="fiesta-stat">
-            <div class="fiesta-stat-label">Precip</div>
-            <div class="fiesta-stat-val">${litrosTxt}</div>
-          </div>
-        </div>
-        <div class="fiesta-analysis">
-          <div class="fiesta-analysis-tag">📡 Nota de l'Expert · Rames GEFS</div>
-          <div class="fiesta-analysis-text">${f.analisis_tecnico}</div>
-        </div>
-        <div class="fiesta-consejo">👉 ${f.consejo}</div>
-      `;
-      container.appendChild(card);
-    });
-
-  } catch (e) {
-    console.error('Error carregant dades:', e);
-    document.getElementById('contenedor-fiestas').innerHTML =
-      '<p style="text-align:center;color:#cc0000;font-family:Crimson Pro,serif;font-style:italic;">Error carregant les dades. Comprova que datos.json existeix.</p>';
-  }
+  return React.createElement('section', { id: 'hero' },
+    React.createElement('div', { className: 'hero-bg' }),
+    React.createElement('div', { className: 'hero-particles' },
+      particles.map(p =>
+        React.createElement('div', {
+          key: p.id, className: 'particle',
+          style: { left: p.left, animationDuration: p.duration, animationDelay: p.delay, '--drift-x': p.driftX }
+        })
+      )
+    ),
+    React.createElement('div', { style: { position: 'relative', zIndex: 2, textAlign: 'center', padding: '0 24px', maxWidth: 800, margin: '0 auto' } },
+      React.createElement(motion.div, {
+        initial: { opacity: 0, y: -20 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.8, delay: 0.2 }
+      },
+        React.createElement('div', { style: { fontSize: '.65rem', fontWeight: 700, letterSpacing: '.4em', textTransform: 'uppercase', color: '#c9a84c', marginBottom: 20 } },
+          '✦ 750 Aniversari del Patronatge de Sant Jordi ✦'
+        )
+      ),
+      React.createElement(motion.h1, {
+        className: 'font-serif',
+        style: { fontSize: 'clamp(2.8rem, 9vw, 5.5rem)', fontWeight: 900, lineHeight: 1.0, color: '#fdf6e3', marginBottom: 12 },
+        initial: { opacity: 0, scale: 0.96 },
+        animate: { opacity: 1, scale: 1 },
+        transition: { duration: 1, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }
+      },
+        'Moros', React.createElement('br'),
+        React.createElement('em', { style: { color: '#c9a84c', fontStyle: 'italic' } }, '& Cristians')
+      ),
+      React.createElement(motion.div, {
+        style: { height: 2, width: 80, background: 'linear-gradient(90deg, transparent, #c9a84c, transparent)', margin: '20px auto' },
+        initial: { scaleX: 0 },
+        animate: { scaleX: 1 },
+        transition: { duration: 0.8, delay: 0.9 }
+      }),
+      React.createElement(motion.p, {
+        className: 'font-crim',
+        style: { fontSize: 'clamp(1.1rem, 3vw, 1.5rem)', color: 'rgba(253,246,227,.8)', fontStyle: 'italic', marginBottom: 40 },
+        initial: { opacity: 0 },
+        animate: { opacity: 1 },
+        transition: { duration: 0.8, delay: 1.1 }
+      }, 'Alcoi · 24, 25, 26 i 27 d\'Abril de 2026'),
+      React.createElement(motion.div, {
+        style: { display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' },
+        initial: { opacity: 0, y: 16 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.7, delay: 1.3 }
+      },
+        React.createElement('button', {
+          onClick: () => document.getElementById('trilogia')?.scrollIntoView({ behavior: 'smooth' }),
+          style: { padding: '12px 28px', background: '#cc0000', color: '#fff', border: 'none', borderRadius: 30, fontWeight: 600, fontSize: '.75rem', letterSpacing: '.12em', textTransform: 'uppercase', cursor: 'pointer', transition: 'background .2s' }
+        }, 'Descobreix la Trilogia'),
+        React.createElement('button', {
+          onClick: () => document.getElementById('meteo')?.scrollIntoView({ behavior: 'smooth' }),
+          style: { padding: '12px 28px', background: 'transparent', color: '#c9a84c', border: '1px solid rgba(201,168,76,.5)', borderRadius: 30, fontWeight: 600, fontSize: '.75rem', letterSpacing: '.12em', textTransform: 'uppercase', cursor: 'pointer' }
+        }, 'Meteo Festes')
+      )
+    ),
+    React.createElement(motion.div, {
+      style: { position: 'absolute', bottom: 32, left: '50%', transform: 'translateX(-50%)', cursor: 'pointer' },
+      animate: { y: [0, 8, 0] },
+      transition: { repeat: Infinity, duration: 2 },
+      onClick: () => document.getElementById('trilogia')?.scrollIntoView({ behavior: 'smooth' })
+    },
+      React.createElement('div', { style: { width: 24, height: 36, border: '1.5px solid rgba(201,168,76,.5)', borderRadius: 12, display: 'flex', justifyContent: 'center', paddingTop: 6 } },
+        React.createElement(motion.div, {
+          style: { width: 3, height: 6, background: '#c9a84c', borderRadius: 3 },
+          animate: { y: [0, 10, 0], opacity: [1, 0, 1] },
+          transition: { repeat: Infinity, duration: 2 }
+        })
+      )
+    )
+  );
 }
 
-updateApp();
+function TimelineSection() {
+  const [active, setActive] = useState(0);
+  const activeItem = TIMELINE[active];
 
-// Recargar cada 10 minutos
-setInterval(updateApp, 10 * 60 * 1000);
+  return React.createElement('section', { id: 'trilogia', style: { padding: '100px 24px', maxWidth: 900, margin: '0 auto' } },
+    React.createElement(FadeIn, null,
+      React.createElement('div', { style: { textAlign: 'center', marginBottom: 60 } },
+        React.createElement('div', { className: 'sec-label' }, '24 · 25 · 26 · 27 d\'Abril'),
+        React.createElement('h2', { className: 'sec-title' }, 'La ', React.createElement('em', null, 'Trilogia'), ' de les Festes')
+      )
+    ),
+    React.createElement('div', { style: { display: 'flex', gap: 32, flexWrap: 'wrap' } },
+      /* Left: dots */
+      React.createElement('div', { style: { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0, minWidth: 60 } },
+        TIMELINE.map((item, i) =>
+          React.createElement(React.Fragment, { key: item.id },
+            React.createElement(motion.div, {
+              className: `timeline-dot ${active === i ? 'active' : ''}`,
+              onClick: () => setActive(i),
+              whileTap: { scale: 0.92 },
+              title: item.titol
+            }, item.emoji),
+            i < TIMELINE.length - 1 &&
+              React.createElement('div', { className: 'timeline-connector', style: { height: 64, marginLeft: 'auto', marginRight: 'auto' } })
+          )
+        )
+      ),
+      /* Right: content */
+      React.createElement('div', { style: { flex: 1, minWidth: 280 } },
+        React.createElement(AnimatePresence, { mode: 'wait' },
+          React.createElement(motion.div, {
+            key: active,
+            initial: { opacity: 0, x: 20 },
+            animate: { opacity: 1, x: 0 },
+            exit: { opacity: 0, x: -20 },
+            transition: { duration: 0.4 }
+          },
+            React.createElement('div', { style: { background: 'rgba(42,28,10,.7)', border: `1px solid rgba(201,168,76,.2)`, borderLeft: `3px solid ${activeItem.color}`, borderRadius: 12, padding: 24, backdropFilter: 'blur(6px)' } },
+              React.createElement('div', { style: { display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 6 } },
+                React.createElement('span', { style: { fontFamily: 'Playfair Display, serif', fontSize: '3rem', fontWeight: 900, color: activeItem.color, lineHeight: 1 } }, activeItem.dia),
+                React.createElement('span', { style: { fontSize: '.65rem', fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(253,246,227,.4)', marginBottom: 4 } }, activeItem.mes)
+              ),
+              React.createElement('h3', { style: { fontFamily: 'Playfair Display, serif', fontSize: '1.4rem', fontWeight: 700, color: '#fdf6e3', marginBottom: 4 } }, activeItem.titol),
+              React.createElement('p', { style: { fontFamily: 'Crimson Pro, serif', fontStyle: 'italic', color: '#c9a84c', fontSize: '.9rem', marginBottom: 16 } }, activeItem.subtitol),
+              React.createElement('p', { style: { fontFamily: 'Crimson Pro, serif', fontSize: '1.05rem', lineHeight: 1.65, color: 'rgba(253,246,227,.75)', marginBottom: 20 } }, activeItem.desc),
+              React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: 8 } },
+                activeItem.detalls.map((d, j) =>
+                  React.createElement(motion.div, {
+                    key: j,
+                    initial: { opacity: 0, x: -10 },
+                    animate: { opacity: 1, x: 0 },
+                    transition: { delay: j * 0.08 },
+                    style: { display: 'flex', alignItems: 'center', gap: 10, fontSize: '.8rem', color: 'rgba(253,246,227,.6)' }
+                  },
+                    React.createElement('div', { style: { width: 4, height: 4, borderRadius: '50%', background: activeItem.color, flexShrink: 0 } }),
+                    d
+                  )
+                )
+              )
+            )
+          )
+        ),
+        /* Day selector pills */
+        React.createElement('div', { style: { display: 'flex', gap: 8, marginTop: 20, flexWrap: 'wrap' } },
+          TIMELINE.map((item, i) =>
+            React.createElement('button', {
+              key: item.id,
+              onClick: () => setActive(i),
+              style: {
+                padding: '6px 16px', borderRadius: 20, fontSize: '.65rem', fontWeight: 600,
+                letterSpacing: '.12em', textTransform: 'uppercase', cursor: 'pointer', transition: 'all .2s',
+                background: active === i ? item.color : 'transparent',
+                color: active === i ? '#fff' : 'rgba(253,246,227,.4)',
+                border: `1px solid ${active === i ? item.color : 'rgba(201,168,76,.2)'}`
+              }
+            }, `Dia ${item.dia}`)
+          )
+        )
+      )
+    )
+  );
+}
+
+function FilaesSection() {
+  const [filtre, setFiltre] = useState('tot');
+  const shown = filtre === 'tot' ? FILAES : FILAES.filter(f => f.tipus === filtre);
+
+  return React.createElement('section', { id: 'filaes', style: { padding: '80px 24px', background: 'rgba(10,6,2,.5)' } },
+    React.createElement('div', { style: { maxWidth: 1100, margin: '0 auto' } },
+      React.createElement(FadeIn, null,
+        React.createElement('div', { style: { textAlign: 'center', marginBottom: 40 } },
+          React.createElement('div', { className: 'sec-label' }, '26 Filaes · Dos Bandos'),
+          React.createElement('h2', { className: 'sec-title' }, 'Les ', React.createElement('em', null, 'Filaes'), " d'Alcoi"),
+          React.createElement('div', { style: { display: 'flex', justifyContent: 'center', gap: 8, marginTop: 24, flexWrap: 'wrap' } },
+            [['tot','Totes',null],['cristia','Bando Cristià','#cc0000'],['moro','Bando Moro','#c9a84c']].map(([v, label, color]) =>
+              React.createElement('button', {
+                key: v, className: `tab-btn ${filtre === v ? 'active' : ''}`,
+                onClick: () => setFiltre(v),
+                style: filtre === v && color ? { background: color, borderColor: color } : {}
+              }, label)
+            )
+          )
+        )
+      ),
+      React.createElement(motion.div, {
+        layout: true,
+        style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }
+      },
+        React.createElement(AnimatePresence, null,
+          shown.map((f, i) =>
+            React.createElement(motion.div, {
+              key: f.nom, layout: true,
+              initial: { opacity: 0, scale: 0.9 },
+              animate: { opacity: 1, scale: 1 },
+              exit: { opacity: 0, scale: 0.85 },
+              transition: { duration: 0.3, delay: i * 0.02 }
+            },
+              React.createElement('div', { className: 'fila-card', style: { position: 'relative' } },
+                React.createElement('img', { src: f.img, alt: f.nom, loading: 'lazy', style: { width: '100%', aspectRatio: '3/4', objectFit: 'cover', display: 'block' } }),
+                React.createElement('div', { className: `fila-badge ${f.tipus === 'cristia' ? 'badge-cristia' : 'badge-moro'}` }, f.tipus === 'cristia' ? 'C' : 'M'),
+                React.createElement('div', { style: { padding: '8px 10px 10px', background: 'rgba(21,14,5,.85)' } },
+                  React.createElement('div', { style: { fontSize: '.6rem', fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', color: 'rgba(253,246,227,.7)', lineHeight: 1.2 } }, f.nom)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+}
+
+function GallerySection() {
+  return React.createElement('section', { id: 'galeria', style: { padding: '80px 24px', maxWidth: 1100, margin: '0 auto' } },
+    React.createElement(FadeIn, null,
+      React.createElement('div', { style: { textAlign: 'center', marginBottom: 40 } },
+        React.createElement('div', { className: 'sec-label' }, 'Imatges · Vídeos · Arxiu'),
+        React.createElement('h2', { className: 'sec-title' }, React.createElement('em', null, 'Galeria'), ' Multimèdia')
+      )
+    ),
+    /* Videos */
+    React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 40 } },
+      VIDEOS.map((v, i) =>
+        React.createElement(FadeIn, { key: i, delay: i * 0.1 },
+          React.createElement('div', null,
+            React.createElement('div', { className: 'video-frame', style: { backgroundImage: `linear-gradient(rgba(21,14,5,.5), rgba(21,14,5,.7)), url(${v.thumb})`, backgroundSize: 'cover', backgroundPosition: 'center' } },
+              React.createElement('div', { className: 'video-play' },
+                React.createElement('div', { className: 'video-play-icon' })
+              )
+            ),
+            React.createElement('div', { style: { marginTop: 12 } },
+              React.createElement('p', { style: { fontFamily: 'Playfair Display, serif', fontSize: '.95rem', fontWeight: 700, color: '#fdf6e3', marginBottom: 3 } }, v.title),
+              React.createElement('p', { style: { fontSize: '.72rem', color: 'rgba(253,246,227,.45)', letterSpacing: '.05em' } }, v.sub)
+            )
+          )
+        )
+      )
+    ),
+    /* Masonry */
+    React.createElement('div', { className: 'masonry' },
+      GALLERY.map((img, i) =>
+        React.createElement(motion.div, {
+          key: i, className: 'masonry-item',
+          initial: { opacity: 0, y: 20 },
+          whileInView: { opacity: 1, y: 0 },
+          viewport: { once: true },
+          transition: { delay: i * 0.06, duration: 0.5 }
+        },
+          React.createElement('img', { src: img.url, alt: '', loading: 'lazy' })
+        )
+      )
+    )
+  );
+}
+
+function MeteoSection() {
+  const [meteo, setMeteo] = useState(null);
+
+  useEffect(() => {
+    fetch('datos.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(setMeteo)
+      .catch(() => setMeteo(null));
+  }, []);
+
+  return React.createElement('section', { id: 'meteo', style: { padding: '80px 24px', background: 'rgba(10,6,2,.6)' } },
+    React.createElement('div', { style: { maxWidth: 900, margin: '0 auto' } },
+      React.createElement(FadeIn, null,
+        React.createElement('div', { style: { textAlign: 'center', marginBottom: 48 } },
+          React.createElement('div', { className: 'sec-label' }, 'AVAMET · Open-Meteo · Meteociel'),
+          React.createElement('h2', { className: 'sec-title' }, 'Meteo ', React.createElement('em', null, 'Festes'))
+        )
+      ),
+      meteo ? React.createElement(React.Fragment, null,
+        /* Live */
+        React.createElement(FadeIn, { delay: 0.1 },
+          React.createElement('div', { style: { background: 'rgba(42,28,10,.7)', border: '1px solid rgba(201,168,76,.2)', borderRadius: 16, padding: 28, marginBottom: 32 } },
+            React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 24, fontSize: '.6rem', fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', color: 'rgba(201,168,76,.6)' } },
+              React.createElement('div', { className: 'live-dot' }), 'Directe · Estació Alcoi AVAMET c27m009e08'
+            ),
+            React.createElement('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 } },
+              React.createElement('div', { className: 'fs' },
+                React.createElement('div', { className: 'fs-label' }, 'Temperatura'),
+                React.createElement('div', { className: 'fs-val' }, meteo.temp !== 'N/D' ? meteo.temp + '°C' : '—')
+              ),
+              React.createElement('div', { className: 'fs' },
+                React.createElement('div', { className: 'fs-label' }, 'Humitat'),
+                React.createElement('div', { className: 'fs-val' }, meteo.hum !== 'N/D' ? meteo.hum + '%' : '—')
+              )
+            ),
+            React.createElement('div', { style: { marginTop: 16, fontSize: '.58rem', color: 'rgba(253,246,227,.25)', letterSpacing: '.1em', textAlign: 'right' } },
+              'Actualitzat: ' + new Date(meteo.fecha).toLocaleString('ca-ES')
+            )
+          )
+        ),
+        /* Fiestas */
+        React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12, marginBottom: 32 } },
+          (meteo.fiestas || []).map((f, i) => {
+            const prob = typeof f.prob === 'number' ? f.prob : 0;
+            const col = prob < 25 ? '#22c55e' : prob < 50 ? '#f59e0b' : '#cc0000';
+            const parts = f.dia.split('·');
+            return React.createElement(FadeIn, { key: i, delay: i * 0.08 },
+              React.createElement('div', { style: { background: 'rgba(42,28,10,.7)', border: `1px solid rgba(201,168,76,.15)`, borderTop: `3px solid ${col}`, borderRadius: 12, padding: 16, backdropFilter: 'blur(6px)' } },
+                React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 } },
+                  React.createElement('div', null,
+                    React.createElement('div', { style: { fontSize: '.52rem', fontWeight: 700, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(201,168,76,.6)', marginBottom: 2 } }, parts[0]?.trim()),
+                    React.createElement('div', { style: { fontFamily: 'Crimson Pro, serif', fontSize: '.85rem', fontStyle: 'italic', color: '#fdf6e3' } }, parts[1]?.trim() || '')
+                  ),
+                  React.createElement('div', { style: { fontSize: '1.6rem' } }, f.icono || '🌡️')
+                ),
+                React.createElement('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 6, marginBottom: 12 } },
+                  [
+                    ['Màx', f.temp_max !== 'N/D' ? f.temp_max + '°' : '—'],
+                    ['Prob', f.prob !== 'N/D' ? f.prob + '%' : '—'],
+                    ['Precip', f.litros !== 'N/D' ? f.litros + 'mm' : '—'],
+                  ].map(([l, v]) =>
+                    React.createElement('div', { key: l, style: { background: 'rgba(201,168,76,.06)', borderRadius: 6, padding: '8px 6px', textAlign: 'center' } },
+                      React.createElement('div', { style: { fontSize: '.48rem', fontWeight: 700, letterSpacing: '.15em', textTransform: 'uppercase', color: 'rgba(201,168,76,.5)', marginBottom: 3 } }, l),
+                      React.createElement('div', { style: { fontFamily: 'Playfair Display, serif', fontSize: '1rem', fontWeight: 700, color: '#fdf6e3' } }, v)
+                    )
+                  )
+                ),
+                React.createElement('div', { style: { borderLeft: `3px solid ${col}`, paddingLeft: 10, fontSize: '.72rem', lineHeight: 1.5, color: 'rgba(253,246,227,.65)', fontFamily: 'Crimson Pro, serif' } },
+                  f.analisis_tecnico
+                )
+              )
+            );
+          })
+        ),
+        /* Meteograma */
+        meteo.mapa_url && meteo.mapa_url !== 'N/D' &&
+          React.createElement(FadeIn, { delay: 0.3 },
+            React.createElement('div', { style: { background: 'rgba(42,28,10,.7)', border: '1px solid rgba(201,168,76,.2)', borderRadius: 16, padding: 20 } },
+              React.createElement('div', { className: 'sec-label', style: { marginBottom: 12 } }, 'Meteograma T850 + T500 + Precipitació · GEFS'),
+              React.createElement('img', { src: meteo.mapa_url, alt: 'Meteograma', style: { width: '100%', borderRadius: 8, border: '1px solid rgba(201,168,76,.15)' } })
+            )
+          )
+      ) : React.createElement('div', { style: { textAlign: 'center', padding: 60, color: 'rgba(253,246,227,.3)', fontFamily: 'Crimson Pro, serif', fontStyle: 'italic', fontSize: '1.1rem' } },
+        'Carregant dades meteorològiques...',
+        React.createElement('br'),
+        React.createElement('small', { style: { fontSize: '.7rem', marginTop: 8, display: 'block', letterSpacing: '.1em' } }, 'Assegura\'t que datos.json existeix al repositori')
+      )
+    )
+  );
+}
+
+function Footer() {
+  return React.createElement('footer', null,
+    React.createElement('div', { style: { maxWidth: 1100, margin: '0 auto' } },
+      React.createElement('div', { style: { display: 'flex', flexWrap: 'wrap', gap: 40, justifyContent: 'space-between', marginBottom: 40 } },
+        React.createElement('div', { style: { flex: 1, minWidth: 220 } },
+          React.createElement('div', { style: { fontFamily: 'Playfair Display, serif', fontSize: '1.3rem', fontWeight: 900, color: '#fdf6e3', marginBottom: 6 } },
+            'ASJ ', React.createElement('span', { style: { color: '#c9a84c' } }, 'METEO')
+          ),
+          React.createElement('p', { style: { fontFamily: 'Crimson Pro, serif', fontStyle: 'italic', fontSize: '.9rem', color: 'rgba(253,246,227,.45)', lineHeight: 1.6, maxWidth: 260 } },
+            'Meteo oficial no oficial per a les Festes de Moros i Cristians d\'Alcoi 2026. Dades actualitzades cada hora.'
+          )
+        ),
+        React.createElement('div', null,
+          React.createElement('div', { style: { fontSize: '.55rem', fontWeight: 700, letterSpacing: '.25em', textTransform: 'uppercase', color: 'rgba(201,168,76,.5)', marginBottom: 14 } }, 'Fonts de dades'),
+          ['AVAMET · c27m009e08', 'Open-Meteo API', 'Meteociel GEFS', 'Associació de Sant Jordi'].map(l =>
+            React.createElement('div', { key: l, style: { fontSize: '.75rem', color: 'rgba(253,246,227,.45)', marginBottom: 8 } }, l)
+          )
+        ),
+        React.createElement('div', null,
+          React.createElement('div', { style: { fontSize: '.55rem', fontWeight: 700, letterSpacing: '.25em', textTransform: 'uppercase', color: 'rgba(201,168,76,.5)', marginBottom: 14 } }, 'Institucions'),
+          [
+            ['www.asjordi.org', 'Associació de Sant Jordi'],
+            ['www.avamet.org', 'AVAMET Meteorologia'],
+            ['750sanjorge.org', '750 Aniversari'],
+          ].map(([href, label]) =>
+            React.createElement('a', {
+              key: href, href: `https://${href}`, target: '_blank', rel: 'noopener',
+              style: { display: 'block', fontSize: '.75rem', color: '#c9a84c', marginBottom: 8, textDecoration: 'none', opacity: .7, transition: 'opacity .2s' }
+            }, label)
+          )
+        )
+      ),
+      React.createElement('div', { style: { height: 1, background: 'rgba(201,168,76,.15)', marginBottom: 24 } }),
+      React.createElement('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 } },
+        React.createElement('p', { style: { fontSize: '.6rem', color: 'rgba(253,246,227,.25)', letterSpacing: '.1em' } }, '© 2026 · Dades: AVAMET · Open-Meteo · ASJ · Meteociel'),
+        React.createElement('p', { style: { fontFamily: 'Playfair Display, serif', fontStyle: 'italic', color: '#c9a84c', fontSize: '.9rem' } }, 'Vítol al Patró Sant Jordi! ✦')
+      )
+    )
+  );
+}
+
+// ══════════════════════════════════════════════════════
+// APP ROOT
+// ══════════════════════════════════════════════════════
+function App() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return React.createElement(React.Fragment, null,
+    React.createElement(Navbar, { scrolled }),
+    React.createElement(HeroSection),
+    React.createElement('div', { style: { height: 1, background: 'linear-gradient(90deg, transparent, rgba(201,168,76,.3), transparent)' } }),
+    React.createElement(TimelineSection),
+    React.createElement('div', { style: { height: 1, background: 'linear-gradient(90deg, transparent, rgba(201,168,76,.3), transparent)' } }),
+    React.createElement(FilaesSection),
+    React.createElement('div', { style: { height: 1, background: 'linear-gradient(90deg, transparent, rgba(201,168,76,.3), transparent)' } }),
+    React.createElement(GallerySection),
+    React.createElement('div', { style: { height: 1, background: 'linear-gradient(90deg, transparent, rgba(201,168,76,.3), transparent)' } }),
+    React.createElement(MeteoSection),
+    React.createElement(Footer)
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
 </script>
 </body>
 </html>
