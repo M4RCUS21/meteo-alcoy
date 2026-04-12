@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Alcoi - Fiestas 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-alcoy { background-color: #1e293b; }
+        .text-alcoy { color: #38bdf8; }
+    </style>
+</head>
+<body class="bg-alcoy text-white min-h-screen font-sans">
+    <div class="max-w-md mx-auto p-6">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-black uppercase tracking-tighter">Meteo <span class="text-alcoy">Festes</span></h1>
+            <p class="text-gray-400 text-xs mt-1">750 Aniversario de San Jorge</p>
+        </header>
+
+        <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="bg-slate-800 p-5 rounded-3xl border border-slate-700 shadow-xl text-center">
+                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Temperatura</p>
+                <div class="flex justify-center items-baseline">
+                    <span id="temp" class="text-4xl font-black italic">--</span>
+                    <span class="text-xl text-alcoy ml-1">°C</span>
+                </div>
+            </div>
+            <div class="bg-slate-800 p-5 rounded-3xl border border-slate-700 shadow-xl text-center">
+                <p class="text-[10px] uppercase text-gray-500 font-bold mb-1">Humedad</p>
+                <div class="flex justify-center items-baseline">
+                    <span id="hum" class="text-4xl font-black italic">--</span>
+                    <span class="text-xl text-alcoy ml-1">%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-800 rounded-3xl border border-slate-700 shadow-2xl overflow-hidden">
+            <div class="p-3 bg-slate-700/50 text-center">
+                <p class="text-[10px] uppercase font-bold text-gray-300 italic">Meteograma GEFS (T850+T500+Precip)</p>
+            </div>
+            <img id="mapa" src="" alt="Cargando mapa..." class="w-full h-auto">
+        </div>
+
+        <footer class="mt-10 text-center">
+            <p class="text-[9px] text-gray-500 uppercase tracking-widest">Última actualización</p>
+            <p id="fecha" class="text-xs font-mono text-gray-400">--</p>
+            <div class="mt-6 pt-6 border-t border-slate-800">
+                <p class="text-[8px] text-gray-600">Datos de AVAMET & Meteociel | Procesado por n8n</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        async function updateMeteo() {
+            try {
+                // El ?v= evita que el móvil guarde la versión vieja del archivo
+                const res = await fetch('datos.json?v=' + Date.now());
+                const data = await response = await res.json();
+                
+                document.getElementById('temp').innerText = data.temp || '--';
+                document.getElementById('hum').innerText = data.hum || '--';
+                document.getElementById('mapa').src = data.mapa_url;
+                
+                const fecha = new Date(data.fecha);
+                document.getElementById('fecha').innerText = fecha.toLocaleString('es-ES');
+            } catch (e) { console.error(e); }
+        }
+        updateMeteo();
+        setInterval(updateMeteo, 300000); // Se actualiza cada 5 min si tienen la web abierta
+    </script>
+</body>
+</html>
