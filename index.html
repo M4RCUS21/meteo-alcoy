@@ -1,148 +1,569 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meteo Alcoi 2026 - Associació de Sant Jordi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
-        .font-asj { font-family: 'Crimson Pro', serif; }
-        .bg-asj { background-color: #cc0000; }
-        .text-asj { color: #cc0000; }
-        .border-asj { border-color: #cc0000; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteo Alcoi · Moros i Cristians 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --asj-red:    #cc0000;
+    --asj-gold:   #c9a84c;
+    --asj-dark:   #1a1208;
+    --asj-cream:  #fdf6e3;
+    --asj-parch:  #f5ead0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background-color: var(--asj-cream);
+    color: var(--asj-dark);
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* ── Textura de pergamino ── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── Tipografía ── */
+  .font-display   { font-family: 'Playfair Display', serif; }
+  .font-editorial { font-family: 'Crimson Pro', serif; }
+
+  /* ── Nav ── */
+  .nav-bar {
+    background: var(--asj-red);
+    border-bottom: 4px solid var(--asj-gold);
+    padding: 0;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,.35);
+  }
+  .nav-inner {
+    max-width: 480px; margin: 0 auto;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 12px 16px 10px;
+    gap: 2px;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem; font-weight: 900;
+    color: #fff; letter-spacing: .04em;
+  }
+  .nav-logo span { color: var(--asj-gold); }
+  .nav-sub {
+    font-size: 0.52rem; font-weight: 500;
+    color: rgba(255,255,255,.75);
+    letter-spacing: .35em; text-transform: uppercase;
+  }
+  .nav-750 {
+    display: inline-block;
+    margin-top: 4px;
+    font-family: 'Crimson Pro', serif;
+    font-size: .7rem; font-style: italic;
+    color: var(--asj-gold);
+    letter-spacing: .1em;
+    border: 1px solid rgba(201,168,76,.4);
+    padding: 1px 10px; border-radius: 20px;
+  }
+
+  /* ── Secciones ── */
+  .main-wrap { max-width: 480px; margin: 0 auto; padding: 20px 14px 60px; position: relative; z-index: 1; }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; font-weight: 700; font-style: italic;
+    color: var(--asj-red);
+    text-align: center;
+    margin: 0 0 12px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-title::before,
+  .section-title::after {
+    content: ''; flex: 1; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--asj-gold), transparent);
+  }
+
+  /* ── Hero banner ── */
+  .hero {
+    border-radius: 12px; overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,.25);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .hero img { width: 100%; height: 200px; object-fit: cover; display: block; }
+  .hero-caption {
+    background: linear-gradient(135deg, var(--asj-red) 0%, #8b0000 100%);
+    border-top: 3px solid var(--asj-gold);
+    padding: 10px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .hero-caption-text { font-family: 'Crimson Pro', serif; font-size: .85rem; font-style: italic; color: #fff; }
+  .hero-caption-badge {
+    background: var(--asj-gold); color: var(--asj-dark);
+    font-size: .6rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: 2px 8px; border-radius: 3px;
+  }
+
+  /* ── Datos actuales ── */
+  .live-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid rgba(201,168,76,.3);
+    border-top: 4px solid var(--asj-red);
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .live-label {
+    font-size: .55rem; font-weight: 600; letter-spacing: .25em;
+    text-transform: uppercase; color: rgba(26,18,8,.4);
+    display: flex; align-items: center; gap: 6px; margin-bottom: 16px;
+  }
+  .live-label::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34,197,94,.2);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 3px rgba(34,197,94,.2); } 50% { box-shadow: 0 0 0 6px rgba(34,197,94,.05); } }
+  .live-grid { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0; }
+  .live-divider { background: #e5e7eb; }
+  .live-val {
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+  }
+  .live-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem; font-weight: 900; line-height: 1;
+    color: var(--asj-dark);
+  }
+  .live-num-label {
+    font-size: .55rem; font-weight: 600; letter-spacing: .2em;
+    text-transform: uppercase; color: rgba(26,18,8,.4);
+  }
+
+  /* ── Cards de fiestas ── */
+  .fiesta-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.07);
+    box-shadow: 0 3px 16px rgba(0,0,0,.07);
+    overflow: hidden;
+    margin-bottom: 16px;
+    animation: fadeUp .5s ease both;
+  }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+  .fiesta-head {
+    background: linear-gradient(135deg, var(--asj-dark) 0%, #2d1f0a 100%);
+    padding: 10px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 2px solid var(--asj-gold);
+  }
+  .fiesta-head-name {
+    font-family: 'Playfair Display', serif;
+    font-size: .85rem; font-style: italic; color: #fff; line-height: 1.2;
+  }
+  .fiesta-head-name small {
+    display: block; font-family: 'DM Sans', sans-serif;
+    font-size: .55rem; font-style: normal; letter-spacing: .15em;
+    text-transform: uppercase; color: var(--asj-gold); font-weight: 500;
+  }
+  .fiesta-icon { font-size: 2rem; }
+  .fiesta-stats {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .fiesta-stat {
+    text-align: center; padding: 12px 8px;
+    border-right: 1px solid #f1f5f9;
+  }
+  .fiesta-stat:last-child { border-right: none; }
+  .fiesta-stat-label { font-size: .5rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: rgba(26,18,8,.35); margin-bottom: 4px; }
+  .fiesta-stat-val { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--asj-dark); line-height: 1; }
+  .fiesta-stat-unit { font-size: .6rem; font-weight: 400; color: rgba(26,18,8,.4); }
+  .fiesta-analysis {
+    padding: 12px 16px 14px;
+    border-left: 4px solid var(--asj-red);
+    margin: 12px 16px 0;
+    background: rgba(204,0,0,.03);
+    border-radius: 0 6px 6px 0;
+  }
+  .fiesta-analysis-tag {
+    font-size: .5rem; font-weight: 700; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--asj-red); margin-bottom: 5px;
+  }
+  .fiesta-analysis-text { font-family: 'Crimson Pro', serif; font-size: .95rem; line-height: 1.5; color: #374151; }
+  .fiesta-consejo { font-size: .72rem; font-weight: 500; color: #6b7280; margin: 8px 16px 14px; padding-top: 8px; border-top: 1px solid #f1f5f9; }
+
+  /* ── Galería de filaes ── */
+  .filaes-section { margin-bottom: 24px; }
+  .filaes-tabs {
+    display: flex; gap: 6px; margin-bottom: 12px; overflow-x: auto;
+    padding-bottom: 4px; scrollbar-width: none;
+  }
+  .filaes-tabs::-webkit-scrollbar { display: none; }
+  .fila-tab {
+    flex-shrink: 0;
+    padding: 4px 14px; border-radius: 20px; font-size: .65rem;
+    font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    cursor: pointer; transition: all .2s;
+    border: 1px solid rgba(0,0,0,.12); background: #fff; color: #6b7280;
+  }
+  .fila-tab.active {
+    background: var(--asj-red); color: #fff; border-color: var(--asj-red);
+  }
+  .filaes-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+  }
+  .fila-item {
+    text-align: center; cursor: pointer;
+  }
+  .fila-img-wrap {
+    border-radius: 8px; overflow: hidden;
+    border: 2px solid transparent;
+    transition: border-color .2s, transform .2s;
+    aspect-ratio: 3/4; background: #e5e7eb;
+  }
+  .fila-item:hover .fila-img-wrap {
+    border-color: var(--asj-gold); transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+  .fila-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fila-name { font-size: .52rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: rgba(26,18,8,.5); margin-top: 4px; line-height: 1.2; }
+
+  /* ── Cuadro de honor ── */
+  .honor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+  .honor-card {
+    background: #fff; border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.07);
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,.07);
+  }
+  .honor-img { width: 100%; height: 130px; object-fit: cover; display: block; }
+  .honor-info { padding: 8px 10px 10px; border-top: 2px solid var(--asj-gold); }
+  .honor-role { font-size: .5rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: rgba(26,18,8,.4); }
+  .honor-name { font-family: 'Playfair Display', serif; font-size: .85rem; font-style: italic; color: var(--asj-red); font-weight: 700; }
+
+  /* ── Meteograma ── */
+  .meteo-card {
+    background: #fff; border-radius: 12px;
+    border: 1px solid rgba(201,168,76,.25);
+    padding: 16px; margin-bottom: 24px;
+    box-shadow: 0 3px 16px rgba(0,0,0,.07);
+  }
+  .meteo-card img { width: 100%; border-radius: 8px; border: 1px solid #e5e7eb; display: block; }
+  .meteo-caption { font-size: .58rem; color: rgba(26,18,8,.4); text-align: center; margin-top: 8px; letter-spacing: .08em; }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center; padding: 24px 16px;
+    border-top: 1px solid rgba(201,168,76,.3);
+    margin-top: 24px;
+  }
+  .footer-update { font-size: .58rem; color: rgba(26,18,8,.35); letter-spacing: .15em; text-transform: uppercase; }
+  .footer-lema { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1rem; color: var(--asj-red); margin-top: 6px; }
+  .footer-copy { font-size: .55rem; color: rgba(26,18,8,.25); margin-top: 4px; }
+
+  /* ── Ornamento decorativo ── */
+  .ornament {
+    text-align: center; color: var(--asj-gold);
+    font-size: 1.1rem; margin: 4px 0 16px;
+    letter-spacing: .3em; opacity: .6;
+  }
+
+  /* ── Divisor dorado ── */
+  .gold-divider {
+    height: 1px; margin: 24px 0;
+    background: linear-gradient(90deg, transparent, var(--asj-gold) 30%, var(--asj-gold) 70%, transparent);
+    opacity: .5;
+  }
+
+  /* ── Estado de carga ── */
+  .skeleton { background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: 6px; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+</style>
 </head>
-<body class="text-slate-800">
+<body>
 
-    <nav class="bg-asj py-4 shadow-lg border-b-4 border-yellow-500">
-        <div class="max-w-md mx-auto px-4 flex flex-col items-center">
-            <span class="font-asj text-white text-2xl font-bold tracking-tight">ASJ METEO</span>
-            <span class="text-[10px] text-white/80 font-bold uppercase tracking-[0.3em]">Moros i Cristians Alcoi 2026</span>
-        </div>
-    </nav>
+<!-- ╔══════════════════════════════╗ -->
+<!-- ║          NAVEGACIÓN          ║ -->
+<!-- ╚══════════════════════════════╝ -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <div class="nav-logo">ASJ <span>METEO</span></div>
+    <div class="nav-sub">Moros i Cristians · Alcoi 2026</div>
+    <div class="nav-750">✦ 750 Aniversari del Patronatge ✦</div>
+  </div>
+</nav>
 
-    <div class="max-w-md mx-auto p-4 space-y-6">
-        
-        <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <img src="https://www.asjordi.org/upload/images/asociacion/organizacion/01-Llana.jpg" class="w-full h-40 object-cover">
-            <div class="p-3 bg-asj text-white text-center">
-                <p class="text-[10px] font-bold uppercase tracking-widest">Sant Jordiet 2026 · Filà Llana</p>
-            </div>
-        </section>
+<div class="main-wrap">
 
-        <section class="bg-white rounded-xl shadow-sm border-t-4 border-asj p-6">
-            <h2 class="text-center text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4 italic text-asj">Directe des de l'estació</h2>
-            <div class="flex justify-around items-center">
-                <div class="text-center">
-                    <span class="block text-4xl font-black text-slate-800" id="temp">--</span>
-                    <span class="text-[9px] font-bold text-slate-400 uppercase">Temperatura</span>
-                </div>
-                <div class="w-px h-10 bg-slate-100"></div>
-                <div class="text-center">
-                    <span class="block text-4xl font-black text-slate-800" id="hum">--</span>
-                    <span class="text-[9px] font-bold text-slate-400 uppercase">Humitat</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="space-y-4">
-            <h3 class="font-asj text-center text-2xl text-asj italic font-bold">Anàlisi de la Trilogia</h3>
-            <div id="contenedor-fiestas" class="space-y-4">
-                </div>
-        </section>
-
-        <section class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
-            <h4 class="text-[9px] font-bold text-slate-400 uppercase mb-3 text-center tracking-widest italic">Tendència d'Ensembles (Rames GEFS)</h4>
-            <img id="mapa" src="" class="w-full rounded border border-slate-100">
-        </section>
-
-        <section class="pt-6 border-t-2 border-slate-200">
-            <h3 class="font-asj text-center text-xl text-slate-700 mb-6 font-bold uppercase italic">Quadre d'Honor 2026</h3>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
-                    <img src="https://www.asjordi.org/upload/images/asociacion/01-ANDALUCES.jpg" class="w-full h-24 object-cover rounded mb-2">
-                    <span class="text-[8px] font-bold uppercase block text-slate-400">Capità Cristià</span>
-                    <span class="text-[9px] text-asj font-black italic">Andaluces</span>
-                </div>
-                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
-                    <img src="https://www.asjordi.org/upload/images/filaes/02-Asturianos.jpg" class="w-full h-24 object-cover rounded mb-2">
-                    <span class="text-[8px] font-bold uppercase block text-slate-400">Alferes Cristià</span>
-                    <span class="text-[9px] text-asj font-black italic">Asturianos</span>
-                </div>
-                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
-                    <img src="https://www.asjordi.org/upload/images/filaes/MARRAKESH.jpg" class="w-full h-24 object-cover rounded mb-2">
-                    <span class="text-[8px] font-bold uppercase block text-slate-400">Capità Moro</span>
-                    <span class="text-[9px] text-asj font-black italic">Marrakesch</span>
-                </div>
-                <div class="bg-white p-2 rounded shadow-sm border border-slate-100 text-center">
-                    <img src="https://www.asjordi.org/upload/images/filaes/12-Realistes.jpg" class="w-full h-24 object-cover rounded mb-2">
-                    <span class="text-[8px] font-bold uppercase block text-slate-400">Alferes Moro</span>
-                    <span class="text-[9px] text-asj font-black italic">Realistes</span>
-                </div>
-            </div>
-        </section>
-
-        <footer class="text-center py-10 opacity-50">
-            <p class="text-[9px] text-slate-400 uppercase tracking-widest font-bold">Actualitzat: <span id="fecha">--</span></p>
-            <p class="text-[7px] text-slate-400 uppercase mt-2 italic text-asj">Vítol al Patró Sant Jordi</p>
-        </footer>
+  <!-- ── Hero ── -->
+  <div class="hero">
+    <img src="https://www.asjordi.org/upload/images/asociacion/organizacion/01-Llana.jpg" alt="Filà Llana">
+    <div class="hero-caption">
+      <span class="hero-caption-text">Sant Jordiet 2026 · Filà Llana</span>
+      <span class="hero-caption-badge">Alcoi</span>
     </div>
+  </div>
 
-    <script>
-        async function updateApp() {
-            try {
-                const res = await fetch('datos.json?v=' + Date.now());
-                const data = await res.json();
+  <!-- ── Datos en directo ── -->
+  <div class="live-card">
+    <div class="live-label">Directe des de l'Estació AVAMET · c27m009e08</div>
+    <div class="live-grid">
+      <div class="live-val">
+        <div class="live-num" id="temp"><span class="skeleton" style="width:80px;height:48px;display:inline-block;"></span></div>
+        <div class="live-num-label">Temperatura</div>
+      </div>
+      <div class="live-divider"></div>
+      <div class="live-val">
+        <div class="live-num" id="hum"><span class="skeleton" style="width:80px;height:48px;display:inline-block;"></span></div>
+        <div class="live-num-label">Humitat</div>
+      </div>
+    </div>
+  </div>
 
-                // Dades capçalera
-                document.getElementById('temp').innerText = data.temp !== 'N/D' ? data.temp + '°' : 'N/D';
-                document.getElementById('hum').innerText = data.hum !== 'N/D' ? data.hum + '%' : 'N/D';
-                document.getElementById('mapa').src = data.mapa_url;
-                document.getElementById('fecha').innerText = new Date(data.fecha).toLocaleString('es-ES');
+  <!-- ── Análisis Trilogía ── -->
+  <div class="section-title">Anàlisi de la Trilogia</div>
+  <div class="ornament">✦ ✦ ✦</div>
+  <div id="contenedor-fiestas"></div>
 
-                // Dades Trilogia
-                const container = document.getElementById('contenedor-fiestas');
-                container.innerHTML = '';
-                
-                data.fiestas.forEach(f => {
-                    const card = `
-                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                            <div class="bg-slate-50 px-4 py-3 border-b border-slate-100 flex justify-between items-center">
-                                <span class="font-black text-asj text-[11px] uppercase italic tracking-tighter">${f.dia}</span>
-                                <span class="text-2xl">${f.icono || '🌡️'}</span>
-                            </div>
-                            <div class="p-4">
-                                <div class="grid grid-cols-3 gap-2 mb-4">
-                                    <div class="text-center bg-slate-50 p-2 rounded-lg">
-                                        <span class="block text-[8px] font-bold text-slate-400 uppercase">Màx</span>
-                                        <span class="font-black text-slate-700">${f.temp_max}°C</span>
-                                    </div>
-                                    <div class="text-center bg-slate-50 p-2 rounded-lg">
-                                        <span class="block text-[8px] font-bold text-slate-400 uppercase">Prob</span>
-                                        <span class="font-black text-slate-700">${f.prob}%</span>
-                                    </div>
-                                    <div class="text-center bg-slate-50 p-2 rounded-lg">
-                                        <span class="block text-[8px] font-bold text-slate-400 uppercase">Precip</span>
-                                        <span class="font-black text-slate-700">${f.litros}mm</span>
-                                    </div>
-                                </div>
-                                <div class="bg-asj/5 p-3 rounded-lg border-l-4 border-asj">
-                                    <p class="text-[11px] leading-relaxed text-slate-600">
-                                        <b class="text-asj font-bold uppercase text-[9px]">Nota de l'expert:</b> ${f.analisis_tecnico}
-                                    </p>
-                                    <p class="text-[10px] mt-2 font-bold text-slate-500 uppercase italic">👉 ${f.consejo}</p>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    container.innerHTML += card;
-                });
+  <div class="gold-divider"></div>
 
-            } catch (e) { console.error("Error en la carga:", e); }
-        }
-        updateApp();
-    </script>
+  <!-- ── Meteograma ── -->
+  <div class="section-title">Tendència d'Ensembles · GEFS</div>
+  <div class="meteo-card">
+    <img id="mapa" src="" alt="Meteograma T850+T500+Precip">
+    <div class="meteo-caption">Meteograma T850 + T500 + Precipitació · Model GFS/GEFS · Meteociel</div>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- ── Cuadro de Honor ── -->
+  <div class="section-title">Quadre d'Honor 2026</div>
+  <div class="ornament">✦ ✦ ✦</div>
+  <div class="honor-grid">
+    <div class="honor-card">
+      <img class="honor-img" src="https://www.asjordi.org/upload/images/asociacion/01-ANDALUCES.jpg" alt="Andaluces" onerror="this.src='https://www.asjordi.org/upload/images/filaes/01-Alcodianos.jpg'">
+      <div class="honor-info">
+        <div class="honor-role">Capità Cristià</div>
+        <div class="honor-name">Andaluces</div>
+      </div>
+    </div>
+    <div class="honor-card">
+      <img class="honor-img" src="https://www.asjordi.org/upload/images/filaes/02-Asturianos.jpg" alt="Asturianos" onerror="this.src='https://www.asjordi.org/upload/images/showroom/ano-2025/1371.jpg'">
+      <div class="honor-info">
+        <div class="honor-role">Alferes Cristià</div>
+        <div class="honor-name">Asturianos</div>
+      </div>
+    </div>
+    <div class="honor-card">
+      <img class="honor-img" src="https://www.asjordi.org/upload/images/filaes/MARRAKESH.jpg" alt="Marrakesch" onerror="this.src='https://www.asjordi.org/upload/images/showroom/ano-2025/1775.jpg'">
+      <div class="honor-info">
+        <div class="honor-role">Capità Moro</div>
+        <div class="honor-name">Marrakesch</div>
+      </div>
+    </div>
+    <div class="honor-card">
+      <img class="honor-img" src="https://www.asjordi.org/upload/images/filaes/12-Realistes.jpg" alt="Realistes" onerror="this.src='https://www.asjordi.org/upload/images/showroom/ano-2025/1695.jpg'">
+      <div class="honor-info">
+        <div class="honor-role">Alferes Moro</div>
+        <div class="honor-name">Realistes</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- ── Galería de Filaes ── -->
+  <div class="section-title">Les Filaes d'Alcoi</div>
+  <div class="ornament">✦ ✦ ✦</div>
+
+  <div class="filaes-section">
+    <div class="filaes-tabs" id="filaes-tabs">
+      <div class="fila-tab active" onclick="filtrarFilaes('tot', this)">Totes</div>
+      <div class="fila-tab" onclick="filtrarFilaes('cristia', this)">Cristians</div>
+      <div class="fila-tab" onclick="filtrarFilaes('moro', this)">Moros</div>
+    </div>
+    <div class="filaes-grid" id="filaes-grid"></div>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-update">Actualitzat: <span id="fecha">--</span></div>
+    <div class="footer-lema">Vítol al Patró Sant Jordi!</div>
+    <div class="footer-copy">Dades: AVAMET · Open-Meteo · ASJ · Meteociel</div>
+  </footer>
+
+</div><!-- /main-wrap -->
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// DATOS DE FILAES (todas las filaes de Alcoi con URLs de ASJ)
+// Orden desfile: Cristians primero (1-14), Moros después (15-28)
+// ═══════════════════════════════════════════════════════════
+const FILAES = [
+  // ── CRISTIANS ──
+  { nom: 'Alcodianos',   tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1234.jpg' },
+  { nom: 'Andaluces',    tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1452.jpg' },
+  { nom: 'Aragonesos',   tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1203.jpg' },
+  { nom: 'Almogávares',  tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1285.jpg' },
+  { nom: 'Asturianos',   tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1371.jpg' },
+  { nom: 'Cruzados',     tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1243.jpg' },
+  { nom: 'Guzmanes',     tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1349.jpg' },
+  { nom: 'Labradores',   tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1360.jpg' },
+  { nom: 'Ligeros',      tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1561.jpg' },
+  { nom: 'Magenta',      tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1588.jpg' },
+  { nom: 'Mozárabes',    tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1307.jpg' },
+  { nom: 'Muntanyesos',  tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1260.jpg' },
+  { nom: 'Navarros',     tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1282.jpg' },
+  { nom: 'Tomasinas',    tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1269.jpg' },
+  { nom: 'Vascos',       tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1332.jpg' },
+  { nom: 'Verdes',       tipus: 'cristia', img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1596.jpg' },
+  // ── MOROS ──
+  { nom: 'Abencerrajes', tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1531.jpg' },
+  { nom: 'Benimerines',  tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1670.jpg' },
+  { nom: 'Chano',        tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1606.jpg' },
+  { nom: 'Cordón',       tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1578.jpg' },
+  { nom: 'Dom. Miques',  tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1628.jpg' },
+  { nom: 'Judíos',       tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1647.jpg' },
+  { nom: 'Llana',        tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1666.jpg' },
+  { nom: 'Marrakesch',   tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1775.jpg' },
+  { nom: 'Mudejares',    tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1550.jpg' },
+  { nom: 'Realistes',    tipus: 'moro',    img: 'https://www.asjordi.org/upload/images/showroom/ano-2025/1695.jpg' },
+];
+
+// ── Render galería de filaes ──────────────────────────────────
+let filaeFiltreActiu = 'tot';
+
+function renderFilaes(filtre) {
+  const grid = document.getElementById('filaes-grid');
+  const llista = filtre === 'tot' ? FILAES : FILAES.filter(f => f.tipus === filtre);
+  grid.innerHTML = llista.map((f, i) => `
+    <div class="fila-item" style="animation-delay:${i * 0.04}s">
+      <div class="fila-img-wrap">
+        <img src="${f.img}" alt="${f.nom}" loading="lazy"
+             onerror="this.parentElement.style.background='#e5e7eb'">
+      </div>
+      <div class="fila-name">${f.nom}</div>
+    </div>
+  `).join('');
+}
+
+function filtrarFilaes(filtre, tabEl) {
+  document.querySelectorAll('.fila-tab').forEach(t => t.classList.remove('active'));
+  tabEl.classList.add('active');
+  filaeFiltreActiu = filtre;
+  renderFilaes(filtre);
+}
+
+renderFilaes('tot');
+
+// ═══════════════════════════════════════════════════════════
+// CARGA DE DATOS DESDE datos.json
+// ═══════════════════════════════════════════════════════════
+async function updateApp() {
+  try {
+    const res  = await fetch('datos.json?v=' + Date.now());
+    const data = await res.json();
+
+    // ── Cabecera live ──
+    document.getElementById('temp').textContent =
+      data.temp !== 'N/D' ? data.temp + '°' : 'N/D';
+    document.getElementById('hum').textContent =
+      data.hum !== 'N/D'  ? data.hum  + '%' : 'N/D';
+
+    // ── Meteograma ──
+    if (data.mapa_url && data.mapa_url !== 'N/D') {
+      document.getElementById('mapa').src = data.mapa_url;
+    }
+
+    // ── Fecha ──
+    document.getElementById('fecha').textContent =
+      new Date(data.fecha).toLocaleString('ca-ES', {
+        day: '2-digit', month: 'long', year: 'numeric',
+        hour: '2-digit', minute: '2-digit'
+      });
+
+    // ── Cards de fiestas ──
+    const container = document.getElementById('contenedor-fiestas');
+    container.innerHTML = '';
+
+    data.fiestas.forEach((f, i) => {
+      // Color del encabezado según riesgo
+      const prob = typeof f.prob === 'number' ? f.prob : 0;
+      const borderColor = prob < 25 ? '#22c55e' : prob < 50 ? '#f59e0b' : '#cc0000';
+
+      const card = document.createElement('div');
+      card.className = 'fiesta-card';
+      card.style.animationDelay = (i * 0.1) + 's';
+      card.style.borderTopColor = borderColor;
+      card.style.borderTopWidth = '3px';
+      card.style.borderTopStyle = 'solid';
+
+      // Nombre corto del día y subtítulo
+      const partsNom = f.dia.split('·');
+      const diaNum   = partsNom[0]?.trim() ?? f.dia;
+      const diaActe  = partsNom[1]?.trim() ?? '';
+
+      const tempMax  = f.temp_max !== 'N/D' ? f.temp_max + '°' : '—';
+      const probTxt  = f.prob    !== 'N/D' ? f.prob + '%'    : '—';
+      const litrosTxt= f.litros  !== 'N/D' ? f.litros + 'mm' : '—';
+
+      card.innerHTML = `
+        <div class="fiesta-head">
+          <div class="fiesta-head-name">
+            <small>${diaNum}</small>
+            ${diaActe}
+          </div>
+          <div class="fiesta-icon">${f.icono || '🌡️'}</div>
+        </div>
+        <div class="fiesta-stats">
+          <div class="fiesta-stat">
+            <div class="fiesta-stat-label">Màx</div>
+            <div class="fiesta-stat-val">${tempMax}</div>
+          </div>
+          <div class="fiesta-stat">
+            <div class="fiesta-stat-label">Prob ☔</div>
+            <div class="fiesta-stat-val">${probTxt}</div>
+          </div>
+          <div class="fiesta-stat">
+            <div class="fiesta-stat-label">Precip</div>
+            <div class="fiesta-stat-val">${litrosTxt}</div>
+          </div>
+        </div>
+        <div class="fiesta-analysis">
+          <div class="fiesta-analysis-tag">📡 Nota de l'Expert · Rames GEFS</div>
+          <div class="fiesta-analysis-text">${f.analisis_tecnico}</div>
+        </div>
+        <div class="fiesta-consejo">👉 ${f.consejo}</div>
+      `;
+      container.appendChild(card);
+    });
+
+  } catch (e) {
+    console.error('Error carregant dades:', e);
+    document.getElementById('contenedor-fiestas').innerHTML =
+      '<p style="text-align:center;color:#cc0000;font-family:Crimson Pro,serif;font-style:italic;">Error carregant les dades. Comprova que datos.json existeix.</p>';
+  }
+}
+
+updateApp();
+
+// Recargar cada 10 minutos
+setInterval(updateApp, 10 * 60 * 1000);
+</script>
 </body>
 </html>
