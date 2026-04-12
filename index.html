@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -45,6 +45,7 @@
       }
       .font-serif  { font-family: "Playfair Display", serif; }
       .font-crim   { font-family: "Crimson Pro", serif; }
+      .font-mono   { font-family: "DM Mono", monospace; }
 
       /* ── Scrollbar ── */
       ::-webkit-scrollbar { width: 5px; }
@@ -315,64 +316,178 @@
       }
 
       /* ═══════════════════════════════════════════════
-         COUNTDOWN CALENDAR (ENTRAETES)
+         COUNTDOWN CALENDAR (ENTRAETES) — REDISSENY PREMIUM
          ═══════════════════════════════════════════════ */
       .countdown-section {
         margin-top: 48px;
         padding-top: 40px;
         border-top: 1px solid rgba(201,168,76,.1);
       }
+
+      /* Grid principal: columnes adaptatives. Les tarjetes amb agenda s'expandixen */
       .countdown-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 12px;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        gap: 14px;
+        align-items: start;
       }
+
+      /* Tarjeta base */
       .countdown-card {
         position: relative;
-        background: rgba(22,16,10,.65);
-        border: 1px solid rgba(201,168,76,.1);
-        border-radius: 12px;
-        padding: 16px 14px;
+        background: rgba(22,16,10,.68);
+        border: 1px solid rgba(201,168,76,.12);
+        border-radius: 14px;
         overflow: hidden;
-        transition: transform .25s, border-color .25s, box-shadow .25s;
+        transition: transform .28s cubic-bezier(.25,.1,.25,1), border-color .28s, box-shadow .28s;
         display: flex; flex-direction: column;
       }
       .countdown-card::before {
         content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-        background: linear-gradient(90deg, transparent, rgba(201,168,76,.18), transparent);
+        background: linear-gradient(90deg, transparent, rgba(201,168,76,.22), transparent);
       }
       .countdown-card:hover {
-        transform: translateY(-3px);
-        border-color: rgba(201,168,76,.28);
-        box-shadow: 0 8px 24px rgba(0,0,0,.35);
+        transform: translateY(-4px);
+        border-color: rgba(201,168,76,.3);
+        box-shadow: 0 10px 30px rgba(0,0,0,.4);
       }
+
+      /* Tarjeta WITH agenda: full width dins la grid (span 2 o tot) */
+      .countdown-card.has-agenda {
+        grid-column: 1 / -1; /* Ocupa tota l'amplada disponible de la grid */
+      }
+
+      /* Cabeçalera meteorològica de la tarjeta */
+      .cc-meteo-header {
+        padding: 16px 18px 14px;
+      }
+
+      /* Divisor elegant entre meteo i agenda */
+      .cc-divider {
+        height: 1px;
+        margin: 0 18px;
+        background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,.28) 30%, rgba(201,168,76,.28) 70%, transparent 100%);
+        flex-shrink: 0;
+      }
+
+      /* Zona de l'agenda */
+      .cc-agenda {
+        padding: 14px 18px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      /* Cabeçalera de cada carrer */
+      .cc-carrer-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+      .cc-carrer-icon {
+        width: 18px; height: 18px; flex-shrink: 0;
+        color: rgba(201,168,76,.55);
+      }
+      .cc-carrer-name {
+        font-family: "Playfair Display", serif;
+        font-size: .88rem;
+        font-weight: 700;
+        color: rgba(253,246,227,.82);
+        letter-spacing: .02em;
+        line-height: 1;
+      }
+
+      /* Grid interna de desfiles */
+      .cc-desfilades-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 6px;
+      }
+
+      /* Ítem individual de desfile */
+      .cc-desfile-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(201,168,76,.04);
+        border: 1px solid rgba(201,168,76,.08);
+        border-radius: 8px;
+        padding: 7px 10px;
+        transition: background .2s, border-color .2s;
+      }
+      .cc-desfile-item:hover {
+        background: rgba(201,168,76,.08);
+        border-color: rgba(201,168,76,.16);
+      }
+      .cc-desfile-hora {
+        font-family: "DM Mono", monospace;
+        font-size: .62rem;
+        color: rgba(201,168,76,.45);
+        flex-shrink: 0;
+        letter-spacing: .04em;
+      }
+      .cc-desfile-fila {
+        font-size: .72rem;
+        font-weight: 600;
+        color: rgba(253,246,227,.82);
+        line-height: 1.2;
+        flex: 1;
+      }
+
+      /* Badge EE — prestige gold */
+      .cc-badge-ee {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
+        background: linear-gradient(135deg, #c9a84c, #8a6f28);
+        color: #0b0806;
+        font-size: .38rem;
+        font-weight: 800;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        padding: 2px 6px;
+        border-radius: 4px;
+        box-shadow: 0 1px 6px rgba(201,168,76,.35), inset 0 1px 0 rgba(255,255,255,.15);
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+
+      /* Separador entre carrers quan n'hi ha dos */
+      .cc-carrer-sep {
+        height: 1px;
+        background: rgba(201,168,76,.08);
+        margin: 2px 0;
+      }
+
+      /* Cabeçalera meteo: dia + icon + temps */
       .countdown-card .cc-day {
         font-family: "Playfair Display", serif;
-        font-size: 1.5rem; font-weight: 900; color: var(--cream); line-height: 1;
+        font-size: 1.6rem; font-weight: 900; color: var(--cream); line-height: 1;
       }
-      .countdown-card .cc-icon { font-size: 1.4rem; }
+      .countdown-card .cc-icon { font-size: 1.45rem; }
       .countdown-card .cc-weekday {
         font-size: .42rem; font-weight: 600; letter-spacing: .18em;
         text-transform: uppercase; color: rgba(201,168,76,.45);
       }
-      .countdown-card .cc-event {
-        font-family: "Crimson Pro", serif; font-size: .75rem;
-        font-style: italic; color: rgba(253,246,227,.55); line-height: 1.3;
-      }
       .countdown-card .cc-temp {
         font-family: "Playfair Display", serif;
-        font-size: 1.1rem; font-weight: 700; color: var(--cream);
+        font-size: 1.15rem; font-weight: 700; color: var(--cream);
       }
       .countdown-card .cc-prob {
         font-size: .65rem; font-weight: 600;
       }
+
       .countdown-empty {
         text-align: center; padding: 44px 20px;
         border: 1px dashed rgba(201,168,76,.15); border-radius: 14px;
         background: rgba(22,16,10,.3);
       }
-      @media (max-width: 500px) {
+
+      @media (max-width: 600px) {
         .countdown-grid { grid-template-columns: 1fr; }
+        .countdown-card.has-agenda { grid-column: 1; }
+        .cc-desfilades-grid { grid-template-columns: 1fr 1fr; }
       }
 
       /* ═══════════════════════════════════════════════
@@ -489,16 +604,249 @@
       const { motion, AnimatePresence, useInView } = window.Motion;
 
       /* ═══════════════════════════════════════════════════════
-         DATA — ENTRAETES
+         DATA — ENTRAETES INFO (COMPLET, reconstruït del PDF oficial)
+         Estructura: { "YYYY-MM-DD": [ { carrer, desfilades: [{hora, fila, ee?}] } ] }
          ═══════════════════════════════════════════════════════ */
       const ENTRAETES_INFO = {
-        "2026-04-14": [
-          { carrer: "Sant Nicolau", desfilades: [{ hora: "23:10", fila: "Mudéjares" }, { hora: "23:30", fila: "Cruzados" }] }
+
+        "2026-04-12": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Guzmanes" },
+              { hora: "22:50", fila: "Mozárabes" },
+              { hora: "23:10", fila: "Berberiscos" },
+              { hora: "23:30", fila: "Almogávares" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Cordón" },
+              { hora: "23:00", fila: "Chano" },
+              { hora: "23:30", fila: "Muntanyesos" },
+              { hora: "00:00", fila: "Aragonesos" }
+            ]
+          }
         ],
+
+        "2026-04-13": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Labradores" },
+              { hora: "22:50", fila: "Andaluces" },
+              { hora: "23:10", fila: "Abencerrajes" },
+              { hora: "23:30", fila: "Domingo Miques" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Llana" },
+              { hora: "23:00", fila: "Alcodianos" },
+              { hora: "23:30", fila: "Cruzados" },
+              { hora: "00:00", fila: "Aragonesos" }
+            ]
+          }
+        ],
+
+        "2026-04-14": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Marrakesch" },
+              { hora: "22:50", fila: "Asturianos" },
+              { hora: "23:10", fila: "Andaluces" },
+              { hora: "23:30", fila: "Berberiscos" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Mudéjares" },
+              { hora: "22:50", fila: "Cruzados" },
+              { hora: "23:10", fila: "Tomasinas" },
+              { hora: "23:30", fila: "Cides" }
+            ]
+          }
+        ],
+
+        "2026-04-15": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Guzmanes" },
+              { hora: "22:50", fila: "Asturianos" },
+              { hora: "23:10", fila: "Marrakesch" },
+              { hora: "23:30", fila: "Realistes" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Alcodianos" },
+              { hora: "22:50", fila: "Navarros" },
+              { hora: "23:10", fila: "Berberiscos" },
+              { hora: "23:30", fila: "Verdes" }
+            ]
+          }
+        ],
+
+        "2026-04-16": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Judíos" },
+              { hora: "22:50", fila: "Realistes", ee: true },
+              { hora: "23:10", fila: "Almogávares" },
+              { hora: "23:30", fila: "Cides" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Tomasinas" },
+              { hora: "22:50", fila: "Mudéjares" },
+              { hora: "23:10", fila: "Almogávares" },
+              { hora: "23:30", fila: "Navarros" }
+            ]
+          }
+        ],
+
         "2026-04-17": [
-          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Magenta" }, { hora: "23:30", fila: "Marrakesch", ee: true }] },
-          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Muntanyesos" }, { hora: "00:00", fila: "Llana", ee: true }] }
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Magenta" },
+              { hora: "22:50", fila: "Vascos", ee: true },
+              { hora: "23:10", fila: "Marrakesch", ee: true },
+              { hora: "23:30", fila: "Verdes" },
+              { hora: "00:00", fila: "Mudéjares" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Muntanyesos" },
+              { hora: "23:00", fila: "Cruzados" },
+              { hora: "23:30", fila: "Cides" },
+              { hora: "00:00", fila: "Llana", ee: true }
+            ]
+          }
+        ],
+
+        "2026-04-18": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "ee Realistes", ee: true },
+              { hora: "22:50", fila: "ee Almogávares", ee: true },
+              { hora: "23:10", fila: "ee Asturianos", ee: true },
+              { hora: "23:30", fila: "ee Andaluces", ee: true }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Benimerines" },
+              { hora: "23:00", fila: "Domingo Miques" },
+              { hora: "23:30", fila: "Ligeros" },
+              { hora: "00:00", fila: "Judíos" },
+              { hora: "00:30", fila: "Tomasinas" }
+            ]
+          }
+        ],
+
+        "2026-04-19": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Labradores" },
+              { hora: "22:50", fila: "Guzmanes" },
+              { hora: "23:10", fila: "Berberiscos" },
+              { hora: "23:30", fila: "Ligeros" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Navarros" },
+              { hora: "22:50", fila: "Andaluces" },
+              { hora: "23:10", fila: "Realistes", ee: true },
+              { hora: "23:30", fila: "Verdes" }
+            ]
+          }
+        ],
+
+        "2026-04-20": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Asturianos", ee: true },
+              { hora: "22:50", fila: "Realistes", ee: true },
+              { hora: "23:10", fila: "Marrakesch", ee: true },
+              { hora: "23:30", fila: "Verdes", ee: true }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Tomasinas" },
+              { hora: "22:50", fila: "Alcodianos" },
+              { hora: "23:10", fila: "Aragonesos" },
+              { hora: "23:30", fila: "Llana" }
+            ]
+          }
+        ],
+
+        "2026-04-21": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Andaluces", ee: true },
+              { hora: "22:50", fila: "Magenta" },
+              { hora: "23:10", fila: "Realistes" },
+              { hora: "23:30", fila: "Verdes" },
+              { hora: "23:50", fila: "Primers Trons" }
+            ]
+          },
+          {
+            carrer: "País Valencià",
+            desfilades: [
+              { hora: "22:30", fila: "Marrakesch" },
+              { hora: "22:50", fila: "Benimerines" },
+              { hora: "23:10", fila: "Vascos" },
+              { hora: "23:30", fila: "Andaluces" }
+            ]
+          }
+        ],
+
+        "2026-04-22": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Labradores" },
+              { hora: "22:50", fila: "Berberiscos" },
+              { hora: "23:10", fila: "Ligeros" },
+              { hora: "23:30", fila: "Navarros" },
+              { hora: "00:30", fila: "Andaluces" }
+            ]
+          }
+        ],
+
+        "2026-04-23": [
+          {
+            carrer: "Sant Nicolau",
+            desfilades: [
+              { hora: "22:30", fila: "Andaluces" },
+              { hora: "23:00", fila: "Marrakesch", ee: true },
+              { hora: "23:30", fila: "Realistes", ee: true },
+              { hora: "00:00", fila: "Almogávares", ee: true }
+            ]
+          }
         ]
+
       };
 
       /* ═══════════════════════════════════════════════════════
@@ -558,10 +906,9 @@
       ];
 
       /* ═══════════════════════════════════════════════════════
-         DATA — FILAES (P5 / P7 cargos)
+         DATA — FILAES
          ═══════════════════════════════════════════════════════ */
       const FILAES = [
-        // ── Bando Cristià ──
         { nom: "Andaluces",    tipus: "cristia", cargo: "Capità Cristià",   img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1452.jpg" },
         { nom: "Asturianos",   tipus: "cristia", cargo: "Alferes Cristià",  img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1371.jpg" },
         { nom: "Cides",        tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1243.jpg" },
@@ -576,7 +923,6 @@
         { nom: "Cruzados",     tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1243.jpg" },
         { nom: "Alcodianos",   tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1234.jpg" },
         { nom: "Aragoneses",   tipus: "cristia",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1203.jpg" },
-        // ── Bando Moro ──
         { nom: "Llana",           tipus: "moro", cargo: "Sant Jordiet",     img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1666.jpg" },
         { nom: "Judíos",          tipus: "moro",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1647.jpg" },
         { nom: "Domingo Miques",  tipus: "moro",                            img: "https://www.asjordi.org/upload/images/showroom/ano-2025/1628.jpg" },
@@ -594,7 +940,7 @@
       ];
 
       /* ═══════════════════════════════════════════════════════
-         DATA — GALLERY (photos only, from asjordi.org)
+         DATA — GALLERY
          ═══════════════════════════════════════════════════════ */
       const GALLERY = [
         "https://www.asjordi.org/upload/images/showroom/ano-2025/1481.jpg",
@@ -624,6 +970,51 @@
         }, children);
       }
 
+      /* ─── Icona SVG de pin de carrer ─── */
+      function IconPin() {
+        return h("svg", {
+          className: "cc-carrer-icon",
+          viewBox: "0 0 18 18", fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+          stroke: "currentColor", strokeWidth: "1.4", strokeLinecap: "round", strokeLinejoin: "round"
+        },
+          h("path", { d: "M9 1.5C6.51 1.5 4.5 3.51 4.5 6c0 4.5 4.5 10.5 4.5 10.5S13.5 10.5 13.5 6c0-2.49-2.01-4.5-4.5-4.5z" }),
+          h("circle", { cx: "9", cy: "6", r: "1.5", fill: "currentColor", stroke: "none" })
+        );
+      }
+
+      /* ═══════════════════════════════════════════════════════
+         COMPONENT: AgendaCarrer — renderitza un carrer amb els seus desfiles
+         ═══════════════════════════════════════════════════════ */
+      function AgendaCarrer({ carrer, desfilades }) {
+        return h("div", null,
+          /* Cabeçalera del carrer */
+          h("div", { className: "cc-carrer-header" },
+            h(IconPin),
+            h("span", { className: "cc-carrer-name" }, carrer),
+          ),
+          /* Grid de desfiles */
+          h("div", { className: "cc-desfilades-grid" },
+            desfilades.map((df, i) => {
+              /* Neteja el prefix "ee " del nom si existeix (és redundant amb el badge) */
+              const nomNet = df.fila.replace(/^ee\s+/i, "");
+              return h(motion.div, {
+                key: i,
+                className: "cc-desfile-item",
+                initial: { opacity: 0, x: -8 },
+                whileInView: { opacity: 1, x: 0 },
+                viewport: { once: true },
+                transition: { delay: i * 0.04, duration: 0.3 },
+              },
+                h("span", { className: "cc-desfile-hora font-mono" }, df.hora),
+                h("span", { className: "cc-desfile-fila" }, nomNet),
+                df.ee && h("span", { className: "cc-badge-ee" }, "EE"),
+              );
+            })
+          )
+        );
+      }
+
       /* ═══════════════════════════════════════════════════════
          C O M P O N E N T S
          ═══════════════════════════════════════════════════════ */
@@ -644,22 +1035,13 @@
         return h(React.Fragment, null,
           h("nav", { id: "navbar", className: scrolled ? "scrolled" : "" },
             h("div", { style: { maxWidth: 1100, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between" } },
-              // Logo
               h("div", { className: "nav-logo", onClick: () => go("hero") },
-                h("img", {
-                  className: "nav-logo-img",
-                  src: "./logo.png",
-                  alt: "MeteoFestes2026",
-                }),
-                h("div", { className: "nav-logo-text" },
-                  "Meteo", h("span", null, "Festes"), "2026"
-                ),
+                h("img", { className: "nav-logo-img", src: "./logo.png", alt: "MeteoFestes2026" }),
+                h("div", { className: "nav-logo-text" }, "Meteo", h("span", null, "Festes"), "2026"),
               ),
-              // Desktop links
               h("div", { className: "nav-desk", style: { display: "flex", gap: 26, alignItems: "center" } },
                 links.map(s => h("a", { key: s.id, className: "nav-link", onClick: () => go(s.id) }, s.l))
               ),
-              // Hamburger
               h("button", { className: "nav-hamburger", onClick: () => setOpen(!open), "aria-label": "Menu" },
                 h("svg", { width: 24, height: 24, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round" },
                   open ? h("path", { d: "M18 6L6 18M6 6l12 12" })
@@ -668,7 +1050,6 @@
               ),
             ),
           ),
-          // Mobile overlay
           open && h(motion.div, { className: "mobile-overlay", initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: .25 } },
             h("button", { onClick: () => setOpen(false), style: { position: "absolute", top: 18, right: 22, background: "none", border: "none", color: "var(--gold)", cursor: "pointer" } },
               h("svg", { width: 28, height: 28, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 2 },
@@ -704,7 +1085,6 @@
             }))
           ),
           h("div", { style: { position: "relative", zIndex: 2, textAlign: "center", padding: "0 24px", maxWidth: 820, margin: "0 auto" } },
-            // Glassmorphism logo circle
             h(motion.div, { className: "hero-float",
               initial: { opacity: 0, scale: .82 }, animate: { opacity: 1, scale: 1 },
               transition: { duration: 1, delay: .2, ease: [.25,.1,.25,1] }
@@ -713,13 +1093,11 @@
                 h("img", { src: "./logo.png", alt: "MeteoFestes2026" })
               )
             ),
-            // Tag
             h(motion.div, { initial: { opacity: 0, y: -18 }, animate: { opacity: 1, y: 0 }, transition: { duration: .8, delay: .5 } },
               h("div", { style: { fontSize: ".58rem", fontWeight: 700, letterSpacing: ".42em", textTransform: "uppercase", color: "#c9a84c", marginBottom: 14 } },
                 "✦ Previsions Meteorològiques · Festes 2026 ✦"
               )
             ),
-            // Title
             h(motion.h1, { className: "font-serif glow",
               style: { fontSize: "clamp(2.5rem,9vw,5rem)", fontWeight: 900, lineHeight: 1, color: "#fdf6e3", marginBottom: 10 },
               initial: { opacity: 0, scale: .96 }, animate: { opacity: 1, scale: 1 },
@@ -729,15 +1107,12 @@
               h("em", { style: { color: "#c9a84c", fontStyle: "italic" } }, "Festes"),
               h("span", { style: { fontSize: "clamp(1.1rem,3vw,1.9rem)", color: "rgba(253,246,227,.45)", fontWeight: 700 } }, " 2026"),
             ),
-            // Divider
             h(motion.div, { style: { height: 2, width: 80, background: "linear-gradient(90deg,transparent,#c9a84c,transparent)", margin: "18px auto" },
               initial: { scaleX: 0 }, animate: { scaleX: 1 }, transition: { duration: .8, delay: 1 } }),
-            // Sub
             h(motion.p, { className: "font-crim", style: { fontSize: "clamp(1rem,3vw,1.35rem)", color: "rgba(253,246,227,.72)", fontStyle: "italic", marginBottom: 34 },
               initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: .8, delay: 1.2 } },
               "Moros i Cristians · Alcoi · 24, 25, 26 i 27 d'Abril de 2026"
             ),
-            // Buttons
             h(motion.div, { style: { display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" },
               initial: { opacity: 0, y: 14 }, animate: { opacity: 1, y: 0 }, transition: { duration: .7, delay: 1.4 } },
               h("button", { onClick: () => document.getElementById("meteo")?.scrollIntoView({ behavior: "smooth" }),
@@ -748,7 +1123,6 @@
               }, "⚔️ La Trilogia"),
             ),
           ),
-          // Scroll pill
           h(motion.div, { style: { position: "absolute", bottom: 30, left: "50%", transform: "translateX(-50%)", cursor: "pointer" },
             animate: { y: [0, 9, 0] }, transition: { repeat: Infinity, duration: 2 },
             onClick: () => document.getElementById("meteo")?.scrollIntoView({ behavior: "smooth" }),
@@ -769,7 +1143,6 @@
             .then(r => r.json()).then(setMeteo).catch(() => setMeteo(null));
         }, []);
 
-        // ── Date comparison helper (year-month-day only, no timezone issues) ──
         function getTodayMidnight() {
           const now = new Date();
           return new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -779,9 +1152,8 @@
           return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
         }
 
-        // ── Filter logic ──
         const allDays = meteo?.fiestas || [];
-        const diesGrans  = allDays.filter(f => {
+        const diesGrans = allDays.filter(f => {
           const d = parseDateMidnight(f.fecha);
           return d.getDate() >= 24 && d.getDate() <= 27 && d.getMonth() === 3;
         });
@@ -791,7 +1163,6 @@
           return d.getDate() >= 12 && d.getDate() <= 23 && d.getMonth() === 3 && d >= today;
         });
 
-        // ── Prob → color helper ──
         function probColor(prob) {
           if (typeof prob !== 'number') return '#888';
           if (prob < 25) return '#22c55e';
@@ -799,18 +1170,15 @@
           return '#cc0000';
         }
 
-        // ── Extract weekday and event from dia string ──
         function parseDia(diaStr) {
           const parts = diaStr.split('·');
           return { weekday: (parts[0] || '').trim(), event: (parts[1] || '').trim() };
         }
 
-        // ── Extract day number from fecha ──
         function dayNum(fecha) {
           return parseDateMidnight(fecha).getDate();
         }
 
-        // ── Days remaining badge ──
         function daysUntil(fecha) {
           const diff = Math.ceil((parseDateMidnight(fecha) - today) / (1000*60*60*24));
           if (diff === 0) return 'AVUI';
@@ -820,14 +1188,14 @@
 
         return h("section", { id: "meteo", style: { padding: "88px 24px", background: "rgba(10,6,2,.55)" } },
           h("div", { style: { maxWidth: 980, margin: "0 auto" } },
-            // ── Section Title ──
+
             h(FadeIn, null,
               h("div", { style: { textAlign: "center", marginBottom: 48 } },
                 h("div", { className: "sec-label" }, "AVAMET · Open-Meteo · Meteociel"),
                 h("h2", { className: "sec-title" }, "Meteo ", h("em", null, "Festes")),
               )
             ),
-            // ── IA Panel ──
+
             h(FadeIn, { delay: .1 },
               h("div", { className: "ia-panel" },
                 h("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 14 } },
@@ -839,10 +1207,11 @@
                 ),
               )
             ),
-            // ── Dynamic data ──
+
             meteo
               ? h(React.Fragment, null,
-                  // ── Live station ──
+
+                  /* ── Live Station ── */
                   h(FadeIn, { delay: .15 },
                     h("div", { style: { background: "var(--dark-card)", border: "1px solid rgba(201,168,76,.18)", borderRadius: 16, padding: 28, marginBottom: 36 } },
                       h("div", { style: { display: "flex", alignItems: "center", gap: 8, marginBottom: 24, fontSize: ".56rem", fontWeight: 600, letterSpacing: ".22em", textTransform: "uppercase", color: "rgba(201,168,76,.55)" } },
@@ -865,9 +1234,9 @@
                     )
                   ),
 
-                  // ════════════════════════════════════════════════════════
-                  // BLOQUE A: "ELS DIES GRANS" (24, 25, 26, 27 — always visible)
-                  // ════════════════════════════════════════════════════════
+                  /* ══════════════════════════════════════════════
+                     BLOC A: ELS DIES GRANS (24–27)
+                     ══════════════════════════════════════════════ */
                   h(FadeIn, { delay: .2 },
                     h("div", { style: { marginBottom: 16 } },
                       h("div", { style: { display: "flex", alignItems: "center", gap: 12, marginBottom: 22 } },
@@ -879,6 +1248,7 @@
                       ),
                     )
                   ),
+
                   h("div", { className: "hero-cards-grid", style: { marginBottom: 40 } },
                     diesGrans.map((f, i) => {
                       const col = probColor(f.prob);
@@ -892,9 +1262,7 @@
                         transition: { duration: .6, delay: i * .1, ease: [.25,.1,.25,1] },
                       },
                         h("div", { className: "hero-card" },
-                          // Badge
                           h("div", { style: { position: "absolute", top: 14, right: 16, fontSize: ".42rem", fontWeight: 800, letterSpacing: ".15em", textTransform: "uppercase", padding: "3px 10px", borderRadius: 20, background: badge === 'AVUI' ? 'var(--red)' : 'rgba(201,168,76,.12)', color: badge === 'AVUI' ? '#fff' : 'var(--gold)', border: '1px solid ' + (badge === 'AVUI' ? 'var(--red)' : 'rgba(201,168,76,.22)'), zIndex: 2 } }, badge),
-                          // Header row
                           h("div", { style: { display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: 14, position: "relative", zIndex: 1 } },
                             h("div", null,
                               h("div", { className: "hc-weekday" }, info.weekday),
@@ -905,9 +1273,7 @@
                               h("div", { className: "hc-icon" }, f.icono || "🌡️"),
                             ),
                           ),
-                          // Event name
                           h("div", { className: "hc-event", style: { marginBottom: 14, position: "relative", zIndex: 1 } }, info.event),
-                          // Stats row
                           h("div", { style: { display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 8, marginBottom: 14, position: "relative", zIndex: 1 } },
                             [["Màx", f.temp_max !== "N/D" ? f.temp_max + "°C" : "—"],
                              ["Prob. Pluja", f.prob !== "N/D" ? f.prob + "%" : "—"],
@@ -918,18 +1284,19 @@
                               )
                             ),
                           ),
-                          // Analysis
                           h("div", { className: "hc-analysis", style: { borderColor: col, position: "relative", zIndex: 1 } }, f.analisis_tecnico),
                         )
                       );
                     })
                   ),
 
-                  // ════════════════════════════════════════════════════════
-                  // BLOQUE B: "CALENDARI D'ENTRAETES" (12–23, dinámico)
-                  // ════════════════════════════════════════════════════════
+                  /* ══════════════════════════════════════════════
+                     BLOC B: CALENDARI D'ENTRAETES (12–23) — PREMIUM
+                     ══════════════════════════════════════════════ */
                   h(FadeIn, { delay: .3 },
                     h("div", { className: "countdown-section" },
+
+                      /* Cabeçalera secció */
                       h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 16, marginBottom: 24 } },
                         h("div", { style: { display: "flex", alignItems: "center", gap: 12 } },
                           h("div", { style: { width: 4, height: 28, borderRadius: 2, background: "linear-gradient(180deg, rgba(201,168,76,.45), rgba(201,168,76,.12))" } }),
@@ -938,15 +1305,22 @@
                             h("div", { style: { fontFamily: "Playfair Display, serif", fontSize: "1.2rem", fontWeight: 900, color: "rgba(253,246,227,.7)" } }, "Calendari Previ"),
                           ),
                         ),
-                        // Botón PDF
                         h("a", {
                           href: "https://www.asjordi.org/upload/files/entraetes/2026/calendari-d039entradetes-2026.pdf",
                           target: "_blank", rel: "noopener noreferrer",
                           style: { padding: "8px 16px", background: "rgba(201,168,76,.1)", border: "1px solid rgba(201,168,76,.3)", borderRadius: "20px", color: "var(--gold)", fontSize: ".7rem", fontWeight: 700, textDecoration: "none", transition: "background .2s", display: "inline-block" },
                           onMouseOver: e => e.currentTarget.style.background = "rgba(201,168,76,.2)",
-                          onMouseOut: e => e.currentTarget.style.background = "rgba(201,168,76,.1)"
-                        }, "📄 Veure Calendari Oficial (PDF)")
+                          onMouseOut:  e => e.currentTarget.style.background = "rgba(201,168,76,.1)"
+                        }, "📄 Veure Calendari Oficial (PDF)"),
                       ),
+
+                      /* Llegenda EE */
+                      h("div", { style: { display: "flex", alignItems: "center", gap: 8, marginBottom: 18, padding: "8px 14px", background: "rgba(201,168,76,.04)", border: "1px solid rgba(201,168,76,.1)", borderRadius: 8, width: "fit-content" } },
+                        h("span", { className: "cc-badge-ee" }, "EE"),
+                        h("span", { style: { fontSize: ".62rem", color: "rgba(253,246,227,.45)", fontFamily: "Crimson Pro, serif", fontStyle: "italic" } }, "Escuadra Especial (Capitán, Alférez o Mig)"),
+                      ),
+
+                      /* Grid de tarjetes */
                       entraetes.length > 0
                         ? h("div", { className: "countdown-grid" },
                             entraetes.map((f, i) => {
@@ -955,43 +1329,51 @@
                               const dn = dayNum(f.fecha);
                               const badge = daysUntil(f.fecha);
                               const isToday = badge === 'AVUI';
-                              const agenda = ENTRAETES_INFO[f.fecha]; // Mini agenda events
-                              
-                              return h(motion.div, { key: f.fecha,
-                                initial: { opacity: 0, y: 16, scale: .95 },
+                              const agenda = ENTRAETES_INFO[f.fecha]; // pot ser undefined
+
+                              return h(motion.div, {
+                                key: f.fecha,
+                                className: agenda ? "countdown-card has-agenda" : "countdown-card",
+                                initial: { opacity: 0, y: 16, scale: .96 },
                                 whileInView: { opacity: 1, y: 0, scale: 1 },
                                 viewport: { once: true },
-                                transition: { duration: .4, delay: i * .04, ease: [.25,.1,.25,1] },
+                                transition: { duration: .42, delay: i * .05, ease: [.25,.1,.25,1] },
+                                style: isToday ? { borderColor: 'var(--gold)', boxShadow: '0 0 24px rgba(201,168,76,.12)' } : {},
                               },
-                                h("div", { className: "countdown-card", style: isToday ? { borderColor: 'var(--gold)', boxShadow: '0 0 20px rgba(201,168,76,.1)' } : {} },
-                                  // Top line: day + icon
-                                  h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 } },
+
+                                /* ── Cabeçalera meteorológica ── */
+                                h("div", { className: "cc-meteo-header" },
+                                  h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 } },
                                     h("div", null,
                                       h("div", { className: "cc-weekday" }, info.weekday),
                                       h("div", { className: "cc-day" }, dn),
                                     ),
-                                    h("div", { className: "cc-icon" }, f.icono || "🌡️"),
+                                    h("div", { style: { display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 4 } },
+                                      h("div", { style: { fontSize: "1.5rem", lineHeight: 1 } }, f.icono || "🌡️"),
+                                      h("div", { style: { fontSize: ".42rem", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: isToday ? '#fff' : 'rgba(201,168,76,.45)', background: isToday ? 'var(--red)' : 'rgba(201,168,76,.06)', padding: '2px 8px', borderRadius: 10 } }, badge),
+                                    ),
                                   ),
-                                  // Temp + prob row
                                   h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } },
                                     h("div", { className: "cc-temp" }, f.temp_max !== "N/D" ? f.temp_max + "°" : "—"),
                                     h("div", { className: "cc-prob", style: { color: col } }, f.prob !== "N/D" ? f.prob + "% pluja" : ""),
                                   ),
-                                  // Badge (today / days left)
-                                  h("div", { style: { marginTop: 8, fontSize: ".42rem", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: isToday ? '#fff' : 'rgba(201,168,76,.45)', background: isToday ? 'var(--red)' : 'rgba(201,168,76,.06)', alignSelf: 'flex-start', padding: '2px 8px', borderRadius: 10 } }, badge),
-                                  
-                                  // Mini Agenda (if available)
-                                  agenda && h("div", { style: { marginTop: 12, paddingTop: 12, borderTop: "1px dashed rgba(201,168,76,.15)" } },
-                                    agenda.map((ag, idx) => h("div", { key: idx, style: { marginBottom: 8 } },
-                                      h("div", { style: { fontSize: ".55rem", fontWeight: 700, color: "var(--gold)", textTransform: "uppercase", letterSpacing: ".1em", marginBottom: 4 } }, "📍 " + ag.carrer),
-                                      ag.desfilades.map((df, j) => h("div", { key: j, style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 } },
-                                        h("span", { style: { fontSize: ".65rem", color: "rgba(253,246,227,.45)", fontFamily: "monospace" } }, "[" + df.hora + "]"),
-                                        h("span", { style: { fontSize: ".75rem", color: "var(--cream)", fontWeight: 600 } }, df.fila),
-                                        df.ee && h("span", { style: { fontSize: ".45rem", fontWeight: 800, background: "linear-gradient(135deg, var(--gold), var(--gold-dark))", color: "var(--dark)", padding: "2px 5px", borderRadius: 3, marginLeft: "auto", boxShadow: "0 2px 4px rgba(201,168,76,.2)" } }, "EE")
-                                      ))
-                                    ))
+                                  /* Context de l'entraeta (sub-text del dia) */
+                                  h("div", { style: { marginTop: 6, fontFamily: "Crimson Pro, serif", fontStyle: "italic", fontSize: ".72rem", color: "rgba(253,246,227,.4)" } }, info.event),
+                                ),
+
+                                /* ── Divisor elegant (só si hi ha agenda) ── */
+                                agenda && h("div", { className: "cc-divider" }),
+
+                                /* ── Zona de l'agenda ── */
+                                agenda && h("div", { className: "cc-agenda" },
+                                  agenda.map((ag, idx) =>
+                                    h(React.Fragment, { key: idx },
+                                      idx > 0 && h("div", { className: "cc-carrer-sep" }),
+                                      h(AgendaCarrer, { carrer: ag.carrer, desfilades: ag.desfilades }),
+                                    )
                                   )
-                                )
+                                ),
+
                               );
                             })
                           )
@@ -1003,7 +1385,7 @@
                     )
                   ),
 
-                  // ── Meteograma ──
+                  /* ── Meteograma ── */
                   meteo.mapa_url && meteo.mapa_url !== "N/D" &&
                     h(FadeIn, { delay: .4 },
                       h("div", { style: { background: "var(--dark-card)", border: "1px solid rgba(201,168,76,.18)", borderRadius: 16, padding: 20, marginTop: 36 } },
@@ -1034,14 +1416,12 @@
             )
           ),
           h("div", { style: { display: "flex", gap: 32, flexWrap: "wrap" } },
-            // Dots
             h("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", minWidth: 60 } },
               TIMELINE.map((t, i) => h(React.Fragment, { key: t.id },
                 h(motion.div, { className: "tl-dot" + (act === i ? " active" : ""), onClick: () => setAct(i), whileTap: { scale: .92 }, title: t.titol }, t.emoji),
                 i < TIMELINE.length - 1 && h("div", { className: "tl-line", style: { height: 64 } }),
               ))
             ),
-            // Card
             h("div", { style: { flex: 1, minWidth: 280 } },
               h(AnimatePresence, { mode: "wait" },
                 h(motion.div, { key: act,
@@ -1069,7 +1449,6 @@
                   )
                 )
               ),
-              // Day pills
               h("div", { style: { display: "flex", gap: 8, marginTop: 20, flexWrap: "wrap" } },
                 TIMELINE.map((t, i) =>
                   h("button", { key: t.id, onClick: () => setAct(i),
@@ -1166,7 +1545,7 @@
         );
       }
 
-      // ────────────────── GALERIA (PHOTOS ONLY) ──────────────────
+      // ────────────────── GALERIA ──────────────────
       function GallerySection() {
         return h("section", { id: "galeria", style: { padding: "88px 24px", maxWidth: 1100, margin: "0 auto" } },
           h(FadeIn, null,
@@ -1193,7 +1572,6 @@
         return h("footer", null,
           h("div", { style: { maxWidth: 1100, margin: "0 auto" } },
             h("div", { style: { display: "flex", flexWrap: "wrap", gap: 48, justifyContent: "space-between", marginBottom: 52 } },
-              // Col 1 — Brand + Legal
               h("div", { style: { flex: "1 1 280px", minWidth: 220 } },
                 h("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 18 } },
                   h("img", { src: "./logo.png", alt: "Logo", style: { width: 32, height: 32, borderRadius: "50%", objectFit: "cover", border: "1px solid rgba(201,168,76,.25)", background: "var(--dark2)" } }),
@@ -1208,7 +1586,6 @@
                   ),
                 ),
               ),
-              // Col 2 — Useful links
               h("div", { style: { flex: "0 1 210px" } },
                 h("div", { style: { fontSize: ".5rem", fontWeight: 700, letterSpacing: ".26em", textTransform: "uppercase", color: "rgba(201,168,76,.45)", marginBottom: 18 } }, "Enllaços Útils"),
                 [
@@ -1225,7 +1602,6 @@
                   }, "→ " + label)
                 ),
               ),
-              // Col 3 — Data sources
               h("div", { style: { flex: "0 1 200px" } },
                 h("div", { style: { fontSize: ".5rem", fontWeight: 700, letterSpacing: ".26em", textTransform: "uppercase", color: "rgba(201,168,76,.45)", marginBottom: 18 } }, "Fonts de Dades"),
                 ["AVAMET · c27m009e08", "Open-Meteo API", "Meteociel GEFS", "IA Generativa"].map(l =>
@@ -1236,15 +1612,12 @@
                 ),
               ),
             ),
-            // Divider
             h("div", { style: { height: 1, background: "linear-gradient(90deg, transparent, rgba(201,168,76,.12), transparent)", marginBottom: 28 } }),
-            // Bottom
             h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14, marginBottom: 28 } },
               h("p", { style: { fontSize: ".55rem", color: "rgba(253,246,227,.18)", letterSpacing: ".1em" } },
                 "© 2026 MeteoFestes2026 · Dades: AVAMET · Open-Meteo · Meteociel"
               ),
             ),
-            // Final message
             h("div", { style: { textAlign: "center", paddingTop: 6 } },
               h("p", { style: { fontFamily: "Crimson Pro, serif", fontStyle: "italic", color: "#c9a84c", fontSize: "1.18rem", letterSpacing: ".03em" } },
                 "✦ Vítol al Patró Sant Jordi! ✦"
