@@ -1,6 +1,52 @@
 {
-  "temp": "N/D",
-  "hum": "8",
+  "temp": 11.9,
+  "hum": 84,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041206/graphe3_1000___-0.472_38.696_.gif",
-  "fecha": "2026-04-12T13:22:18.227Z"
+  "fiestas": [
+    {
+      "dia": "Viernes 24 - Entrada de Moros",
+      "fecha": "2026-04-24",
+      "temp_max": 24.8,
+      "icono": "🌦️",
+      "consejo": "👕 Manga corta",
+      "disponible": true
+    },
+    {
+      "dia": "Sábado 25 - Día de San Jorge",
+      "fecha": "2026-04-25",
+      "temp_max": 14.8,
+      "icono": "🌦️",
+      "consejo": "🧣 Coge la manta",
+      "disponible": true
+    },
+    {
+      "dia": "Domingo 26 - Entrada de Cristianos",
+      "fecha": "2026-04-26",
+      "temp_max": 20.2,
+      "icono": "🌦️",
+      "consejo": "👕 Manga corta",
+      "disponible": true
+    },
+    {
+      "dia": "Lunes 27 - Día de la Patrona",
+      "fecha": "2026-04-27",
+      "temp_max": 17.5,
+      "icono": "🌤️",
+      "consejo": "🧣 Coge la manta",
+      "disponible": true
+    }
+  ],
+  "estacion": "Alcoi - c27m009e08",
+  "fuentes": {
+    "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
+    "meteograma": "https://www.avamet.org/mx-previsio.php?id=c27m009e08",
+    "prevision": "Open-Meteo API v1"
+  },
+  "estado": {
+    "temp_ok": true,
+    "hum_ok": true,
+    "mapa_ok": true,
+    "openmeteo_ok": true
+  },
+  "fecha": "2026-04-12T13:43:41.507Z"
 }
