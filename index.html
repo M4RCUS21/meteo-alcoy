@@ -352,9 +352,9 @@
         box-shadow: 0 10px 30px rgba(0,0,0,.4);
       }
 
-      /* Tarjeta WITH agenda: full width dins la grid (span 2 o tot) */
+      /* Tarjeta WITH agenda: full width dins la grid */
       .countdown-card.has-agenda {
-        grid-column: 1 / -1; /* Ocupa tota l'amplada disponible de la grid */
+        grid-column: 1 / -1; 
       }
 
       /* Cabeçalera meteorològica de la tarjeta */
@@ -605,248 +605,54 @@
 
       /* ═══════════════════════════════════════════════════════
          DATA — ENTRAETES INFO (COMPLET, reconstruït del PDF oficial)
-         Estructura: { "YYYY-MM-DD": [ { carrer, desfilades: [{hora, fila, ee?}] } ] }
          ═══════════════════════════════════════════════════════ */
       const ENTRAETES_INFO = {
-
-        "2026-04-12": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Guzmanes" },
-              { hora: "22:50", fila: "Mozárabes" },
-              { hora: "23:10", fila: "Berberiscos" },
-              { hora: "23:30", fila: "Almogávares" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Cordón" },
-              { hora: "23:00", fila: "Chano" },
-              { hora: "23:30", fila: "Muntanyesos" },
-              { hora: "00:00", fila: "Aragonesos" }
-            ]
-          }
+        "2026-04-08": [
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:50", fila: "Marrakesch" }, { hora: "23:10", fila: "Asturianos" }, { hora: "23:30", fila: "Andaluces" }] }
         ],
-
-        "2026-04-13": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Labradores" },
-              { hora: "22:50", fila: "Andaluces" },
-              { hora: "23:10", fila: "Abencerrajes" },
-              { hora: "23:30", fila: "Domingo Miques" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Llana" },
-              { hora: "23:00", fila: "Alcodianos" },
-              { hora: "23:30", fila: "Cruzados" },
-              { hora: "00:00", fila: "Aragonesos" }
-            ]
-          }
+        "2026-04-09": [
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Llana" }, { hora: "22:50", fila: "Alcodianos" }, { hora: "23:10", fila: "Cruzados" }, { hora: "23:30", fila: "Aragonesos" }] }
         ],
-
+        "2026-04-10": [
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Cordón" }, { hora: "22:50", fila: "Chano" }, { hora: "23:10", fila: "Muntanyesos" }, { hora: "23:30", fila: "Berberiscos" }, { hora: "00:30", fila: "Aragonesos" }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Cides" }, { hora: "23:00", fila: "Realistes" }, { hora: "23:30", fila: "Marrakesch" }, { hora: "00:00", fila: "Benimerines" }, { hora: "00:30", fila: "Vascos" }] }
+        ],
+        "2026-04-11": [
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Labradores" }, { hora: "22:50", fila: "Andaluces" }, { hora: "23:10", fila: "Abencerrajes" }, { hora: "23:30", fila: "Domingo Miques" }, { hora: "00:30", fila: "Mozárabes" }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Mudéjares" }, { hora: "23:00", fila: "Almogávares" }, { hora: "23:30", fila: "Navarros" }, { hora: "00:00", fila: "Verdes" }, { hora: "00:30", fila: "Guzmanes" }] }
+        ],
         "2026-04-14": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Marrakesch" },
-              { hora: "22:50", fila: "Asturianos" },
-              { hora: "23:10", fila: "Andaluces" },
-              { hora: "23:30", fila: "Berberiscos" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Mudéjares" },
-              { hora: "22:50", fila: "Cruzados" },
-              { hora: "23:10", fila: "Tomasinas" },
-              { hora: "23:30", fila: "Cides" }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "23:10", fila: "Mudéjares" }, { hora: "23:30", fila: "Cruzados" }] }
         ],
-
         "2026-04-15": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Guzmanes" },
-              { hora: "22:50", fila: "Asturianos" },
-              { hora: "23:10", fila: "Marrakesch" },
-              { hora: "23:30", fila: "Realistes" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Alcodianos" },
-              { hora: "22:50", fila: "Navarros" },
-              { hora: "23:10", fila: "Berberiscos" },
-              { hora: "23:30", fila: "Verdes" }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Alcodianos" }, { hora: "22:50", fila: "Abencerrajes" }, { hora: "23:10", fila: "Navarros" }, { hora: "23:30", fila: "Berberiscos" }] }
         ],
-
         "2026-04-16": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Judíos" },
-              { hora: "22:50", fila: "Realistes", ee: true },
-              { hora: "23:10", fila: "Almogávares" },
-              { hora: "23:30", fila: "Cides" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Tomasinas" },
-              { hora: "22:50", fila: "Mudéjares" },
-              { hora: "23:10", fila: "Almogávares" },
-              { hora: "23:30", fila: "Navarros" }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Guzmanes" }, { hora: "22:50", fila: "Asturianos" }, { hora: "23:10", fila: "Marrakesch" }, { hora: "23:30", fila: "Tomasinas" }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Almogávares" }, { hora: "22:50", fila: "Berberiscos" }, { hora: "23:30", fila: "Tomasinas" }] }
         ],
-
         "2026-04-17": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Magenta" },
-              { hora: "22:50", fila: "Vascos", ee: true },
-              { hora: "23:10", fila: "Marrakesch", ee: true },
-              { hora: "23:30", fila: "Verdes" },
-              { hora: "00:00", fila: "Mudéjares" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Muntanyesos" },
-              { hora: "23:00", fila: "Cruzados" },
-              { hora: "23:30", fila: "Cides" },
-              { hora: "00:00", fila: "Llana", ee: true }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Magenta" }, { hora: "22:50", fila: "Vascos" }, { hora: "23:10", fila: "Marrakesch", ee: true }, { hora: "23:30", fila: "Verdes", ee: true }, { hora: "00:30", fila: "Mudéjares" }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Muntanyesos" }, { hora: "23:00", fila: "Cruzados" }, { hora: "23:30", fila: "Cides" }, { hora: "00:00", fila: "Llana" }, { hora: "00:30", fila: "Andaluces" }] }
         ],
-
         "2026-04-18": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "ee Realistes", ee: true },
-              { hora: "22:50", fila: "ee Almogávares", ee: true },
-              { hora: "23:10", fila: "ee Asturianos", ee: true },
-              { hora: "23:30", fila: "ee Andaluces", ee: true }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Benimerines" },
-              { hora: "23:00", fila: "Domingo Miques" },
-              { hora: "23:30", fila: "Ligeros" },
-              { hora: "00:00", fila: "Judíos" },
-              { hora: "00:30", fila: "Tomasinas" }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Realistes", ee: true }, { hora: "22:50", fila: "Almogávares", ee: true }, { hora: "23:10", fila: "Asturianos", ee: true }, { hora: "23:30", fila: "Andaluces", ee: true }, { hora: "00:30", fila: "Benimerines" }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Domingo Miques" }, { hora: "23:00", fila: "Ligeros" }, { hora: "23:30", fila: "Judíos" }, { hora: "00:00", fila: "Tomasinas" }, { hora: "00:30", fila: "Labradores" }] }
         ],
-
-        "2026-04-19": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Labradores" },
-              { hora: "22:50", fila: "Guzmanes" },
-              { hora: "23:10", fila: "Berberiscos" },
-              { hora: "23:30", fila: "Ligeros" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Navarros" },
-              { hora: "22:50", fila: "Andaluces" },
-              { hora: "23:10", fila: "Realistes", ee: true },
-              { hora: "23:30", fila: "Verdes" }
-            ]
-          }
-        ],
-
         "2026-04-20": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Asturianos", ee: true },
-              { hora: "22:50", fila: "Realistes", ee: true },
-              { hora: "23:10", fila: "Marrakesch", ee: true },
-              { hora: "23:30", fila: "Verdes", ee: true }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Tomasinas" },
-              { hora: "22:50", fila: "Alcodianos" },
-              { hora: "23:10", fila: "Aragonesos" },
-              { hora: "23:30", fila: "Llana" }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Guzmanes" }, { hora: "22:50", fila: "Realistes" }, { hora: "23:10", fila: "Verdes" }, { hora: "23:30", fila: "Primers Trons" }] }
         ],
-
         "2026-04-21": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Andaluces", ee: true },
-              { hora: "22:50", fila: "Magenta" },
-              { hora: "23:10", fila: "Realistes" },
-              { hora: "23:30", fila: "Verdes" },
-              { hora: "23:50", fila: "Primers Trons" }
-            ]
-          },
-          {
-            carrer: "País Valencià",
-            desfilades: [
-              { hora: "22:30", fila: "Marrakesch" },
-              { hora: "22:50", fila: "Benimerines" },
-              { hora: "23:10", fila: "Vascos" },
-              { hora: "23:30", fila: "Andaluces" }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Berberiscos" }, { hora: "22:50", fila: "Ligeros" }, { hora: "23:10", fila: "Navarros" }, { hora: "23:30", fila: "Andaluces" }] }
         ],
-
         "2026-04-22": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Labradores" },
-              { hora: "22:50", fila: "Berberiscos" },
-              { hora: "23:10", fila: "Ligeros" },
-              { hora: "23:30", fila: "Navarros" },
-              { hora: "00:30", fila: "Andaluces" }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Judíos" }, { hora: "22:50", fila: "Realistes" }, { hora: "23:10", fila: "Almogávares", ee: true }, { hora: "23:30", fila: "Cides" }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "23:10", fila: "Magenta" }] }
         ],
-
         "2026-04-23": [
-          {
-            carrer: "Sant Nicolau",
-            desfilades: [
-              { hora: "22:30", fila: "Andaluces" },
-              { hora: "23:00", fila: "Marrakesch", ee: true },
-              { hora: "23:30", fila: "Realistes", ee: true },
-              { hora: "00:00", fila: "Almogávares", ee: true }
-            ]
-          }
+          { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Asturianos", ee: true }, { hora: "22:50", fila: "Realistes", ee: true }, { hora: "23:10", fila: "Marrakesch", ee: true }, { hora: "23:30", fila: "Verdes", ee: true }, { hora: "23:50", fila: "Andaluces", ee: true }] },
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Tomasinas" }, { hora: "23:10", fila: "Alcodianos" }, { hora: "23:30", fila: "Aragonesos" }, { hora: "23:50", fila: "Llana" }] }
         ]
-
       };
 
       /* ═══════════════════════════════════════════════════════
@@ -940,7 +746,7 @@
       ];
 
       /* ═══════════════════════════════════════════════════════
-         DATA — GALLERY
+         DATA — GALLERY (photos only, from asjordi.org)
          ═══════════════════════════════════════════════════════ */
       const GALLERY = [
         "https://www.asjordi.org/upload/images/showroom/ano-2025/1481.jpg",
@@ -984,7 +790,7 @@
       }
 
       /* ═══════════════════════════════════════════════════════
-         COMPONENT: AgendaCarrer — renderitza un carrer amb els seus desfiles
+         COMPONENT: AgendaCarrer
          ═══════════════════════════════════════════════════════ */
       function AgendaCarrer({ carrer, desfilades }) {
         return h("div", null,
@@ -996,7 +802,7 @@
           /* Grid de desfiles */
           h("div", { className: "cc-desfilades-grid" },
             desfilades.map((df, i) => {
-              /* Neteja el prefix "ee " del nom si existeix (és redundant amb el badge) */
+              /* Neteja el prefix "ee " del nom si existeix */
               const nomNet = df.fila.replace(/^ee\s+/i, "");
               return h(motion.div, {
                 key: i,
@@ -1157,10 +963,17 @@
           const d = parseDateMidnight(f.fecha);
           return d.getDate() >= 24 && d.getDate() <= 27 && d.getMonth() === 3;
         });
+        
         const today = getTodayMidnight();
+        
+        // ── Filter logic ──
+        // Ara només mostrarem les targetes de "Entraetes" si eixe dia té alguna programació a l'agenda.
+        // D'aquesta manera, els dies buits (com el 12 o el 13) no apareixen.
         const entraetes = allDays.filter(f => {
           const d = parseDateMidnight(f.fecha);
-          return d.getDate() >= 12 && d.getDate() <= 23 && d.getMonth() === 3 && d >= today;
+          const isEntraetaPeriod = d.getDate() >= 6 && d.getDate() <= 23 && d.getMonth() === 3;
+          const hasAgenda = !!ENTRAETES_INFO[f.fecha];
+          return isEntraetaPeriod && hasAgenda && d >= today;
         });
 
         function probColor(prob) {
