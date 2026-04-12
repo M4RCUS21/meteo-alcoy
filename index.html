@@ -50,23 +50,37 @@
         </footer>
     </div>
 
-    <script>
+<script>
         async function updateMeteo() {
             try {
-                // El ?v= evita que el móvil guarde la versión vieja del archivo
+                // El ?v= evita que el navegador guarde la versión vieja (caché)
                 const res = await fetch('datos.json?v=' + Date.now());
-                const data = await response = await res.json();
                 
+                // Si el archivo no existe o da error, paramos
+                if (!res.ok) throw new Error('No se pudo cargar el JSON');
+                
+                const data = await res.json(); // <--- LINEA CORREGIDA
+                
+                // Ponemos los datos en la pantalla
                 document.getElementById('temp').innerText = data.temp || '--';
                 document.getElementById('hum').innerText = data.hum || '--';
                 document.getElementById('mapa').src = data.mapa_url;
                 
+                // Formateamos la fecha para que sea legible en España
                 const fecha = new Date(data.fecha);
                 document.getElementById('fecha').innerText = fecha.toLocaleString('es-ES');
-            } catch (e) { console.error(e); }
+                
+            } catch (e) { 
+                console.error("Error en la carga:", e);
+                document.getElementById('fecha').innerText = "Error cargando datos...";
+            }
         }
+
+        // Ejecutar nada más abrir la web
         updateMeteo();
-        setInterval(updateMeteo, 300000); // Se actualiza cada 5 min si tienen la web abierta
+
+        // Recargar automáticamente cada 5 minutos
+        setInterval(updateMeteo, 300000);
     </script>
 </body>
 </html>
