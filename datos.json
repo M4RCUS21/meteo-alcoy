@@ -1,7 +1,7 @@
 {
-  "temp": 11.6,
-  "hum": 86,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041206/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 11.4,
+  "hum": 85,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041212/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Domingo 12 · Entraetes (desfiles nocturnos)",
@@ -186,5 +186,5 @@
     "mapa_ok": true,
     "openmeteo_ok": true
   },
-  "fecha": "2026-04-12T14:42:47.637Z"
+  "fecha": "2026-04-12T17:21:23.963Z"
 }
