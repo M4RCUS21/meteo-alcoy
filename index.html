@@ -29,6 +29,10 @@
       ::-webkit-scrollbar { width: 5px; }
       ::-webkit-scrollbar-track { background: var(--dark); }
       ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }
+      
+      /* Amagar scrollbar pel modal horitzontal */
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+      .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
       /* NAVBAR */
       #navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; transition: background .4s, padding .4s, backdrop-filter .4s, box-shadow .4s; padding: 16px 0; }
@@ -57,7 +61,7 @@
       .hero-glass img { width: 85%; height: 85%; object-fit: cover; border-radius: 50%; }
       @keyframes heroFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
       .hero-float { animation: heroFloat 5s ease-in-out infinite; }
-      @keyframes glowPulse { 0%, 100% { text-shadow: 0 0 20px rgba(201,168,76,.12); } 50% { text-shadow: 0 0 50px rgba(201,168,76,.22); } }
+      @keyframes glowPulse { 0%, 100% { text-shadow: 0 0 20px rgba(201,168,76,.12); } 50%      { text-shadow: 0 0 50px rgba(201,168,76,.22); } }
       .glow { animation: glowPulse 4s ease-in-out infinite; }
       .gold-div { height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.25), transparent); }
 
@@ -87,12 +91,9 @@
       .hero-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 20%, rgba(201,168,76,.06), transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(204,0,0,.03), transparent 50%); pointer-events: none; }
       .hero-card::after { content: ''; position: absolute; top: -1px; left: 20%; right: 20%; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.5), transparent); }
       .hero-card:hover { transform: translateY(-6px) scale(1.015); border-color: rgba(201,168,76,.55); box-shadow: 0 18px 50px rgba(0,0,0,.5), 0 0 40px rgba(201,168,76,.08), inset 0 0 30px rgba(201,168,76,.02); }
-
-      /* OUT-OF-RANGE: border puntejat, fons més fosc, hover suau */
       .hero-card.out-of-range { border-style: dashed; border-color: rgba(201,168,76,.16); background: linear-gradient(145deg, rgba(18,12,7,.7), rgba(10,7,4,.82)); }
       .hero-card.out-of-range::after { background: linear-gradient(90deg, transparent, rgba(201,168,76,.14), transparent); }
       .hero-card.out-of-range:hover { transform: translateY(-3px) scale(1.005); border-color: rgba(201,168,76,.26); box-shadow: 0 8px 22px rgba(0,0,0,.35); }
-
       .hero-card .hc-day { font-family: "Playfair Display", serif; font-size: 3.4rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
       .hero-card .hc-icon { font-size: 2.8rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,.4)); line-height: 1; }
       .hero-card .hc-temp { font-family: "Playfair Display", serif; font-size: 2.6rem; font-weight: 900; color: var(--cream); line-height: 1; }
@@ -101,19 +102,12 @@
       .hero-card .hc-stat { background: rgba(201,168,76,.06); border: 1px solid rgba(201,168,76,.12); border-radius: 10px; padding: 10px 8px; text-align: center; }
       .hero-card .hc-stat-label { font-size: .42rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: rgba(201,168,76,.45); margin-bottom: 3px; }
       .hero-card .hc-stat-val { font-family: "Playfair Display", serif; font-size: 1.05rem; font-weight: 700; color: var(--cream); }
-      /* Stat N/D: guió més petit i molt atenuat */
       .hero-card .hc-stat-val.nd { opacity: .28; font-size: .82rem; letter-spacing: .18em; }
       .hero-card .hc-analysis { font-family: "Crimson Pro", serif; font-size: .82rem; line-height: 1.6; color: rgba(253,246,227,.58); border-left: 3px solid; padding-left: 12px; }
-      /* Anàlisi en mode avís: italic, petit, color daurat molt tènue */
       .hero-card .hc-analysis.nd-warning { font-size: .72rem; font-style: italic; color: rgba(253,246,227,.32); border-left-color: rgba(201,168,76,.16) !important; }
-
-      /* Pill "Aviat" */
       .soon-pill { display: inline-flex; align-items: center; gap: 4px; font-size: .4rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: rgba(201,168,76,.42); background: rgba(201,168,76,.05); border: 1px dashed rgba(201,168,76,.18); padding: 3px 9px; border-radius: 20px; white-space: nowrap; }
-
-      /* Icona espera animada */
       .waiting-icon { display: inline-block; animation: waitFloat 3.5s ease-in-out infinite; opacity: .5; }
       @keyframes waitFloat { 0%,100% { transform: translateY(0) scale(1); opacity: .45; } 50% { transform: translateY(-3px) scale(1.06); opacity: .65; } }
-
       .hero-cards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
       @media (max-width: 768px) { .hero-cards-grid { grid-template-columns: 1fr; } .hero-card .hc-day { font-size: 2.6rem; } .hero-card .hc-temp { font-size: 2rem; } .hero-card .hc-icon { font-size: 2.2rem; } }
 
@@ -123,7 +117,6 @@
       .countdown-card { position: relative; background: rgba(22,16,10,.68); border: 1px solid rgba(201,168,76,.12); border-radius: 14px; overflow: hidden; transition: transform .28s cubic-bezier(.25,.1,.25,1), border-color .28s, box-shadow .28s; display: flex; flex-direction: column; }
       .countdown-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.22), transparent); }
       .countdown-card:hover { transform: translateY(-4px); border-color: rgba(201,168,76,.3); box-shadow: 0 10px 30px rgba(0,0,0,.4); }
-      /* Countdown out-of-range */
       .countdown-card.out-of-range { border-style: dashed; border-color: rgba(201,168,76,.09); background: rgba(14,9,5,.55); }
       .countdown-card.out-of-range:hover { transform: translateY(-2px); border-color: rgba(201,168,76,.18); box-shadow: 0 5px 14px rgba(0,0,0,.22); }
       .countdown-card.has-agenda { grid-column: 1 / -1; }
@@ -144,13 +137,15 @@
       .countdown-card .cc-icon { font-size: 1.45rem; }
       .countdown-card .cc-weekday { font-size: .42rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: rgba(201,168,76,.45); }
       .countdown-card .cc-temp { font-family: "Playfair Display", serif; font-size: 1.15rem; font-weight: 700; color: var(--cream); }
-      /* Temperatura N/D en countdown */
       .countdown-card .cc-temp.nd { opacity: .25; font-size: .95rem; }
       .countdown-card .cc-prob { font-size: .65rem; font-weight: 600; }
-      /* Texte N/D sota la capçalera de la countdown-card */
       .cc-nd-hint { font-family: "Crimson Pro", serif; font-size: .68rem; font-style: italic; color: rgba(253,246,227,.26); padding: 7px 10px; border-top: 1px solid rgba(201,168,76,.06); margin-top: 4px; line-height: 1.5; }
       .countdown-empty { text-align: center; padding: 44px 20px; border: 1px dashed rgba(201,168,76,.15); border-radius: 14px; background: rgba(22,16,10,.3); }
       @media (max-width: 600px) { .countdown-grid { grid-template-columns: 1fr; } .countdown-card.has-agenda { grid-column: 1; } .cc-desfilades-grid { grid-template-columns: 1fr 1fr; } }
+
+      /* MODAL HOURLY */
+      .modal-card { background: rgba(22,16,10,.95); border: 1px solid rgba(201,168,76,.3); box-shadow: 0 24px 50px rgba(0,0,0,.5); }
+      .hourly-card { background: rgba(255,255,255,.03); border: 1px solid rgba(201,168,76,.1); }
 
       /* TIMELINE */
       .tl-dot { width: 50px; height: 50px; border-radius: 50%; background: var(--dark2); border: 2px solid var(--gold-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; transition: all .3s; cursor: pointer; }
@@ -197,7 +192,6 @@
         return isND(f.temp_max) && (f.icono === '❓' || isND(f.icono));
       }
 
-      /* Substitueix ❓ per 🔮 animat */
       function SmartIcon({ f, fontSize }) {
         if (f.icono === '❓' || isOutOfRange(f)) {
           return h('span', { className: 'waiting-icon', style: { fontSize: fontSize || 'inherit' } }, '🔮');
@@ -205,7 +199,6 @@
         return h('span', { style: { fontSize: fontSize || 'inherit' } }, f.icono || '🌡️');
       }
 
-      /* Trunca l'anàlisi: si conté avís N/D, retorna un text curt i elegant */
       function resolveAnalisis(raw) {
         if (!raw) return { nd: false, text: '' };
         const isWarning = raw.includes('⚠️') || raw.includes('no disponibles') || raw.includes('temporalment') || raw.includes('rango');
@@ -389,6 +382,8 @@
       /* ═══ METEO ═══ */
       function MeteoSection() {
         const [meteo, setMeteo] = useState(null);
+        const [selectedDay, setSelectedDay] = useState(null); // ESTADO PARA EL MODAL
+
         useEffect(() => { fetch("./datos.json?v="+Date.now()).then(r=>r.json()).then(setMeteo).catch(()=>setMeteo(null)); }, []);
 
         function getTodayMidnight() { const n=new Date(); return new Date(n.getFullYear(),n.getMonth(),n.getDate()); }
@@ -404,7 +399,7 @@
         function dayNum(f) { return parseDateMidnight(f).getDate(); }
         function daysUntil(f) { const d=Math.ceil((parseDateMidnight(f)-today)/(1000*60*60*24)); if(d===0) return 'AVUI'; if(d===1) return 'DEMÀ'; return d+' dies'; }
 
-        return h("section", { id:"meteo", style:{ padding:"88px 24px", background:"rgba(10,6,2,.55)" } },
+        return h("section", { id:"meteo", style:{ padding:"88px 24px", background:"rgba(10,6,2,.55)", position: "relative" } },
           h("div", { style:{ maxWidth:980, margin:"0 auto" } },
             h(FadeIn, null, h("div", { style:{ textAlign:"center", marginBottom:48 } }, h("div", { className:"sec-label" }, "AVAMET · ECMWF · AROME · GEFS"), h("h2", { className:"sec-title" }, "Meteo ", h("em", null, "Festes")))),
             h(FadeIn, { delay:.1 },
@@ -442,15 +437,21 @@
                   const dn = dayNum(f.fecha);
                   const badge = daysUntil(f.fecha);
                   const anal = resolveAnalisis(f.analisis_tecnico);
-                  return h(motion.div, { key:f.fecha, initial:{ opacity:0, y:30, scale:.96 }, whileInView:{ opacity:1, y:0, scale:1 }, viewport:{ once:true }, transition:{ duration:.6, delay:i*.1, ease:[.25,.1,.25,1] } },
+                  return h(motion.div, { 
+                    key:f.fecha, 
+                    initial:{ opacity:0, y:30, scale:.96 }, 
+                    whileInView:{ opacity:1, y:0, scale:1 }, 
+                    viewport:{ once:true }, 
+                    transition:{ duration:.6, delay:i*.1, ease:[.25,.1,.25,1] },
+                    onClick: () => setSelectedDay(f), // CLICK AL MODAL
+                    style: { cursor: 'pointer' }
+                  },
                     h("div", { className:"hero-card"+(oor?" out-of-range":"") },
-                      /* Badge temporal */
                       h("div", { style:{ position:"absolute", top:14, right:16, zIndex:2, display:"flex", alignItems:"center", gap:6 } },
                         oor
                           ? h("div", { className:"soon-pill" }, "🔮 Aviat disponible")
                           : h("div", { style:{ fontSize:".42rem", fontWeight:800, letterSpacing:".15em", textTransform:"uppercase", padding:"3px 10px", borderRadius:20, background:badge==='AVUI'?'var(--red)':'rgba(201,168,76,.12)', color:badge==='AVUI'?'#fff':'var(--gold)', border:'1px solid '+(badge==='AVUI'?'var(--red)':'rgba(201,168,76,.22)') } }, badge)
                       ),
-                      /* Header */
                       h("div", { style:{ display:"flex", alignItems:"flex-end", justifyContent:"space-between", marginBottom:14, position:"relative", zIndex:1 } },
                         h("div", { style:{ display:"flex", alignItems:"center", gap:10 } },
                           h("div", null, h("div", { className:"hc-weekday" }, info.weekday), h("div", { className:"hc-day", style:oor?{ opacity:.55 }:{} }, dn)),
@@ -461,9 +462,7 @@
                           h(SmartIcon, { f, fontSize: oor?'2.2rem':'2.8rem' }),
                         )
                       ),
-                      /* Nom event */
                       h("div", { className:"hc-event", style:{ marginBottom:14, position:"relative", zIndex:1, opacity:oor?.6:1 } }, info.event),
-                      /* Stats */
                       h("div", { style:{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:8, marginBottom:14, position:"relative", zIndex:1 } },
                         [["Màx", oor?"—":isND(f.temp_max)?"—":f.temp_max+"°C"],
                          ["Prob. Pluja", oor?"—":isND(f.prob)?"—":f.prob+"%"],
@@ -474,7 +473,6 @@
                           )
                         )
                       ),
-                      /* Anàlisi */
                       h("div", { className:"hc-analysis"+(anal.nd?" nd-warning":""), style:{ borderColor:anal.nd?'rgba(201,168,76,.14)':col, position:"relative", zIndex:1 } }, anal.text)
                     )
                   );
@@ -510,9 +508,9 @@
                             key:f.fecha,
                             className:["countdown-card", agenda?"has-agenda":"", oor?"out-of-range":""].filter(Boolean).join(" "),
                             initial:{ opacity:0, y:16, scale:.96 }, whileInView:{ opacity:1, y:0, scale:1 }, viewport:{ once:true }, transition:{ duration:.42, delay:i*.05, ease:[.25,.1,.25,1] },
-                            style:isToday&&!oor?{ borderColor:'var(--gold)', boxShadow:'0 0 24px rgba(201,168,76,.12)' }:{}
+                            style: { cursor: 'pointer', ...(isToday&&!oor?{ borderColor:'var(--gold)', boxShadow:'0 0 24px rgba(201,168,76,.12)' }:{}) },
+                            onClick: () => setSelectedDay(f) // CLICK AL MODAL
                           },
-                            /* Header meteo */
                             h("div", { className:"cc-meteo-header" },
                               h("div", { style:{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:10 } },
                                 h("div", null, h("div", { className:"cc-weekday", style:oor?{ opacity:.45 }:{} }, info.weekday), h("div", { className:"cc-day", style:oor?{ opacity:.45 }:{} }, dn)),
@@ -524,16 +522,13 @@
                                   )
                                 )
                               ),
-                              /* Temp + prob: oculta etiquetes si N/D */
                               h("div", { style:{ display:"flex", justifyContent:"space-between", alignItems:"center" } },
                                 h("div", { className:"cc-temp"+(oor?" nd":"") }, oor?"—":isND(f.temp_max)?"—":f.temp_max+"°"),
                                 !oor && !isND(f.prob) && h("div", { className:"cc-prob", style:{ color:col } }, f.prob+"% pluja")
                               ),
                               h("div", { style:{ marginTop:6, fontFamily:"Crimson Pro, serif", fontStyle:"italic", fontSize:".72rem", color:oor?"rgba(253,246,227,.25)":"rgba(253,246,227,.4)" } }, info.event),
-                              /* Text avís N/D curt */
                               oor && anal.nd && h("div", { className:"cc-nd-hint" }, anal.text)
                             ),
-                            /* Agenda sempre visible si hi ha ENTRAETES_INFO */
                             agenda && h("div", { className:"cc-divider" }),
                             agenda && h("div", { className:"cc-agenda" },
                               agenda.map((ag,idx) => h(React.Fragment, { key:idx }, idx>0&&h("div", { className:"cc-carrer-sep" }), h(AgendaCarrer, { carrer:ag.carrer, desfilades:ag.desfilades })))
@@ -554,7 +549,61 @@
               )
             ) : h("div", { style:{ textAlign:"center", padding:60, color:"rgba(253,246,227,.28)", fontFamily:"Crimson Pro, serif", fontStyle:"italic", fontSize:"1.1rem" } },
               "Carregant dades meteorològiques...", h("br"), h("small", { style:{ fontSize:".7rem", marginTop:8, display:"block", letterSpacing:".1em" } }, "Assegura't que datos.json existeix al repositori")
+            ),
+
+            /* ── MODAL POR HORAS ── */
+            h(AnimatePresence, null,
+              selectedDay && h(motion.div, {
+                className: "fixed inset-0 z-[1001] flex items-center justify-center p-4",
+                style: { background: "rgba(0,0,0,.6)", backdropFilter: "blur(4px)" },
+                initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 },
+                onClick: () => setSelectedDay(null)
+              },
+                h(motion.div, {
+                  className: "modal-card rounded-2xl p-6 w-full max-w-lg relative overflow-hidden",
+                  initial: { y: 30, opacity: 0, scale: 0.95 },
+                  animate: { y: 0, opacity: 1, scale: 1 },
+                  exit: { y: 20, opacity: 0, scale: 0.95 },
+                  transition: { type: "spring", damping: 25, stiffness: 300 },
+                  onClick: (e) => e.stopPropagation() // Evita tancar si clica dins
+                },
+                  /* Botó Tancar */
+                  h("button", {
+                    className: "absolute top-5 right-5 text-[var(--gold)] hover:text-white transition-colors",
+                    onClick: () => setSelectedDay(null)
+                  }, 
+                    h("svg", { width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", stroke:"currentColor", strokeWidth:"2", strokeLinecap:"round" },
+                      h("path", { d:"M18 6L6 18M6 6l12 12" })
+                    )
+                  ),
+                  /* Cabecera Modal */
+                  h("div", { className: "mb-6 pr-6" },
+                    h("h3", { className: "font-serif text-xl font-bold text-[var(--cream)] mb-2" }, selectedDay.dia),
+                    selectedDay.modelo_fuente && selectedDay.modelo_fuente !== "N/D" && !isOutOfRange(selectedDay) &&
+                      h("span", { className: "model-badge " + selectedDay.modelo_fuente.toLowerCase() }, selectedDay.modelo_fuente)
+                  ),
+                  /* Contingut Hores */
+                  (!selectedDay.horas || selectedDay.horas.length === 0 || isOutOfRange(selectedDay)) ?
+                    h("p", { className: "font-crim italic text-[rgba(253,246,227,.5)] text-center py-8" },
+                      "La previsió detallada per hores encara no està disponible per a aquesta data. Les dades horàries s'activen 15 dies abans."
+                    ) :
+                    h("div", { className: "flex gap-3 overflow-x-auto hide-scrollbar snap-x pb-2 pt-1" },
+                      selectedDay.horas.map((hData, i) =>
+                        h("div", { key: i, className: "hourly-card flex flex-col items-center justify-center rounded-xl p-3 min-w-[80px] snap-center shrink-0" },
+                          h("span", { className: "font-mono text-[.7rem] text-[var(--gold)] mb-2" }, hData.hora),
+                          h("span", { className: "text-3xl mb-2" }, hData.icono),
+                          h("span", { className: "font-serif font-bold text-[1.2rem] text-[var(--cream)] leading-none" }, hData.temp !== "N/D" ? `${hData.temp}°` : "-"),
+                          h("div", { className: "flex flex-col items-center mt-2 opacity-80 gap-1" },
+                            hData.prob > 0 && h("span", { className: "text-[.6rem] font-bold text-[#60a5fa] leading-none" }, `${hData.prob}%`),
+                            hData.litros > 0 && h("span", { className: "text-[.55rem] text-blue-200 leading-none" }, `${hData.litros}mm`)
+                          )
+                        )
+                      )
+                    )
+                )
+              )
             )
+
           )
         );
       }
