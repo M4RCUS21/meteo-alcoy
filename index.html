@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeteoFestes2026 · Moros i Cristians d'Alcoi</title>
-    <meta name="description" content="Consulta meteorològica per a les Festes de Moros i Cristians d'Alcoi 2026. Previsions actualitzades amb dades d'AVAMET, Open-Meteo i Meteociel." />
+    <meta name="description" content="Consulta meteorològica per a les Festes de Moros i Cristians d'Alcoi 2026. Previsions actualitzades amb dades d'AVAMET, ECMWF i AROME." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -195,7 +195,7 @@
       .sec-title em { color: var(--gold); font-style: italic; }
 
       /* ═══════════════════════════════════════════════
-         IA PANEL
+         IA PANEL & BADGES
          ═══════════════════════════════════════════════ */
       .ia-panel {
         background: linear-gradient(135deg, rgba(35,26,14,.85), rgba(22,16,10,.92));
@@ -209,6 +209,27 @@
         width: 80%; height: 80%;
         background: radial-gradient(circle, rgba(201,168,76,.035), transparent 60%);
         pointer-events: none;
+      }
+      
+      .model-badge {
+        font-size: 0.42rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 2px 6px;
+        border-radius: 4px;
+        display: inline-block;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      }
+      .model-badge.ecmwf {
+        background: rgba(201, 168, 76, 0.15);
+        color: var(--gold-light);
+        border: 1px solid rgba(201, 168, 76, 0.3);
+      }
+      .model-badge.arome {
+        background: rgba(204, 0, 0, 0.15);
+        color: #ff6b6b;
+        border: 1px solid rgba(204, 0, 0, 0.3);
       }
 
       /* ═══════════════════════════════════════════════
@@ -324,7 +345,6 @@
         border-top: 1px solid rgba(201,168,76,.1);
       }
 
-      /* Grid principal: columnes adaptatives. Les tarjetes amb agenda s'expandixen */
       .countdown-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
@@ -332,7 +352,6 @@
         align-items: start;
       }
 
-      /* Tarjeta base */
       .countdown-card {
         position: relative;
         background: rgba(22,16,10,.68);
@@ -352,17 +371,14 @@
         box-shadow: 0 10px 30px rgba(0,0,0,.4);
       }
 
-      /* Tarjeta WITH agenda: full width dins la grid */
       .countdown-card.has-agenda {
         grid-column: 1 / -1; 
       }
 
-      /* Cabeçalera meteorològica de la tarjeta */
       .cc-meteo-header {
         padding: 16px 18px 14px;
       }
 
-      /* Divisor elegant entre meteo i agenda */
       .cc-divider {
         height: 1px;
         margin: 0 18px;
@@ -370,7 +386,6 @@
         flex-shrink: 0;
       }
 
-      /* Zona de l'agenda */
       .cc-agenda {
         padding: 14px 18px 16px;
         display: flex;
@@ -378,7 +393,6 @@
         gap: 14px;
       }
 
-      /* Cabeçalera de cada carrer */
       .cc-carrer-header {
         display: flex;
         align-items: center;
@@ -398,14 +412,12 @@
         line-height: 1;
       }
 
-      /* Grid interna de desfiles */
       .cc-desfilades-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 6px;
       }
 
-      /* Ítem individual de desfile */
       .cc-desfile-item {
         display: flex;
         align-items: center;
@@ -435,7 +447,6 @@
         flex: 1;
       }
 
-      /* Badge EE — prestige gold */
       .cc-badge-ee {
         display: inline-flex;
         align-items: center;
@@ -453,14 +464,12 @@
         white-space: nowrap;
       }
 
-      /* Separador entre carrers quan n'hi ha dos */
       .cc-carrer-sep {
         height: 1px;
         background: rgba(201,168,76,.08);
         margin: 2px 0;
       }
 
-      /* Cabeçalera meteo: dia + icon + temps */
       .countdown-card .cc-day {
         font-family: "Playfair Display", serif;
         font-size: 1.6rem; font-weight: 900; color: var(--cream); line-height: 1;
@@ -651,7 +660,7 @@
         ],
         "2026-04-23": [
           { carrer: "Sant Nicolau", desfilades: [{ hora: "22:30", fila: "Asturianos", ee: true }, { hora: "22:50", fila: "Realistes", ee: true }, { hora: "23:10", fila: "Marrakesch", ee: true }, { hora: "23:30", fila: "Verdes", ee: true }, { hora: "23:50", fila: "Andaluces", ee: true }] },
-          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Tomasinas" }, { hora: "23:10", fila: "Alcodianos" }, { hora: "23:30", fila: "Aragonesos entraeta dels palos" }, { hora: "23:50", fila: "Llana" }] }
+          { carrer: "País Valencià", desfilades: [{ hora: "22:30", fila: "Tomasinas" }, { hora: "23:10", fila: "Alcodianos" }, { hora: "23:30", fila: "Aragonesos" }, { hora: "23:50", fila: "Llana" }] }
         ]
       };
 
@@ -746,7 +755,7 @@
       ];
 
       /* ═══════════════════════════════════════════════════════
-         DATA — GALLERY (photos only, from asjordi.org)
+         DATA — GALLERY
          ═══════════════════════════════════════════════════════ */
       const GALLERY = [
         "https://www.asjordi.org/upload/images/showroom/ano-2025/1481.jpg",
@@ -776,7 +785,6 @@
         }, children);
       }
 
-      /* ─── Icona SVG de pin de carrer ─── */
       function IconPin() {
         return h("svg", {
           className: "cc-carrer-icon",
@@ -789,20 +797,14 @@
         );
       }
 
-      /* ═══════════════════════════════════════════════════════
-         COMPONENT: AgendaCarrer
-         ═══════════════════════════════════════════════════════ */
       function AgendaCarrer({ carrer, desfilades }) {
         return h("div", null,
-          /* Cabeçalera del carrer */
           h("div", { className: "cc-carrer-header" },
             h(IconPin),
             h("span", { className: "cc-carrer-name" }, carrer),
           ),
-          /* Grid de desfiles */
           h("div", { className: "cc-desfilades-grid" },
             desfilades.map((df, i) => {
-              /* Neteja el prefix "ee " del nom si existeix */
               const nomNet = df.fila.replace(/^ee\s+/i, "");
               return h(motion.div, {
                 key: i,
@@ -825,7 +827,6 @@
          C O M P O N E N T S
          ═══════════════════════════════════════════════════════ */
 
-      // ────────────────── NAVBAR ──────────────────
       function Navbar({ scrolled }) {
         const [open, setOpen] = useState(false);
         const go = (id) => { document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }); setOpen(false); };
@@ -873,7 +874,6 @@
         );
       }
 
-      // ────────────────── HERO ──────────────────
       function HeroSection() {
         const pts = Array.from({ length: 24 }, (_, i) => ({
           i, left: Math.random() * 100 + "%",
@@ -941,7 +941,6 @@
         );
       }
 
-      // ────────────────── METEO ──────────────────
       function MeteoSection() {
         const [meteo, setMeteo] = useState(null);
         useEffect(() => {
@@ -966,9 +965,6 @@
         
         const today = getTodayMidnight();
         
-        // ── Filter logic ──
-        // Ara només mostrarem les targetes de "Entraetes" si eixe dia té alguna programació a l'agenda.
-        // D'aquesta manera, els dies buits (com el 12 o el 13) no apareixen.
         const entraetes = allDays.filter(f => {
           const d = parseDateMidnight(f.fecha);
           const isEntraetaPeriod = d.getDate() >= 6 && d.getDate() <= 23 && d.getMonth() === 3;
@@ -1004,7 +1000,7 @@
 
             h(FadeIn, null,
               h("div", { style: { textAlign: "center", marginBottom: 48 } },
-                h("div", { className: "sec-label" }, "AVAMET · Open-Meteo · Meteociel"),
+                h("div", { className: "sec-label" }, "AVAMET · ECMWF · AROME · GEFS"),
                 h("h2", { className: "sec-title" }, "Meteo ", h("em", null, "Festes")),
               )
             ),
@@ -1016,7 +1012,7 @@
                   h("span", { style: { fontSize: ".58rem", fontWeight: 700, letterSpacing: ".22em", textTransform: "uppercase", color: "var(--gold)" } }, "Avís · Intel·ligència Artificial i Meteorologia"),
                 ),
                 h("p", { style: { fontFamily: "Crimson Pro, serif", fontSize: ".95rem", lineHeight: 1.72, color: "rgba(253,246,227,.75)", position: "relative", zIndex: 1 } },
-                  "Les previsions meteorològiques s'actualitzen cada dia. Les dades tècniques (AVAMET, Open-Meteo, Meteociel) van acompanyades d'una interpretació per Intel·ligència Artificial per traduir la informació a un llenguatge senzill. Cal advertir que estes són prediccions a futur; l'oratge mai es pot encertar al 100% i sovint és molt difícil d'interpretar amb exactitud. Segons s'acoste el dia de les festes, el pronòstic serà més precís."
+                  "Les previsions s'actualitzen cada hora. El sistema utilitza el model europeu ECMWF per a la tendència general, i canvia automàticament al model francés d'alta resolució AROME quan falten 3 dies per a oferir precisió quilomètrica. Aquestes dades són interpretades per IA per a adaptar-les al context de les festes (polvora, roba, etc.)."
                 ),
               )
             ),
@@ -1077,9 +1073,12 @@
                         h("div", { className: "hero-card" },
                           h("div", { style: { position: "absolute", top: 14, right: 16, fontSize: ".42rem", fontWeight: 800, letterSpacing: ".15em", textTransform: "uppercase", padding: "3px 10px", borderRadius: 20, background: badge === 'AVUI' ? 'var(--red)' : 'rgba(201,168,76,.12)', color: badge === 'AVUI' ? '#fff' : 'var(--gold)', border: '1px solid ' + (badge === 'AVUI' ? 'var(--red)' : 'rgba(201,168,76,.22)'), zIndex: 2 } }, badge),
                           h("div", { style: { display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: 14, position: "relative", zIndex: 1 } },
-                            h("div", null,
-                              h("div", { className: "hc-weekday" }, info.weekday),
-                              h("div", { className: "hc-day" }, dn),
+                            h("div", { style: { display: "flex", alignItems: "center", gap: 10 } },
+                              h("div", null,
+                                h("div", { className: "hc-weekday" }, info.weekday),
+                                h("div", { className: "hc-day" }, dn),
+                              ),
+                              f.modelo_fuente && f.modelo_fuente !== "N/D" && h("div", { className: "model-badge " + f.modelo_fuente.toLowerCase() }, f.modelo_fuente)
                             ),
                             h("div", { style: { display: "flex", alignItems: "flex-end", gap: 12 } },
                               h("div", { className: "hc-temp" }, f.temp_max !== "N/D" ? f.temp_max + "°" : "—"),
@@ -1104,12 +1103,11 @@
                   ),
 
                   /* ══════════════════════════════════════════════
-                     BLOC B: CALENDARI D'ENTRAETES (12–23) — PREMIUM
+                     BLOC B: CALENDARI D'ENTRAETES
                      ══════════════════════════════════════════════ */
                   h(FadeIn, { delay: .3 },
                     h("div", { className: "countdown-section" },
 
-                      /* Cabeçalera secció */
                       h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 16, marginBottom: 24 } },
                         h("div", { style: { display: "flex", alignItems: "center", gap: 12 } },
                           h("div", { style: { width: 4, height: 28, borderRadius: 2, background: "linear-gradient(180deg, rgba(201,168,76,.45), rgba(201,168,76,.12))" } }),
@@ -1127,13 +1125,11 @@
                         }, "📄 Veure Calendari Oficial (PDF)"),
                       ),
 
-                      /* Llegenda EE */
                       h("div", { style: { display: "flex", alignItems: "center", gap: 8, marginBottom: 18, padding: "8px 14px", background: "rgba(201,168,76,.04)", border: "1px solid rgba(201,168,76,.1)", borderRadius: 8, width: "fit-content" } },
                         h("span", { className: "cc-badge-ee" }, "EE"),
                         h("span", { style: { fontSize: ".62rem", color: "rgba(253,246,227,.45)", fontFamily: "Crimson Pro, serif", fontStyle: "italic" } }, "Escuadra Especial (Capitán, Alférez o Mig)"),
                       ),
 
-                      /* Grid de tarjetes */
                       entraetes.length > 0
                         ? h("div", { className: "countdown-grid" },
                             entraetes.map((f, i) => {
@@ -1142,7 +1138,7 @@
                               const dn = dayNum(f.fecha);
                               const badge = daysUntil(f.fecha);
                               const isToday = badge === 'AVUI';
-                              const agenda = ENTRAETES_INFO[f.fecha]; // pot ser undefined
+                              const agenda = ENTRAETES_INFO[f.fecha]; 
 
                               return h(motion.div, {
                                 key: f.fecha,
@@ -1153,8 +1149,6 @@
                                 transition: { duration: .42, delay: i * .05, ease: [.25,.1,.25,1] },
                                 style: isToday ? { borderColor: 'var(--gold)', boxShadow: '0 0 24px rgba(201,168,76,.12)' } : {},
                               },
-
-                                /* ── Cabeçalera meteorológica ── */
                                 h("div", { className: "cc-meteo-header" },
                                   h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 } },
                                     h("div", null,
@@ -1163,21 +1157,20 @@
                                     ),
                                     h("div", { style: { display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 4 } },
                                       h("div", { style: { fontSize: "1.5rem", lineHeight: 1 } }, f.icono || "🌡️"),
-                                      h("div", { style: { fontSize: ".42rem", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: isToday ? '#fff' : 'rgba(201,168,76,.45)', background: isToday ? 'var(--red)' : 'rgba(201,168,76,.06)', padding: '2px 8px', borderRadius: 10 } }, badge),
+                                      h("div", { style: { display: "flex", alignItems: "center", gap: 6 } },
+                                        f.modelo_fuente && f.modelo_fuente !== "N/D" && h("div", { className: "model-badge " + f.modelo_fuente.toLowerCase() }, f.modelo_fuente),
+                                        h("div", { style: { fontSize: ".42rem", fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", color: isToday ? '#fff' : 'rgba(201,168,76,.45)', background: isToday ? 'var(--red)' : 'rgba(201,168,76,.06)', padding: '2px 8px', borderRadius: 10 } }, badge)
+                                      ),
                                     ),
                                   ),
                                   h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } },
                                     h("div", { className: "cc-temp" }, f.temp_max !== "N/D" ? f.temp_max + "°" : "—"),
                                     h("div", { className: "cc-prob", style: { color: col } }, f.prob !== "N/D" ? f.prob + "% pluja" : ""),
                                   ),
-                                  /* Context de l'entraeta (sub-text del dia) */
                                   h("div", { style: { marginTop: 6, fontFamily: "Crimson Pro, serif", fontStyle: "italic", fontSize: ".72rem", color: "rgba(253,246,227,.4)" } }, info.event),
                                 ),
 
-                                /* ── Divisor elegant (só si hi ha agenda) ── */
                                 agenda && h("div", { className: "cc-divider" }),
-
-                                /* ── Zona de l'agenda ── */
                                 agenda && h("div", { className: "cc-agenda" },
                                   agenda.map((ag, idx) =>
                                     h(React.Fragment, { key: idx },
@@ -1186,7 +1179,6 @@
                                     )
                                   )
                                 ),
-
                               );
                             })
                           )
@@ -1216,7 +1208,6 @@
         );
       }
 
-      // ────────────────── TIMELINE ──────────────────
       function TimelineSection() {
         const [act, setAct] = useState(0);
         const it = TIMELINE[act];
@@ -1278,7 +1269,6 @@
         );
       }
 
-      // ────────────────── FILAES ──────────────────
       function FilaesSection() {
         const [fil, setFil] = useState("tot");
         const list = fil === "tot" ? FILAES : FILAES.filter(f => f.tipus === fil);
@@ -1328,7 +1318,6 @@
         );
       }
 
-      // ────────────────── CARTELL ──────────────────
       function CartelSection() {
         return h("section", { id: "cartell", style: { padding: "88px 24px" } },
           h("div", { style: { maxWidth: 720, margin: "0 auto" } },
@@ -1358,7 +1347,6 @@
         );
       }
 
-      // ────────────────── GALERIA ──────────────────
       function GallerySection() {
         return h("section", { id: "galeria", style: { padding: "88px 24px", maxWidth: 1100, margin: "0 auto" } },
           h(FadeIn, null,
@@ -1380,7 +1368,6 @@
         );
       }
 
-      // ────────────────── FOOTER ──────────────────
       function Footer() {
         return h("footer", null,
           h("div", { style: { maxWidth: 1100, margin: "0 auto" } },
@@ -1417,7 +1404,7 @@
               ),
               h("div", { style: { flex: "0 1 200px" } },
                 h("div", { style: { fontSize: ".5rem", fontWeight: 700, letterSpacing: ".26em", textTransform: "uppercase", color: "rgba(201,168,76,.45)", marginBottom: 18 } }, "Fonts de Dades"),
-                ["AVAMET · c27m009e08", "Open-Meteo API", "Meteociel GEFS", "IA Generativa"].map(l =>
+                ["AVAMET · c27m009e08", "ECMWF (Model Europeu)", "AROME (Alta resolució)", "IA Generativa"].map(l =>
                   h("div", { key: l, style: { fontSize: ".74rem", color: "rgba(253,246,227,.38)", marginBottom: 10, display: "flex", alignItems: "center", gap: 7 } },
                     h("div", { style: { width: 4, height: 4, borderRadius: "50%", background: "var(--gold-dark)", flexShrink: 0 } }),
                     l
@@ -1428,7 +1415,7 @@
             h("div", { style: { height: 1, background: "linear-gradient(90deg, transparent, rgba(201,168,76,.12), transparent)", marginBottom: 28 } }),
             h("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14, marginBottom: 28 } },
               h("p", { style: { fontSize: ".55rem", color: "rgba(253,246,227,.18)", letterSpacing: ".1em" } },
-                "© 2026 MeteoFestes2026 · Dades: AVAMET · Open-Meteo · Meteociel"
+                "© 2026 MeteoFestes2026 · Dades: AVAMET · ECMWF · AROME · GEFS"
               ),
             ),
             h("div", { style: { textAlign: "center", paddingTop: 6 } },
@@ -1440,9 +1427,6 @@
         );
       }
 
-      /* ═══════════════════════════════════════════════════════
-         APP ROOT
-         ═══════════════════════════════════════════════════════ */
       function App() {
         const [scrolled, setScrolled] = useState(false);
         useEffect(() => {
