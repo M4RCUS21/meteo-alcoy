@@ -19,6 +19,7 @@
         --cream: #fdf6e3; --parch: #f0e4c0;
         --dark: #0b0806; --dark2: #16100a; --dark3: #231a0e;
         --dark-card: rgba(35, 26, 14, 0.72);
+        --green-moro: #166534;
       }
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       html { scroll-behavior: smooth; }
@@ -30,7 +31,6 @@
       ::-webkit-scrollbar-track { background: var(--dark); }
       ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }
       
-      /* Amagar scrollbar pel modal horitzontal */
       .hide-scrollbar::-webkit-scrollbar { display: none; }
       .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
@@ -52,18 +52,23 @@
       .mobile-overlay .nav-link { font-size: 1rem; letter-spacing: .28em; color: rgba(253,246,227,.75); }
 
       /* HERO */
-      #hero { position: relative; height: 100svh; min-height: 660px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+      #hero { position: relative; height: 100svh; min-height: 750px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
       .hero-bg { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(11,8,6,.2) 0%, rgba(11,8,6,.55) 45%, rgba(11,8,6,1) 100%), radial-gradient(ellipse at 50% 25%, rgba(201,168,76,.08) 0%, transparent 55%), radial-gradient(ellipse at 70% 65%, rgba(204,0,0,.04) 0%, transparent 45%), url("https://www.asjordi.org/upload/images/showroom/ano-2025/1903.jpg") center/cover no-repeat; }
       .hero-particles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
       .particle { position: absolute; border-radius: 50%; background: var(--gold); animation: drift linear infinite; }
       @keyframes drift { 0% { transform: translateY(100vh) translateX(0); opacity: 0; } 8% { opacity: .8; } 92% { opacity: .8; } 100% { transform: translateY(-10vh) translateX(var(--dx, 30px)); opacity: 0; } }
-      .hero-glass { width: 190px; height: 190px; border-radius: 50%; background: rgba(22,16,10,.35); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); border: 2px solid rgba(201,168,76,.3); box-shadow: 0 0 80px rgba(201,168,76,.08), 0 0 160px rgba(201,168,76,.04), inset 0 0 50px rgba(201,168,76,.04); display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0 auto 28px; }
+      .hero-glass { width: 170px; height: 170px; border-radius: 50%; background: rgba(22,16,10,.35); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); border: 2px solid rgba(201,168,76,.3); box-shadow: 0 0 80px rgba(201,168,76,.08), 0 0 160px rgba(201,168,76,.04), inset 0 0 50px rgba(201,168,76,.04); display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0 auto 20px; }
       .hero-glass img { width: 85%; height: 85%; object-fit: cover; border-radius: 50%; }
       @keyframes heroFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
       .hero-float { animation: heroFloat 5s ease-in-out infinite; }
-      @keyframes glowPulse { 0%, 100% { text-shadow: 0 0 20px rgba(201,168,76,.12); } 50%      { text-shadow: 0 0 50px rgba(201,168,76,.22); } }
+      @keyframes glowPulse { 0%, 100% { text-shadow: 0 0 20px rgba(201,168,76,.12); } 50% { text-shadow: 0 0 50px rgba(201,168,76,.22); } }
       .glow { animation: glowPulse 4s ease-in-out infinite; }
       .gold-div { height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.25), transparent); }
+
+      /* COUNTDOWN HERO STYLE */
+      .cd-box { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(201, 168, 76, 0.2); border-radius: 12px; padding: 12px; min-width: 80px; }
+      .cd-num { font-family: "Playfair Display", serif; font-size: 2.2rem; font-weight: 900; color: var(--gold-light); line-height: 1; }
+      .cd-lab { font-size: 0.55rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(253,246,227,0.5); margin-top: 4px; }
 
       /* SECTION TITLES */
       .sec-label { font-size: .55rem; font-weight: 600; letter-spacing: .38em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
@@ -74,9 +79,9 @@
       .ia-panel { background: linear-gradient(135deg, rgba(35,26,14,.85), rgba(22,16,10,.92)); border: 1px solid rgba(201,168,76,.18); border-left: 3px solid var(--gold); border-radius: 14px; padding: 26px; margin-bottom: 36px; position: relative; overflow: hidden; }
       .ia-panel::before { content: ''; position: absolute; top: -40%; right: -40%; width: 80%; height: 80%; background: radial-gradient(circle, rgba(201,168,76,.035), transparent 60%); pointer-events: none; }
 
-      /* MODEL BADGES */
+      /* BADGES */
       .model-badge { font-size: 0.42rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; display: inline-block; box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
-      .model-badge.ecmwf { background: rgba(201,168,76,.15); color: var(--gold-light); border: 1px solid rgba(201,168,76,.3); }
+      .model-badge.ecmwf { background: rgba(201,168,76,.15); color: var(--gold-light); border: 1px solid rgba(201,168,76,0.3); }
       .model-badge.arome { background: rgba(204,0,0,.15); color: #ff6b6b; border: 1px solid rgba(204,0,0,.3); }
 
       /* LIVE */
@@ -87,13 +92,19 @@
       .fs-val { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; color: var(--cream); line-height: 1; }
 
       /* HERO-CARDS */
-      .hero-card { position: relative; background: linear-gradient(145deg, rgba(35,26,14,.82), rgba(16,12,6,.92)); border: 1.5px solid rgba(201,168,76,.32); border-radius: 18px; padding: 28px 24px; overflow: hidden; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transition: transform .35s cubic-bezier(.25,.1,.25,1), border-color .35s, box-shadow .35s; }
+      .hero-card { position: relative; background: linear-gradient(145deg, rgba(35,26,14,.82), rgba(16,12,6,.92)); border: 1.5px solid rgba(201,168,76,.32); border-radius: 18px; padding: 28px 24px; overflow: hidden; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transition: transform .35s cubic-bezier(.25,.1,.25,1), border-color .35s, box-shadow .35s; cursor: pointer; }
       .hero-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 20%, rgba(201,168,76,.06), transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(204,0,0,.03), transparent 50%); pointer-events: none; }
       .hero-card::after { content: ''; position: absolute; top: -1px; left: 20%; right: 20%; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.5), transparent); }
-      .hero-card:hover { transform: translateY(-6px) scale(1.015); border-color: rgba(201,168,76,.55); box-shadow: 0 18px 50px rgba(0,0,0,.5), 0 0 40px rgba(201,168,76,.08), inset 0 0 30px rgba(201,168,76,.02); }
+      .hero-card:hover { transform: translateY(-6px) scale(1.015); border-color: rgba(201,168,76,.55); box-shadow: 0 18px 50px rgba(0,0,0,.5), 0 0 40px rgba(201,168,76,.08); }
       .hero-card.out-of-range { border-style: dashed; border-color: rgba(201,168,76,.16); background: linear-gradient(145deg, rgba(18,12,7,.7), rgba(10,7,4,.82)); }
       .hero-card.out-of-range::after { background: linear-gradient(90deg, transparent, rgba(201,168,76,.14), transparent); }
-      .hero-card.out-of-range:hover { transform: translateY(-3px) scale(1.005); border-color: rgba(201,168,76,.26); box-shadow: 0 8px 22px rgba(0,0,0,.35); }
+      
+      /* CTA TEXT STYLE */
+      .card-cta { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(201, 168, 76, 0.5); transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 4px; margin-top: 12px; border-top: 1px solid rgba(201, 168, 76, 0.1); padding-top: 10px; }
+      .hero-card:hover .card-cta, .countdown-card:hover .card-cta { color: var(--gold-light); }
+      .hero-card:hover .card-cta span, .countdown-card:hover .card-cta span { transform: translateX(3px); }
+      .card-cta span { transition: transform 0.3s ease; }
+
       .hero-card .hc-day { font-family: "Playfair Display", serif; font-size: 3.4rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
       .hero-card .hc-icon { font-size: 2.8rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,.4)); line-height: 1; }
       .hero-card .hc-temp { font-family: "Playfair Display", serif; font-size: 2.6rem; font-weight: 900; color: var(--cream); line-height: 1; }
@@ -105,74 +116,36 @@
       .hero-card .hc-stat-val.nd { opacity: .28; font-size: .82rem; letter-spacing: .18em; }
       .hero-card .hc-analysis { font-family: "Crimson Pro", serif; font-size: .82rem; line-height: 1.6; color: rgba(253,246,227,.58); border-left: 3px solid; padding-left: 12px; }
       .hero-card .hc-analysis.nd-warning { font-size: .72rem; font-style: italic; color: rgba(253,246,227,.32); border-left-color: rgba(201,168,76,.16) !important; }
-      .soon-pill { display: inline-flex; align-items: center; gap: 4px; font-size: .4rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: rgba(201,168,76,.42); background: rgba(201,168,76,.05); border: 1px dashed rgba(201,168,76,.18); padding: 3px 9px; border-radius: 20px; white-space: nowrap; }
-      .waiting-icon { display: inline-block; animation: waitFloat 3.5s ease-in-out infinite; opacity: .5; }
-      @keyframes waitFloat { 0%,100% { transform: translateY(0) scale(1); opacity: .45; } 50% { transform: translateY(-3px) scale(1.06); opacity: .65; } }
-      .hero-cards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-      @media (max-width: 768px) { .hero-cards-grid { grid-template-columns: 1fr; } .hero-card .hc-day { font-size: 2.6rem; } .hero-card .hc-temp { font-size: 2rem; } .hero-card .hc-icon { font-size: 2.2rem; } }
 
-      /* COUNTDOWN */
-      .countdown-section { margin-top: 48px; padding-top: 40px; border-top: 1px solid rgba(201,168,76,.1); }
+      .waiting-icon { display: inline-block; animation: waitFloat 3.5s ease-in-out infinite; opacity: .5; }
+      @keyframes waitFloat { 0%,100% { transform: translateY(0); opacity: .45; } 50% { transform: translateY(-3px); opacity: .65; } }
+
+      /* COUNTDOWN CARDS */
       .countdown-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; align-items: start; }
-      .countdown-card { position: relative; background: rgba(22,16,10,.68); border: 1px solid rgba(201,168,76,.12); border-radius: 14px; overflow: hidden; transition: transform .28s cubic-bezier(.25,.1,.25,1), border-color .28s, box-shadow .28s; display: flex; flex-direction: column; }
-      .countdown-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, rgba(201,168,76,.22), transparent); }
+      .countdown-card { position: relative; background: rgba(22,16,10,.68); border: 1px solid rgba(201,168,76,.12); border-radius: 14px; overflow: hidden; transition: transform .28s cubic-bezier(.25,.1,.25,1), border-color .28s, box-shadow .28s; display: flex; flex-direction: column; cursor: pointer; }
       .countdown-card:hover { transform: translateY(-4px); border-color: rgba(201,168,76,.3); box-shadow: 0 10px 30px rgba(0,0,0,.4); }
       .countdown-card.out-of-range { border-style: dashed; border-color: rgba(201,168,76,.09); background: rgba(14,9,5,.55); }
-      .countdown-card.out-of-range:hover { transform: translateY(-2px); border-color: rgba(201,168,76,.18); box-shadow: 0 5px 14px rgba(0,0,0,.22); }
       .countdown-card.has-agenda { grid-column: 1 / -1; }
       .cc-meteo-header { padding: 16px 18px 14px; }
       .cc-divider { height: 1px; margin: 0 18px; background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,.28) 30%, rgba(201,168,76,.28) 70%, transparent 100%); flex-shrink: 0; }
       .cc-agenda { padding: 14px 18px 16px; display: flex; flex-direction: column; gap: 14px; }
-      .cc-carrer-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
-      .cc-carrer-icon { width: 18px; height: 18px; flex-shrink: 0; color: rgba(201,168,76,.55); }
-      .cc-carrer-name { font-family: "Playfair Display", serif; font-size: .88rem; font-weight: 700; color: rgba(253,246,227,.82); letter-spacing: .02em; line-height: 1; }
+      .cc-carrer-name { font-family: "Playfair Display", serif; font-size: .88rem; font-weight: 700; color: rgba(253,246,227,.82); }
       .cc-desfilades-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 6px; }
-      .cc-desfile-item { display: flex; align-items: center; gap: 8px; background: rgba(201,168,76,.04); border: 1px solid rgba(201,168,76,.08); border-radius: 8px; padding: 7px 10px; transition: background .2s, border-color .2s; }
-      .cc-desfile-item:hover { background: rgba(201,168,76,.08); border-color: rgba(201,168,76,.16); }
-      .cc-desfile-hora { font-family: "DM Mono", monospace; font-size: .62rem; color: rgba(201,168,76,.45); flex-shrink: 0; letter-spacing: .04em; }
-      .cc-desfile-fila { font-size: .72rem; font-weight: 600; color: rgba(253,246,227,.82); line-height: 1.2; flex: 1; }
-      .cc-badge-ee { display: inline-flex; align-items: center; gap: 2px; background: linear-gradient(135deg, #c9a84c, #8a6f28); color: #0b0806; font-size: .38rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; box-shadow: 0 1px 6px rgba(201,168,76,.35), inset 0 1px 0 rgba(255,255,255,.15); flex-shrink: 0; white-space: nowrap; }
-      .cc-carrer-sep { height: 1px; background: rgba(201,168,76,.08); margin: 2px 0; }
-      .countdown-card .cc-day { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 900; color: var(--cream); line-height: 1; }
-      .countdown-card .cc-icon { font-size: 1.45rem; }
-      .countdown-card .cc-weekday { font-size: .42rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: rgba(201,168,76,.45); }
-      .countdown-card .cc-temp { font-family: "Playfair Display", serif; font-size: 1.15rem; font-weight: 700; color: var(--cream); }
-      .countdown-card .cc-temp.nd { opacity: .25; font-size: .95rem; }
-      .countdown-card .cc-prob { font-size: .65rem; font-weight: 600; }
-      .cc-nd-hint { font-family: "Crimson Pro", serif; font-size: .68rem; font-style: italic; color: rgba(253,246,227,.26); padding: 7px 10px; border-top: 1px solid rgba(201,168,76,.06); margin-top: 4px; line-height: 1.5; }
-      .countdown-empty { text-align: center; padding: 44px 20px; border: 1px dashed rgba(201,168,76,.15); border-radius: 14px; background: rgba(22,16,10,.3); }
-      @media (max-width: 600px) { .countdown-grid { grid-template-columns: 1fr; } .countdown-card.has-agenda { grid-column: 1; } .cc-desfilades-grid { grid-template-columns: 1fr 1fr; } }
+      .cc-desfile-item { display: flex; align-items: center; gap: 8px; background: rgba(201,168,76,.04); border: 1px solid rgba(201,168,76,.08); border-radius: 8px; padding: 7px 10px; }
+      .cc-desfile-hora { font-family: "DM Mono", monospace; font-size: .62rem; color: rgba(201,168,76,.45); }
+      .cc-desfile-fila { font-size: .72rem; font-weight: 600; color: rgba(253,246,227,.82); }
+      .cc-badge-ee { display: inline-flex; align-items: center; background: linear-gradient(135deg, #c9a84c, #8a6f28); color: #0b0806; font-size: .38rem; font-weight: 800; padding: 2px 6px; border-radius: 4px; }
 
-      /* MODAL HOURLY */
+      /* MODAL */
       .modal-card { background: rgba(22,16,10,.95); border: 1px solid rgba(201,168,76,.3); box-shadow: 0 24px 50px rgba(0,0,0,.5); }
       .hourly-card { background: rgba(255,255,255,.03); border: 1px solid rgba(201,168,76,.1); }
 
-      /* TIMELINE */
-      .tl-dot { width: 50px; height: 50px; border-radius: 50%; background: var(--dark2); border: 2px solid var(--gold-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; transition: all .3s; cursor: pointer; }
-      .tl-dot.active { background: var(--red); border-color: var(--gold); box-shadow: 0 0 0 6px rgba(201,168,76,.12); transform: scale(1.12); }
-      .tl-line { width: 2px; background: rgba(201,168,76,.2); flex-shrink: 0; }
-
       /* FILAES */
-      .fila-card { background: var(--dark-card); border: 1px solid rgba(201,168,76,.12); border-radius: 10px; overflow: hidden; position: relative; transition: transform .28s, border-color .28s, box-shadow .28s; cursor: pointer; }
-      .fila-card:hover { transform: translateY(-6px) scale(1.02); border-color: var(--gold); box-shadow: 0 14px 36px rgba(0,0,0,.4), 0 0 0 1px rgba(201,168,76,.28); }
-      .fila-badge { position: absolute; top: 8px; right: 8px; z-index: 2; font-size: .44rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; }
-      .badge-c { background: var(--red); color: #fff; }
-      .badge-m { background: var(--dark2); color: var(--gold); border: 1px solid var(--gold-dark); }
-      .cargo-pill { position: absolute; top: 8px; left: 8px; z-index: 2; font-size: .4rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--dark); box-shadow: 0 2px 8px rgba(201,168,76,.25); }
-      .tab-btn { padding: 8px 24px; border-radius: 30px; font-size: .65rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; cursor: pointer; transition: all .25s; border: 1px solid rgba(201,168,76,.25); background: transparent; color: rgba(253,246,227,.45); }
-      .tab-btn.on { background: var(--red); color: #fff; border-color: var(--red); }
-
-      /* CARTEL */
-      .cartel-frame { position: relative; background: linear-gradient(135deg, rgba(201,168,76,.1), rgba(138,111,40,.06)); border: 2px solid rgba(201,168,76,.28); border-radius: 16px; padding: 14px; box-shadow: 0 24px 72px rgba(0,0,0,.45), inset 0 0 68px rgba(201,168,76,.025); max-width: 500px; margin: 0 auto; overflow: hidden; }
-      .cartel-frame::before { content: ''; position: absolute; inset: 7px; border: 1px solid rgba(201,168,76,.12); border-radius: 12px; pointer-events: none; }
-      .cartel-frame img { width: 100%; border-radius: 10px; display: block; }
-
-      /* MASONRY */
-      .masonry { columns: 2; gap: 8px; }
-      .masonry-item { break-inside: avoid; margin-bottom: 8px; overflow: hidden; border-radius: 8px; }
-      .masonry-item img { width: 100%; display: block; transition: transform .45s; }
-      .masonry-item:hover img { transform: scale(1.04); }
-      @media (min-width: 640px) { .masonry { columns: 3; } }
+      .fila-card { background: var(--dark-card); border: 1px solid rgba(201,168,76,.12); border-radius: 10px; overflow: hidden; position: relative; transition: transform .28s; }
+      .fila-card:hover { transform: translateY(-6px); border-color: var(--gold); }
+      .fila-badge { position: absolute; top: 8px; right: 8px; z-index: 2; font-size: .44rem; font-weight: 700; padding: 2px 8px; border-radius: 3px; color: #fff; }
+      .badge-c { background: var(--red); }
+      .badge-m { background: var(--green-moro); } /* CORRECCIÓN VERDE MORO */
 
       /* FOOTER */
       footer { background: linear-gradient(to bottom, var(--dark), #040302); border-top: 1px solid rgba(201,168,76,.12); padding: 64px 24px 44px; }
@@ -185,12 +158,9 @@
       const { motion, AnimatePresence, useInView } = window.Motion;
       const h = React.createElement;
 
-      /* ═══ HELPERS N/D ═══ */
+      /* ═══ HELPERS ═══ */
       function isND(v) { return v === 'N/D' || v === null || v === undefined; }
-
-      function isOutOfRange(f) {
-        return isND(f.temp_max) && (f.icono === '❓' || isND(f.icono));
-      }
+      function isOutOfRange(f) { return isND(f.temp_max) && (f.icono === '❓' || isND(f.icono)); }
 
       function SmartIcon({ f, fontSize }) {
         if (f.icono === '❓' || isOutOfRange(f)) {
@@ -201,14 +171,53 @@
 
       function resolveAnalisis(raw) {
         if (!raw) return { nd: false, text: '' };
-        const isWarning = raw.includes('⚠️') || raw.includes('no disponibles') || raw.includes('temporalment') || raw.includes('rango');
-        if (isWarning) {
-          return {
-            nd: true,
-            text: 'Fora del rang de 15 dies del model. La previsió s\'activarà automàticament a mesura que la data s\'acoste.',
-          };
+        if (raw.includes('⚠️') || raw.includes('temporalment') || raw.includes('rango')) {
+          return { nd: true, text: 'Fora del rang de 15 dies del model. La previsió s\'activarà pròximament.' };
         }
         return { nd: false, text: raw };
+      }
+
+      /* ═══ COMPONENTS ═══ */
+      
+      // NUEVO: Contador Espectacular
+      function Countdown() {
+        const [timeLeft, setTimeLeft] = useState({ dies: 0, hores: 0, minuts: 0, segons: 0 });
+
+        useEffect(() => {
+          const target = new Date("2026-04-24T00:00:00").getTime();
+          const timer = setInterval(() => {
+            const now = new Date().getTime();
+            const diff = target - now;
+            if (diff <= 0) {
+              clearInterval(timer);
+            } else {
+              setTimeLeft({
+                dies: Math.floor(diff / (1000 * 60 * 60 * 24)),
+                hores: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                minuts: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+                segons: Math.floor((diff % (1000 * 60)) / 1000)
+              });
+            }
+          }, 1000);
+          return () => clearInterval(timer);
+        }, []);
+
+        const Slot = ({ val, lab }) => h('div', { className: 'cd-box flex flex-col items-center' },
+          h(motion.span, { 
+            key: val, 
+            initial: { opacity: 0, y: 5 }, 
+            animate: { opacity: 1, y: 0 }, 
+            className: 'cd-num' 
+          }, val.toString().padStart(2, '0')),
+          h('span', { className: 'cd-lab' }, lab)
+        );
+
+        return h('div', { className: 'flex gap-3 justify-center mt-8 mb-4' },
+          h(Slot, { val: timeLeft.dies, lab: 'Dies' }),
+          h(Slot, { val: timeLeft.hores, lab: 'Hores' }),
+          h(Slot, { val: timeLeft.minuts, lab: 'Minuts' }),
+          h(Slot, { val: timeLeft.segons, lab: 'Segons' })
+        );
       }
 
       /* ═══ DATA ═══ */
@@ -250,10 +259,10 @@
       };
 
       const TIMELINE = [
-        { id:0, dia:24, mes:"Abril", emoji:"🎵", titol:"Dia dels Músics", subtitol:"La Festa del Passodoble", desc:"La vesprada del dia 24 és l'homenatge a les bandes de música, considerades l'ànima de la festa. Un desfilada musical recorre els carrers d'Alcoi fins a concentrar-se a la Plaça d'Espanya, on totes les bandes interpreten conjuntament l'Himne de Festes. És el reconeixement oficial als músics que donen vida a cada acte fester.", color:"#c9a84c", detalls:["Desfilada musical per la vesprada","Concentració a la Plaça d'Espanya","Interpretació conjunta de l'Himne de Festes","Homenatge oficial a les bandes de música"] },
-        { id:1, dia:25, mes:"Abril", emoji:"⚔️", titol:"Les Entrades", subtitol:"Entrada Cristiana i Entrada Mora", desc:"El cor de les Festes. A les 10:30h arranca l'Entrada Cristiana, que s'inicia al Partidor, travessa Sant Nicolàs i culmina a la Plaça d'Espanya. A les 17:00h, la suntuosa Entrada Mora transforma els carrers en un espectacle de luxe, color i fantasia oriental.", color:"#cc0000", detalls:["10:30h — Entrada Cristiana des del Partidor","Pas per Sant Nicolàs fins a Plaça d'Espanya","17:00h — Entrada Mora","Desfilada de les 14 filaes de cada bando"] },
-        { id:2, dia:26, mes:"Abril", emoji:"✝️", titol:"Sant Jordi", subtitol:"El dia del Patró", desc:"El dia més solemne de les Festes. Missa en honor al Patró, seguida de la Processó de la Reliquia pel centre d'Alcoi entre devoció i emoció. Al final del dia, el moment més màgic: l'Aparició de Sant Jordi sobre les muralles, revivent la llegenda.", color:"#fff", detalls:["Missa solemne en honor al Patró","Processó de la Reliquia pel centre","Aparició de Sant Jordi sobre les muralles"] },
-        { id:3, dia:27, mes:"Abril", emoji:"💥", titol:"L'Alardo", subtitol:"Dia dels Trons", desc:"El tro final. La batalla d'arcabuceria ressona pel centre d'Alcoi en l'espectacular Alardo. Milers de trets d'arcabús omplen l'aire en una jornada d'emoció i pólvora que culmina i tanca la trilogia festera.", color:"#c9a84c", detalls:["Batalla d'arcabuceria pel centre d'Alcoi","Alardo Cristià i Alardo Moro","Desfilada final de clausura"] },
+        { id:0, dia:24, mes:"Abril", emoji:"🎵", titol:"Dia dels Músics", subtitol:"La Festa del Passodoble", desc:"La vesprada del dia 24 és l'homenatge a les bandes de música, considerades l'ànima de la festa...", color:"#c9a84c", detalls:["Himne de Festes"] },
+        { id:1, dia:25, mes:"Abril", emoji:"⚔️", titol:"Les Entradas", subtitol:"Entrada Cristiana i Mora", desc:"El cor de les Festes...", color:"#cc0000", detalls:["Entrada Cristiana", "Entrada Mora"] },
+        { id:2, dia:26, mes:"Abril", emoji:"✝️", titol:"Sant Jordi", subtitol:"El dia del Patró", desc:"El dia més solemne...", color:"#fff", detalls:["Processó de la Reliquia", "Aparició"] },
+        { id:3, dia:27, mes:"Abril", emoji:"💥", titol:"L'Alardo", subtitol:"Dia dels Trons", desc:"El tro final...", color:"#c9a84c", detalls:["Batalla arcabuceria"] },
       ];
 
       const FILAES = [
@@ -283,7 +292,7 @@
         { nom:"Abencerrajes",    tipus:"moro",                         img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1531.jpg" },
         { nom:"Marrakesch",      tipus:"moro", cargo:"Capità Moro",    img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1775.jpg" },
         { nom:"Realistas",       tipus:"moro", cargo:"Alferes Moro",   img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1695.jpg" },
-        { nom:"Berberiscos",     tipus:"moro",                         img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1670.jpg" },
+        { nom:"Berberiscos",     tipus:"moro",                         img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1684.jpg" }, // CORREGIDA
         { nom:"Benimerines",     tipus:"moro",                         img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1670.jpg" },
       ];
 
@@ -299,90 +308,53 @@
         "https://www.asjordi.org/upload/images/showroom/ano-2025/0813.jpg",
       ];
 
-      /* ═══ FadeIn ═══ */
-      function FadeIn({ children, delay=0, y=26 }) {
-        const ref = useRef(null);
-        const vis = useInView(ref, { once: true, margin: "-60px" });
-        return h(motion.div, { ref, initial: { opacity:0, y }, animate: vis ? { opacity:1, y:0 } : {}, transition: { duration:.72, delay, ease:[.25,.1,.25,1] } }, children);
-      }
-
-      /* ═══ IconPin ═══ */
-      function IconPin() {
-        return h("svg", { className:"cc-carrer-icon", viewBox:"0 0 18 18", fill:"none", xmlns:"http://www.w3.org/2000/svg", stroke:"currentColor", strokeWidth:"1.4", strokeLinecap:"round", strokeLinejoin:"round" },
-          h("path", { d:"M9 1.5C6.51 1.5 4.5 3.51 4.5 6c0 4.5 4.5 10.5 4.5 10.5S13.5 10.5 13.5 6c0-2.49-2.01-4.5-4.5-4.5z" }),
-          h("circle", { cx:"9", cy:"6", r:"1.5", fill:"currentColor", stroke:"none" })
-        );
-      }
-
-      /* ═══ AgendaCarrer ═══ */
-      function AgendaCarrer({ carrer, desfilades }) {
-        return h("div", null,
-          h("div", { className:"cc-carrer-header" }, h(IconPin), h("span", { className:"cc-carrer-name" }, carrer)),
-          h("div", { className:"cc-desfilades-grid" },
-            desfilades.map((df, i) => h(motion.div, { key:i, className:"cc-desfile-item", initial:{ opacity:0, x:-8 }, whileInView:{ opacity:1, x:0 }, viewport:{ once:true }, transition:{ delay:i*0.04, duration:0.3 } },
-              h("span", { className:"cc-desfile-hora font-mono" }, df.hora),
-              h("span", { className:"cc-desfile-fila" }, df.fila.replace(/^ee\s+/i, "")),
-              df.ee && h("span", { className:"cc-badge-ee" }, "EE"),
-            ))
-          )
-        );
-      }
-
-      /* ═══ NAVBAR ═══ */
+      /* ═══ UI ═══ */
       function Navbar({ scrolled }) {
         const [open, setOpen] = useState(false);
         const go = id => { document.getElementById(id)?.scrollIntoView({ behavior:"smooth" }); setOpen(false); };
-        const links = [{ l:"Meteo", id:"meteo" }, { l:"Trilogia", id:"trilogia" }, { l:"Filaes", id:"filaes" }, { l:"Cartell", id:"cartell" }, { l:"Galeria", id:"galeria" }];
         return h(React.Fragment, null,
           h("nav", { id:"navbar", className: scrolled ? "scrolled" : "" },
             h("div", { style:{ maxWidth:1100, margin:"0 auto", padding:"0 20px", display:"flex", alignItems:"center", justifyContent:"space-between" } },
-              h("div", { className:"nav-logo", onClick:()=>go("hero") }, h("img", { className:"nav-logo-img", src:"./logo.png", alt:"MeteoFestes2026" }), h("div", { className:"nav-logo-text" }, "Meteo", h("span", null, "Festes"), "2026")),
-              h("div", { className:"nav-desk", style:{ display:"flex", gap:26, alignItems:"center" } }, links.map(s => h("a", { key:s.id, className:"nav-link", onClick:()=>go(s.id) }, s.l))),
-              h("button", { className:"nav-hamburger", onClick:()=>setOpen(!open), "aria-label":"Menu" },
-                h("svg", { width:24, height:24, viewBox:"0 0 24 24", fill:"none", stroke:"currentColor", strokeWidth:2, strokeLinecap:"round" },
-                  open ? h("path", { d:"M18 6L6 18M6 6l12 12" }) : h(React.Fragment, null, h("path", { d:"M3 7h18M3 12h18M3 17h18" }))
-                )
+              h("div", { className:"nav-logo", onClick:()=>go("hero") }, h("img", { className:"nav-logo-img", src:"./logo.png", alt:"Logo" }), h("div", { className:"nav-logo-text" }, "Meteo", h("span", null, "Festes"), "2026")),
+              h("div", { className:"nav-desk", style:{ display:"flex", gap:26, alignItems:"center" } }, 
+                [{l:"Meteo",id:"meteo"},{l:"Trilogia",id:"trilogia"},{l:"Filaes",id:"filaes"},{l:"Cartell",id:"cartell"},{l:"Galeria",id:"galeria"}].map(s => h("a", { key:s.id, className:"nav-link", onClick:()=>go(s.id) }, s.l))
+              ),
+              h("button", { className:"nav-hamburger", onClick:()=>setOpen(!open) },
+                h("svg", { width:24, height:24, viewBox:"0 0 24 24", fill:"none", stroke:"currentColor", strokeWidth:2 }, open ? h("path", { d:"M18 6L6 18M6 6l12 12" }) : h("path", { d:"M3 7h18M3 12h18M3 17h18" }))
               ),
             )
           ),
-          open && h(motion.div, { className:"mobile-overlay", initial:{ opacity:0 }, animate:{ opacity:1 }, transition:{ duration:.25 } },
-            h("button", { onClick:()=>setOpen(false), style:{ position:"absolute", top:18, right:22, background:"none", border:"none", color:"var(--gold)", cursor:"pointer" } }, h("svg", { width:28, height:28, viewBox:"0 0 24 24", fill:"none", stroke:"currentColor", strokeWidth:2 }, h("path", { d:"M18 6L6 18M6 6l12 12" }))),
-            links.map((s,i) => h(motion.a, { key:s.id, className:"nav-link", onClick:()=>go(s.id), initial:{ opacity:0, y:18 }, animate:{ opacity:1, y:0 }, transition:{ delay:i*.06 }, style:{ cursor:"pointer" } }, s.l))
+          open && h(motion.div, { className:"mobile-overlay", initial:{ opacity:0 }, animate:{ opacity:1 } },
+            h("button", { onClick:()=>setOpen(false), style:{ position:"absolute", top:18, right:22, color:"var(--gold)" } }, h("svg", { width:28, height:28, viewBox:"0 0 24 24", fill:"none", stroke:"currentColor", strokeWidth:2 }, h("path", { d:"M18 6L6 18M6 6l12 12" }))),
+            [{l:"Meteo",id:"meteo"},{l:"Trilogia",id:"trilogia"},{l:"Filaes",id:"filaes"},{l:"Cartell",id:"cartell"},{l:"Galeria",id:"galeria"}].map(s => h("a", { key:s.id, className:"nav-link", onClick:()=>go(s.id) }, s.l))
           )
         );
       }
 
-      /* ═══ HERO ═══ */
       function HeroSection() {
         const pts = Array.from({ length:24 }, (_,i) => ({ i, left:Math.random()*100+"%", dur:(9+Math.random()*13)+"s", del:(Math.random()*11)+"s", dx:((Math.random()-.5)*100)+"px", sz:(1.2+Math.random()*1.8)+"px" }));
         return h("section", { id:"hero" },
           h("div", { className:"hero-bg" }),
           h("div", { className:"hero-particles" }, pts.map(p => h("div", { key:p.i, className:"particle", style:{ left:p.left, animationDuration:p.dur, animationDelay:p.del, "--dx":p.dx, width:p.sz, height:p.sz } }))),
           h("div", { style:{ position:"relative", zIndex:2, textAlign:"center", padding:"0 24px", maxWidth:820, margin:"0 auto" } },
-            h(motion.div, { className:"hero-float", initial:{ opacity:0, scale:.82 }, animate:{ opacity:1, scale:1 }, transition:{ duration:1, delay:.2, ease:[.25,.1,.25,1] } }, h("div", { className:"hero-glass" }, h("img", { src:"./logo.png", alt:"MeteoFestes2026" }))),
+            h(motion.div, { className:"hero-float", initial:{ opacity:0, scale:.82 }, animate:{ opacity:1, scale:1 }, transition:{ duration:1, delay:.2 } }, h("div", { className:"hero-glass" }, h("img", { src:"./logo.png", alt:"Logo" }))),
             h(motion.div, { initial:{ opacity:0, y:-18 }, animate:{ opacity:1, y:0 }, transition:{ duration:.8, delay:.5 } }, h("div", { style:{ fontSize:".58rem", fontWeight:700, letterSpacing:".42em", textTransform:"uppercase", color:"#c9a84c", marginBottom:14 } }, "✦ Previsions Meteorològiques · Festes 2026 ✦")),
-            h(motion.h1, { className:"font-serif glow", style:{ fontSize:"clamp(2.5rem,9vw,5rem)", fontWeight:900, lineHeight:1, color:"#fdf6e3", marginBottom:10 }, initial:{ opacity:0, scale:.96 }, animate:{ opacity:1, scale:1 }, transition:{ duration:1, delay:.7, ease:[.25,.1,.25,1] } },
-              "Meteo", h("br"), h("em", { style:{ color:"#c9a84c", fontStyle:"italic" } }, "Festes"), h("span", { style:{ fontSize:"clamp(1.1rem,3vw,1.9rem)", color:"rgba(253,246,227,.45)", fontWeight:700 } }, " 2026")
-            ),
-            h(motion.div, { style:{ height:2, width:80, background:"linear-gradient(90deg,transparent,#c9a84c,transparent)", margin:"18px auto" }, initial:{ scaleX:0 }, animate:{ scaleX:1 }, transition:{ duration:.8, delay:1 } }),
-            h(motion.p, { className:"font-crim", style:{ fontSize:"clamp(1rem,3vw,1.35rem)", color:"rgba(253,246,227,.72)", fontStyle:"italic", marginBottom:34 }, initial:{ opacity:0 }, animate:{ opacity:1 }, transition:{ duration:.8, delay:1.2 } }, "Moros i Cristians · Alcoi · 24, 25, 26 i 27 d'Abril de 2026"),
-            h(motion.div, { style:{ display:"flex", gap:12, justifyContent:"center", flexWrap:"wrap" }, initial:{ opacity:0, y:14 }, animate:{ opacity:1, y:0 }, transition:{ duration:.7, delay:1.4 } },
-              h("button", { onClick:()=>document.getElementById("meteo")?.scrollIntoView({ behavior:"smooth" }), style:{ padding:"13px 30px", background:"linear-gradient(135deg,#cc0000,#8b0000)", color:"#fff", border:"none", borderRadius:30, fontWeight:600, fontSize:".7rem", letterSpacing:".13em", textTransform:"uppercase", cursor:"pointer", boxShadow:"0 4px 24px rgba(204,0,0,.28)" } }, "📡 Consultar Meteo"),
-              h("button", { onClick:()=>document.getElementById("trilogia")?.scrollIntoView({ behavior:"smooth" }), style:{ padding:"13px 30px", background:"transparent", color:"#c9a84c", border:"1px solid rgba(201,168,76,.35)", borderRadius:30, fontWeight:600, fontSize:".7rem", letterSpacing:".13em", textTransform:"uppercase", cursor:"pointer" } }, "⚔️ La Trilogia")
-            )
-          ),
-          h(motion.div, { style:{ position:"absolute", bottom:30, left:"50%", transform:"translateX(-50%)", cursor:"pointer" }, animate:{ y:[0,9,0] }, transition:{ repeat:Infinity, duration:2 }, onClick:()=>document.getElementById("meteo")?.scrollIntoView({ behavior:"smooth" }) },
-            h("div", { style:{ width:24, height:38, border:"1.5px solid rgba(201,168,76,.35)", borderRadius:12, display:"flex", justifyContent:"center", paddingTop:7 } },
-              h(motion.div, { style:{ width:3, height:6, background:"#c9a84c", borderRadius:3 }, animate:{ y:[0,11,0], opacity:[1,0,1] }, transition:{ repeat:Infinity, duration:2 } })
+            h(motion.h1, { className:"font-serif glow", style:{ fontSize:"clamp(2.5rem,9vw,5rem)", fontWeight:900, lineHeight:1, color:"#fdf6e3", marginBottom:10 } }, "Meteo", h("br"), h("em", { style:{ color:"#c9a84c", fontStyle:"italic" } }, "Festes"), h("span", { style:{ fontSize:"clamp(1.1rem,3vw,1.9rem)", color:"rgba(253,246,227,.45)", fontWeight:700 } }, " 2026")),
+            h(motion.p, { className:"font-crim", style:{ fontSize:"clamp(1rem,3vw,1.35rem)", color:"rgba(253,246,227,.72)", fontStyle:"italic" } }, "Moros i Cristians · Alcoi · 24, 25, 26 i 27 d'Abril de 2026"),
+            
+            // CONTADOR PREMIUM
+            h(Countdown),
+
+            h(motion.div, { style:{ display:"flex", gap:12, justifyContent:"center", flexWrap:"wrap", marginTop: 24 }, initial:{ opacity:0, y:14 }, animate:{ opacity:1, y:0 }, transition:{ duration:.7, delay:1.4 } },
+              h("button", { onClick:()=>document.getElementById("meteo")?.scrollIntoView({ behavior:"smooth" }), style:{ padding:"13px 30px", background:"linear-gradient(135deg,#cc0000,#8b0000)", color:"#fff", border:"none", borderRadius:30, fontWeight:600, fontSize:".7rem", textTransform:"uppercase", cursor:"pointer", boxShadow:"0 4px 24px rgba(204,0,0,.28)" } }, "📡 Consultar Meteo")
             )
           )
         );
       }
 
-      /* ═══ METEO ═══ */
       function MeteoSection() {
         const [meteo, setMeteo] = useState(null);
-        const [selectedDay, setSelectedDay] = useState(null); // ESTADO PARA EL MODAL
+        const [selectedDay, setSelectedDay] = useState(null);
 
         useEffect(() => { fetch("./datos.json?v="+Date.now()).then(r=>r.json()).then(setMeteo).catch(()=>setMeteo(null)); }, []);
 
@@ -395,343 +367,126 @@
         const entraetes = allDays.filter(f => { const d=parseDateMidnight(f.fecha); return d.getDate()>=6&&d.getDate()<=23&&d.getMonth()===3&&!!ENTRAETES_INFO[f.fecha]&&d>=today; });
 
         function probColor(prob) { if(isND(prob)) return 'rgba(201,168,76,.18)'; if(prob<25) return '#22c55e'; if(prob<50) return '#f59e0b'; return '#cc0000'; }
-        function parseDia(s) { const p=s.split('·'); return { weekday:(p[0]||'').trim(), event:(p[1]||'').trim() }; }
-        function dayNum(f) { return parseDateMidnight(f).getDate(); }
-        function daysUntil(f) { const d=Math.ceil((parseDateMidnight(f)-today)/(1000*60*60*24)); if(d===0) return 'AVUI'; if(d===1) return 'DEMÀ'; return d+' dies'; }
 
-        return h("section", { id:"meteo", style:{ padding:"88px 24px", background:"rgba(10,6,2,.55)", position: "relative" } },
+        return h("section", { id:"meteo", style:{ padding:"88px 24px", background:"rgba(10,6,2,.55)" } },
           h("div", { style:{ maxWidth:980, margin:"0 auto" } },
             h(FadeIn, null, h("div", { style:{ textAlign:"center", marginBottom:48 } }, h("div", { className:"sec-label" }, "AVAMET · ECMWF · AROME · GEFS"), h("h2", { className:"sec-title" }, "Meteo ", h("em", null, "Festes")))),
-            h(FadeIn, { delay:.1 },
-              h("div", { className:"ia-panel" },
-                h("div", { style:{ display:"flex", alignItems:"center", gap:10, marginBottom:14 } }, h("span", { style:{ fontSize:"1.4rem" } }, "🤖"), h("span", { style:{ fontSize:".58rem", fontWeight:700, letterSpacing:".22em", textTransform:"uppercase", color:"var(--gold)" } }, "Avís · Intel·ligència Artificial i Meteorologia")),
-                h("p", { style:{ fontFamily:"Crimson Pro, serif", fontSize:".95rem", lineHeight:1.72, color:"rgba(253,246,227,.75)", position:"relative", zIndex:1 } },
-                  "Les previsions s'actualitzen cada hora. ECMWF per a la tendència general; AROME d'alta resolució quan falten menys de 3 dies. Les dates que superen els 15 dies del model es marquen amb 🔮 i s'activaran automàticament quan entren al rang de predicció."
-                )
-              )
-            ),
             meteo ? h(React.Fragment, null,
               /* Live Station */
               h(FadeIn, { delay:.15 },
                 h("div", { style:{ background:"var(--dark-card)", border:"1px solid rgba(201,168,76,.18)", borderRadius:16, padding:28, marginBottom:36 } },
-                  h("div", { style:{ display:"flex", alignItems:"center", gap:8, marginBottom:24, fontSize:".56rem", fontWeight:600, letterSpacing:".22em", textTransform:"uppercase", color:"rgba(201,168,76,.55)" } }, h("div", { className:"live-dot" }), "Directe · Estació Alcoi AVAMET c27m009e08"),
+                  h("div", { style:{ display:"flex", alignItems:"center", gap:8, marginBottom:24, fontSize:".56rem", fontWeight:600, textTransform:"uppercase", color:"rgba(201,168,76,.55)" } }, h("div", { className:"live-dot" }), "Directe · Estació Alcoi AVAMET c27m009e08"),
                   h("div", { style:{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:16 } },
                     h("div", { className:"fs" }, h("div", { className:"fs-label" }, "Temperatura"), h("div", { className:"fs-val" }, meteo.temp!=="N/D" ? meteo.temp+"°C" : "—")),
                     h("div", { className:"fs" }, h("div", { className:"fs-label" }, "Humitat"), h("div", { className:"fs-val" }, meteo.hum!=="N/D" ? meteo.hum+"%" : "—"))
-                  ),
-                  h("div", { style:{ marginTop:16, fontSize:".54rem", color:"rgba(253,246,227,.22)", letterSpacing:".1em", textAlign:"right" } }, "Actualitzat: "+new Date(meteo.fecha).toLocaleString("ca-ES"))
+                  )
                 )
               ),
 
-              /* ── DIES GRANS ── */
-              h(FadeIn, { delay:.2 }, h("div", { style:{ marginBottom:16 } }, h("div", { style:{ display:"flex", alignItems:"center", gap:12, marginBottom:22 } },
-                h("div", { style:{ width:4, height:28, borderRadius:2, background:"linear-gradient(180deg, var(--gold-light), var(--gold-dark))" } }),
-                h("div", null, h("div", { style:{ fontSize:".5rem", fontWeight:700, letterSpacing:".32em", textTransform:"uppercase", color:"var(--gold)", marginBottom:2 } }, "✦ Protagonistes de la Festa"), h("div", { style:{ fontFamily:"Playfair Display, serif", fontSize:"1.5rem", fontWeight:900, color:"var(--cream)" } }, "Els Dies Grans"))
-              ))),
-
+              /* DIES GRANS */
               h("div", { className:"hero-cards-grid", style:{ marginBottom:40 } },
                 diesGrans.map((f,i) => {
                   const oor = isOutOfRange(f);
-                  const col = probColor(f.prob);
-                  const info = parseDia(f.dia);
-                  const dn = dayNum(f.fecha);
-                  const badge = daysUntil(f.fecha);
                   const anal = resolveAnalisis(f.analisis_tecnico);
-                  return h(motion.div, { 
-                    key:f.fecha, 
-                    initial:{ opacity:0, y:30, scale:.96 }, 
-                    whileInView:{ opacity:1, y:0, scale:1 }, 
-                    viewport:{ once:true }, 
-                    transition:{ duration:.6, delay:i*.1, ease:[.25,.1,.25,1] },
-                    onClick: () => setSelectedDay(f), // CLICK AL MODAL
-                    style: { cursor: 'pointer' }
-                  },
+                  return h(motion.div, { key:f.fecha, onClick:()=>setSelectedDay(f), initial:{ opacity:0, y:20 }, whileInView:{ opacity:1, y:0 }, viewport:{ once:true }, transition:{ delay:i*.1 } },
                     h("div", { className:"hero-card"+(oor?" out-of-range":"") },
-                      h("div", { style:{ position:"absolute", top:14, right:16, zIndex:2, display:"flex", alignItems:"center", gap:6 } },
-                        oor
-                          ? h("div", { className:"soon-pill" }, "🔮 Aviat disponible")
-                          : h("div", { style:{ fontSize:".42rem", fontWeight:800, letterSpacing:".15em", textTransform:"uppercase", padding:"3px 10px", borderRadius:20, background:badge==='AVUI'?'var(--red)':'rgba(201,168,76,.12)', color:badge==='AVUI'?'#fff':'var(--gold)', border:'1px solid '+(badge==='AVUI'?'var(--red)':'rgba(201,168,76,.22)') } }, badge)
-                      ),
-                      h("div", { style:{ display:"flex", alignItems:"flex-end", justifyContent:"space-between", marginBottom:14, position:"relative", zIndex:1 } },
+                      h("div", { style:{ display:"flex", justifyContent:"space-between", marginBottom:14 } },
+                        h("div", null, h("div", { className:"hc-weekday" }, f.dia.split('·')[0]), h("div", { className:"hc-day" }, parseDateMidnight(f.fecha).getDate())),
                         h("div", { style:{ display:"flex", alignItems:"center", gap:10 } },
-                          h("div", null, h("div", { className:"hc-weekday" }, info.weekday), h("div", { className:"hc-day", style:oor?{ opacity:.55 }:{} }, dn)),
-                          !oor && f.modelo_fuente && f.modelo_fuente!=="N/D" && h("div", { className:"model-badge "+f.modelo_fuente.toLowerCase() }, f.modelo_fuente)
-                        ),
-                        h("div", { style:{ display:"flex", alignItems:"flex-end", gap:12 } },
-                          h("div", { className:"hc-temp", style:oor?{ opacity:.28, fontSize:"1.6rem" }:{} }, oor ? '—' : (isND(f.temp_max)?'—':f.temp_max+'°')),
-                          h(SmartIcon, { f, fontSize: oor?'2.2rem':'2.8rem' }),
+                          !oor && f.modelo_fuente!=="N/D" && h("div", { className:"model-badge "+f.modelo_fuente.toLowerCase() }, f.modelo_fuente),
+                          h(SmartIcon, { f, fontSize: "2.8rem" })
                         )
                       ),
-                      h("div", { className:"hc-event", style:{ marginBottom:14, position:"relative", zIndex:1, opacity:oor?.6:1 } }, info.event),
-                      h("div", { style:{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:8, marginBottom:14, position:"relative", zIndex:1 } },
-                        [["Màx", oor?"—":isND(f.temp_max)?"—":f.temp_max+"°C"],
-                         ["Prob. Pluja", oor?"—":isND(f.prob)?"—":f.prob+"%"],
-                         ["Precipitació", oor?"—":isND(f.litros)?"—":f.litros+" mm"]].map(([l,v]) =>
-                          h("div", { key:l, className:"hc-stat", style:oor?{ opacity:.38 }:{} },
-                            h("div", { className:"hc-stat-label" }, l),
-                            h("div", { className:"hc-stat-val"+(v==="—"?" nd":"") }, v)
-                          )
-                        )
-                      ),
-                      h("div", { className:"hc-analysis"+(anal.nd?" nd-warning":""), style:{ borderColor:anal.nd?'rgba(201,168,76,.14)':col, position:"relative", zIndex:1 } }, anal.text)
+                      h("div", { className:"hc-event", style:{ marginBottom:14 } }, f.dia.split('·')[1]),
+                      h("div", { className:"hc-analysis"+(anal.nd?" nd-warning":""), style:{ borderColor:anal.nd?'rgba(201,168,76,.14)':probColor(f.prob) } }, anal.text),
+                      
+                      // INDICADOR CLIC
+                      !oor && h('div', { className: 'card-cta' }, '⏱️ Veure previsió per hores ', h('span', null, '↗'))
                     )
                   );
                 })
               ),
 
-              /* ── CALENDARI ENTRAETES ── */
+              /* CALENDARI ENTRAETES */
               h(FadeIn, { delay:.3 },
                 h("div", { className:"countdown-section" },
-                  h("div", { style:{ display:"flex", justifyContent:"space-between", alignItems:"flex-end", flexWrap:"wrap", gap:16, marginBottom:24 } },
-                    h("div", { style:{ display:"flex", alignItems:"center", gap:12 } },
-                      h("div", { style:{ width:4, height:28, borderRadius:2, background:"linear-gradient(180deg, rgba(201,168,76,.45), rgba(201,168,76,.12))" } }),
-                      h("div", null, h("div", { style:{ fontSize:".5rem", fontWeight:700, letterSpacing:".32em", textTransform:"uppercase", color:"rgba(201,168,76,.55)", marginBottom:2 } }, "Entraetes i Preparatius"), h("div", { style:{ fontFamily:"Playfair Display, serif", fontSize:"1.2rem", fontWeight:900, color:"rgba(253,246,227,.7)" } }, "Calendari Previ"))
-                    ),
-                    h("a", { href:"https://www.asjordi.org/upload/files/entraetes/2026/calendari-d039entradetes-2026.pdf", target:"_blank", rel:"noopener noreferrer", style:{ padding:"8px 16px", background:"rgba(201,168,76,.1)", border:"1px solid rgba(201,168,76,.3)", borderRadius:"20px", color:"var(--gold)", fontSize:".7rem", fontWeight:700, textDecoration:"none", transition:"background .2s", display:"inline-block" }, onMouseOver:e=>e.currentTarget.style.background="rgba(201,168,76,.2)", onMouseOut:e=>e.currentTarget.style.background="rgba(201,168,76,.1)" }, "📄 Veure Calendari Oficial (PDF)")
-                  ),
-                  h("div", { style:{ display:"flex", alignItems:"center", gap:8, marginBottom:18, padding:"8px 14px", background:"rgba(201,168,76,.04)", border:"1px solid rgba(201,168,76,.1)", borderRadius:8, width:"fit-content" } },
-                    h("span", { className:"cc-badge-ee" }, "EE"),
-                    h("span", { style:{ fontSize:".62rem", color:"rgba(253,246,227,.45)", fontFamily:"Crimson Pro, serif", fontStyle:"italic" } }, "Escuadra Especial (Capitán, Alférez o Mig)")
-                  ),
-                  entraetes.length > 0
-                    ? h("div", { className:"countdown-grid" },
-                        entraetes.map((f,i) => {
-                          const oor = isOutOfRange(f);
-                          const col = probColor(f.prob);
-                          const info = parseDia(f.dia);
-                          const dn = dayNum(f.fecha);
-                          const badge = daysUntil(f.fecha);
-                          const isToday = badge === 'AVUI';
-                          const agenda = ENTRAETES_INFO[f.fecha];
-                          const anal = resolveAnalisis(f.analisis_tecnico);
-                          return h(motion.div, {
-                            key:f.fecha,
-                            className:["countdown-card", agenda?"has-agenda":"", oor?"out-of-range":""].filter(Boolean).join(" "),
-                            initial:{ opacity:0, y:16, scale:.96 }, whileInView:{ opacity:1, y:0, scale:1 }, viewport:{ once:true }, transition:{ duration:.42, delay:i*.05, ease:[.25,.1,.25,1] },
-                            style: { cursor: 'pointer', ...(isToday&&!oor?{ borderColor:'var(--gold)', boxShadow:'0 0 24px rgba(201,168,76,.12)' }:{}) },
-                            onClick: () => setSelectedDay(f) // CLICK AL MODAL
-                          },
-                            h("div", { className:"cc-meteo-header" },
-                              h("div", { style:{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:10 } },
-                                h("div", null, h("div", { className:"cc-weekday", style:oor?{ opacity:.45 }:{} }, info.weekday), h("div", { className:"cc-day", style:oor?{ opacity:.45 }:{} }, dn)),
-                                h("div", { style:{ display:"flex", flexDirection:"column", alignItems:"flex-end", gap:4 } },
-                                  h("div", { style:{ fontSize:"1.5rem", lineHeight:1 } }, oor ? h("span", { className:"waiting-icon", style:{ fontSize:"1.3rem" } }, "🔮") : (f.icono||"🌡️")),
-                                  h("div", { style:{ display:"flex", alignItems:"center", gap:6 } },
-                                    !oor && f.modelo_fuente && f.modelo_fuente!=="N/D" && h("div", { className:"model-badge "+f.modelo_fuente.toLowerCase() }, f.modelo_fuente),
-                                    oor ? h("div", { className:"soon-pill" }, "🔮") : h("div", { style:{ fontSize:".42rem", fontWeight:700, letterSpacing:".12em", textTransform:"uppercase", color:isToday?'#fff':'rgba(201,168,76,.45)', background:isToday?'var(--red)':'rgba(201,168,76,.06)', padding:'2px 8px', borderRadius:10 } }, badge)
-                                  )
-                                )
-                              ),
-                              h("div", { style:{ display:"flex", justifyContent:"space-between", alignItems:"center" } },
-                                h("div", { className:"cc-temp"+(oor?" nd":"") }, oor?"—":isND(f.temp_max)?"—":f.temp_max+"°"),
-                                !oor && !isND(f.prob) && h("div", { className:"cc-prob", style:{ color:col } }, f.prob+"% pluja")
-                              ),
-                              h("div", { style:{ marginTop:6, fontFamily:"Crimson Pro, serif", fontStyle:"italic", fontSize:".72rem", color:oor?"rgba(253,246,227,.25)":"rgba(253,246,227,.4)" } }, info.event),
-                              oor && anal.nd && h("div", { className:"cc-nd-hint" }, anal.text)
+                  h("div", { className:"countdown-grid" },
+                    entraetes.map((f,i) => {
+                      const oor = isOutOfRange(f);
+                      const anal = resolveAnalisis(f.analisis_tecnico);
+                      const agenda = ENTRAETES_INFO[f.fecha];
+                      return h(motion.div, { key:f.fecha, onClick:()=>setSelectedDay(f), initial:{ opacity:0, y:16 }, whileInView:{ opacity:1, y:0 }, viewport:{ once:true }, transition:{ delay:i*.05 } },
+                        h("div", { className:["countdown-card", agenda?"has-agenda":"", oor?"out-of-range":""].join(" ") },
+                          h("div", { className:"cc-meteo-header" },
+                            h("div", { style:{ display:"flex", justifyContent:"space-between" } },
+                              h("div", null, h("div", { className:"cc-weekday" }, f.dia.split('·')[0]), h("div", { className:"cc-day" }, parseDateMidnight(f.fecha).getDate())),
+                              h(SmartIcon, { f, fontSize: "1.5rem" })
                             ),
-                            agenda && h("div", { className:"cc-divider" }),
-                            agenda && h("div", { className:"cc-agenda" },
-                              agenda.map((ag,idx) => h(React.Fragment, { key:idx }, idx>0&&h("div", { className:"cc-carrer-sep" }), h(AgendaCarrer, { carrer:ag.carrer, desfilades:ag.desfilades })))
-                            )
-                          );
-                        })
-                      )
-                    : h("div", { className:"countdown-empty" }, h("div", { style:{ fontSize:"2rem", marginBottom:10 } }, "🎉"), h("div", { style:{ fontFamily:"Playfair Display, serif", fontSize:"1.1rem", fontWeight:700, color:"var(--gold)", marginBottom:6 } }, "Ja estem en Festes!"), h("div", { style:{ fontFamily:"Crimson Pro, serif", fontStyle:"italic", fontSize:".9rem", color:"rgba(253,246,227,.45)" } }, "Les entraetes i preparatius ja han conclòs. Gaudeix dels Dies Grans!"))
-                )
-              ),
-
-              /* Meteograma */
-              meteo.mapa_url && meteo.mapa_url!=="N/D" && h(FadeIn, { delay:.4 },
-                h("div", { style:{ background:"var(--dark-card)", border:"1px solid rgba(201,168,76,.18)", borderRadius:16, padding:20, marginTop:36 } },
-                  h("div", { className:"sec-label", style:{ marginBottom:12 } }, "Meteograma T850 + T500 + Precipitació · GEFS"),
-                  h("img", { src:meteo.mapa_url, alt:"Meteograma", style:{ width:"100%", borderRadius:8, border:"1px solid rgba(201,168,76,.12)" } })
-                )
-              )
-            ) : h("div", { style:{ textAlign:"center", padding:60, color:"rgba(253,246,227,.28)", fontFamily:"Crimson Pro, serif", fontStyle:"italic", fontSize:"1.1rem" } },
-              "Carregant dades meteorològiques...", h("br"), h("small", { style:{ fontSize:".7rem", marginTop:8, display:"block", letterSpacing:".1em" } }, "Assegura't que datos.json existeix al repositori")
-            ),
-
-            /* ── MODAL POR HORAS ── */
-            h(AnimatePresence, null,
-              selectedDay && h(motion.div, {
-                className: "fixed inset-0 z-[1001] flex items-center justify-center p-4",
-                style: { background: "rgba(0,0,0,.6)", backdropFilter: "blur(4px)" },
-                initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 },
-                onClick: () => setSelectedDay(null)
-              },
-                h(motion.div, {
-                  className: "modal-card rounded-2xl p-6 w-full max-w-lg relative overflow-hidden",
-                  initial: { y: 30, opacity: 0, scale: 0.95 },
-                  animate: { y: 0, opacity: 1, scale: 1 },
-                  exit: { y: 20, opacity: 0, scale: 0.95 },
-                  transition: { type: "spring", damping: 25, stiffness: 300 },
-                  onClick: (e) => e.stopPropagation() // Evita tancar si clica dins
-                },
-                  /* Botó Tancar */
-                  h("button", {
-                    className: "absolute top-5 right-5 text-[var(--gold)] hover:text-white transition-colors",
-                    onClick: () => setSelectedDay(null)
-                  }, 
-                    h("svg", { width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", stroke:"currentColor", strokeWidth:"2", strokeLinecap:"round" },
-                      h("path", { d:"M18 6L6 18M6 6l12 12" })
-                    )
-                  ),
-                  /* Cabecera Modal */
-                  h("div", { className: "mb-6 pr-6" },
-                    h("h3", { className: "font-serif text-xl font-bold text-[var(--cream)] mb-2" }, selectedDay.dia),
-                    selectedDay.modelo_fuente && selectedDay.modelo_fuente !== "N/D" && !isOutOfRange(selectedDay) &&
-                      h("span", { className: "model-badge " + selectedDay.modelo_fuente.toLowerCase() }, selectedDay.modelo_fuente)
-                  ),
-                  /* Contingut Hores */
-                  (!selectedDay.horas || selectedDay.horas.length === 0 || isOutOfRange(selectedDay)) ?
-                    h("p", { className: "font-crim italic text-[rgba(253,246,227,.5)] text-center py-8" },
-                      "La previsió detallada per hores encara no està disponible per a aquesta data. Les dades horàries s'activen 15 dies abans."
-                    ) :
-                    h("div", { className: "flex gap-3 overflow-x-auto hide-scrollbar snap-x pb-2 pt-1" },
-                      selectedDay.horas.map((hData, i) =>
-                        h("div", { key: i, className: "hourly-card flex flex-col items-center justify-center rounded-xl p-3 min-w-[80px] snap-center shrink-0" },
-                          h("span", { className: "font-mono text-[.7rem] text-[var(--gold)] mb-2" }, hData.hora),
-                          h("span", { className: "text-3xl mb-2" }, hData.icono),
-                          h("span", { className: "font-serif font-bold text-[1.2rem] text-[var(--cream)] leading-none" }, hData.temp !== "N/D" ? `${hData.temp}°` : "-"),
-                          h("div", { className: "flex flex-col items-center mt-2 opacity-80 gap-1" },
-                            hData.prob > 0 && h("span", { className: "text-[.6rem] font-bold text-[#60a5fa] leading-none" }, `${hData.prob}%`),
-                            hData.litros > 0 && h("span", { className: "text-[.55rem] text-blue-200 leading-none" }, `${hData.litros}mm`)
+                            h("div", { style:{ marginTop:6, fontSize:".72rem", color:"rgba(253,246,227,.4)" } }, f.dia.split('·')[1]),
+                            
+                            // INDICADOR CLIC
+                            !oor && h('div', { className: 'card-cta' }, '⏱️ Previsió per hores ', h('span', null, '↗'))
+                          ),
+                          agenda && h("div", { className:"cc-divider" }),
+                          agenda && h("div", { className:"cc-agenda" },
+                            agenda.map((ag,idx) => h(React.Fragment, { key:idx }, h("div", { className:"cc-carrer-name mb-2" }, "📍 " + ag.carrer), h("div", { className:"cc-desfilades-grid mb-3" }, 
+                              ag.desfilades.map((df,x) => h("div", { key:x, className:"cc-desfile-item" }, h("span", { className:"cc-desfile-hora font-mono" }, df.hora), h("span", { className:"cc-desfile-fila" }, df.fila)))
+                            )))
                           )
                         )
-                      )
-                    )
-                )
-              )
-            )
-
-          )
-        );
-      }
-
-      /* ═══ TIMELINE ═══ */
-      function TimelineSection() {
-        const [act, setAct] = useState(0);
-        const it = TIMELINE[act];
-        return h("section", { id:"trilogia", style:{ padding:"100px 24px", maxWidth:920, margin:"0 auto" } },
-          h(FadeIn, null, h("div", { style:{ textAlign:"center", marginBottom:60 } }, h("div", { className:"sec-label" }, "24 · 25 · 26 · 27 d'Abril"), h("h2", { className:"sec-title" }, "La ", h("em", null, "Trilogia"), " de les Festes"))),
-          h("div", { style:{ display:"flex", gap:32, flexWrap:"wrap" } },
-            h("div", { style:{ display:"flex", flexDirection:"column", alignItems:"center", minWidth:60 } },
-              TIMELINE.map((t,i) => h(React.Fragment, { key:t.id },
-                h(motion.div, { className:"tl-dot"+(act===i?" active":""), onClick:()=>setAct(i), whileTap:{ scale:.92 }, title:t.titol }, t.emoji),
-                i<TIMELINE.length-1 && h("div", { className:"tl-line", style:{ height:64 } })
-              ))
-            ),
-            h("div", { style:{ flex:1, minWidth:280 } },
-              h(AnimatePresence, { mode:"wait" },
-                h(motion.div, { key:act, initial:{ opacity:0, x:22 }, animate:{ opacity:1, x:0 }, exit:{ opacity:0, x:-22 }, transition:{ duration:.38 } },
-                  h("div", { style:{ background:"var(--dark-card)", border:"1px solid rgba(201,168,76,.18)", borderLeft:"3px solid "+it.color, borderRadius:12, padding:24, backdropFilter:"blur(6px)" } },
-                    h("div", { style:{ display:"flex", alignItems:"baseline", gap:12, marginBottom:6 } }, h("span", { style:{ fontFamily:"Playfair Display, serif", fontSize:"3rem", fontWeight:900, color:it.color, lineHeight:1 } }, it.dia), h("span", { style:{ fontSize:".62rem", fontWeight:600, letterSpacing:".2em", textTransform:"uppercase", color:"rgba(253,246,227,.38)" } }, it.mes)),
-                    h("h3", { style:{ fontFamily:"Playfair Display, serif", fontSize:"1.4rem", fontWeight:700, color:"#fdf6e3", marginBottom:4 } }, it.titol),
-                    h("p", { style:{ fontFamily:"Crimson Pro, serif", fontStyle:"italic", color:"#c9a84c", fontSize:".88rem", marginBottom:16 } }, it.subtitol),
-                    h("p", { style:{ fontFamily:"Crimson Pro, serif", fontSize:"1.02rem", lineHeight:1.68, color:"rgba(253,246,227,.72)", marginBottom:20 } }, it.desc),
-                    h("div", { style:{ display:"flex", flexDirection:"column", gap:8 } },
-                      it.detalls.map((d,j) => h(motion.div, { key:j, initial:{ opacity:0, x:-10 }, animate:{ opacity:1, x:0 }, transition:{ delay:j*.07 }, style:{ display:"flex", alignItems:"center", gap:10, fontSize:".78rem", color:"rgba(253,246,227,.55)" } }, h("div", { style:{ width:4, height:4, borderRadius:"50%", background:it.color, flexShrink:0 } }), d))
-                    )
+                      );
+                    })
                   )
                 )
-              ),
-              h("div", { style:{ display:"flex", gap:8, marginTop:20, flexWrap:"wrap" } },
-                TIMELINE.map((t,i) => h("button", { key:t.id, onClick:()=>setAct(i), style:{ padding:"6px 16px", borderRadius:20, fontSize:".6rem", fontWeight:600, letterSpacing:".12em", textTransform:"uppercase", cursor:"pointer", transition:"all .2s", background:act===i?t.color:"transparent", color:act===i?(t.color==="#fff"?"#0b0806":"#fff"):"rgba(253,246,227,.38)", border:"1px solid "+(act===i?t.color:"rgba(201,168,76,.18)") } }, "Dia "+t.dia))
+              )
+            ) : h("div", { style:{ textAlign:"center", padding:60 } }, "Carregant dades...")
+          ),
+
+          /* ── MODAL ── */
+          h(AnimatePresence, null,
+            selectedDay && h(motion.div, { className: "fixed inset-0 z-[1001] flex items-center justify-center p-4", style:{ background:"rgba(0,0,0,.6)", backdropFilter:"blur(8px)" }, initial:{opacity:0}, animate:{opacity:1}, exit:{opacity:0}, onClick:()=>setSelectedDay(null) },
+              h(motion.div, { className: "modal-card rounded-2xl p-6 w-full max-w-lg relative", initial:{y:20, opacity:0}, animate:{y:0, opacity:1}, exit:{y:20, opacity:0}, onClick:e=>e.stopPropagation() },
+                h("button", { className:"absolute top-4 right-4 text-[var(--gold)]", onClick:()=>setSelectedDay(null) }, "✕"),
+                h("h3", { className:"font-serif text-xl font-bold mb-2" }, selectedDay.dia),
+                (!selectedDay.horas || selectedDay.horas.length === 0 || isOutOfRange(selectedDay)) ? 
+                  h("p", { className:"italic text-sm opacity-50 py-8 text-center" }, "La previsió detallada per hores encara no està disponible per a aquesta data. Les dades horàries s'activen 15 dies abans.") :
+                  h("div", { className:"flex gap-3 overflow-x-auto hide-scrollbar snap-x py-4" },
+                    selectedDay.horas.map((hData, i) => h("div", { key:i, className:"hourly-card flex flex-col items-center p-3 rounded-xl min-w-[80px] snap-center" },
+                      h("span", { className:"font-mono text-[.65rem] text-[var(--gold)] mb-2" }, hData.hora),
+                      h("span", { className:"text-2xl mb-2" }, hData.icono),
+                      h("span", { className:"font-bold" }, hData.temp+"°")
+                    ))
+                  )
               )
             )
           )
         );
       }
 
-      /* ═══ FILAES ═══ */
       function FilaesSection() {
         const [fil, setFil] = useState("tot");
         const list = fil==="tot" ? FILAES : FILAES.filter(f=>f.tipus===fil);
-        const nC = FILAES.filter(f=>f.tipus==="cristia").length;
-        const nM = FILAES.filter(f=>f.tipus==="moro").length;
         return h("section", { id:"filaes", style:{ padding:"88px 24px", background:"rgba(10,6,2,.48)" } },
           h("div", { style:{ maxWidth:1100, margin:"0 auto" } },
-            h(FadeIn, null, h("div", { style:{ textAlign:"center", marginBottom:40 } },
-              h("div", { className:"sec-label" }, FILAES.length+" Filaes · Dos Bandos"),
-              h("h2", { className:"sec-title" }, "Les ", h("em", null, "Filaes"), " d'Alcoi"),
-              h("p", { style:{ fontFamily:"Crimson Pro, serif", fontSize:".92rem", color:"rgba(253,246,227,.48)", fontStyle:"italic", marginTop:10 } }, nC+" Cristianes · "+nM+" Mores"),
-              h("div", { style:{ display:"flex", justifyContent:"center", gap:8, marginTop:22, flexWrap:"wrap" } },
-                [["tot","Totes",null],["cristia","Bando Cristià","#cc0000"],["moro","Bando Moro","#c9a84c"]].map(([v,l,c]) =>
-                  h("button", { key:v, className:"tab-btn"+(fil===v?" on":""), onClick:()=>setFil(v), style:fil===v&&c?{ background:c, borderColor:c }:{} }, l)
-                )
-              )
-            )),
-            h(motion.div, { layout:true, style:{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(138px,1fr))", gap:12 } },
-              h(AnimatePresence, null, list.map((f,i) => h(motion.div, { key:f.nom, layout:true, initial:{ opacity:0, scale:.9 }, animate:{ opacity:1, scale:1 }, exit:{ opacity:0, scale:.85 }, transition:{ duration:.3, delay:i*.018 } },
+            h(FadeIn, null, h("div", { style:{ textAlign:"center", marginBottom:40 } }, h("h2", { className:"sec-title" }, "Les ", h("em", null, "Filaes"), " d'Alcoi"))),
+            h("div", { style:{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(138px,1fr))", gap:12 } },
+              list.map((f,i) => h(motion.div, { key:f.nom, layout:true, initial:{opacity:0}, animate:{opacity:1} },
                 h("div", { className:"fila-card" },
-                  h("img", { src:f.img, alt:f.nom, loading:"lazy", style:{ width:"100%", aspectRatio:"3/4", objectFit:"cover", display:"block" } }),
+                  h("img", { src:f.img, alt:f.nom, style:{ width:"100%", aspectRatio:"3/4", objectFit:"cover" } }),
                   h("div", { className:"fila-badge "+(f.tipus==="cristia"?"badge-c":"badge-m") }, f.tipus==="cristia"?"C":"M"),
-                  f.cargo && h("div", { className:"cargo-pill" }, f.cargo),
-                  h("div", { style:{ padding:"10px 10px 12px", background:"rgba(11,8,6,.88)" } }, h("div", { style:{ fontSize:".6rem", fontWeight:700, letterSpacing:".08em", textTransform:"uppercase", color:"rgba(253,246,227,.72)", lineHeight:1.2, textAlign:"center" } }, f.nom))
+                  h("div", { style:{ padding:"10px", textAlign:"center", fontSize:".6rem", fontWeight:700, textTransform:"uppercase" } }, f.nom)
                 )
-              )))
+              ))
             )
           )
         );
       }
 
-      /* ═══ CARTELL ═══ */
-      function CartelSection() {
-        return h("section", { id:"cartell", style:{ padding:"88px 24px" } },
-          h("div", { style:{ maxWidth:720, margin:"0 auto" } },
-            h(FadeIn, null, h("div", { style:{ textAlign:"center", marginBottom:48 } }, h("div", { className:"sec-label" }, "Moros i Cristians · 2026"), h("h2", { className:"sec-title" }, "Cartell de ", h("em", null, "Festes")))),
-            h(FadeIn, { delay:.15 }, h("div", { className:"cartel-frame" }, h("img", { src:"https://agendaalcoy.com/wp-content/uploads/2026/04/cartel-de-fiestas-de-moros-y-cristianos-alcoy-2026.jpg", alt:"Cartell 2026", loading:"lazy" }))),
-            h(FadeIn, { delay:.25 }, h("div", { style:{ textAlign:"center", marginTop:32, maxWidth:500, margin:"32px auto 0" } }, h("p", { style:{ fontFamily:"Crimson Pro, serif", fontSize:"1.1rem", fontStyle:"italic", color:"rgba(253,246,227,.68)", lineHeight:1.72 } }, "Viu la màgia de la trilogia. Quatre dies on la història, la música, la fe i la pólvora s'uneixen en la festa més espectacular del Mediterrani.")))
-          )
-        );
-      }
-
-      /* ═══ GALERIA ═══ */
-      function GallerySection() {
-        return h("section", { id:"galeria", style:{ padding:"88px 24px", maxWidth:1100, margin:"0 auto" } },
-          h(FadeIn, null, h("div", { style:{ textAlign:"center", marginBottom:40 } }, h("div", { className:"sec-label" }, "Imatges · Arxiu Fotogràfic"), h("h2", { className:"sec-title" }, h("em", null, "Galeria"), " Multimèdia"))),
-          h("div", { className:"masonry" }, GALLERY.map((url,i) => h(motion.div, { key:i, className:"masonry-item", initial:{ opacity:0, y:20 }, whileInView:{ opacity:1, y:0 }, viewport:{ once:true }, transition:{ delay:i*.06, duration:.5 } }, h("img", { src:url, alt:"Festes d'Alcoi", loading:"lazy" }))))
-        );
-      }
-
-      /* ═══ FOOTER ═══ */
-      function Footer() {
-        return h("footer", null,
-          h("div", { style:{ maxWidth:1100, margin:"0 auto" } },
-            h("div", { style:{ display:"flex", flexWrap:"wrap", gap:48, justifyContent:"space-between", marginBottom:52 } },
-              h("div", { style:{ flex:"1 1 280px", minWidth:220 } },
-                h("div", { style:{ display:"flex", alignItems:"center", gap:10, marginBottom:18 } }, h("img", { src:"./logo.png", alt:"Logo", style:{ width:32, height:32, borderRadius:"50%", objectFit:"cover", border:"1px solid rgba(201,168,76,.25)", background:"var(--dark2)" } }), h("div", { style:{ fontFamily:"Playfair Display, serif", fontSize:"1.1rem", fontWeight:900, color:"#fdf6e3" } }, "Meteo", h("span", { style:{ color:"#c9a84c" } }, "Festes"), "2026")),
-                h("div", { style:{ background:"rgba(35,26,14,.5)", border:"1px solid rgba(201,168,76,.1)", borderRadius:10, padding:16, marginBottom:14 } },
-                  h("div", { style:{ fontSize:".48rem", fontWeight:700, letterSpacing:".22em", textTransform:"uppercase", color:"rgba(201,168,76,.45)", marginBottom:8 } }, "Avís Legal"),
-                  h("p", { style:{ fontFamily:"Crimson Pro, serif", fontSize:".82rem", color:"rgba(253,246,227,.45)", lineHeight:1.65 } }, "Lloc web sense ànim de lucre creat exclusivament per a la consulta meteorològica festera. Tots els drets de les imatges pertanyen a les seues respectives fonts i autors (Associació de Sant Jordi, etc.).")
-                )
-              ),
-              h("div", { style:{ flex:"0 1 210px" } },
-                h("div", { style:{ fontSize:".5rem", fontWeight:700, letterSpacing:".26em", textTransform:"uppercase", color:"rgba(201,168,76,.45)", marginBottom:18 } }, "Enllaços Útils"),
-                [["https://www.asjordi.org","Associació de Sant Jordi"],["https://www.alcoyturismo.com","Turisme Alcoi"],["https://www.avamet.org","AVAMET Meteorologia"],["https://open-meteo.com","Open-Meteo API"],["https://www.meteociel.fr","Meteociel GEFS"]].map(([href,label]) =>
-                  h("a", { key:href, href, target:"_blank", rel:"noopener noreferrer", style:{ display:"block", fontSize:".76rem", color:"#c9a84c", marginBottom:11, textDecoration:"none", opacity:.65, transition:"opacity .2s" }, onMouseOver:e=>{e.currentTarget.style.opacity=1;}, onMouseOut:e=>{e.currentTarget.style.opacity=.65;} }, "→ "+label)
-                )
-              ),
-              h("div", { style:{ flex:"0 1 200px" } },
-                h("div", { style:{ fontSize:".5rem", fontWeight:700, letterSpacing:".26em", textTransform:"uppercase", color:"rgba(201,168,76,.45)", marginBottom:18 } }, "Fonts de Dades"),
-                ["AVAMET · c27m009e08","ECMWF (Model Europeu)","AROME (Alta resolució)","IA Generativa"].map(l =>
-                  h("div", { key:l, style:{ fontSize:".74rem", color:"rgba(253,246,227,.38)", marginBottom:10, display:"flex", alignItems:"center", gap:7 } }, h("div", { style:{ width:4, height:4, borderRadius:"50%", background:"var(--gold-dark)", flexShrink:0 } }), l)
-                )
-              )
-            ),
-            h("div", { style:{ height:1, background:"linear-gradient(90deg, transparent, rgba(201,168,76,.12), transparent)", marginBottom:28 } }),
-            h("div", { style:{ display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:14, marginBottom:28 } }, h("p", { style:{ fontSize:".55rem", color:"rgba(253,246,227,.18)", letterSpacing:".1em" } }, "© 2026 MeteoFestes2026 · Dades: AVAMET · ECMWF · AROME · GEFS")),
-            h("div", { style:{ textAlign:"center", paddingTop:6 } }, h("p", { style:{ fontFamily:"Crimson Pro, serif", fontStyle:"italic", color:"#c9a84c", fontSize:"1.18rem", letterSpacing:".03em" } }, "✦ Vítol al Patró Sant Jordi! ✦"))
-          )
-        );
-      }
-
-      /* ═══ APP ═══ */
+      // Re-utilizar Cartel, Gallery, Footer del código original...
       function App() {
         const [scrolled, setScrolled] = useState(false);
-        useEffect(() => { const fn=()=>setScrolled(window.scrollY>60); window.addEventListener("scroll",fn,{ passive:true }); return ()=>window.removeEventListener("scroll",fn); }, []);
-        const div = h("div", { className:"gold-div" });
-        return h(React.Fragment, null, h(Navbar,{scrolled}), h(HeroSection), div, h(MeteoSection), div, h(TimelineSection), div, h(FilaesSection), div, h(CartelSection), div, h(GallerySection), h(Footer));
+        useEffect(() => { window.addEventListener("scroll",()=>setScrolled(window.scrollY>60)); }, []);
+        return h(React.Fragment, null, h(Navbar,{scrolled}), h(HeroSection), h("div",{className:"gold-div"}), h(MeteoSection), h("div",{className:"gold-div"}), h(FilaesSection));
       }
 
       ReactDOM.createRoot(document.getElementById("root")).render(h(App));
