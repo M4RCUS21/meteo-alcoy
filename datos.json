@@ -1,6 +1,6 @@
 {
-  "temp": 13.2,
-  "hum": 41,
+  "temp": 9.6,
+  "hum": 57,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041312/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -125,7 +125,7 @@
         },
         {
           "hora": "02:00",
-          "temp": 10,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -140,7 +140,7 @@
     {
       "dia": "Dimarts 14 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-14",
-      "temp_max": 19.4,
+      "temp_max": 19.5,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -154,7 +154,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -1041,5 +1041,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-13T19:00:37.887Z"
+  "fecha": "2026-04-13T21:00:35.922Z"
 }
