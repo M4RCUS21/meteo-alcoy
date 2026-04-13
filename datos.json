@@ -4,14 +4,79 @@
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041300/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
+      "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
+      "fecha": "2026-04-08",
+      "temp_max": "N/D",
+      "icono": "❓",
+      "prob": "N/D",
+      "litros": "N/D",
+      "consejo": "⚠️ Sin datos de temperatura disponibles",
+      "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
+      "modelo_fuente": "N/D",
+      "dias_restantes": -5,
+      "datos_disponibles": false
+    },
+    {
+      "dia": "Dijous 9 · Entraetes (desfiles nocturnos)",
+      "fecha": "2026-04-09",
+      "temp_max": "N/D",
+      "icono": "❓",
+      "prob": "N/D",
+      "litros": "N/D",
+      "consejo": "⚠️ Sin datos de temperatura disponibles",
+      "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
+      "modelo_fuente": "N/D",
+      "dias_restantes": -4,
+      "datos_disponibles": false
+    },
+    {
+      "dia": "Divendres 10 · Entraetes (desfiles nocturnos)",
+      "fecha": "2026-04-10",
+      "temp_max": "N/D",
+      "icono": "❓",
+      "prob": "N/D",
+      "litros": "N/D",
+      "consejo": "⚠️ Sin datos de temperatura disponibles",
+      "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
+      "modelo_fuente": "N/D",
+      "dias_restantes": -3,
+      "datos_disponibles": false
+    },
+    {
+      "dia": "Dissabte 11 · Entraetes (desfiles nocturnos)",
+      "fecha": "2026-04-11",
+      "temp_max": "N/D",
+      "icono": "❓",
+      "prob": "N/D",
+      "litros": "N/D",
+      "consejo": "⚠️ Sin datos de temperatura disponibles",
+      "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
+      "modelo_fuente": "N/D",
+      "dias_restantes": -2,
+      "datos_disponibles": false
+    },
+    {
+      "dia": "Diumenge 12 · Entraetes (desfiles nocturnos)",
+      "fecha": "2026-04-12",
+      "temp_max": "N/D",
+      "icono": "❓",
+      "prob": "N/D",
+      "litros": "N/D",
+      "consejo": "⚠️ Sin datos de temperatura disponibles",
+      "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
+      "modelo_fuente": "N/D",
+      "dias_restantes": -1,
+      "datos_disponibles": false
+    },
+    {
       "dia": "Dilluns 13 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-13",
       "temp_max": 15.8,
-      "icono": "❓",
-      "prob": "N/D",
+      "icono": "⛈️",
+      "prob": 95,
       "litros": 11.3,
       "consejo": "🧥 Noche fresca. Se recomienda capa térmica bajo el traje",
-      "analisis_tecnico": "Datos del modelo no disponibles para este día. 🌡️ Máxima de 15.8 °C: se prevé una noche fresca. El enfriamiento radiativo en el microclima del valle será acusado tras la puesta del sol.",
+      "analisis_tecnico": "El modelo de mesoescala AROME (resolución ~1.3 km) ofrece una representación de alta resolución del flujo local de la Foia d'Alcoi. Situación de riesgo meteorológico alto: todos los indicadores apuntan a precipitaciones generalizadas, persistentes e intensas. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. 🌡️ Máxima de 15.8°C: se prevé una noche fresca con enfriamiento radiativo. 🔴 Riesgo alto de precipitación. La entraeta podría suspenderse. Consulta el protocolo oficial.",
       "modelo_fuente": "AROME",
       "dias_restantes": 0,
       "datos_disponibles": true
@@ -20,11 +85,11 @@
       "dia": "Dimarts 14 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-14",
       "temp_max": 18.8,
-      "icono": "❓",
-      "prob": "N/D",
+      "icono": "☀️",
+      "prob": 0,
       "litros": 0,
       "consejo": "🌙 Noche agradable. Temperatura suave, perfecta para desfilar",
-      "analisis_tecnico": "Datos del modelo no disponibles para este día.",
+      "analisis_tecnico": "El modelo de mesoescala AROME (resolución ~1.3 km) ofrece una representación de alta resolución del flujo local de la Foia d'Alcoi. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "AROME",
       "dias_restantes": 1,
       "datos_disponibles": true
@@ -37,7 +102,7 @@
       "prob": 0,
       "litros": 0,
       "consejo": "🌙 Noche agradable. Temperatura suave, perfecta para desfilar",
-      "analisis_tecnico": "Previsión a corto-medio plazo (2 días) del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Cielos despejados o con escasa nubosidad de tipo cúmulo de buen tiempo. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 2,
       "datos_disponibles": true
@@ -50,7 +115,7 @@
       "prob": 0,
       "litros": 0,
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a corto-medio plazo (3 días) del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Cielos despejados o con escasa nubosidad de tipo cúmulo de buen tiempo. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 3,
       "datos_disponibles": true
@@ -63,7 +128,7 @@
       "prob": 0,
       "litros": 0,
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a corto-medio plazo (4 días) del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Cielos despejados o con escasa nubosidad de tipo cúmulo de buen tiempo. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 4,
       "datos_disponibles": true
@@ -76,7 +141,7 @@
       "prob": 4,
       "litros": 0,
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a corto-medio plazo (5 días) del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Cielos despejados o con escasa nubosidad de tipo cúmulo de buen tiempo. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 5,
       "datos_disponibles": true
@@ -89,7 +154,7 @@
       "prob": 7,
       "litros": 0.6,
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a corto-medio plazo (6 días) del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Cielos despejados o con escasa nubosidad de tipo cúmulo de buen tiempo. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 6,
       "datos_disponibles": true
@@ -102,7 +167,7 @@
       "prob": 8,
       "litros": 0.6,
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a medio plazo (7 días) del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Cielos despejados o con escasa nubosidad de tipo cúmulo de buen tiempo. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 7,
       "datos_disponibles": true
@@ -115,7 +180,7 @@
       "prob": 10,
       "litros": 0,
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a medio plazo (8 días) del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Cielos despejados o con escasa nubosidad de tipo cúmulo de buen tiempo. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 8,
       "datos_disponibles": true
@@ -128,7 +193,7 @@
       "prob": 16,
       "litros": 0,
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a medio plazo (9 días) del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste (llevant feble) con advección de humedad procedente del Mediterráneo. Posible nubosidad media-alta sin descargas significativas. El forzamiento orográfico de la Serra del Maigmó podría generar chubascos dispersos en cotas elevadas que probablemente no afecten al valle. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad. El único factor a vigilar es el viento local (tramontana nocturna).",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 9,
       "datos_disponibles": true
@@ -141,7 +206,7 @@
       "prob": 20,
       "litros": 2.1,
       "consejo": "🕶️ Calor moderado. Agua y protección solar recomendados",
-      "analisis_tecnico": "Previsión a medio plazo (10 días) del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste (llevant feble) con advección de humedad procedente del Mediterráneo. Posible nubosidad media-alta sin descargas significativas. El forzamiento orográfico de la Serra del Maigmó podría generar chubascos dispersos en cotas elevadas que probablemente no afecten al valle. 🟡 Posible lluvia débil durante los preparativos (20% · 2.1 mm). Protege los instrumentos musicales, los sistemas de amplificación y los elementos decorativos en exterior. Los materiales metálicos de las filades son especialmente sensibles a la humedad residual.",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Posible lluvia débil durante los preparativos. Protege instrumentos y materiales metálicos.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 10,
       "datos_disponibles": true
@@ -154,7 +219,7 @@
       "prob": 26,
       "litros": 0,
       "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a muy largo plazo (>11 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste (llevant feble) con advección de humedad procedente del Mediterráneo. Posible nubosidad media-alta sin descargas significativas. El forzamiento orográfico de la Serra del Maigmó podría generar chubascos dispersos en cotas elevadas que probablemente no afecten al valle. 🎶🟡 Riesgo moderado de lluvia (26% · 0.0 mm). Los instrumentos de viento-madera y las vainas de los instrumentos de metal son sensibles a la humedad. Se recomienda fundas impermeables para los instrumentos y atención especial a los parches de los tambores.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🎶🟡 Riesgo moderado de lluvia. Los instrumentos de viento-madera son sensibles a la humedad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 11,
       "datos_disponibles": true
@@ -167,7 +232,7 @@
       "prob": 20,
       "litros": 1.2,
       "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a muy largo plazo (>12 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste (llevant feble) con advección de humedad procedente del Mediterráneo. Posible nubosidad media-alta sin descargas significativas. El forzamiento orográfico de la Serra del Maigmó podría generar chubascos dispersos en cotas elevadas que probablemente no afecten al valle. 🟡 Riesgo bajo pero real (20% · 1.2 mm). Incluso unos pocos milímetros de lluvia pueden manchar los tejidos de seda, terciopelo y brocado de los trajes de gala y deteriorar los bordados de los boatos. Prepara fundas de plástico transpirable.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Riesgo bajo pero real (1.2 mm). Prepara fundas de plástico transpirable para los tejidos delicados.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 12,
       "datos_disponibles": true
@@ -180,7 +245,7 @@
       "prob": 16,
       "litros": 0.3,
       "consejo": "🕶️ Calor moderado. Agua y protección solar recomendados",
-      "analisis_tecnico": "Previsión a muy largo plazo (>13 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste (llevant feble) con advección de humedad procedente del Mediterráneo. Posible nubosidad media-alta sin descargas significativas. El forzamiento orográfico de la Serra del Maigmó podría generar chubascos dispersos en cotas elevadas que probablemente no afecten al valle. ⚔️ Condiciones ideales para el Dia de Sant Jordi. La representación del Miracle y la Procesión de la Reliquia discurrirán bajo un cielo benigno, realzando la emoción y la solemnidad del día.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. ⚔️ Condiciones ideales para la Reliquia y el Miracle.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 13,
       "datos_disponibles": true
@@ -193,7 +258,7 @@
       "prob": 16,
       "litros": 0,
       "consejo": "👕 Temperatura ideal para el Alardo y las descargas",
-      "analisis_tecnico": "Previsión a muy largo plazo (>14 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste (llevant feble) con advección de humedad procedente del Mediterráneo. Posible nubosidad media-alta sin descargas significativas. El forzamiento orográfico de la Serra del Maigmó podría generar chubascos dispersos en cotas elevadas que probablemente no afecten al valle. 💥 AVISO CRÍTICO — ARCABUCERÍA Y PÓLVORA EN RIESGO: La pólvora negra (KNO₃ + C + S) es extremadamente higroscópica; por encima del 70–75% de humedad relativa pierde capacidad de ignición progresivamente, generando disparos irregulares, retardos peligrosos o fallos en cadena.  🟡 Riesgo bajo pero no despreciable (16%). Con la pólvora no se puede arriesgar bajo ningún concepto. Sigue los protocolos de conservación de la pólvora de los capitanes de filà.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 💥 AVISO CRÍTICO — PÓLVORA EN RIESGO: La pólvora negra pierde capacidad de ignición con alta humedad. Mantenla en recipientes herméticos. 🟡 Riesgo bajo. Sigue los protocolos de conservación de la pólvora.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 14,
       "datos_disponibles": true
@@ -213,5 +278,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-13T08:08:33.058Z"
+  "fecha": "2026-04-13T08:11:34.673Z"
 }
