@@ -1,6 +1,6 @@
 {
-  "temp": 7.9,
-  "hum": 69,
+  "temp": 10.1,
+  "hum": 59,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041300/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -204,21 +204,21 @@
     {
       "dia": "Dimecres 15 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-15",
-      "temp_max": 20.9,
+      "temp_max": 21.6,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 8,
+          "temp": 10,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -232,14 +232,14 @@
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -259,7 +259,7 @@
           "icono": "☀️"
         }
       ],
-      "consejo": "🌙 Noche agradable. Temperatura suave, perfecta para desfilar",
+      "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
       "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 2,
@@ -268,14 +268,14 @@
     {
       "dia": "Dijous 16 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-16",
-      "temp_max": 21.8,
+      "temp_max": 22.3,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -289,14 +289,14 @@
         },
         {
           "hora": "14:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -339,7 +339,7 @@
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -360,7 +360,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 23,
+          "temp": 24,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -1041,5 +1041,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-13T08:42:03.556Z"
+  "fecha": "2026-04-13T10:00:38.963Z"
 }
