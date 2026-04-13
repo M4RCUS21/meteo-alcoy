@@ -25,32 +25,27 @@
       .hide-scrollbar::-webkit-scrollbar { display: none; }
       .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-      /* NAVBAR SCROLL */
-      #navbar.scrolled { background: rgba(11,8,6,.92); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(201,168,76,.12); }
+      #navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; transition: all .4s; padding: 16px 0; }
+      #navbar.scrolled { background: rgba(11,8,6,.92); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(201,168,76,.12); padding: 10px 0; }
       .nav-logo-img { width: 38px; height: 38px; border-radius: 50%; border: 1.5px solid rgba(201,168,76,.35); }
 
-      /* CARDS */
       .hero-card, .countdown-card { position: relative; background: linear-gradient(145deg, rgba(35,26,14,.82), rgba(16,12,6,.92)); border: 1.5px solid rgba(201,168,76,.32); border-radius: 18px; padding: 24px; transition: all .35s ease; cursor: pointer; }
       .hero-card:hover, .countdown-card:hover { transform: translateY(-6px); border-color: var(--gold); box-shadow: 0 15px 40px rgba(0,0,0,0.5); }
-      .hero-card.out-of-range { border-style: dashed; opacity: 0.7; cursor: default; }
+      .out-of-range { border-style: dashed !important; opacity: 0.7; cursor: default !important; }
 
-      /* BADGES FILAES */
-      .fila-badge { position: absolute; top: 8px; right: 8px; font-size: .44rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; color: #fff; }
+      .fila-badge { position: absolute; top: 8px; right: 8px; font-size: .44rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; color: #fff; z-index: 10; }
       .badge-c { background: var(--red); }
-      .badge-m { background: var(--green-moro); } /* VERDE MORO */
+      .badge-m { background: var(--green-moro); } 
 
-      /* COUNTDOWN HERO */
-      .cd-box { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(201, 168, 76, 0.2); border-radius: 12px; padding: 12px; min-width: 75px; text-align: center; }
-      .cd-num { font-family: "Playfair Display", serif; font-size: 2rem; font-weight: 900; color: var(--gold-light); line-height: 1; }
-      .cd-lab { font-size: 0.5rem; font-weight: 700; text-transform: uppercase; color: rgba(253,246,227,0.4); margin-top: 4px; }
+      .cd-box { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(201, 168, 76, 0.2); border-radius: 12px; padding: 10px; min-width: 70px; text-align: center; }
+      .cd-num { font-family: "Playfair Display", serif; font-size: 1.8rem; font-weight: 900; color: var(--gold-light); line-height: 1; }
+      .cd-lab { font-size: 0.45rem; font-weight: 700; text-transform: uppercase; color: rgba(253,246,227,0.4); margin-top: 2px; }
 
-      /* CTA */
       .card-cta { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; color: rgba(201,168,76,0.5); margin-top: 12px; border-top: 1px solid rgba(201,168,76,0.1); padding-top: 10px; display: flex; align-items: center; gap: 4px; }
       .hero-card:hover .card-cta { color: var(--gold); }
-
-      /* MODAL */
-      .modal-card { background: rgba(22,16,10,0.98); border: 1px solid var(--gold); box-shadow: 0 0 50px rgba(0,0,0,0.8); }
-      .hourly-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(201,168,76,0.1); border-radius: 12px; min-width: 85px; padding: 12px; display: flex; flex-direction: column; align-items: center; }
+      
+      .modal-card { background: rgba(22,16,10,0.98); border: 1px solid var(--gold); }
+      .hourly-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(201,168,76,0.1); border-radius: 12px; min-width: 80px; padding: 10px; display: flex; flex-direction: column; align-items: center; }
     </style>
   </head>
   <body>
@@ -64,40 +59,38 @@
       function isND(v) { return v === 'N/D' || v === null || v === undefined; }
       function isOutOfRange(f) { return isND(f.temp_max) || f.analisis_tecnico?.includes('rang'); }
 
-      /* ═══ ANIMATION COMPONENT (FIXED ERROR) ═══ */
+      /* ═══ ANIMATION ═══ */
       function FadeIn({ children, delay = 0, y = 20 }) {
         const ref = useRef(null);
         const vis = useInView(ref, { once: true, margin: "-50px" });
-        return h(motion.div, {
-          ref,
-          initial: { opacity: 0, y },
-          animate: vis ? { opacity: 1, y: 0 } : {},
-          transition: { duration: 0.6, delay, ease: "easeOut" },
-        }, children);
+        return h(motion.div, { ref, initial: { opacity: 0, y }, animate: vis ? { opacity: 1, y: 0 } : {}, transition: { duration: 0.6, delay } }, children);
       }
 
-      /* ═══ SMART ICON ═══ */
-      function SmartIcon({ f, fontSize }) {
-        if (isOutOfRange(f)) return h('span', { className: 'waiting-icon', style: { fontSize } }, '🔮');
-        return h('span', { style: { fontSize } }, f.icono || '🌡️');
+      /* ═══ NAVBAR (RESTAURADA) ═══ */
+      function Navbar({ scrolled }) {
+        return h("nav", { id: "navbar", className: scrolled ? "scrolled" : "" },
+          h("div", { className: "max-w-6xl mx-auto px-6 flex justify-between items-center" },
+            h("div", { className: "flex items-center gap-3" },
+              h("img", { className: "nav-logo-img", src: "./logo.png" }),
+              h("div", { className: "font-serif font-bold text-white" }, "Meteo", h("span", { className: "text-[var(--gold)]" }, "Festes"))
+            ),
+            h("div", { className: "hidden md:flex gap-6 text-[0.6rem] font-bold uppercase tracking-widest text-gray-400" },
+              h("a", { href: "#meteo", className: "hover:text-white" }, "Meteo"),
+              h("a", { href: "#trilogia", className: "hover:text-white" }, "Trilogia"),
+              h("a", { href: "#filaes", className: "hover:text-white" }, "Filaes")
+            )
+          )
+        );
       }
 
-      /* ═══ COUNTDOWN COMPONENT ═══ */
+      /* ═══ COUNTDOWN ═══ */
       function Countdown() {
         const [timeLeft, setTimeLeft] = useState({ d: 0, h: 0, m: 0, s: 0 });
         useEffect(() => {
           const target = new Date("2026-04-24T00:00:00").getTime();
           const timer = setInterval(() => {
-            const now = new Date().getTime();
-            const diff = target - now;
-            if (diff > 0) {
-              setTimeLeft({
-                d: Math.floor(diff / 86400000),
-                h: Math.floor((diff % 86400000) / 3600000),
-                m: Math.floor((diff % 3600000) / 60000),
-                s: Math.floor((diff % 60000) / 1000)
-              });
-            }
+            const diff = target - new Date().getTime();
+            if (diff > 0) setTimeLeft({ d: Math.floor(diff/86400000), h: Math.floor((diff%86400000)/3600000), m: Math.floor((diff%3600000)/60000), s: Math.floor((diff%60000)/1000) });
           }, 1000);
           return () => clearInterval(timer);
         }, []);
@@ -105,31 +98,14 @@
         return h('div', { className: 'flex gap-2 justify-center mt-6' }, Box(timeLeft.d, 'Dies'), Box(timeLeft.h, 'Hores'), Box(timeLeft.m, 'Min'), Box(timeLeft.s, 'Seg'));
       }
 
-      /* ═══ DATA ═══ */
-      const FILAES = [
-        { nom:"Andaluces", tipus:"cristia", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1452.jpg" },
-        { nom:"Asturianos", tipus:"cristia", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1371.jpg" },
-        { nom:"Berberiscos", tipus:"moro", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1684.jpg" }, // FOTO CORREGIDA
-        { nom:"Benimerines", tipus:"moro", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1670.jpg" },
-        { nom:"Marrakesch", tipus:"moro", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1775.jpg" },
-        { nom:"Realistas", tipus:"moro", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1695.jpg" },
-        // ... añadir resto si es necesario
-      ];
-
-      const ENTRAETES_INFO = {
-        "2026-04-13": [{ carrer: "Sant Nicolau", desfilades: [{ hora: "22:50", fila: "Marrakesch" }] }],
-        "2026-04-14": [{ carrer: "Sant Nicolau", desfilades: [{ hora: "23:10", fila: "Mudéjares" }] }],
-        // ... (resto de info)
-      };
-
       /* ═══ SECTIONS ═══ */
       function HeroSection() {
-        return h("section", { id:"hero" },
-          h("div", { className:"hero-bg" }),
-          h("div", { style:{ position:"relative", zIndex:2, textAlign:"center" } },
-            h(FadeIn, null, h("div", { className:"hero-glass" }, h("img", { src:"./logo.png", alt:"Logo" }))),
-            h("h1", { className:"font-serif text-5xl font-black text-white" }, "Meteo ", h("em", { className:"text-[var(--gold)]" }, "Festes")),
-            h("p", { className:"font-crim italic text-xl text-gray-300" }, "Compte enrere per a la Trilogia 2026"),
+        return h("section", { id: "hero", className: "relative h-screen flex items-center justify-center overflow-hidden" },
+          h("div", { className: "hero-bg" }),
+          h("div", { className: "relative z-10 text-center px-6" },
+            h("div", { className: "hero-glass w-40 h-40 mx-auto mb-6 flex items-center justify-center rounded-full" }, h("img", { src: "./logo.png", className: "w-32" })),
+            h("h1", { className: "font-serif text-5xl font-black text-white" }, "Meteo ", h("em", { className: "text-[var(--gold)]" }, "Festes")),
+            h("p", { className: "font-crim italic text-xl text-gray-300 mt-2" }, "Alcoi · Abril 2026"),
             h(Countdown)
           )
         );
@@ -138,82 +114,59 @@
       function MeteoSection() {
         const [meteo, setMeteo] = useState(null);
         const [selectedDay, setSelectedDay] = useState(null);
+        useEffect(() => { fetch("./datos.json?v="+Date.now()).then(r=>r.json()).then(setMeteo); }, []);
+        if (!meteo) return h('div', { className: 'text-center py-20' }, 'Carregant...');
 
-        useEffect(() => {
-          fetch("./datos.json?v=" + Date.now())
-            .then(r => r.json())
-            .then(setMeteo)
-            .catch(e => console.error("Error cargando JSON", e));
-        }, []);
+        const diesGrans = meteo.fiestas.filter(f => ['24','25','26','27'].some(d => f.fecha.endsWith(d)));
 
-        if (!meteo) return h('div', { className: 'text-center py-20' }, 'Carregant dades...');
-
-        const diesGrans = (meteo.fiestas || []).filter(f => f.fecha.includes('-24') || f.fecha.includes('-25') || f.fecha.includes('-26') || f.fecha.includes('-27'));
-        const entraetes = (meteo.fiestas || []).filter(f => !diesGrans.includes(f) && !isOutOfRange(f));
-
-        return h("section", { id: "meteo", className: "py-20 px-6" },
-          h("div", { className: "max-w-5xl mx-auto" },
-            h(FadeIn, null, h("h2", { className: "sec-title text-center mb-12" }, "Previsió ", h("em", null, "Detallada"))),
-            
-            /* GRID DIES GRANS */
-            h("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6 mb-12" },
-              diesGrans.map((f, i) => {
-                const oor = isOutOfRange(f);
-                return h(motion.div, { 
-                  key: f.fecha, 
-                  className: "hero-card" + (oor ? " out-of-range" : ""),
-                  onClick: () => !oor && setSelectedDay(f)
-                },
-                  h("div", { className: "flex justify-between items-start" },
-                    h("div", null, 
-                      h("div", { className: "text-[var(--gold)] text-xs font-bold uppercase" }, f.dia.split('·')[0]),
-                      h("div", { className: "text-4xl font-black" }, f.fecha.split('-')[2])
-                    ),
-                    h(SmartIcon, { f, fontSize: "2.5rem" })
-                  ),
-                  h("div", { className: "font-serif text-lg mt-2 mb-4" }, f.dia.split('·')[1]),
-                  !oor && h("div", { className: "card-cta" }, "⏱️ Veure previsió per hores ", h("span", null, "→"))
-                );
-              })
-            ),
-
-            /* MODAL DETALLE HORAS */
-            h(AnimatePresence, null,
-              selectedDay && h(motion.div, { 
-                className: "fixed inset-0 z-[2000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm",
-                initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 },
-                onClick: () => setSelectedDay(null)
-              },
-                h(motion.div, { 
-                  className: "modal-card w-full max-w-xl p-8 rounded-3xl relative",
-                  initial: { y: 50 }, animate: { y: 0 }, exit: { y: 50 },
-                  onClick: e => e.stopPropagation()
-                },
-                  h("button", { className: "absolute top-6 right-6 text-2xl", onClick: () => setSelectedDay(null) }, "✕"),
-                  h("h3", { className: "font-serif text-2xl font-bold mb-6" }, selectedDay.dia),
-                  h("div", { className: "flex gap-4 overflow-x-auto hide-scrollbar pb-4" },
-                    (selectedDay.horas || []).map((hData, idx) => h("div", { key: idx, className: "hourly-card" },
-                      h("span", { className: "font-mono text-xs text-[var(--gold)] mb-2" }, hData.hora),
-                      h("span", { className: "text-3xl mb-2" }, hData.icono),
-                      h("span", { className: "text-xl font-bold" }, hData.temp + "°")
-                    ))
-                  )
-                )
+        return h("section", { id: "meteo", className: "py-20 px-6 max-w-5xl mx-auto" },
+          h(FadeIn, null, h("h2", { className: "sec-title text-center mb-12" }, "La Nostra ", h("em", null, "Previsió"))),
+          h("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-6" },
+            diesGrans.map((f, i) => {
+              const oor = isOutOfRange(f);
+              return h(motion.div, { key: f.fecha, className: "hero-card" + (oor ? " out-of-range" : ""), onClick: () => !oor && setSelectedDay(f) },
+                h("div", { className: "flex justify-between" },
+                  h("div", null, h("div", { className: "text-[var(--gold)] text-xs font-bold" }, f.dia.split('·')[0]), h("div", { className: "text-4xl font-black" }, f.fecha.split('-')[2])),
+                  h("span", { className: "text-4xl" }, oor ? '🔮' : f.icono)
+                ),
+                h("div", { className: "font-serif text-lg mt-2" }, f.dia.split('·')[1]),
+                !oor && h("div", { className: "card-cta" }, "⏱️ Veure previsió per hores →")
+              );
+            })
+          ),
+          /* MODAL */
+          h(AnimatePresence, null, selectedDay && h(motion.div, { className: "fixed inset-0 z-[2000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm", initial: { opacity: 0 }, animate: { opacity: 1 }, exit: { opacity: 0 }, onClick: () => setSelectedDay(null) },
+            h(motion.div, { className: "modal-card w-full max-w-lg p-8 rounded-3xl relative", initial: { y: 50 }, animate: { y: 0 }, exit: { y: 50 }, onClick: e => e.stopPropagation() },
+              h("button", { className: "absolute top-6 right-6", onClick: () => setSelectedDay(null) }, "✕"),
+              h("h3", { className: "font-serif text-2xl font-bold mb-6" }, selectedDay.dia),
+              h("div", { className: "flex gap-3 overflow-x-auto hide-scrollbar pb-4" },
+                (selectedDay.horas || []).map((hData, idx) => h("div", { key: idx, className: "hourly-card" },
+                  h("span", { className: "font-mono text-[0.6rem] text-[var(--gold)]" }, hData.hora),
+                  h("span", { className: "text-2xl my-2" }, hData.icono),
+                  h("span", { className: "font-bold" }, hData.temp + "°")
+                ))
               )
             )
-          )
+          ))
         );
       }
 
+      const FILAES = [
+        { nom:"Andaluces", tipus:"cristia", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1452.jpg" },
+        { nom:"Asturianos", tipus:"cristia", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1371.jpg" },
+        { nom:"Berberiscos", tipus:"moro", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1684.jpg" },
+        { nom:"Benimerines", tipus:"moro", img:"https://www.asjordi.org/upload/images/showroom/ano-2025/1670.jpg" },
+      ];
+
       function FilaesSection() {
-        return h("section", { id: "filaes", className: "py-20 bg-black/20" },
-          h("div", { className: "max-w-6xl mx-auto px-6" },
+        return h("section", { id: "filaes", className: "py-20 bg-white/5 px-6" },
+          h("div", { className: "max-w-6xl mx-auto" },
             h(FadeIn, null, h("h2", { className: "sec-title text-center mb-12" }, "Les ", h("em", null, "Filaes"))),
-            h("div", { className: "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" },
-              FILAES.map(f => h("div", { key: f.nom, className: "fila-card" },
-                h("img", { src: f.img, className: "w-full aspect-[3/4] object-cover" }),
+            h("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-4" },
+              FILAES.map(f => h("div", { key: f.nom, className: "fila-card rounded-xl overflow-hidden bg-black/40 relative" },
                 h("div", { className: "fila-badge " + (f.tipus === 'cristia' ? 'badge-c' : 'badge-m') }, f.tipus === 'cristia' ? 'C' : 'M'),
-                h("div", { className: "p-3 text-center font-bold text-[0.7rem] uppercase" }, f.nom)
+                h("img", { src: f.img, className: "w-full aspect-[3/4] object-cover" }),
+                h("div", { className: "p-3 text-center text-[0.6rem] font-bold uppercase" }, f.nom)
               ))
             )
           )
@@ -223,15 +176,14 @@
       function App() {
         const [scrolled, setScrolled] = useState(false);
         useEffect(() => {
-          const handle = () => setScrolled(window.scrollY > 50);
-          window.addEventListener("scroll", handle);
-          return () => window.removeEventListener("scroll", handle);
+          const h = () => setScrolled(window.scrollY > 50);
+          window.addEventListener("scroll", h);
+          return () => window.removeEventListener("scroll", h);
         }, []);
-
-        return h(React.Fragment, null,
-          h(Navbar, { scrolled }),
-          h(HeroSection),
-          h(MeteoSection),
+        return h(React.Fragment, null, 
+          h(Navbar, { scrolled }), 
+          h(HeroSection), 
+          h(MeteoSection), 
           h(FilaesSection)
         );
       }
