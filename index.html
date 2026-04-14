@@ -481,11 +481,35 @@ const ENTR={
   "2026-04-23":[{c:"Sant Nicolau",d:[{h:"22:30",f:"Asturianos",ee:true},{h:"22:50",f:"Realistes",ee:true},{h:"23:10",f:"Marrakesch",ee:true},{h:"23:30",f:"Verdes",ee:true},{h:"23:50",f:"Andaluces",ee:true}]},{c:"País Valencià",d:[{h:"22:30",f:"Tomasinas"},{h:"23:10",f:"Alcodianos"},{h:"23:30",f:"Aragonesos"},{h:"23:50",f:"Llana"}]}],
 };
 
-const TIMELINE=[
-  {id:0,dia:24,icon:"drum",titol:"Dia dels Músics",sub:"La Festa del Passodoble",desc:"La vesprada del dia 24, les bandes de música, considerades l'ànima de la festa, desfilen pels carrers d'Alcoi fins a concentrar-se a la Plaça d'Espanya, on totes interpreten conjuntament l'Himne de Festes.",color:"var(--gold)",detalls:["20:00h — Festa del Passodoble","Concert de l'Himne de les Festes","Nit de l'Olla i sopar de germanor"]},
-  {id:1,dia:25,icon:"swords",titol:"Les Entrades",sub:"L'esplendor de les Filaes",desc:"El cor de les Festes. A les 10:30h l'Entrada Cristiana recorre els carrers des del Partidor fins a la Plaça d'Espanya. A les 17:00h, la suntuosa Entrada Mora transforma Alcoi en un espectacle de luxe i fantasia.",color:"var(--red)",detalls:["10:30h — Entrada Cristiana des del Partidor","17:00h — Entrada Mora","Desfilada de les 14 filaes de cada bando"]},
-  {id:2,dia:26,icon:"cross",titol:"Sant Jordi",sub:"El dia del Patró",desc:"El dia més solemne. Missa en honor al Patró, la Processó de la Reliquia i, al final, el moment màgic: l'Aparició de Sant Jordi sobre les muralles, revivent la llegenda que dona sentit a tota la festa.",color:"#999",detalls:["Missa solemne en honor al Patró","Processó de la Reliquia pel centre","Aparició de Sant Jordi sobre les muralles"]},
-  {id:3,dia:27,icon:"spark",titol:"L'Alardo",sub:"Dia dels Trons",desc:"El tro final. Milers de trets d'arcabús omplen l'aire d'Alcoi en l'espectacular Alardo. Cristians i Moros disparen simultàniament en una batalla final que tanca la trilogia festera amb pólvora i emoció.",color:"var(--gold)",detalls:["Batalla d'arcabuceria pel centre d'Alcoi","Alardo Cristià i Alardo Moro simultanis","Desfilada final de clausura"]},
+const TIMELINE = [
+  { 
+    id: 0, dia: 24, icon: "drum", color: "var(--gold)", 
+    titol: { ca: "Dia dels Músics", es: "Día de los Músicos" }, 
+    sub: { ca: "La Festa del Passodoble", es: "La Fiesta del Pasodoble" }, 
+    desc: { ca: "La vesprada del dia 24, les bandes de música desfilen pels carrers d'Alcoi fins a concentrar-se a la Plaça d'Espanya, on totes interpreten conjuntament l'Himne de Festes.", es: "La tarde del día 24, las bandas de música desfilan por las calles de Alcoy hasta concentrarse en la Plaza de España para interpretar el Himno de Fiestas." }, 
+    detalls: { ca: ["20:00h — Festa del Passodoble", "Concert de l'Himne de les Festes", "Nit de l'Olla i sopar de germanor"], es: ["20:00h — Fiesta del Pasodoble", "Concierto del Himno de Fiestas", "Nit de l'Olla y cena de hermandad"] } 
+  },
+  { 
+    id: 1, dia: 25, icon: "swords", color: "var(--red)", 
+    titol: { ca: "Les Entrades", es: "Las Entradas" }, 
+    sub: { ca: "L'esplendor de les Filaes", es: "El esplendor de las Filaes" }, 
+    desc: { ca: "El cor de les Festes. A les 10:30h l'Entrada Cristiana recorre els carrers des del Partidor fins a la Plaça d'Espanya. A les 17:00h, la suntuosa Entrada Mora transforma Alcoi en un espectacle de luxe i fantasia.", es: "El corazón de las Fiestas. A las 10:30h la Entrada Cristiana. A las 17:00h, la suntuosa Entrada Mora transforma Alcoy en un espectáculo de lujo y fantasía." }, 
+    detalls: { ca: ["10:30h — Entrada Cristiana des del Partidor", "17:00h — Entrada Mora", "Desfilada de les 14 filaes de cada bando"], es: ["10:30h — Entrada Cristiana desde el Partidor", "17:00h — Entrada Mora", "Desfile de las 14 filaes de cada bando"] } 
+  },
+  { 
+    id: 2, dia: 26, icon: "cross", color: "#999", 
+    titol: { ca: "Sant Jordi", es: "San Jorge" }, 
+    sub: { ca: "El dia del Patró", es: "El día del Patrón" }, 
+    desc: { ca: "El dia més solemne. Missa en honor al Patró, la Processó de la Reliquia i, al final, el moment màgic: l'Aparició de Sant Jordi sobre les muralles, revivent la llegenda que dona sentit a tota la festa.", es: "El día más solemne. Misa en honor al Patrón, la Procesión de la Reliquia y la mágica Aparición de San Jorge sobre las murallas." }, 
+    detalls: { ca: ["Missa solemne en honor al Patró", "Processó de la Reliquia pel centre", "Aparició de Sant Jordi sobre les muralles"], es: ["Misa solemne en honor al Patrón", "Procesión de la Reliquia por el centro", "Aparición de San Jorge sobre las murallas"] } 
+  },
+  { 
+    id: 3, dia: 27, icon: "spark", color: "var(--gold)", 
+    titol: { ca: "L'Alardo", es: "El Alardo" }, 
+    sub: { ca: "Dia dels Trons", es: "Día de los Truenos" }, 
+    desc: { ca: "El tro final. Milers de trets d'arcabús omplen l'aire d'Alcoi en l'espectacular Alardo. Cristians i Moros disparen simultàniament en una batalla final que tanca la trilogia festera amb pólvora i emoció.", es: "Miles de disparos de arcabuz llenan el aire de Alcoy en el espectacular Alardo. Cristianos y Moros disparan en una batalla final que cierra la trilogía." }, 
+    detalls: { ca: ["Batalla d'arcabuceria pel centre d'Alcoi", "Alardo Cristià i Alardo Moro simultanis", "Desfilada final de clausura"], es: ["Batalla de arcabucería por el centro de Alcoy", "Alardo Cristiano y Moro simultáneos", "Desfile final de clausura"] } 
+  }
 ];
 
 const FILAES=[
