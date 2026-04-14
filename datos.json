@@ -1,6 +1,6 @@
 {
-  "temp": 16.4,
-  "hum": 43,
+  "temp": 16.1,
+  "hum": 45,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041406/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -538,7 +538,7 @@
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
-      "temp_max": 26,
+      "temp_max": 24.3,
       "icono": "🌤️",
       "prob": 16,
       "litros": 0,
@@ -559,35 +559,35 @@
         },
         {
           "hora": "14:00",
-          "temp": 25,
+          "temp": 24,
           "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 26,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 22,
+          "temp": 20,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 19,
+          "temp": 17,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 18,
+          "temp": 16,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
@@ -602,21 +602,21 @@
     {
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
-      "temp_max": 28,
+      "temp_max": 29,
       "icono": "🌤️",
       "prob": 15,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 25,
+          "temp": 24,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -630,14 +630,14 @@
         },
         {
           "hora": "17:00",
-          "temp": 27,
+          "temp": 29,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 23,
+          "temp": 25,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
@@ -651,7 +651,7 @@
         },
         {
           "hora": "02:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
@@ -666,49 +666,49 @@
     {
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
-      "temp_max": 27.5,
+      "temp_max": 28.7,
       "icono": "🌤️",
       "prob": 20,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 17,
+          "temp": 19,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 20,
+          "temp": 25,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 27,
+          "temp": 29,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 27,
+          "temp": 28,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 24,
+          "temp": 25,
           "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 20,
           "litros": 0,
           "icono": "🌤️"
@@ -721,8 +721,8 @@
           "icono": "🌤️"
         }
       ],
-      "consejo": "🕶️ Calor moderado. Agua y protección solar recomendados",
-      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Posible lluvia débil durante los preparativos. Protege instrumentos y materiales metálicos.",
+      "consejo": "🔆 Mucho calor. Hidratación y protección solar máximas",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. Advección cálida de origen sahariano: temperaturas muy por encima de la media climática. 🟡 Posible lluvia débil durante los preparativos. Protege instrumentos y materiales metálicos.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 9,
       "datos_disponibles": true
@@ -730,56 +730,56 @@
     {
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
-      "temp_max": 24.5,
+      "temp_max": 27.8,
       "icono": "🌤️",
       "prob": 26,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 19,
+          "temp": 20,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 22,
+          "temp": 25,
           "prob": 15,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "14:00",
-          "temp": 24,
+          "temp": 27,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 24,
+          "temp": 28,
           "prob": 24,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 21,
+          "temp": 24,
           "prob": 26,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 19,
+          "temp": 21,
           "prob": 22,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 15,
+          "temp": 17,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
@@ -794,28 +794,28 @@
     {
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
-      "temp_max": 20.7,
+      "temp_max": 21.5,
       "icono": "🌤️",
       "prob": 20,
-      "litros": 0,
+      "litros": 1.5,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 3,
-          "litros": 0,
+          "litros": 0.1,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 17,
           "prob": 8,
-          "litros": 0,
+          "litros": 0.1,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 20,
+          "temp": 21,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
@@ -829,28 +829,28 @@
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 17,
           "prob": 6,
-          "litros": 0,
+          "litros": 0.2,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 15,
           "prob": 6,
-          "litros": 0,
+          "litros": 0.1,
           "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟠 Riesgo moderado. Las Entrades podrían celebrarse con incidencias. Plan B activado.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Riesgo bajo pero real (1.5 mm). Prepara fundas de plástico transpirable para los tejidos delicados.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 11,
       "datos_disponibles": true
@@ -858,106 +858,42 @@
     {
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
-      "temp_max": 21.2,
+      "temp_max": 15.8,
       "icono": "🌤️",
       "prob": 16,
-      "litros": 0,
+      "litros": 0.9,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 10,
+          "temp": 14,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 19,
-          "prob": 10,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "17:00",
-          "temp": 21,
-          "prob": 13,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "20:00",
-          "temp": 18,
-          "prob": 16,
-          "litros": 0,
-          "icono": "🌤️"
-        },
-        {
-          "hora": "23:00",
-          "temp": 13,
-          "prob": 14,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "02:00",
-          "temp": 14,
-          "prob": 10,
-          "litros": 0,
-          "icono": "☀️"
-        }
-      ],
-      "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. ⚔️ Condiciones ideales para la Reliquia y el Miracle.",
-      "modelo_fuente": "ECMWF",
-      "dias_restantes": 12,
-      "datos_disponibles": true
-    },
-    {
-      "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
-      "fecha": "2026-04-27",
-      "temp_max": 20,
-      "icono": "🌤️",
-      "prob": 16,
-      "litros": 0,
-      "horas": [
-        {
-          "hora": "08:00",
-          "temp": 14,
-          "prob": 6,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "11:00",
-          "temp": 17,
-          "prob": 9,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "14:00",
-          "temp": 20,
-          "prob": 13,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "17:00",
-          "temp": 18,
-          "prob": 15,
-          "litros": 0,
-          "icono": "🌤️"
-        },
-        {
-          "hora": "20:00",
           "temp": 16,
+          "prob": 10,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "17:00",
+          "temp": 15,
+          "prob": 13,
+          "litros": 0.1,
+          "icono": "☀️"
+        },
+        {
+          "hora": "20:00",
+          "temp": 14,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
@@ -965,20 +901,84 @@
         {
           "hora": "23:00",
           "temp": 12,
+          "prob": 14,
+          "litros": 0.1,
+          "icono": "☀️"
+        },
+        {
+          "hora": "02:00",
+          "temp": 11,
+          "prob": 10,
+          "litros": 0,
+          "icono": "☀️"
+        }
+      ],
+      "consejo": "🧣 Fresco. Lleva abrigo o chaqueta",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. ⚔️ Condiciones ideales para la Reliquia y el Miracle.",
+      "modelo_fuente": "ECMWF",
+      "dias_restantes": 12,
+      "datos_disponibles": true
+    },
+    {
+      "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
+      "fecha": "2026-04-27",
+      "temp_max": 17.4,
+      "icono": "🌤️",
+      "prob": 16,
+      "litros": 0.3,
+      "horas": [
+        {
+          "hora": "08:00",
+          "temp": 11,
+          "prob": 6,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "11:00",
+          "temp": 15,
+          "prob": 9,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "14:00",
+          "temp": 17,
+          "prob": 13,
+          "litros": 0.1,
+          "icono": "☀️"
+        },
+        {
+          "hora": "17:00",
+          "temp": 17,
+          "prob": 15,
+          "litros": 0,
+          "icono": "🌤️"
+        },
+        {
+          "hora": "20:00",
+          "temp": 14,
+          "prob": 16,
+          "litros": 0,
+          "icono": "🌤️"
+        },
+        {
+          "hora": "23:00",
+          "temp": 11,
           "prob": 15,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 9,
+          "temp": 11,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura ideal para el Alardo y las descargas",
-      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 💥 AVISO CRÍTICO — PÓLVORA EN RIESGO: La pólvora negra pierde capacidad de ignición con alta humedad. Mantenla en recipientes herméticos. 🟡 Riesgo bajo. Sigue los protocolos de conservación de la pólvora.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. 💥 AVISO CRÍTICO — PÓLVORA EN RIESGO: La pólvora negra pierde capacidad de ignición con alta humedad. Mantenla en recipientes herméticos. 🟡 Riesgo bajo. Sigue los protocolos de conservación de la pólvora.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 13,
       "datos_disponibles": true
@@ -998,5 +998,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-14T11:13:14.312Z"
+  "fecha": "2026-04-14T12:00:38.585Z"
 }
