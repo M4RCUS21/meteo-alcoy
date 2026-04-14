@@ -1277,7 +1277,12 @@ function Footer(){
       ),
       h("div",{style:{height:1,background:"linear-gradient(90deg,transparent,var(--border-m),transparent)",marginBottom:20}}),
       h("div",{style:{textAlign:"center"}},
-        h("p",{style:{fontFamily:"Playfair Display,serif",fontStyle:"italic",color:"var(--gold)",fontSize:"1.08rem",letterSpacing:".04em"}},t.vitol)
+        h("p",{style:{fontFamily:"Playfair Display,serif",fontStyle:"italic",color:"var(--gold)",fontSize:"1.08rem",letterSpacing:".04em",marginBottom:10}},t.vitol),
+        /* Créditos personalizados */
+        h("div",{style:{marginTop:20,opacity:0.8}},
+          h("span",{style:{fontSize:".6rem",letterSpacing:".15em",textTransform:"uppercase",color:"var(--text-s)",display:"block",marginBottom:4}},"Desenvolupat per"),
+          h("span",{style:{fontFamily:"Playfair Display,serif",fontSize:".9rem",fontWeight:700,color:"var(--text)"}},"Marcos Pérez Catalá")
+        )
       )
     )
   );
