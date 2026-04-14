@@ -1,6 +1,6 @@
 {
-  "temp": 13.2,
-  "hum": 49,
+  "temp": 14.7,
+  "hum": 46,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041400/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -218,7 +218,7 @@
     {
       "dia": "Dijous 16 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-16",
-      "temp_max": 22,
+      "temp_max": 21.8,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -232,7 +232,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -253,7 +253,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -289,7 +289,7 @@
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -324,7 +324,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -417,7 +417,7 @@
       "horas": [
         {
           "hora": "08:00",
-          "temp": 10,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -998,5 +998,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-14T09:00:38.059Z"
+  "fecha": "2026-04-14T10:00:36.976Z"
 }
