@@ -1,7 +1,7 @@
 {
-  "temp": 19.1,
-  "hum": 43,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041406/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 17.5,
+  "hum": 45,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041412/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -90,7 +90,7 @@
     {
       "dia": "Dimarts 14 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-14",
-      "temp_max": 19.6,
+      "temp_max": 19.5,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -118,14 +118,14 @@
         },
         {
           "hora": "17:00",
-          "temp": 19,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 18,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -154,7 +154,7 @@
     {
       "dia": "Dimecres 15 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-15",
-      "temp_max": 22.1,
+      "temp_max": 22,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -168,14 +168,14 @@
         },
         {
           "hora": "11:00",
-          "temp": 17,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -218,7 +218,7 @@
     {
       "dia": "Dijous 16 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-16",
-      "temp_max": 21.8,
+      "temp_max": 22.1,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -232,7 +232,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -253,7 +253,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -282,7 +282,7 @@
     {
       "dia": "Divendres 17 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-17",
-      "temp_max": 23.7,
+      "temp_max": 23.5,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -324,14 +324,14 @@
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -346,7 +346,7 @@
     {
       "dia": "Dissabte 18 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-18",
-      "temp_max": 24.2,
+      "temp_max": 23.9,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -360,14 +360,14 @@
         },
         {
           "hora": "11:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 24,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -410,7 +410,7 @@
     {
       "dia": "Diumenge 19 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-19",
-      "temp_max": 24.9,
+      "temp_max": 25.2,
       "icono": "☀️",
       "prob": 3,
       "litros": 0,
@@ -424,7 +424,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -445,21 +445,21 @@
         },
         {
           "hora": "20:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 14,
+          "temp": 17,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 14,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
@@ -474,7 +474,7 @@
     {
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
-      "temp_max": 26.8,
+      "temp_max": 27.1,
       "icono": "☀️",
       "prob": 3,
       "litros": 0,
@@ -488,7 +488,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -516,7 +516,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 2,
           "litros": 0,
           "icono": "☀️"
@@ -538,14 +538,14 @@
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
-      "temp_max": 24.3,
+      "temp_max": 27.1,
       "icono": "☀️",
       "prob": 11,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
@@ -559,35 +559,35 @@
         },
         {
           "hora": "14:00",
-          "temp": 24,
+          "temp": 27,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 27,
           "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 20,
+          "temp": 24,
           "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 17,
+          "temp": 19,
           "prob": 11,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 11,
           "litros": 0,
           "icono": "☀️"
@@ -998,5 +998,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-14T16:00:37.403Z"
+  "fecha": "2026-04-14T17:00:36.494Z"
 }
