@@ -1,6 +1,6 @@
 {
-  "temp": 8.1,
-  "hum": 62,
+  "temp": 8.7,
+  "hum": 58,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -14,7 +14,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -5,
+      "dias_restantes": -6,
       "datos_disponibles": false
     },
     {
@@ -28,7 +28,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -4,
+      "dias_restantes": -5,
       "datos_disponibles": false
     },
     {
@@ -42,7 +42,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -3,
+      "dias_restantes": -4,
       "datos_disponibles": false
     },
     {
@@ -56,7 +56,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -2,
+      "dias_restantes": -3,
       "datos_disponibles": false
     },
     {
@@ -70,7 +70,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -1,
+      "dias_restantes": -2,
       "datos_disponibles": false
     },
     {
@@ -84,13 +84,13 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": 0,
+      "dias_restantes": -1,
       "datos_disponibles": false
     },
     {
       "dia": "Dimarts 14 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-14",
-      "temp_max": 19.5,
+      "temp_max": 19.4,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -125,21 +125,21 @@
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 13,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -148,20 +148,20 @@
       "consejo": "🌙 Noche agradable. Temperatura suave, perfecta para desfilar",
       "analisis_tecnico": "El modelo de mesoescala AROME (resolución ~1.3 km) ofrece una representación de alta resolución del flujo local de la Foia d'Alcoi. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "AROME",
-      "dias_restantes": 1,
+      "dias_restantes": 0,
       "datos_disponibles": true
     },
     {
       "dia": "Dimecres 15 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-15",
-      "temp_max": 21.4,
+      "temp_max": 21.7,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 9,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -182,7 +182,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -196,23 +196,23 @@
         },
         {
           "hora": "23:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": "N/D",
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
-      "modelo_fuente": "ECMWF",
-      "dias_restantes": 2,
+      "analisis_tecnico": "El modelo de mesoescala AROME (resolución ~1.3 km) ofrece una representación de alta resolución del flujo local de la Foia d'Alcoi. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
+      "modelo_fuente": "AROME",
+      "dias_restantes": 1,
       "datos_disponibles": true
     },
     {
@@ -276,7 +276,7 @@
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
       "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 3,
+      "dias_restantes": 2,
       "datos_disponibles": true
     },
     {
@@ -340,7 +340,7 @@
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
       "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 4,
+      "dias_restantes": 3,
       "datos_disponibles": true
     },
     {
@@ -404,7 +404,7 @@
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
       "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 5,
+      "dias_restantes": 4,
       "datos_disponibles": true
     },
     {
@@ -468,7 +468,7 @@
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
       "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 6,
+      "dias_restantes": 5,
       "datos_disponibles": true
     },
     {
@@ -523,136 +523,72 @@
         },
         {
           "hora": "02:00",
-          "temp": 16,
-          "prob": 8,
+          "temp": 19,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 7,
+      "dias_restantes": 6,
       "datos_disponibles": true
     },
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
-      "temp_max": 24.8,
-      "icono": "☀️",
-      "prob": 10,
-      "litros": 0,
-      "horas": [
-        {
-          "hora": "08:00",
-          "temp": 15,
-          "prob": 6,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "11:00",
-          "temp": 21,
-          "prob": 3,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "14:00",
-          "temp": 24,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "17:00",
-          "temp": 24,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "20:00",
-          "temp": 21,
-          "prob": 10,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "23:00",
-          "temp": 17,
-          "prob": 6,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "02:00",
-          "temp": 14,
-          "prob": 6,
-          "litros": 0,
-          "icono": "☀️"
-        }
-      ],
-      "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
-      "modelo_fuente": "ECMWF",
-      "dias_restantes": 8,
-      "datos_disponibles": true
-    },
-    {
-      "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
-      "fecha": "2026-04-22",
-      "temp_max": 24.4,
+      "temp_max": 25.4,
       "icono": "🌤️",
       "prob": 16,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 14,
-          "prob": 10,
+          "temp": 15,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 20,
-          "prob": 16,
+          "temp": 19,
+          "prob": 0,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 24,
-          "prob": 6,
+          "temp": 25,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 24,
-          "prob": 6,
+          "temp": 25,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 21,
-          "prob": 13,
+          "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 14,
-          "prob": 13,
+          "prob": 16,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
-          "prob": 9,
+          "temp": 15,
+          "prob": 10,
           "litros": 0,
           "icono": "☀️"
         }
@@ -660,77 +596,141 @@
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
       "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 9,
+      "dias_restantes": 7,
+      "datos_disponibles": true
+    },
+    {
+      "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
+      "fecha": "2026-04-22",
+      "temp_max": 26.3,
+      "icono": "🌤️",
+      "prob": 15,
+      "litros": 0,
+      "horas": [
+        {
+          "hora": "08:00",
+          "temp": 17,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "11:00",
+          "temp": 23,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "14:00",
+          "temp": 25,
+          "prob": 3,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "17:00",
+          "temp": 26,
+          "prob": 6,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "20:00",
+          "temp": 22,
+          "prob": 10,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "23:00",
+          "temp": 19,
+          "prob": 13,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
+          "hora": "02:00",
+          "temp": 17,
+          "prob": 19,
+          "litros": 0,
+          "icono": "🌤️"
+        }
+      ],
+      "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. ✅ Sin riesgo de precipitación. Las entraetes pueden desarrollarse con total normalidad.",
+      "modelo_fuente": "ECMWF",
+      "dias_restantes": 8,
       "datos_disponibles": true
     },
     {
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
-      "temp_max": 21.1,
+      "temp_max": 25.4,
       "icono": "🌤️",
       "prob": 20,
-      "litros": 0.3,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
+          "temp": 16,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 16,
-          "prob": 7,
+          "temp": 19,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 20,
-          "prob": 10,
+          "temp": 24,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 21,
-          "prob": 15,
+          "temp": 25,
+          "prob": 6,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 17,
-          "prob": 19,
+          "temp": 22,
+          "prob": 7,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 18,
           "prob": 20,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": 16,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         }
       ],
-      "consejo": "👕 Temperatura agradable para el desfile",
+      "consejo": "🕶️ Calor moderado. Agua y protección solar recomendados",
       "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Posible lluvia débil durante los preparativos. Protege instrumentos y materiales metálicos.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 10,
+      "dias_restantes": 9,
       "datos_disponibles": true
     },
     {
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
-      "temp_max": 21.1,
+      "temp_max": 21.8,
       "icono": "🌤️",
       "prob": 26,
       "litros": 0,
@@ -744,7 +744,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 15,
           "litros": 0,
           "icono": "🌤️"
@@ -758,7 +758,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 24,
           "litros": 0,
           "icono": "🌤️"
@@ -772,7 +772,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 14,
+          "temp": 16,
           "prob": 22,
           "litros": 0,
           "icono": "🌤️"
@@ -786,22 +786,22 @@
         }
       ],
       "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🎶🟡 Riesgo moderado de lluvia. Los instrumentos de viento-madera son sensibles a la humedad.",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🎶🟡 Riesgo moderado de lluvia. Los instrumentos de viento-madera son sensibles a la humedad.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 11,
+      "dias_restantes": 10,
       "datos_disponibles": true
     },
     {
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
-      "temp_max": 23.2,
+      "temp_max": 22.2,
       "icono": "🌤️",
       "prob": 20,
-      "litros": 0,
+      "litros": 3.3,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
+          "temp": 15,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
@@ -822,149 +822,149 @@
         },
         {
           "hora": "17:00",
-          "temp": 23,
+          "temp": 22,
           "prob": 10,
-          "litros": 0,
+          "litros": 0.1,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 21,
+          "temp": 18,
           "prob": 6,
-          "litros": 0,
+          "litros": 0.5,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 17,
+          "temp": 15,
           "prob": 5,
-          "litros": 0,
+          "litros": 0.5,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 6,
-          "litros": 0,
+          "litros": 0.2,
           "icono": "☀️"
         }
       ],
-      "consejo": "🕶️ Calor moderado. Agua y protección solar recomendados",
+      "consejo": "👕 Temperatura agradable para el desfile",
       "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟠 Riesgo moderado. Las Entrades podrían celebrarse con incidencias. Plan B activado.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 12,
+      "dias_restantes": 11,
       "datos_disponibles": true
     },
     {
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
-      "temp_max": 21.5,
+      "temp_max": 18.7,
       "icono": "🌤️",
       "prob": 16,
-      "litros": 0,
+      "litros": 1.2,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
+          "temp": 12,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 17,
+          "temp": 15,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 22,
+          "temp": 17,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 15,
           "prob": 16,
-          "litros": 0,
+          "litros": 0.1,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 14,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 11,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. ⚔️ Condiciones ideales para la Reliquia y el Miracle.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. ⚔️ Condiciones ideales para la Reliquia y el Miracle.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 13,
+      "dias_restantes": 12,
       "datos_disponibles": true
     },
     {
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
-      "temp_max": 20.4,
+      "temp_max": 18.7,
       "icono": "🌤️",
       "prob": 16,
-      "litros": 0,
+      "litros": 0.3,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 11,
+          "temp": 10,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 9,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 19,
+          "temp": 15,
           "prob": 13,
-          "litros": 0,
+          "litros": 0.1,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 15,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 17,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 15,
+          "temp": 13,
           "prob": 15,
           "litros": 0,
           "icono": "🌤️"
@@ -978,9 +978,9 @@
         }
       ],
       "consejo": "👕 Temperatura ideal para el Alardo y las descargas",
-      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 💥 AVISO CRÍTICO — PÓLVORA EN RIESGO: La pólvora negra pierde capacidad de ignición con alta humedad. Mantenla en recipientes herméticos. 🟡 Riesgo bajo. Sigue los protocolos de conservación de la pólvora.",
+      "analisis_tecnico": "Previsión a muy largo plazo (>10 días) del modelo global ECMWF IFS: considerar únicamente como tendencia de escala sinóptica, sujeta a variaciones sustanciales. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. 💥 AVISO CRÍTICO — PÓLVORA EN RIESGO: La pólvora negra pierde capacidad de ignición con alta humedad. Mantenla en recipientes herméticos. 🟡 Riesgo bajo. Sigue los protocolos de conservación de la pólvora.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 14,
+      "dias_restantes": 13,
       "datos_disponibles": true
     }
   ],
@@ -998,5 +998,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-13T23:00:35.246Z"
+  "fecha": "2026-04-14T00:00:38.655Z"
 }
