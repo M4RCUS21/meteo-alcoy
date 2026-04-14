@@ -463,6 +463,15 @@ function resolveAnal(raw,t){
   const nd=cl.includes("⚠️")||cl.includes("no disponibles")||cl.includes("temporalment")||cl.includes("rango");
   return nd?{nd:true,txt:t?.ndHint||"Fora del rang del model."}:{nd:false,txt:cl};
 }
+function AnalText({txt}){
+  if(!txt)return null;
+  const AVISO=/([Aa]lerta|[Ww]arning|⛔|⚠️)/g;
+  const parts=txt.split(AVISO);
+  return h(React.Fragment,null,
+    parts.map((part,i)=>AVISO.test(part)?(AVISO.lastIndex=0,h("span",{key:i,className:"aviso-tecnic"},part)):(AVISO.lastIndex=0,h("span",{key:i},part)))
+  );
+}   
+   
 
 /* ── DATA ── */
 const ENTR={
