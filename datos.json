@@ -1,6 +1,6 @@
 {
-  "temp": 21.4,
-  "hum": 44,
+  "temp": 19,
+  "hum": 50,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041512/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -601,9 +601,9 @@
         },
         {
           "hora": "02:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 12,
-          "litros": 0,
+          "litros": 0.1,
           "icono": "☀️"
         }
       ],
@@ -616,63 +616,63 @@
     {
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
-      "temp_max": 18.5,
+      "temp_max": 24.9,
       "icono": "🌤️",
       "prob": 19,
-      "litros": 0,
+      "litros": 0.2,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 14,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 11,
+          "temp": 20,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 17,
+          "temp": 24,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 18,
+          "temp": 25,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 16,
+          "temp": 21,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 10,
+          "temp": 16,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 11,
+          "temp": 16,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         }
       ],
-      "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. ✅ Jornada de preparativos sin riesgo de lluvia. Condiciones óptimas para montar escenografías.",
+      "consejo": "🕶️ Calor moderado. Agua y protección solar recomendados",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. ✅ Jornada de preparativos sin riesgo de lluvia. Condiciones óptimas para montar escenografías.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 8,
       "datos_disponibles": true
@@ -680,62 +680,62 @@
     {
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
-      "temp_max": 20,
+      "temp_max": 23.7,
       "icono": "🌤️",
       "prob": 29,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 11,
+          "temp": 15,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 20,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 20,
+          "temp": 23,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 20,
+          "temp": 23,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 10,
+          "temp": 13,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 10,
+          "temp": 12,
           "prob": 7,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "👕 Temperatura agradable para el desfile",
+      "consejo": "🕶️ Calor moderado. Agua y protección solar recomendados",
       "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🎶🟡 Riesgo moderado de lluvia. Los instrumentos de viento-madera son sensibles a la humedad.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 9,
@@ -744,63 +744,63 @@
     {
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
-      "temp_max": 21.8,
+      "temp_max": 14.5,
       "icono": "🌤️",
       "prob": 28,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 10,
+          "temp": 11,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 11,
           "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 21,
+          "temp": 12,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 22,
+          "temp": 14,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 18,
+          "temp": 14,
           "prob": 26,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 13,
+          "temp": 9,
           "prob": 28,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 11,
+          "temp": 8,
           "prob": 26,
           "litros": 0,
           "icono": "🌤️"
         }
       ],
-      "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟠 Riesgo moderado. Las Entrades podrían celebrarse con incidencias. Plan B activado.",
+      "consejo": "🧣 Fresco. Lleva abrigo o chaqueta",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. Entrada de aire polar marítimo o continental en niveles bajos: temperaturas notablemente inferiores a la normal estacional. 🟠 Riesgo moderado. Las Entrades podrían celebrarse con incidencias. Plan B activado.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 10,
       "datos_disponibles": true
@@ -808,56 +808,56 @@
     {
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
-      "temp_max": 20.9,
+      "temp_max": 19.2,
       "icono": "🌦️",
       "prob": 31,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 10,
+          "temp": 8,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 21,
+          "temp": 18,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 17,
+          "temp": 16,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 13,
+          "temp": 11,
           "prob": 31,
           "litros": 0,
           "icono": "🌦️"
         },
         {
           "hora": "02:00",
-          "temp": 11,
+          "temp": 8,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
@@ -872,56 +872,56 @@
     {
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
-      "temp_max": 20.3,
+      "temp_max": 19.3,
       "icono": "🌦️",
       "prob": 31,
-      "litros": 1.2,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 10,
+          "temp": 8,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 17,
+          "temp": 15,
           "prob": 17,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "14:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 26,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 13,
+          "temp": 15,
           "prob": 29,
-          "litros": 0.2,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 13,
+          "temp": 11,
           "prob": 25,
-          "litros": 0.2,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 9,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
@@ -948,5 +948,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-15T17:00:37.256Z"
+  "fecha": "2026-04-15T18:00:37.791Z"
 }
