@@ -1,6 +1,6 @@
 {
-  "temp": 22.7,
-  "hum": 33,
+  "temp": 22.4,
+  "hum": 35,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041506/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -362,7 +362,7 @@
       "fecha": "2026-04-19",
       "temp_max": 23.9,
       "icono": "☀️",
-      "prob": 3,
+      "prob": 0,
       "litros": 0,
       "horas": [
         {
@@ -389,21 +389,21 @@
         {
           "hora": "17:00",
           "temp": 23,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 20,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 15,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
@@ -426,7 +426,7 @@
       "fecha": "2026-04-20",
       "temp_max": 26.4,
       "icono": "☀️",
-      "prob": 4,
+      "prob": 0,
       "litros": 0,
       "horas": [
         {
@@ -453,28 +453,28 @@
         {
           "hora": "17:00",
           "temp": 26,
-          "prob": 1,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 24,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 16,
-          "prob": 4,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 15,
-          "prob": 5,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
@@ -496,7 +496,7 @@
         {
           "hora": "08:00",
           "temp": 14,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
@@ -554,55 +554,55 @@
       "fecha": "2026-04-22",
       "temp_max": 25.6,
       "icono": "☀️",
-      "prob": 13,
+      "prob": 10,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 14,
-          "prob": 8,
+          "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 24,
-          "prob": 6,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 25,
-          "prob": 4,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 25,
-          "prob": 10,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 20,
-          "prob": 13,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 19,
-          "prob": 10,
+          "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 16,
-          "prob": 13,
+          "prob": 12,
           "litros": 0,
           "icono": "☀️"
         }
@@ -948,5 +948,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-15T15:00:38.775Z"
+  "fecha": "2026-04-15T16:00:39.441Z"
 }
