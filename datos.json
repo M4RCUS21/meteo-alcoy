@@ -1,6 +1,6 @@
 {
-  "temp": 18.8,
-  "hum": 47,
+  "temp": 21.6,
+  "hum": 37,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041506/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -104,7 +104,7 @@
     {
       "dia": "Dimecres 15 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-15",
-      "temp_max": 22.5,
+      "temp_max": 22.6,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -132,14 +132,14 @@
         },
         {
           "hora": "17:00",
-          "temp": 22,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -168,7 +168,7 @@
     {
       "dia": "Dijous 16 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-16",
-      "temp_max": 23,
+      "temp_max": 22.8,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -552,7 +552,7 @@
     {
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
-      "temp_max": 23.9,
+      "temp_max": 25.6,
       "icono": "☀️",
       "prob": 13,
       "litros": 0,
@@ -573,35 +573,35 @@
         },
         {
           "hora": "14:00",
-          "temp": 16,
+          "temp": 25,
           "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 13,
+          "temp": 25,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 14,
+          "temp": 20,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 12,
+          "temp": 19,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 16,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
@@ -616,10 +616,10 @@
     {
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
-      "temp_max": 17.2,
+      "temp_max": 18.5,
       "icono": "🌤️",
       "prob": 19,
-      "litros": 0.3,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
@@ -630,42 +630,42 @@
         },
         {
           "hora": "11:00",
-          "temp": 14,
+          "temp": 11,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 15,
+          "temp": 17,
           "prob": 6,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 17,
+          "temp": 18,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 17,
+          "temp": 16,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 10,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 13,
+          "temp": 11,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
@@ -680,56 +680,56 @@
     {
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
-      "temp_max": 21,
+      "temp_max": 20,
       "icono": "🌤️",
       "prob": 29,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
+          "temp": 11,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "11:00",
-          "temp": 18,
+          "temp": 16,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 14,
+          "temp": 10,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 13,
+          "temp": 10,
           "prob": 7,
           "litros": 0,
           "icono": "☀️"
@@ -744,21 +744,21 @@
     {
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
-      "temp_max": 21.1,
+      "temp_max": 21.8,
       "icono": "🌤️",
       "prob": 28,
-      "litros": 0.3,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 14,
+          "temp": 10,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 19,
+          "temp": 16,
           "prob": 8,
           "litros": 0,
           "icono": "☀️"
@@ -772,35 +772,35 @@
         },
         {
           "hora": "17:00",
-          "temp": 20,
+          "temp": 22,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 17,
+          "temp": 18,
           "prob": 26,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 13,
           "prob": 28,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": 11,
           "prob": 26,
           "litros": 0,
           "icono": "🌤️"
         }
       ],
       "consejo": "👕 Temperatura agradable para el desfile",
-      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Riesgo bajo pero real (0.3 mm). Prepara fundas de plástico transpirable para los tejidos delicados.",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟠 Riesgo moderado. Las Entrades podrían celebrarse con incidencias. Plan B activado.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 10,
       "datos_disponibles": true
@@ -808,30 +808,30 @@
     {
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
-      "temp_max": 20.1,
+      "temp_max": 20.9,
       "icono": "🌦️",
       "prob": 31,
-      "litros": 3.6,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 10,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 12,
+          "temp": 15,
           "prob": 10,
-          "litros": 0.7,
+          "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 15,
+          "temp": 21,
           "prob": 10,
-          "litros": 0.5,
+          "litros": 0,
           "icono": "☀️"
         },
         {
@@ -843,21 +843,21 @@
         },
         {
           "hora": "20:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 31,
           "litros": 0,
           "icono": "🌦️"
         },
         {
           "hora": "02:00",
-          "temp": 13,
+          "temp": 11,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
@@ -872,14 +872,14 @@
     {
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
-      "temp_max": 20.9,
+      "temp_max": 20.3,
       "icono": "🌦️",
       "prob": 31,
-      "litros": 0,
+      "litros": 1.2,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 10,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
@@ -900,28 +900,28 @@
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 18,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 13,
           "prob": 29,
-          "litros": 0,
+          "litros": 0.2,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 13,
           "prob": 25,
-          "litros": 0,
+          "litros": 0.2,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": 12,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
@@ -948,5 +948,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-15T11:00:38.998Z"
+  "fecha": "2026-04-15T13:00:37.720Z"
 }
