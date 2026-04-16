@@ -1,6 +1,6 @@
 {
-  "temp": 17.4,
-  "hum": 62,
+  "temp": 19.2,
+  "hum": 56,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041600/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -376,7 +376,7 @@
       "fecha": "2026-04-20",
       "temp_max": 27.7,
       "icono": "☀️",
-      "prob": 4,
+      "prob": 7,
       "litros": 0,
       "horas": [
         {
@@ -403,29 +403,29 @@
         {
           "hora": "17:00",
           "temp": 27,
-          "prob": 1,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 23,
-          "prob": 3,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 18,
-          "prob": 4,
+          "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 16,
-          "prob": 1,
-          "litros": 0,
+          "prob": 8,
+          "litros": 0.1,
           "icono": "☀️"
         }
       ],
@@ -441,12 +441,12 @@
       "temp_max": 22.4,
       "icono": "☀️",
       "prob": 13,
-      "litros": 3,
+      "litros": 2.6,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
-          "prob": 2,
+          "temp": 14,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
@@ -898,5 +898,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-16T09:00:40.386Z"
+  "fecha": "2026-04-16T10:00:40.570Z"
 }
