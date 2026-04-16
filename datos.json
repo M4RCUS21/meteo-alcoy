@@ -1,7 +1,7 @@
 {
-  "temp": 20.8,
-  "hum": 43,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041606/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 19.9,
+  "hum": 45,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041612/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -182,7 +182,7 @@
     {
       "dia": "Divendres 17 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-17",
-      "temp_max": 25.1,
+      "temp_max": 25.2,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -224,7 +224,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -246,21 +246,21 @@
     {
       "dia": "Dissabte 18 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-18",
-      "temp_max": 24.8,
+      "temp_max": 25.1,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -310,7 +310,7 @@
     {
       "dia": "Diumenge 19 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-19",
-      "temp_max": 25.5,
+      "temp_max": 25.2,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -324,7 +324,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -345,7 +345,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -374,7 +374,7 @@
     {
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
-      "temp_max": 26.9,
+      "temp_max": 27.1,
       "icono": "☀️",
       "prob": 10,
       "litros": 0,
@@ -388,7 +388,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 22,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -402,7 +402,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 26,
+          "temp": 27,
           "prob": 5,
           "litros": 0,
           "icono": "☀️"
@@ -438,63 +438,63 @@
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
-      "temp_max": 22.4,
+      "temp_max": 26.5,
       "icono": "🌤️",
       "prob": 21,
-      "litros": 2.4,
+      "litros": 0.3,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 22,
+          "temp": 26,
           "prob": 5,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 22,
+          "temp": 26,
           "prob": 9,
-          "litros": 0.6,
+          "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 20,
           "prob": 15,
-          "litros": 0,
-          "icono": "🌤️"
-        },
-        {
-          "hora": "23:00",
-          "temp": 15,
-          "prob": 21,
           "litros": 0.1,
           "icono": "🌤️"
         },
         {
+          "hora": "23:00",
+          "temp": 16,
+          "prob": 21,
+          "litros": 0,
+          "icono": "🌤️"
+        },
+        {
           "hora": "02:00",
-          "temp": 13,
+          "temp": 15,
           "prob": 23,
-          "litros": 0.4,
+          "litros": 0,
           "icono": "🌤️"
         }
       ],
       "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
-      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Riesgo bajo: posible llovizna residual (2.4 mm). Llevar protección por precaución.",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟡 Riesgo bajo: posible llovizna residual (0.3 mm). Llevar protección por precaución.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 5,
       "datos_disponibles": true
@@ -502,63 +502,63 @@
     {
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
-      "temp_max": 19.2,
+      "temp_max": 27.6,
       "icono": "🌤️",
       "prob": 23,
-      "litros": 7.2,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 16,
           "prob": 15,
-          "litros": 0.7,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "11:00",
-          "temp": 13,
+          "temp": 21,
           "prob": 9,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 14,
+          "temp": 26,
           "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 19,
+          "temp": 27,
           "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 17,
+          "temp": 24,
           "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 14,
+          "temp": 18,
           "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": 16,
           "prob": 5,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "🌙 Noche agradable. Temperatura suave, perfecta para desfilar",
-      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas. 🟠 Riesgo moderado. La entraeta podría suspenderse si la lluvia es persistente. Pendiente del radar.",
+      "consejo": "🌙 Noche cálida. Condiciones ideales para las entraetes",
+      "analisis_tecnico": "Previsión a corto-medio plazo del modelo ECMWF IFS. El skill del modelo a esta escala es aceptable para la región del Mediterráneo occidental. Circulación de vientos del este o nordeste con advección de humedad procedente del Mediterráneo. Posible nubosidad sin descargas significativas.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 6,
       "datos_disponibles": true
@@ -566,49 +566,49 @@
     {
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
-      "temp_max": 16,
+      "temp_max": 20.2,
       "icono": "☀️",
       "prob": 7,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
+          "temp": 12,
           "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 16,
-          "prob": 3,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "14:00",
           "temp": 15,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
+          "hora": "14:00",
+          "temp": 20,
+          "prob": 3,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
           "hora": "17:00",
-          "temp": 16,
+          "temp": 20,
           "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 13,
+          "temp": 16,
           "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 12,
+          "temp": 13,
           "prob": 7,
           "litros": 0,
           "icono": "☀️"
@@ -621,8 +621,8 @@
           "icono": "☀️"
         }
       ],
-      "consejo": "🧣 Fresco. Lleva abrigo o chaqueta",
-      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. Masa de aire de origen atlántico con temperaturas frescas. Enfriamiento radiativo nocturno acusado. ✅ Jornada de preparativos sin riesgo de lluvia. Condiciones óptimas para montar escenografías.",
+      "consejo": "👕 Temperatura agradable para el desfile",
+      "analisis_tecnico": "Previsión a medio plazo del modelo ECMWF IFS (0.04°). Fiabilidad moderada; conviene revisar en los días siguientes. El patrón de presión indica dominio anticiclónico con subsidencia en capas medias, lo que suprime la convección y garantiza estabilidad dinámica. ✅ Jornada de preparativos sin riesgo de lluvia. Condiciones óptimas para montar escenografías.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 7,
       "datos_disponibles": true
@@ -633,7 +633,7 @@
       "temp_max": 13.9,
       "icono": "🌤️",
       "prob": 26,
-      "litros": 0.3,
+      "litros": 0.5,
       "horas": [
         {
           "hora": "08:00",
@@ -898,5 +898,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-16T16:00:37.710Z"
+  "fecha": "2026-04-16T17:00:38.236Z"
 }
