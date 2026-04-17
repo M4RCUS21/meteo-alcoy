@@ -6,6 +6,7 @@
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-08",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -20,6 +21,7 @@
     {
       "dia": "Dijous 9 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-09",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -34,6 +36,7 @@
     {
       "dia": "Divendres 10 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-10",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -48,6 +51,7 @@
     {
       "dia": "Dissabte 11 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-11",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -62,6 +66,7 @@
     {
       "dia": "Diumenge 12 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-12",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -76,6 +81,7 @@
     {
       "dia": "Dilluns 13 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-13",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -90,6 +96,7 @@
     {
       "dia": "Dimarts 14 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-14",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -104,6 +111,7 @@
     {
       "dia": "Dimecres 15 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-15",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -118,6 +126,7 @@
     {
       "dia": "Dijous 16 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-16",
+      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -132,6 +141,7 @@
     {
       "dia": "Divendres 17 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-17",
+      "tipus": "entraeta",
       "temp_max": 25.4,
       "icono": "☀️",
       "prob": 0,
@@ -196,6 +206,7 @@
     {
       "dia": "Dissabte 18 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-18",
+      "tipus": "entraeta",
       "temp_max": 25.2,
       "icono": "☀️",
       "prob": 0,
@@ -260,6 +271,7 @@
     {
       "dia": "Diumenge 19 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-19",
+      "tipus": "entraeta",
       "temp_max": 25.7,
       "icono": "☀️",
       "prob": 0,
@@ -324,6 +336,7 @@
     {
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
+      "tipus": "entraeta",
       "temp_max": 27.2,
       "icono": "☀️",
       "prob": 0,
@@ -388,6 +401,7 @@
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
+      "tipus": "entraeta",
       "temp_max": 29,
       "icono": "☀️",
       "prob": 8,
@@ -452,6 +466,7 @@
     {
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
+      "tipus": "entraeta",
       "temp_max": 28.9,
       "icono": "☀️",
       "prob": 10,
@@ -516,6 +531,7 @@
     {
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
+      "tipus": "vespra",
       "temp_max": 16.7,
       "icono": "☀️",
       "prob": 13,
@@ -580,6 +596,7 @@
     {
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
+      "tipus": "musics",
       "temp_max": 23.7,
       "icono": "🌤️",
       "prob": 26,
@@ -644,6 +661,7 @@
     {
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
+      "tipus": "entrades",
       "temp_max": 23.9,
       "icono": "🌤️",
       "prob": 24,
@@ -700,7 +718,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~24°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 24ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🔴 Peligro serio de lluvia continua. Situación muy comprometida para los boatos de seda y metal.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 24ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🏆 Condiciones inmejorables para la Entrada. Los trajes y boatos lucirán espectaculares.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 8,
       "datos_disponibles": true
@@ -708,6 +726,7 @@
     {
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
+      "tipus": "santjordi",
       "temp_max": 21.2,
       "icono": "🌤️",
       "prob": 25,
@@ -772,6 +791,7 @@
     {
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
+      "tipus": "alardo",
       "temp_max": 18.7,
       "icono": "🌦️",
       "prob": 32,
@@ -828,13 +848,17 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 19ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🟡 Riesgo muy bajo de lluvia fina. Vigilar de mantener la pólvora tapada por precaución.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 19ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 10,
       "datos_disponibles": true
     }
   ],
   "estacion": "Alcoi — Estació c27m009e08",
+  "resumen_grans": {
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 24ºC. Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa i no hauria d'espatllar els actes.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 24ºC. Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa y no debería estropear los actos."
+  },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
     "meteograma": "Meteociel GEFS (via AVAMET)",
@@ -848,5 +872,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-17T13:00:32.896Z"
+  "fecha": "2026-04-17T13:08:38.811Z"
 }
