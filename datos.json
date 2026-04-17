@@ -1,12 +1,11 @@
 {
-  "temp": 15.4,
-  "hum": 59,
+  "temp": 18,
+  "hum": 54,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041700/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-08",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -21,7 +20,6 @@
     {
       "dia": "Dijous 9 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-09",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -36,7 +34,6 @@
     {
       "dia": "Divendres 10 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-10",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -51,7 +48,6 @@
     {
       "dia": "Dissabte 11 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-11",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -66,7 +62,6 @@
     {
       "dia": "Diumenge 12 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-12",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -81,7 +76,6 @@
     {
       "dia": "Dilluns 13 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-13",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -96,7 +90,6 @@
     {
       "dia": "Dimarts 14 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-14",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -111,7 +104,6 @@
     {
       "dia": "Dimecres 15 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-15",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -126,7 +118,6 @@
     {
       "dia": "Dijous 16 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-16",
-      "tipus": "entraeta",
       "temp_max": "N/D",
       "icono": "❓",
       "prob": "N/D",
@@ -141,7 +132,6 @@
     {
       "dia": "Divendres 17 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-17",
-      "tipus": "entraeta",
       "temp_max": 25.2,
       "icono": "☀️",
       "prob": 0,
@@ -206,7 +196,6 @@
     {
       "dia": "Dissabte 18 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-18",
-      "tipus": "entraeta",
       "temp_max": 25.6,
       "icono": "☀️",
       "prob": 0,
@@ -271,7 +260,6 @@
     {
       "dia": "Diumenge 19 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-19",
-      "tipus": "entraeta",
       "temp_max": 25.3,
       "icono": "☀️",
       "prob": 0,
@@ -336,7 +324,6 @@
     {
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
-      "tipus": "entraeta",
       "temp_max": 27.1,
       "icono": "☀️",
       "prob": 0,
@@ -401,7 +388,6 @@
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
-      "tipus": "entraeta",
       "temp_max": 28.5,
       "icono": "🌤️",
       "prob": 18,
@@ -466,7 +452,6 @@
     {
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
-      "tipus": "entraeta",
       "temp_max": 28.9,
       "icono": "☀️",
       "prob": 10,
@@ -531,7 +516,6 @@
     {
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
-      "tipus": "vespra",
       "temp_max": 16.7,
       "icono": "☀️",
       "prob": 13,
@@ -596,7 +580,6 @@
     {
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
-      "tipus": "musics",
       "temp_max": 15.2,
       "icono": "🌤️",
       "prob": 26,
@@ -661,7 +644,6 @@
     {
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
-      "tipus": "entrades",
       "temp_max": 13.1,
       "icono": "🌤️",
       "prob": 24,
@@ -726,7 +708,6 @@
     {
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
-      "tipus": "santjordi",
       "temp_max": 19.7,
       "icono": "🌤️",
       "prob": 25,
@@ -791,7 +772,6 @@
     {
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
-      "tipus": "alardo",
       "temp_max": 20.3,
       "icono": "🌦️",
       "prob": 32,
@@ -855,10 +835,6 @@
     }
   ],
   "estacion": "Alcoi — Estació c27m009e08",
-  "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 20ºC. Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa i no hauria d'espatllar els actes.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 20ºC. Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa y no debería estropear los actos."
-  },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
     "meteograma": "Meteociel GEFS (via AVAMET)",
@@ -872,5 +848,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-17T07:26:10.946Z"
+  "fecha": "2026-04-17T08:00:30.116Z"
 }
