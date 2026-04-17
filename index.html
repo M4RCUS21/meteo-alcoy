@@ -3978,6 +3978,9 @@
      /* ══════════════════
                METEO SECTION
             ══════════════════ */
+ /* ══════════════════
+               METEO SECTION
+            ══════════════════ */
       function MeteoSection() {
         const t = useT();
         const [meteo, setMeteo] = useState(null);
@@ -4010,40 +4013,11 @@
           );
         });
 
-        /* ─── LÓGICA DEL RESUMEN INTELIGENTE ─── */
+        // Extraemos el resumen calculado desde n8n
         let summaryTxt = "";
-        if (diesGrans.length > 0) {
-          const validTemps = diesGrans.map((d) => parseFloat(d.temp_max)).filter((n) => !isNaN(n));
-          const maxT = validTemps.length ? Math.max(...validTemps) : null;
-          const validRain = diesGrans.map((d) => parseFloat(d.litros)).filter((n) => !isNaN(n));
-          const totalRain = validRain.length ? validRain.reduce((a, b) => a + b, 0) : 0;
-          const validProb = diesGrans.map((d) => parseFloat(d.prob)).filter((n) => !isNaN(n));
-          const maxProb = validProb.length ? Math.max(...validProb) : 0;
-
-          if (maxT !== null) {
-            const isEs = t.today === "HOY";
-            if (isEs) {
-               let tempText = maxT > 25
-                ? `Tendremos días calurosos, alcanzando los ${Math.round(maxT)}ºC de máxima. Tocará hidratarse bien con los trajes.`
-                : `Este año nos libramos de los fuertes calores de semanas pasadas. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos ${Math.round(maxT)}ºC.`;
-               let rainText = maxProb < 20
-                ? "Además, la atmósfera se prevé muy estable y sin rastro de lluvia, ideal para disfrutar de la Trilogía en la calle."
-                : (maxProb < 50 && totalRain < 3)
-                  ? "Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa y no debería estropear los actos."
-                  : "No obstante, se aproxima un frente que podría traer algo de frío y lluvia, por lo que habrá que seguir la evolución de este panel día a día.";
-               summaryTxt = tempText + " " + rainText;
-            } else {
-               let tempText = maxT > 25
-                ? `Tindrem dies calorosos, arribant als ${Math.round(maxT)}ºC de màxima. Tocarà hidratar-se bé amb els trages.`
-                : `Aquest any ens lliurem de les fortes calors de setmanes passades. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns ${Math.round(maxT)}ºC.`;
-               let rainText = maxProb < 20
-                ? "A més, l'oratge es preveu molt estable i sense rastre de pluja, ideal per a gaudir de la Trilogia al carrer."
-                : (maxProb < 50 && totalRain < 3)
-                  ? "Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa i no hauria d'espatllar els actes."
-                  : "No obstant això, s'aproxima un front que podria portar un poc de fred i aigua, pel que caldrà seguir l'evolució d'aquest panell dia a dia.";
-               summaryTxt = tempText + " " + rainText;
-            }
-          }
+        if (meteo?.resumen_grans) {
+           const idiomaActual = t.today === "HOY" ? "es" : "ca";
+           summaryTxt = meteo.resumen_grans[idiomaActual];
         }
 
         const badge = (f) => {
