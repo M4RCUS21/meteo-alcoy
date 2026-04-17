@@ -1,6 +1,6 @@
 {
-  "temp": 19.6,
-  "hum": 51,
+  "temp": 20.8,
+  "hum": 46,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041700/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -260,7 +260,7 @@
     {
       "dia": "Diumenge 19 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-19",
-      "temp_max": 25.3,
+      "temp_max": 25.7,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -316,7 +316,7 @@
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 26ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 2,
       "datos_disponibles": true
@@ -324,10 +324,10 @@
     {
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
-      "temp_max": 27.1,
+      "temp_max": 27.2,
       "icono": "☀️",
       "prob": 0,
-      "litros": 0.3,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
@@ -338,7 +338,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 23,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -354,7 +354,7 @@
           "hora": "17:00",
           "temp": 27,
           "prob": 0,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "☀️"
         },
         {
@@ -373,7 +373,7 @@
         },
         {
           "hora": "02:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -388,9 +388,9 @@
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
-      "temp_max": 28.5,
-      "icono": "🌤️",
-      "prob": 18,
+      "temp_max": 29,
+      "icono": "☀️",
+      "prob": 8,
       "litros": 0,
       "horas": [
         {
@@ -402,49 +402,49 @@
         },
         {
           "hora": "11:00",
-          "temp": 24,
-          "prob": 0,
+          "temp": 23,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 28,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 28,
-          "prob": 10,
+          "temp": 29,
+          "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 23,
-          "prob": 18,
+          "temp": 24,
+          "prob": 8,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 15,
-          "prob": 13,
+          "temp": 16,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 13,
-          "prob": 1,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. Hará bastante calor, alcanzando los 29ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 29ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 4,
       "datos_disponibles": true
@@ -459,8 +459,8 @@
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
-          "prob": 5,
+          "temp": 14,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
@@ -848,5 +848,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-17T09:00:31.055Z"
+  "fecha": "2026-04-17T10:00:34.014Z"
 }
