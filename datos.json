@@ -1,7 +1,7 @@
 {
   "temp": 20.8,
   "hum": 46,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041700/graphe3_1000___-0.472_38.696_.gif",
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041706/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -132,7 +132,7 @@
     {
       "dia": "Divendres 17 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-17",
-      "temp_max": 25.2,
+      "temp_max": 25.4,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -146,7 +146,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 22,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -174,7 +174,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -196,7 +196,7 @@
     {
       "dia": "Dissabte 18 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-18",
-      "temp_max": 25.6,
+      "temp_max": 25.2,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -224,7 +224,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 25,
+          "temp": 24,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -238,7 +238,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -252,7 +252,7 @@
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 26ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "AROME",
       "dias_restantes": 1,
       "datos_disponibles": true
@@ -580,7 +580,7 @@
     {
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
-      "temp_max": 15.2,
+      "temp_max": 23.7,
       "icono": "🌤️",
       "prob": 26,
       "litros": 0.3,
@@ -601,42 +601,42 @@
         },
         {
           "hora": "14:00",
-          "temp": 15,
+          "temp": 21,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 15,
+          "temp": 24,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 13,
+          "temp": 20,
           "prob": 26,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 12,
+          "temp": 17,
           "prob": 23,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 16,
           "prob": 19,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "🌤️"
         }
       ],
-      "consejo": "🧣 Fresco. Lleva abrigo o térmica bajo el traje",
-      "analisis_tecnico": "Los modelos marcan un 26% de probabilidad de lluvia con apenas 0.3 mm. Esto significa que hay opciones de que caiga algo, pero 0.3 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. Será un día bastante fresco, con máximas de solo 15ºC. Ideal para no sudar nada en las Entradas, pero hará falta abrigarse bien en cuanto caiga el sol.",
+      "consejo": "👕 Temperatura ideal (~24°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Los modelos marcan un 26% de probabilidad de lluvia con apenas 0.3 mm. Esto significa que hay opciones de que caiga algo, pero 0.3 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. En cuanto al termómetro, como mucho llegaremos a los 24ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 7,
       "datos_disponibles": true
@@ -644,63 +644,63 @@
     {
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
-      "temp_max": 13.1,
+      "temp_max": 23.9,
       "icono": "🌤️",
       "prob": 24,
-      "litros": 0.9,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 16,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "11:00",
-          "temp": 12,
+          "temp": 20,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 13,
+          "temp": 23,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 13,
+          "temp": 24,
           "prob": 23,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 13,
+          "temp": 21,
           "prob": 23,
-          "litros": 0.1,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 12,
+          "temp": 17,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 13,
+          "temp": 15,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "🧣 Fresco. Lleva abrigo o térmica bajo el traje",
-      "analisis_tecnico": "Los modelos marcan un 24% de probabilidad de lluvia con apenas 0.9 mm. Esto significa que hay opciones de que caiga algo, pero 0.9 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. Será un día bastante fresco, con máximas de solo 13ºC. Ideal para no sudar nada en las Entradas, pero hará falta abrigarse bien en cuanto caiga el sol. 🟡 Habrá nubes en el cielo y ratos de sol. Ningún riesgo real para los trajes ni los boatos, la lluvia si aparece será anecdótica.",
+      "consejo": "👕 Temperatura ideal (~24°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 24ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🔴 Peligro serio de lluvia continua. Situación muy comprometida para los boatos de seda y metal.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 8,
       "datos_disponibles": true
@@ -708,10 +708,10 @@
     {
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
-      "temp_max": 19.7,
+      "temp_max": 21.2,
       "icono": "🌤️",
       "prob": 25,
-      "litros": 0,
+      "litros": 0.6,
       "horas": [
         {
           "hora": "08:00",
@@ -722,14 +722,14 @@
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 9,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 19,
+          "temp": 21,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
@@ -738,33 +738,33 @@
           "hora": "17:00",
           "temp": 20,
           "prob": 20,
-          "litros": 0,
+          "litros": 0.2,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 17,
+          "temp": 19,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 12,
+          "temp": 14,
           "prob": 25,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 10,
+          "temp": 12,
           "prob": 29,
           "litros": 0,
           "icono": "🌤️"
         }
       ],
-      "consejo": "👕 Temperatura ideal (~20°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 20ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. ⚔️🔴 Riesgo serio de lluvia que podría afectar a la Procesión.",
+      "consejo": "👕 Temperatura ideal (~21°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Los modelos marcan un 25% de probabilidad de lluvia con apenas 0.6 mm. Esto significa que hay opciones de que caiga algo, pero 0.6 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. En cuanto al termómetro, como mucho llegaremos a los 21ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. ⚔️🟡 Posibles 4 gotas sueltas, pero nada que impida el desarrollo de los actos religiosos y el Miracle.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 9,
       "datos_disponibles": true
@@ -772,7 +772,7 @@
     {
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
-      "temp_max": 20.3,
+      "temp_max": 18.7,
       "icono": "🌦️",
       "prob": 32,
       "litros": 0,
@@ -786,35 +786,35 @@
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 20,
+          "temp": 18,
           "prob": 22,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 18,
+          "temp": 14,
           "prob": 32,
           "litros": 0,
           "icono": "🌦️"
         },
         {
           "hora": "23:00",
-          "temp": 13,
+          "temp": 11,
           "prob": 25,
           "litros": 0,
           "icono": "🌤️"
@@ -827,8 +827,8 @@
           "icono": "🌤️"
         }
       ],
-      "consejo": "👕 Temperatura ideal (~20°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 20ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🟡 Riesgo muy bajo de lluvia fina. Vigilar de mantener la pólvora tapada por precaución.",
+      "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 19ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🟡 Riesgo muy bajo de lluvia fina. Vigilar de mantener la pólvora tapada por precaución.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 10,
       "datos_disponibles": true
@@ -848,5 +848,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-17T11:00:30.979Z"
+  "fecha": "2026-04-17T12:00:31.556Z"
 }
