@@ -142,7 +142,7 @@
       "dia": "Divendres 17 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-17",
       "tipus": "entraeta",
-      "temp_max": 25.4,
+      "temp_max": 25.5,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -170,7 +170,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 25,
+          "temp": 26,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -198,7 +198,7 @@
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 26ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "AROME",
       "dias_restantes": 0,
       "datos_disponibles": true
@@ -872,5 +872,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-17T13:08:38.811Z"
+  "fecha": "2026-04-17T13:31:58.346Z"
 }
