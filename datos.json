@@ -170,7 +170,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 26,
+          "temp": 25,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -242,7 +242,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -793,8 +793,8 @@
       "fecha": "2026-04-27",
       "tipus": "alardo",
       "temp_max": 18,
-      "icono": "🌦️",
-      "prob": 32,
+      "icono": "🌤️",
+      "prob": 24,
       "litros": 0.3,
       "horas": [
         {
@@ -814,41 +814,41 @@
         {
           "hora": "14:00",
           "temp": 16,
-          "prob": 22,
+          "prob": 24,
           "litros": 0.1,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
           "temp": 18,
-          "prob": 22,
+          "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
           "temp": 15,
-          "prob": 32,
+          "prob": 16,
           "litros": 0,
-          "icono": "🌦️"
+          "icono": "🌤️"
         },
         {
           "hora": "23:00",
           "temp": 13,
-          "prob": 25,
+          "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
           "temp": 13,
-          "prob": 16,
+          "prob": 19,
           "litros": 0.1,
           "icono": "🌤️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Los modelos marcan un 32% de probabilidad de lluvia con apenas 0.3 mm. Esto significa que hay opciones de que caiga algo, pero 0.3 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. En cuanto al termómetro, como mucho llegaremos a los 18ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🟡 Riesgo muy bajo de lluvia fina o exceso de humedad. Vigilar de mantener la pólvora tapada por precaución.",
+      "analisis_tecnico": "Los modelos marcan un 24% de probabilidad de lluvia con apenas 0.3 mm. Esto significa que hay opciones de que caiga algo, pero 0.3 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. En cuanto al termómetro, como mucho llegaremos a los 18ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🟡 Riesgo muy bajo de lluvia fina o exceso de humedad. Vigilar de mantener la pólvora tapada por precaución.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 10,
       "datos_disponibles": true
@@ -872,5 +872,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-17T18:00:37.145Z"
+  "fecha": "2026-04-17T19:01:06.162Z"
 }
