@@ -287,21 +287,21 @@
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
       "tipus": "entraeta",
-      "temp_max": 27.6,
+      "temp_max": 27.4,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 23,
+          "temp": 24,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -315,7 +315,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 27,
+          "temp": 26,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -329,7 +329,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -343,7 +343,7 @@
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 28ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 2,
       "datos_disponibles": true
@@ -352,14 +352,14 @@
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
       "tipus": "entraeta",
-      "temp_max": 27.6,
+      "temp_max": 27.2,
       "icono": "☀️",
       "prob": 3,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -380,35 +380,35 @@
         },
         {
           "hora": "17:00",
-          "temp": 28,
+          "temp": 27,
           "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 23,
+          "temp": 22,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 14,
           "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 28ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 3,
       "datos_disponibles": true
@@ -417,14 +417,14 @@
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
       "tipus": "entraeta",
-      "temp_max": 27.4,
+      "temp_max": 27,
       "icono": "☀️",
-      "prob": 2,
+      "prob": 1,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 12,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -446,28 +446,28 @@
         {
           "hora": "17:00",
           "temp": 27,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 22,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 19,
-          "prob": 2,
+          "temp": 15,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 18,
-          "prob": 3,
+          "temp": 16,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
@@ -484,55 +484,55 @@
       "tipus": "vespra",
       "temp_max": 25.9,
       "icono": "☀️",
-      "prob": 9,
+      "prob": 1,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 13,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 19,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 24,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 26,
-          "prob": 5,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 22,
-          "prob": 7,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 17,
-          "prob": 9,
+          "prob": 1,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 15,
-          "prob": 10,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         }
@@ -548,58 +548,58 @@
       "fecha": "2026-04-24",
       "tipus": "musics",
       "temp_max": 27,
-      "icono": "🌤️",
-      "prob": 23,
+      "icono": "🌦️",
+      "prob": 31,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 15,
-          "prob": 7,
+          "prob": 11,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 25,
-          "prob": 5,
+          "prob": 16,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "14:00",
           "temp": 27,
-          "prob": 5,
+          "prob": 20,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "17:00",
           "temp": 26,
-          "prob": 9,
+          "prob": 24,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "20:00",
           "temp": 24,
-          "prob": 16,
+          "prob": 28,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
           "temp": 17,
-          "prob": 23,
+          "prob": 31,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         },
         {
           "hora": "02:00",
           "temp": 16,
-          "prob": 17,
+          "prob": 33,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
@@ -613,28 +613,28 @@
       "fecha": "2026-04-25",
       "tipus": "entrades",
       "temp_max": 24.3,
-      "icono": "🌤️",
-      "prob": 23,
+      "icono": "🌦️",
+      "prob": 33,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 16,
-          "prob": 0,
+          "prob": 29,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "11:00",
           "temp": 20,
-          "prob": 3,
+          "prob": 25,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "14:00",
           "temp": 23,
-          "prob": 6,
+          "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
@@ -822,5 +822,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-18T03:01:06.501Z"
+  "fecha": "2026-04-18T04:01:06.359Z"
 }
