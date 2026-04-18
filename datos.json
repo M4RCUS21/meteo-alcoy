@@ -157,14 +157,14 @@
       "dia": "Dissabte 18 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-18",
       "tipus": "entraeta",
-      "temp_max": 25.4,
+      "temp_max": 25.3,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -222,14 +222,14 @@
       "dia": "Diumenge 19 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-19",
       "tipus": "entraeta",
-      "temp_max": 25,
+      "temp_max": 25.1,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -250,14 +250,14 @@
         },
         {
           "hora": "17:00",
-          "temp": 24,
+          "temp": 25,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -271,7 +271,7 @@
         },
         {
           "hora": "02:00",
-          "temp": "N/D",
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -822,5 +822,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-18T00:01:05.746Z"
+  "fecha": "2026-04-18T03:01:06.501Z"
 }
