@@ -1,7 +1,7 @@
 {
-  "temp": 23.3,
-  "hum": 36,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041900/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 23.6,
+  "hum": 37,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041906/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -172,14 +172,14 @@
       "dia": "Diumenge 19 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-19",
       "tipus": "entraeta",
-      "temp_max": 25,
+      "temp_max": 25.1,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 17,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -214,7 +214,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -237,7 +237,7 @@
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
       "tipus": "entraeta",
-      "temp_max": 27.4,
+      "temp_max": 26.6,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -265,7 +265,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 27,
+          "temp": 26,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -279,7 +279,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -627,7 +627,7 @@
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
       "tipus": "santjordi",
-      "temp_max": 22.2,
+      "temp_max": 21.1,
       "icono": "🌤️",
       "prob": 29,
       "litros": 0,
@@ -648,42 +648,42 @@
         },
         {
           "hora": "14:00",
-          "temp": 22,
-          "prob": 2,
+          "temp": 20,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 21,
-          "prob": 3,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "20:00",
           "temp": 20,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
+          "hora": "20:00",
+          "temp": 16,
+          "prob": 6,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
           "hora": "23:00",
-          "temp": 15,
-          "prob": 10,
+          "temp": 13,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 15,
-          "prob": 6,
+          "temp": 12,
+          "prob": 13,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "👕 Temperatura ideal (~22°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 22ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. ⚔️ Día del Patrón perfecto para la Reliquia y la Procesión General.",
+      "consejo": "👕 Temperatura ideal (~21°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 21ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. ⚔️ Día del Patrón perfecto para la Reliquia y la Procesión General.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 7,
       "datos_disponibles": true
@@ -692,63 +692,63 @@
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
       "tipus": "alardo",
-      "temp_max": 23,
+      "temp_max": 22,
       "icono": "🌤️",
-      "prob": 16,
+      "prob": 19,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
-          "prob": 6,
+          "temp": 12,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 23,
+          "temp": 22,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 18,
+          "temp": 17,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 12,
-          "prob": 16,
+          "temp": 13,
+          "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 11,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "👕 Temperatura ideal (~23°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 23ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
+      "consejo": "👕 Temperatura ideal (~22°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 22ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 8,
       "datos_disponibles": true
@@ -772,5 +772,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-19T11:00:27.383Z"
+  "fecha": "2026-04-19T12:18:06.737Z"
 }
