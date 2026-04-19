@@ -3344,7 +3344,7 @@
         },
       ];
 
-      /* ══════════════════
+/* ══════════════════
                COUNTDOWN
             ══════════════════ */
       const FESTA_TARGET = new Date("2026-04-24T00:00:00");
@@ -3353,7 +3353,8 @@
           const d = FESTA_TARGET - Date.now();
           if (d <= 0) return null;
           return {
-            dies: Math.floor(d / 864e5),
+            // Le sumamos +1 justo aquí al final de los días:
+            dies: Math.floor(d / 864e5) + 1, 
             hores: Math.floor((d / 36e5) % 24),
             minuts: Math.floor((d / 6e4) % 60),
             segons: Math.floor((d / 1e3) % 60),
