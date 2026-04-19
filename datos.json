@@ -1,5 +1,5 @@
 {
-  "temp": 22.9,
+  "temp": 23.1,
   "hum": 36,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041900/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
@@ -302,7 +302,7 @@
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
       "tipus": "entraeta",
-      "temp_max": 28.4,
+      "temp_max": 27.5,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -316,14 +316,14 @@
         },
         {
           "hora": "11:00",
-          "temp": 23,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 27,
+          "temp": 26,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -337,7 +337,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 24,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -367,14 +367,14 @@
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
       "tipus": "entraeta",
-      "temp_max": 29,
+      "temp_max": 29.1,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 14,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -402,14 +402,14 @@
         },
         {
           "hora": "20:00",
-          "temp": 25,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 17,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -446,7 +446,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
@@ -474,14 +474,14 @@
         },
         {
           "hora": "23:00",
-          "temp": 13,
+          "temp": 12,
           "prob": 1,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -772,5 +772,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-19T10:03:20.253Z"
+  "fecha": "2026-04-19T10:32:20.971Z"
 }
