@@ -1,6 +1,6 @@
 {
-  "temp": 18.2,
-  "hum": 51,
+  "temp": 16.8,
+  "hum": 55,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026041912/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -214,7 +214,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -237,21 +237,21 @@
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
       "tipus": "entraeta",
-      "temp_max": 27.3,
+      "temp_max": 27.5,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 22,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -286,14 +286,14 @@
         },
         {
           "hora": "02:00",
-          "temp": 17,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 28ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "AROME",
       "dias_restantes": 1,
       "datos_disponibles": true
@@ -772,5 +772,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-19T19:00:26.361Z"
+  "fecha": "2026-04-19T20:00:26.221Z"
 }
