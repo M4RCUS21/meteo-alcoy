@@ -1,5 +1,5 @@
 {
-  "temp": 14.3,
+  "temp": 14,
   "hum": 57,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
@@ -187,28 +187,28 @@
       "dia": "Dilluns 20 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-20",
       "tipus": "entraeta",
-      "temp_max": 26.9,
+      "temp_max": 27,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 22,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 26,
+          "temp": 27,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -259,7 +259,7 @@
       "horas": [
         {
           "hora": "08:00",
-          "temp": 13,
+          "temp": 14,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -287,7 +287,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 22,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -301,7 +301,7 @@
         },
         {
           "hora": "02:00",
-          "temp": "N/D",
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -722,5 +722,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-20T01:00:24.195Z"
+  "fecha": "2026-04-20T02:00:25.346Z"
 }
