@@ -1,6 +1,6 @@
 {
-  "temp": 26.3,
-  "hum": 29,
+  "temp": 25.7,
+  "hum": 34,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042006/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -229,14 +229,14 @@
         },
         {
           "hora": "23:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -252,7 +252,7 @@
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
       "tipus": "entraeta",
-      "temp_max": 26.6,
+      "temp_max": 26.5,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -266,7 +266,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 22,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -722,5 +722,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-20T13:00:27.626Z"
+  "fecha": "2026-04-20T14:00:28.142Z"
 }
