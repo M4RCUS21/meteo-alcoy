@@ -1,7 +1,7 @@
 {
-  "temp": 22.7,
-  "hum": 35,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042100/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 24.9,
+  "hum": 24,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042106/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -391,14 +391,14 @@
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -412,7 +412,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -445,7 +445,7 @@
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
       "tipus": "musics",
-      "temp_max": 18.4,
+      "temp_max": 17.4,
       "icono": "☀️",
       "prob": 6,
       "litros": 1.4,
@@ -466,42 +466,42 @@
         },
         {
           "hora": "14:00",
-          "temp": 18,
+          "temp": 17,
           "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 18,
+          "temp": 17,
           "prob": 22,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 17,
+          "temp": 15,
           "prob": 23,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 13,
+          "temp": 12,
           "prob": 19,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "02:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.4 mm totales. Temp. media 4 modelos: 19.9ºC. Prob. media: 6%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
+      "consejo": "👕 Temperatura ideal (~17°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.4 mm totales. Temp. media 4 modelos: 19.6ºC. Prob. media: 6%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -514,7 +514,7 @@
         "precip_icon": 0,
         "precip_gem": 5.4,
         "media_precip_mm": 1.38,
-        "media_temp_c": 19.9,
+        "media_temp_c": 19.6,
         "media_prob_pct": 6,
         "porcentaje_acuerdo_seco": 75,
         "veredicto": "Riesgo moderado para la noche de los Músicos.",
@@ -523,7 +523,7 @@
         "media_total_mm": 1.38,
         "temp_ecmwf_c": null,
         "temp_gfs_c": 21.9,
-        "temp_icon_c": 18.4,
+        "temp_icon_c": 17.6,
         "temp_gem_c": 19.3
       }
     },
@@ -531,63 +531,63 @@
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
       "tipus": "entrades",
-      "temp_max": 25.6,
+      "temp_max": 23.7,
       "icono": "🌤️",
-      "prob": 20,
-      "litros": 9.9,
+      "prob": 17,
+      "litros": 9.8,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 11,
+          "temp": 10,
           "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 20,
+          "temp": 18,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 25,
+          "temp": 23,
           "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 26,
+          "temp": 23,
           "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 23,
+          "temp": 20,
           "prob": 15,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 13,
           "prob": 9,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": 11,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 9.9 mm totales. Temp. media 4 modelos: 18.9ºC. Prob. media: 20%. El 50% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas.",
+      "consejo": "👕 Temperatura ideal (~24°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 9.8 mm totales. Temp. media 4 modelos: 18.2ºC. Prob. media: 17%. El 50% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -597,19 +597,19 @@
       "super_ensemble_datos": {
         "precip_ecmwf": 0,
         "precip_gfs": 0.9,
-        "precip_icon": 0.3,
+        "precip_icon": 0,
         "precip_gem": 38.4,
-        "media_precip_mm": 9.9,
-        "media_temp_c": 18.9,
-        "media_prob_pct": 20,
+        "media_precip_mm": 9.82,
+        "media_temp_c": 18.2,
+        "media_prob_pct": 17,
         "porcentaje_acuerdo_seco": 50,
         "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
         "tipo_dia": "entrades",
-        "prob_sintetica_pct": 20,
-        "media_total_mm": 9.9,
+        "prob_sintetica_pct": 17,
+        "media_total_mm": 9.82,
         "temp_ecmwf_c": null,
         "temp_gfs_c": 18.9,
-        "temp_icon_c": 25.8,
+        "temp_icon_c": 23.9,
         "temp_gem_c": 11.9
       }
     },
@@ -624,7 +624,7 @@
       "horas": [
         {
           "hora": "08:00",
-          "temp": 14,
+          "temp": 11,
           "prob": 6,
           "litros": 0,
           "icono": "☀️"
@@ -788,8 +788,8 @@
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Tindrem dies calorosos per a la Trilogia, arribant als 27ºC de màxima. Tocarà hidratar-se bé amb els trages. S'aproxima inestabilitat. Caldrà seguir l'evolució d'aquest panell dia a dia.",
-    "es": "Tendremos días calurosos para la Trilogía, alcanzando los 27ºC de máxima. Tocará hidratarse bien con los trajes. Se aproxima inestabilidad. Habrá que seguir la evolución de este panel día a día."
+    "ca": "Tindrem dies calorosos per a la Trilogia, arribant als 27ºC de màxima. Tocarà hidratar-se bé amb els trages. A més, l'oratge es preveu molt estable i sense rastre de pluja, ideal per a gaudir al carrer.",
+    "es": "Tendremos días calurosos para la Trilogía, alcanzando los 27ºC de máxima. Tocará hidratarse bien con los trajes. Además, la atmósfera se prevé muy estable y sin rastro de lluvia, ideal para disfrutar en la calle."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T10:00:39.753Z",
+  "fecha": "2026-04-21T11:00:40.462Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -812,7 +812,7 @@
       "precip_icon": 0,
       "precip_gem": 5.4,
       "media_precip_mm": 1.38,
-      "media_temp_c": 19.9,
+      "media_temp_c": 19.6,
       "media_prob_pct": 6,
       "porcentaje_acuerdo_seco": 75,
       "veredicto": "Riesgo moderado para la noche de los Músicos.",
@@ -821,25 +821,25 @@
       "media_total_mm": 1.38,
       "temp_ecmwf_c": null,
       "temp_gfs_c": 21.9,
-      "temp_icon_c": 18.4,
+      "temp_icon_c": 17.6,
       "temp_gem_c": 19.3
     },
     "2026-04-25": {
       "precip_ecmwf": 0,
       "precip_gfs": 0.9,
-      "precip_icon": 0.3,
+      "precip_icon": 0,
       "precip_gem": 38.4,
-      "media_precip_mm": 9.9,
-      "media_temp_c": 18.9,
-      "media_prob_pct": 20,
+      "media_precip_mm": 9.82,
+      "media_temp_c": 18.2,
+      "media_prob_pct": 17,
       "porcentaje_acuerdo_seco": 50,
       "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 20,
-      "media_total_mm": 9.9,
+      "prob_sintetica_pct": 17,
+      "media_total_mm": 9.82,
       "temp_ecmwf_c": null,
       "temp_gfs_c": 18.9,
-      "temp_icon_c": 25.8,
+      "temp_icon_c": 23.9,
       "temp_gem_c": 11.9
     },
     "2026-04-26": {
