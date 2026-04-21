@@ -1699,8 +1699,8 @@
           },
           guideEns: {
             lbl: "Super-Ensemble",
-            ttl: "4 Models Globals (Dia Entrades)",
-            desc: "Consens de ECMWF, GFS, ICON i GEM per al 25 d'abril (06:00–23:59). Quants models coincideixen? Com és la precipitació màxima esperada? Veredicte automàtic generat per n8n.",
+            ttl: "4 Models Globals (Trilogia)",
+            desc: "Consens d'ECMWF, GFS, ICON i GEM per als 4 dies de la Festa (06:00–23:59). Quants models coincideixen? Com és la precipitació mitjana esperada? Veredicte automàtic generat per n8n.",
           },
           cargoTitle: "Cargos ",
           cargoEm: "2026",
@@ -1731,8 +1731,8 @@
             "Fora del rang del model. S'activarà automàticament a mesura que la data s'acoste.",
           festesStarted: "Les Festes han Començat!",
           seNoData:
-            "El Super-Ensemble s'activarà quan s'aproxime el 25 d'abril.",
-          seTitle: "Anàlisi Super-Ensemble · Dia de les Entrades",
+            "El Super-Ensemble s'activarà quan s'aproxime el 24 d'abril.",
+          seTitle: "Anàlisi Super-Ensemble · 4 Models Globals",
           seAcord: "modelos secos",
           seMitja: "Mitjana 4 models",
         },
@@ -1792,8 +1792,8 @@
           },
           guideEns: {
             lbl: "Super-Ensemble",
-            ttl: "4 Modelos Globales (Día Entradas)",
-            desc: "Consenso de ECMWF, GFS, ICON y GEM para el 25 de abril (06:00–23:59). ¿Cuántos modelos coinciden? ¿Cuál es la precipitación máxima esperada? Veredicto automático generado por n8n.",
+            ttl: "4 Modelos Globales (Trilogía)",
+            desc: "Consenso de ECMWF, GFS, ICON y GEM para los 4 días de la Fiesta (06:00–23:59). ¿Cuántos modelos coinciden? ¿Cuál es la precipitación media esperada? Veredicto automático generado por n8n.",
           },
           cargoTitle: "Cargos ",
           cargoEm: "2026",
@@ -1824,8 +1824,8 @@
             "Fuera del rango del modelo. Se activará automáticamente a medida que se acerque la fecha.",
           festesStarted: "¡Las Fiestas han Comenzado!",
           seNoData:
-            "El Super-Ensemble se activará cuando se aproxime el 25 de abril.",
-          seTitle: "Análisis Super-Ensemble · Día de las Entradas",
+            "El Super-Ensemble se activará cuando se aproxime el 24 de abril.",
+          seTitle: "Análisis Super-Ensemble · 4 Modelos Globales",
           seAcord: "modelos secos",
           seMitja: "Media 4 modelos",
         },
@@ -2814,294 +2814,470 @@
       }
 
       /* ══════════════════════════════════════════════════════════════
-         SUPER ENSEMBLE PANEL — PATCH NEW COMPONENT
-         Reads: super_ensemble_entradas from datos.json
-         Shows: 4-model precipitation bars + veredicto per Dia Entrades
+         SUPER-ENSEMBLE DASHBOARD v2 — PREMIUM VISUAL COMPONENT
+         Reads: super_ensemble_datos from each fiesta in datos.json
+         Renders: Bar chart + avg line, Temp card, Prob donut, Verdict
       ══════════════════════════════════════════════════════════════ */
       function SuperEnsemblePanel({ data, t }) {
         if (!data) return null;
 
+        /* ── Data extraction (v10.1 + retrocompat v10.0) ── */
         const {
-          modelo_europeo_mm = 0,
-          modelo_americano_mm = 0,
-          modelo_aleman_mm = 0,
-          modelo_canadiense_mm = 0,
-          media_total_mm = 0,
+          precip_ecmwf = data.modelo_europeo_total_mm ?? 0,
+          precip_gfs   = data.modelo_americano_total_mm ?? 0,
+          precip_icon  = data.modelo_aleman_total_mm ?? 0,
+          precip_gem   = data.modelo_canadiense_total_mm ?? 0,
+          media_precip_mm = data.media_total_mm ?? 0,
+          media_temp_c = null,
+          media_prob_pct = null,
           porcentaje_acuerdo_seco = 0,
           veredicto = "",
         } = data;
 
         const models = [
-          { lbl: "🇪🇺 ECMWF", val: modelo_europeo_mm },
-          { lbl: "🇺🇸 GFS", val: modelo_americano_mm },
-          { lbl: "🇩🇪 ICON", val: modelo_aleman_mm },
-          { lbl: "🇨🇦 GEM", val: modelo_canadiense_mm },
+          { lbl: "ECMWF",  flag: "🇪🇺", val: precip_ecmwf, sub: "European" },
+          { lbl: "GFS",    flag: "🇺🇸", val: precip_gfs,   sub: "American" },
+          { lbl: "ICON",   flag: "🇩🇪", val: precip_icon,  sub: "German" },
+          { lbl: "GEM",    flag: "🇨🇦", val: precip_gem,   sub: "Canadian" },
         ];
 
-        const maxMm = Math.max(...models.map((m) => m.val), 0.01);
+        /* ── Color helpers ── */
+        const maxMm = Math.max(...models.map(m => m.val), 0.1);
+        const barScale = Math.max(maxMm, media_precip_mm, 1); // ensure avg line is visible
 
-        const verdictColor =
-          media_total_mm === 0
-            ? "#22c55e"
-            : media_total_mm <= 1
-              ? "#f59e0b"
-              : media_total_mm <= 3
-                ? "#f97316"
-                : "var(--red)";
+        const sevColor = (mm) =>
+          mm === 0 ? "#22c55e" : mm <= 1 ? "#eab308" : mm <= 3 ? "#f97316" : "#ef4444";
 
-        const barColor = (v) =>
-          v === 0
-            ? "#22c55e"
-            : v <= 1
-              ? "#f59e0b"
-              : v <= 3
-                ? "#f97316"
-                : "var(--red)";
+        const probColor = (p) =>
+          p < 20 ? "#22c55e" : p < 50 ? "#eab308" : "#ef4444";
 
-        const acordColor =
-          porcentaje_acuerdo_seco >= 75
-            ? "#22c55e"
-            : porcentaje_acuerdo_seco >= 50
-              ? "#f59e0b"
-              : "var(--red)";
+        const verdictCol = sevColor(media_precip_mm);
+        const acordCol = porcentaje_acuerdo_seco >= 75
+          ? "#22c55e" : porcentaje_acuerdo_seco >= 50 ? "#eab308" : "#ef4444";
+
+        /* ── Average line position as % ── */
+        const avgPct = Math.min(100, (media_precip_mm / barScale) * 100);
+
+        /* ── Donut SVG for probability ── */
+        const donutR = 28, donutStroke = 5;
+        const donutCirc = 2 * Math.PI * donutR;
+        const probVal = media_prob_pct ?? 0;
+        const donutFill = (probVal / 100) * donutCirc;
+        const donutColor = probColor(probVal);
+
+        /* ── Thermometer icon (inline SVG) ── */
+        const thermoSvg = h("svg", {
+          width: 16, height: 16, viewBox: "0 0 24 24", fill: "none",
+          style: { flexShrink: 0 }
+        },
+          h("path", {
+            d: "M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z",
+            stroke: "currentColor", strokeWidth: 1.6,
+            strokeLinecap: "round", strokeLinejoin: "round",
+            fill: "currentColor", fillOpacity: 0.1,
+          }),
+          h("circle", { cx: 11.5, cy: 17.5, r: 1.5, fill: "currentColor" }),
+        );
 
         return h(
           "div",
           {
             style: {
               marginTop: 14,
-              background:
-                "linear-gradient(135deg,rgba(122,82,21,0.08),rgba(78,51,10,0.03))",
+              background: "var(--card)",
               border: "1.5px solid var(--border-m)",
-              borderRadius: 14,
-              padding: "13px 13px 11px",
+              borderRadius: 16,
+              padding: 0,
               position: "relative",
               overflow: "hidden",
+              boxShadow: "var(--shadow-sm)",
             },
           },
-          /* Corner accent */
+
+          /* ═══ TOP ACCENT BAR ═══ */
           h("div", {
             style: {
-              position: "absolute",
-              top: 0,
-              right: 0,
-              width: 44,
-              height: 44,
-              background:
-                "linear-gradient(225deg,rgba(122,82,21,0.14),transparent)",
-              borderRadius: "0 14px 0 0",
-              pointerEvents: "none",
+              height: 3,
+              background: "linear-gradient(90deg, var(--gold-d), var(--gold), var(--gold-l), var(--gold))",
+              borderRadius: "16px 16px 0 0",
             },
           }),
 
-          /* ── Header ── */
-          h(
-            "div",
-            {
-              style: {
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                marginBottom: 10,
-                gap: 6,
-                flexWrap: "wrap",
-              },
+          /* ═══ HEADER ═══ */
+          h("div", {
+            style: {
+              padding: "12px 16px 0",
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              gap: 8, flexWrap: "wrap",
             },
-            h(
-              "div",
-              { style: { display: "flex", alignItems: "center", gap: 5 } },
+          },
+            h("div", { style: { display: "flex", alignItems: "center", gap: 6 } },
               h("div", {
                 style: {
-                  width: 6,
-                  height: 6,
-                  borderRadius: "50%",
-                  background: verdictColor,
-                  boxShadow: "0 0 8px " + verdictColor,
+                  width: 7, height: 7, borderRadius: "50%",
+                  background: verdictCol,
+                  boxShadow: "0 0 10px " + verdictCol + ", 0 0 20px " + verdictCol + "40",
+                  animation: media_precip_mm > 0 ? "livePulse 2s infinite" : "none",
                   flexShrink: 0,
-                  animation:
-                    media_total_mm === 0 ? "none" : "livePulse 2s infinite",
                 },
               }),
-              h(
-                "span",
-                {
-                  style: {
-                    fontSize: ".43rem",
-                    fontWeight: 800,
-                    letterSpacing: ".17em",
-                    textTransform: "uppercase",
-                    color: "var(--gold)",
-                  },
-                },
-                "Super-Ensemble · 4 Models Globals",
-              ),
-            ),
-            h(
-              "div",
-              {
+              h("span", {
                 style: {
-                  fontSize: ".42rem",
-                  fontWeight: 700,
-                  letterSpacing: ".08em",
-                  textTransform: "uppercase",
-                  color: acordColor,
-                  background: "rgba(0,0,0,0.04)",
-                  border: "1px solid var(--border)",
-                  borderRadius: 20,
-                  padding: "2px 8px",
-                  whiteSpace: "nowrap",
+                  fontSize: ".42rem", fontWeight: 800,
+                  letterSpacing: ".18em", textTransform: "uppercase",
+                  color: "var(--gold)",
                 },
-              },
-              porcentaje_acuerdo_seco + "% " + (t?.seAcord || "modelos secos"),
+              }, "Super-Ensemble · 4 Models Globals"),
             ),
-          ),
-
-          /* ── Model bars ── */
-          h(
-            "div",
-            {
+            h("div", {
               style: {
-                display: "flex",
-                flexDirection: "column",
-                gap: 5,
-                marginBottom: 11,
+                fontSize: ".39rem", fontWeight: 700,
+                letterSpacing: ".1em", textTransform: "uppercase",
+                color: acordCol,
+                background: "rgba(0,0,0,0.03)",
+                border: "1px solid var(--border)",
+                borderRadius: 20, padding: "3px 10px",
+                whiteSpace: "nowrap",
               },
-            },
-            models.map((m, i) => {
-              const pct = Math.min(100, (m.val / maxMm) * 100);
-              const bc = barColor(m.val);
-              return h(
-                "div",
-                {
-                  key: i,
-                  style: { display: "flex", alignItems: "center", gap: 7 },
-                },
-                h(
-                  "span",
-                  {
-                    style: {
-                      fontSize: ".5rem",
-                      fontWeight: 600,
-                      color: "var(--text-s)",
-                      width: 64,
-                      flexShrink: 0,
-                      whiteSpace: "nowrap",
-                    },
-                  },
-                  m.lbl,
-                ),
-                h(
-                  "div",
-                  {
-                    style: {
-                      flex: 1,
-                      height: 6,
-                      background: "var(--border)",
-                      borderRadius: 3,
-                      overflow: "hidden",
-                    },
-                  },
-                  h("div", {
-                    style: {
-                      height: "100%",
-                      width: pct + "%",
-                      background: bc,
-                      borderRadius: 3,
-                      transition: "width .7s ease",
-                    },
-                  }),
-                ),
-                h(
-                  "span",
-                  {
-                    style: {
-                      fontSize: ".49rem",
-                      fontFamily: "DM Mono,monospace",
-                      color: bc,
-                      fontWeight: 700,
-                      width: 36,
-                      textAlign: "right",
-                      flexShrink: 0,
-                    },
-                  },
-                  m.val === 0 ? "0 mm" : m.val + " mm",
-                ),
-              );
-            }),
+            }, porcentaje_acuerdo_seco + "% " + (t?.seAcord || "modelos secos")),
           ),
 
-          /* ── Divider ── */
+          /* ═══ MAIN CONTENT GRID ═══ */
           h("div", {
             style: {
-              height: 1,
-              background:
-                "linear-gradient(90deg,transparent,var(--border-m),transparent)",
-              marginBottom: 9,
+              display: "grid",
+              gridTemplateColumns: media_temp_c !== null || media_prob_pct !== null
+                ? "1fr auto" : "1fr",
+              gap: 12,
+              padding: "14px 16px 12px",
+              alignItems: "start",
             },
-          }),
+          },
 
-          /* ── Bottom: media badge + veredicto ── */
-          h(
-            "div",
-            { style: { display: "flex", alignItems: "flex-start", gap: 10 } },
-            h(
-              "div",
-              {
+            /* ─── LEFT: Bar Chart ─── */
+            h("div", { style: { minWidth: 0 } },
+              /* Section label */
+              h("div", {
                 style: {
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  background: "rgba(0,0,0,0.04)",
-                  border: "1px solid var(--border)",
-                  borderRadius: 10,
-                  padding: "7px 9px",
-                  flexShrink: 0,
-                  minWidth: 58,
+                  fontSize: ".36rem", fontWeight: 700,
+                  letterSpacing: ".2em", textTransform: "uppercase",
+                  color: "var(--text-s)", marginBottom: 8,
                 },
+              }, "Precipitació per Model (mm)"),
+
+              /* Bar chart container with avg line */
+              h("div", {
+                style: { position: "relative", paddingRight: 44 },
               },
-              h(
-                "span",
-                {
+                /* Average vertical dashed line */
+                avgPct > 0 && avgPct < 100 && h("div", {
                   style: {
-                    fontSize: ".37rem",
-                    fontWeight: 700,
-                    letterSpacing: ".12em",
-                    textTransform: "uppercase",
-                    color: "var(--text-s)",
-                    marginBottom: 3,
+                    position: "absolute",
+                    left: "calc(" + avgPct + "% - " + (avgPct * 44 / 100) + "px)",
+                    top: -2, bottom: -2,
+                    width: 0,
+                    borderLeft: "1.5px dashed var(--gold)",
+                    opacity: 0.6,
+                    zIndex: 2,
+                    pointerEvents: "none",
+                  },
+                }),
+                /* Average label */
+                avgPct > 0 && h("div", {
+                  style: {
+                    position: "absolute",
+                    left: "calc(" + Math.min(avgPct, 90) + "% - " + (Math.min(avgPct, 90) * 44 / 100) + "px)",
+                    top: -11,
+                    fontSize: ".32rem", fontWeight: 700,
+                    fontFamily: "DM Mono,monospace",
+                    color: "var(--gold)",
+                    letterSpacing: ".05em",
+                    zIndex: 3,
+                    whiteSpace: "nowrap",
+                  },
+                }, "μ " + media_precip_mm + " mm"),
+
+                /* Model bars */
+                h("div", {
+                  style: {
+                    display: "flex", flexDirection: "column", gap: 6,
+                    paddingTop: avgPct > 0 ? 4 : 0,
                   },
                 },
-                t?.seMitja || "Mitjana",
-              ),
-              h(
-                "span",
-                {
-                  style: {
-                    fontFamily: "Playfair Display,serif",
-                    fontSize: "1.08rem",
-                    fontWeight: 900,
-                    color: verdictColor,
-                    lineHeight: 1,
-                  },
-                },
-                media_total_mm === 0 ? "0 mm" : media_total_mm + " mm",
+                  models.map((m, i) => {
+                    const pct = Math.min(100, (m.val / barScale) * 100);
+                    const bc = sevColor(m.val);
+                    return h("div", {
+                      key: i,
+                      style: {
+                        display: "flex", alignItems: "center", gap: 6,
+                      },
+                    },
+                      /* Flag + label */
+                      h("div", {
+                        style: {
+                          width: 62, flexShrink: 0,
+                          display: "flex", alignItems: "center", gap: 3,
+                        },
+                      },
+                        h("span", { style: { fontSize: ".6rem", lineHeight: 1 } }, m.flag),
+                        h("span", {
+                          style: {
+                            fontSize: ".44rem", fontWeight: 700,
+                            color: "var(--text-m)",
+                            letterSpacing: ".04em",
+                          },
+                        }, m.lbl),
+                      ),
+                      /* Bar track */
+                      h("div", {
+                        style: {
+                          flex: 1, height: 8,
+                          background: "var(--border)",
+                          borderRadius: 4, overflow: "hidden",
+                          position: "relative",
+                        },
+                      },
+                        h("div", {
+                          style: {
+                            height: "100%",
+                            width: pct + "%",
+                            background: "linear-gradient(90deg, " + bc + "cc, " + bc + ")",
+                            borderRadius: 4,
+                            transition: "width .8s cubic-bezier(.22,.68,0,1)",
+                            boxShadow: m.val > 0 ? "0 0 8px " + bc + "40" : "none",
+                          },
+                        }),
+                      ),
+                      /* Value */
+                      h("span", {
+                        style: {
+                          fontSize: ".46rem",
+                          fontFamily: "DM Mono,monospace",
+                          color: bc, fontWeight: 700,
+                          width: 38, textAlign: "right", flexShrink: 0,
+                        },
+                      }, m.val === 0 ? "0 mm" : m.val.toFixed(1) + "mm"),
+                    );
+                  }),
+                ),
               ),
             ),
-            h(
-              "div",
-              {
+
+            /* ─── RIGHT: Metric Cards ─── */
+            (media_temp_c !== null || media_prob_pct !== null) &&
+            h("div", {
+              style: {
+                display: "flex", flexDirection: "column", gap: 8,
+                alignItems: "center", minWidth: 90,
+              },
+            },
+              /* Temperature Card */
+              media_temp_c !== null && h("div", {
                 style: {
-                  fontFamily: "Crimson Pro,serif",
-                  fontSize: ".8rem",
-                  fontStyle: "italic",
-                  color: verdictColor,
-                  lineHeight: 1.58,
-                  borderLeft: "3px solid " + verdictColor,
-                  paddingLeft: 9,
-                  alignSelf: "center",
+                  background: "linear-gradient(135deg, rgba(122,82,21,0.06), rgba(122,82,21,0.02))",
+                  border: "1px solid var(--border)",
+                  borderRadius: 12,
+                  padding: "10px 12px",
+                  textAlign: "center",
+                  width: "100%",
+                  position: "relative",
+                  overflow: "hidden",
                 },
               },
-              veredicto,
+                /* Subtle accent */
+                h("div", {
+                  style: {
+                    position: "absolute", top: 0, left: 0, right: 0, height: 2,
+                    background: "linear-gradient(90deg, transparent, var(--gold-l), transparent)",
+                    opacity: 0.5,
+                  },
+                }),
+                /* Label */
+                h("div", {
+                  style: {
+                    fontSize: ".32rem", fontWeight: 700,
+                    letterSpacing: ".18em", textTransform: "uppercase",
+                    color: "var(--text-s)", marginBottom: 5,
+                    display: "flex", alignItems: "center",
+                    justifyContent: "center", gap: 4,
+                  },
+                },
+                  thermoSvg,
+                  "Temp",
+                ),
+                /* Big number */
+                h("div", {
+                  style: {
+                    fontFamily: "Playfair Display,serif",
+                    fontSize: "1.3rem", fontWeight: 900,
+                    color: "var(--text)", lineHeight: 1,
+                    letterSpacing: "-.02em",
+                  },
+                }, Math.round(media_temp_c * 10) / 10 + "°"),
+                h("div", {
+                  style: {
+                    fontSize: ".34rem", color: "var(--text-s)",
+                    fontWeight: 600, marginTop: 2,
+                    letterSpacing: ".08em",
+                  },
+                }, "MEDIA 4 MODELS"),
+              ),
+
+              /* Probability Card with Donut */
+              media_prob_pct !== null && h("div", {
+                style: {
+                  background: "linear-gradient(135deg, rgba(122,82,21,0.06), rgba(122,82,21,0.02))",
+                  border: "1px solid var(--border)",
+                  borderRadius: 12,
+                  padding: "10px 12px",
+                  textAlign: "center",
+                  width: "100%",
+                  position: "relative",
+                  overflow: "hidden",
+                },
+              },
+                h("div", {
+                  style: {
+                    position: "absolute", top: 0, left: 0, right: 0, height: 2,
+                    background: "linear-gradient(90deg, transparent, " + donutColor + "80, transparent)",
+                    opacity: 0.5,
+                  },
+                }),
+                h("div", {
+                  style: {
+                    fontSize: ".32rem", fontWeight: 700,
+                    letterSpacing: ".18em", textTransform: "uppercase",
+                    color: "var(--text-s)", marginBottom: 6,
+                  },
+                }, "Prob. Pluja"),
+                /* SVG Donut */
+                h("div", {
+                  style: { position: "relative", width: 66, height: 66, margin: "0 auto" },
+                },
+                  h("svg", {
+                    width: 66, height: 66, viewBox: "0 0 66 66",
+                    style: { transform: "rotate(-90deg)" },
+                  },
+                    /* Track */
+                    h("circle", {
+                      cx: 33, cy: 33, r: donutR,
+                      fill: "none", stroke: "var(--border)",
+                      strokeWidth: donutStroke,
+                    }),
+                    /* Fill */
+                    h("circle", {
+                      cx: 33, cy: 33, r: donutR,
+                      fill: "none", stroke: donutColor,
+                      strokeWidth: donutStroke,
+                      strokeDasharray: donutCirc,
+                      strokeDashoffset: donutCirc - donutFill,
+                      strokeLinecap: "round",
+                      style: {
+                        transition: "stroke-dashoffset .8s cubic-bezier(.22,.68,0,1)",
+                        filter: "drop-shadow(0 0 4px " + donutColor + "60)",
+                      },
+                    }),
+                  ),
+                  /* Center number */
+                  h("div", {
+                    style: {
+                      position: "absolute",
+                      top: "50%", left: "50%",
+                      transform: "translate(-50%,-50%)",
+                      fontFamily: "Playfair Display,serif",
+                      fontSize: ".95rem", fontWeight: 900,
+                      color: donutColor, lineHeight: 1,
+                    },
+                  }, probVal + "%"),
+                ),
+                h("div", {
+                  style: {
+                    fontSize: ".34rem", color: "var(--text-s)",
+                    fontWeight: 600, marginTop: 4,
+                    letterSpacing: ".08em",
+                  },
+                }, "MEDIA 4 MODELS"),
+              ),
+            ),
+          ),
+
+          /* ═══ VERDICT ALERT BOX ═══ */
+          veredicto && h("div", {
+            style: {
+              margin: "0 14px 14px",
+              padding: "10px 13px",
+              background: "linear-gradient(90deg, " + verdictCol + "08, transparent)",
+              borderLeft: "3px solid " + verdictCol,
+              borderRadius: "0 8px 8px 0",
+              display: "flex", alignItems: "center", gap: 8,
+            },
+          },
+            /* Severity dot */
+            h("div", {
+              style: {
+                width: 8, height: 8, borderRadius: "50%",
+                background: verdictCol, flexShrink: 0,
+                boxShadow: "0 0 6px " + verdictCol + "80",
+              },
+            }),
+            h("div", {
+              style: {
+                fontFamily: "Crimson Pro,serif",
+                fontSize: ".82rem", fontStyle: "italic",
+                color: "var(--text-m)", lineHeight: 1.5,
+              },
+            }, veredicto),
+          ),
+
+          /* ═══ BOTTOM SUMMARY BAR ═══ */
+          h("div", {
+            style: {
+              padding: "8px 16px 10px",
+              borderTop: "1px solid var(--border)",
+              display: "flex", justifyContent: "space-between",
+              alignItems: "center", gap: 8, flexWrap: "wrap",
+            },
+          },
+            /* Left: avg precip */
+            h("div", {
+              style: { display: "flex", alignItems: "baseline", gap: 5 },
+            },
+              h("span", {
+                style: {
+                  fontSize: ".35rem", fontWeight: 700,
+                  letterSpacing: ".14em", textTransform: "uppercase",
+                  color: "var(--text-s)",
+                },
+              }, t?.seMitja || "Mitjana"),
+              h("span", {
+                style: {
+                  fontFamily: "Playfair Display,serif",
+                  fontSize: ".92rem", fontWeight: 900,
+                  color: verdictCol,
+                },
+              }, media_precip_mm === 0 ? "0 mm" : media_precip_mm.toFixed(1) + " mm"),
+            ),
+            /* Right: compact metrics */
+            h("div", {
+              style: {
+                display: "flex", gap: 10, alignItems: "center",
+              },
+            },
+              media_temp_c !== null && h("span", {
+                style: {
+                  fontSize: ".44rem", fontWeight: 700,
+                  color: "var(--text-m)",
+                  fontFamily: "DM Mono,monospace",
+                },
+              }, "🌡 " + (Math.round(media_temp_c * 10) / 10) + "°C"),
+              media_prob_pct !== null && h("span", {
+                style: {
+                  fontSize: ".44rem", fontWeight: 700,
+                  color: donutColor,
+                  fontFamily: "DM Mono,monospace",
+                },
+              }, "💧 " + probVal + "%"),
             ),
           ),
         );
@@ -3109,11 +3285,11 @@
 
       /* ── HELPERS ── */
       const isND = (v) => v === "N/D" || v === null || v === undefined;
-      /* PATCH: Day 25 (Entrades) is NEVER out-of-range — it always has super-ensemble */
+      /* HELPERS: isOOR returns true if no data is available for a given day */
       const isOOR = (f) => {
         if (!f) return true;
-        if (f.fecha === "2026-04-25") return false; // ← PATCH: never OOR for Entrades
-        return isND(f?.temp_max) && (f?.icono === "❓" || isND(f?.icono));
+        // Si hay datos (AROME, ECMWF o Super-Ensemble) no es OOR
+        return f.datos_disponibles === false;
       };
       function parseDate(s) {
         const p = s.split("-");
@@ -4342,12 +4518,12 @@
         });
 
         /* ── PATCH: Extract super_ensemble_entradas ── */
-        const superEnsembleEntrades = meteo?.super_ensemble_entradas || null;
+
 
         let summaryTxt = "";
         if (meteo?.resumen_grans) {
-          const idiomaActual = t.today === "HOY" ? "es" : "ca";
-          summaryTxt = meteo.resumen_grans[idiomaActual];
+          const lang = t.today === "HOY" ? "es" : "ca";
+          summaryTxt = meteo.resumen_grans[lang] || "";
         }
 
         const badge = (f) => {
@@ -4633,19 +4809,17 @@
                       const bdg = badge(f);
                       const anal = resolveAnal(f.analisis_tecnico, t);
                       const dn = parseDate(f.fecha).getDate();
-                      /* PATCH: Day 25 gets special treatment */
-                      const isDia25 = f.fecha === "2026-04-25";
-                      const hasSE = isDia25 && !!superEnsembleEntrades;
+                      const hasSE = !!f.super_ensemble_datos;
 
                       return h(
                         "div",
                         {
                           key: f.fecha,
-                          /* PATCH: add 'entrades-special' class for day 25 */
+                          /* PATCH: add 'entrades-special' class if SE is active */
                           className:
                             "hcard" +
                             (oor ? " oor" : "") +
-                            (isDia25 ? " entrades-special" : ""),
+                            (f.requiere_super_ensemble ? " entrades-special" : ""),
                           onClick: () => !oor && setSelDay(f),
                         },
                         /* Badge */
@@ -4816,10 +4990,10 @@
                           h(AnalText, { txt: anal.txt }),
                         ),
 
-                        /* ── PATCH: SuperEnsemblePanel only for day 25 ── */
-                        isDia25 &&
+                        /* ── PATCH: SuperEnsemblePanel for any day with SE data ── */
+                        hasSE &&
                           h(SuperEnsemblePanel, {
-                            data: superEnsembleEntrades,
+                            data: f.super_ensemble_datos,
                             t,
                           }),
 
@@ -5376,14 +5550,13 @@
                           },
                           selDay.modelo_fuente,
                         ),
-                      /* PATCH: show super-ensemble info in modal for day 25 */
-                      selDay.fecha === "2026-04-25" &&
-                        superEnsembleEntrades &&
+                      /* PATCH: show super-ensemble info in modal for any day with SE data */
+                      selDay.super_ensemble_datos &&
                         h(
                           "div",
                           { style: { marginTop: 10 } },
                           h(SuperEnsemblePanel, {
-                            data: superEnsembleEntrades,
+                            data: selDay.super_ensemble_datos,
                             t,
                           }),
                         ),
