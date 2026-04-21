@@ -1,6 +1,6 @@
 {
-  "temp": 19.3,
-  "hum": 37,
+  "temp": 19.7,
+  "hum": 35,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042100/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -15,6 +15,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -13,
       "datos_disponibles": false
     },
@@ -30,6 +33,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -12,
       "datos_disponibles": false
     },
@@ -45,6 +51,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -11,
       "datos_disponibles": false
     },
@@ -60,6 +69,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -10,
       "datos_disponibles": false
     },
@@ -75,6 +87,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -9,
       "datos_disponibles": false
     },
@@ -90,6 +105,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -8,
       "datos_disponibles": false
     },
@@ -105,6 +123,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -7,
       "datos_disponibles": false
     },
@@ -120,6 +141,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -6,
       "datos_disponibles": false
     },
@@ -135,6 +159,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -5,
       "datos_disponibles": false
     },
@@ -150,6 +177,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -4,
       "datos_disponibles": false
     },
@@ -165,6 +195,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -3,
       "datos_disponibles": false
     },
@@ -180,6 +213,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -2,
       "datos_disponibles": false
     },
@@ -195,6 +231,9 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": -1,
       "datos_disponibles": false
     },
@@ -258,8 +297,11 @@
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "AROME",
+      "modelo_fuente_activo": "AROME",
+      "arome_disponible": true,
+      "requiere_super_ensemble": false,
       "dias_restantes": 0,
       "datos_disponibles": true
     },
@@ -323,8 +365,11 @@
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.4 mm. Esto significa que hay opciones de que caiga algo, pero 0.4 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. Hará bastante calor, alcanzando los 28ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 🟡 Cielos nubosos. Como mucho caerán 2 o 3 gotas sin importancia. A disfrutar de la noche.",
+      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.4 mm. Esto significa que hay opciones de que caiga algo, pero 0.4 mm es poquísima cantidad. Hará bastante calor, alcanzando los 28ºC de máxima. 🟡 Cielos nubosos. Como mucho caerán 2 o 3 gotas sin importancia.",
       "modelo_fuente": "AROME",
+      "modelo_fuente_activo": "AROME",
+      "arome_disponible": true,
+      "requiere_super_ensemble": false,
       "dias_restantes": 1,
       "datos_disponibles": true
     },
@@ -388,8 +433,11 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~20°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 20ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 20ºC. Temperatura ideal en Fiestas.",
       "modelo_fuente": "ECMWF",
+      "modelo_fuente_activo": "ECMWF",
+      "arome_disponible": false,
+      "requiere_super_ensemble": false,
       "dias_restantes": 2,
       "datos_disponibles": true
     },
@@ -398,9 +446,9 @@
       "fecha": "2026-04-24",
       "tipus": "musics",
       "temp_max": 18.4,
-      "icono": "🌦️",
-      "prob": 35,
-      "litros": 0,
+      "icono": "🌤️",
+      "prob": 25,
+      "litros": 1.4,
       "horas": [
         {
           "hora": "08:00",
@@ -453,10 +501,29 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 18ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante.",
-      "modelo_fuente": "ECMWF",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.4 mm totales. Pico máximo medio horario: 0.4 mm/h. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos. Proteger instrumentos.",
+      "modelo_fuente": "Super-Ensemble",
+      "modelo_fuente_activo": "Super-Ensemble",
+      "arome_disponible": false,
+      "requiere_super_ensemble": true,
       "dias_restantes": 3,
-      "datos_disponibles": true
+      "datos_disponibles": true,
+      "super_ensemble_datos": {
+        "tipo_dia": "musics",
+        "modelo_europeo_max_mm": 0,
+        "modelo_americano_max_mm": 0.1,
+        "modelo_aleman_max_mm": 0,
+        "modelo_canadiense_max_mm": 1.4,
+        "modelo_europeo_total_mm": 0,
+        "modelo_americano_total_mm": 0.1,
+        "modelo_aleman_total_mm": 0,
+        "modelo_canadiense_total_mm": 5.4,
+        "media_pico_mm": 0.38,
+        "media_total_mm": 1.38,
+        "porcentaje_acuerdo_seco": 75,
+        "prob_sintetica_pct": 25,
+        "veredicto": "Riesgo moderado para la noche de los Músicos. Proteger instrumentos."
+      }
     },
     {
       "dia": "Dissabte 25 · Día de las Entradas",
@@ -464,8 +531,8 @@
       "tipus": "entrades",
       "temp_max": 25.6,
       "icono": "🌤️",
-      "prob": 26,
-      "litros": 0,
+      "prob": 25,
+      "litros": 9.9,
       "horas": [
         {
           "hora": "08:00",
@@ -518,10 +585,29 @@
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. Hará bastante calor, alcanzando los 26ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 🏆 Condiciones inmejorables para la Entrada. Los trajes y boatos lucirán espectaculares.",
-      "modelo_fuente": "ECMWF",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 9.9 mm totales. Pico máximo medio horario: 0.8 mm/h. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas. Mucha precaución.",
+      "modelo_fuente": "Super-Ensemble",
+      "modelo_fuente_activo": "Super-Ensemble",
+      "arome_disponible": false,
+      "requiere_super_ensemble": true,
       "dias_restantes": 4,
-      "datos_disponibles": true
+      "datos_disponibles": true,
+      "super_ensemble_datos": {
+        "tipo_dia": "entrades",
+        "modelo_europeo_max_mm": 0,
+        "modelo_americano_max_mm": 0.4,
+        "modelo_aleman_max_mm": 0.1,
+        "modelo_canadiense_max_mm": 2.7,
+        "modelo_europeo_total_mm": 0,
+        "modelo_americano_total_mm": 0.9,
+        "modelo_aleman_total_mm": 0.3,
+        "modelo_canadiense_total_mm": 38.4,
+        "media_pico_mm": 0.8,
+        "media_total_mm": 9.9,
+        "porcentaje_acuerdo_seco": 75,
+        "prob_sintetica_pct": 25,
+        "veredicto": "Riesgo alto de lluvia para el día de las Entradas. Mucha precaución."
+      }
     },
     {
       "dia": "Diumenge 26 · Día de San Jorge",
@@ -529,7 +615,7 @@
       "tipus": "santjordi",
       "temp_max": 27,
       "icono": "☀️",
-      "prob": 13,
+      "prob": 5,
       "litros": 0,
       "horas": [
         {
@@ -583,10 +669,29 @@
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ⚔️ Día del Patrón perfecto para la Reliquia y la Procesión General.",
-      "modelo_fuente": "ECMWF",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Pico máximo medio horario: 0.0 mm/h. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
+      "modelo_fuente": "Super-Ensemble",
+      "modelo_fuente_activo": "Super-Ensemble",
+      "arome_disponible": false,
+      "requiere_super_ensemble": true,
       "dias_restantes": 5,
-      "datos_disponibles": true
+      "datos_disponibles": true,
+      "super_ensemble_datos": {
+        "tipo_dia": "santjordi",
+        "modelo_europeo_max_mm": 0,
+        "modelo_americano_max_mm": 0,
+        "modelo_aleman_max_mm": 0,
+        "modelo_canadiense_max_mm": 0,
+        "modelo_europeo_total_mm": 0,
+        "modelo_americano_total_mm": 0,
+        "modelo_aleman_total_mm": 0,
+        "modelo_canadiense_total_mm": 0,
+        "media_pico_mm": 0,
+        "media_total_mm": 0,
+        "porcentaje_acuerdo_seco": 100,
+        "prob_sintetica_pct": 5,
+        "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia."
+      }
     },
     {
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
@@ -594,7 +699,7 @@
       "tipus": "alardo",
       "temp_max": 26.9,
       "icono": "☀️",
-      "prob": 8,
+      "prob": 5,
       "litros": 0,
       "horas": [
         {
@@ -648,21 +753,40 @@
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
-      "modelo_fuente": "ECMWF",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Pico máximo medio horario: 0.0 mm/h. El 100% de los modelos coincide en un día seco (< 0.5 mm). Alardo perfecto. Pólvora seca garantizada.",
+      "modelo_fuente": "Super-Ensemble",
+      "modelo_fuente_activo": "Super-Ensemble",
+      "arome_disponible": false,
+      "requiere_super_ensemble": true,
       "dias_restantes": 6,
-      "datos_disponibles": true
+      "datos_disponibles": true,
+      "super_ensemble_datos": {
+        "tipo_dia": "alardo",
+        "modelo_europeo_max_mm": 0,
+        "modelo_americano_max_mm": 0,
+        "modelo_aleman_max_mm": 0,
+        "modelo_canadiense_max_mm": 0,
+        "modelo_europeo_total_mm": 0,
+        "modelo_americano_total_mm": 0,
+        "modelo_aleman_total_mm": 0,
+        "modelo_canadiense_total_mm": 0,
+        "media_pico_mm": 0,
+        "media_total_mm": 0,
+        "porcentaje_acuerdo_seco": 100,
+        "prob_sintetica_pct": 5,
+        "veredicto": "Alardo perfecto. Pólvora seca garantizada."
+      }
     }
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Tindrem dies calorosos per a la Trilogia, arribant als 27ºC de màxima. Tocarà hidratar-se bé amb els trages. Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa i no hauria d'espatllar els actes.",
-    "es": "Tendremos días calurosos para la Trilogía, alcanzando los 27ºC de máxima. Tocará hidratarse bien con los trajes. Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa y no debería estropear los actos."
+    "ca": "Tindrem dies calorosos per a la Trilogia, arribant als 27ºC de màxima. Tocarà hidratar-se bé amb els trages. S'aproxima inestabilitat. Caldrà seguir l'evolució d'aquest panell dia a dia.",
+    "es": "Tendremos días calurosos para la Trilogía, alcanzando los 27ºC de máxima. Tocará hidratarse bien con los trajes. Se aproxima inestabilidad. Habrá que seguir la evolución de este panel día a día."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
     "meteograma": "Meteociel GEFS (via AVAMET)",
-    "prevision": "Open-Meteo — ECMWF IFS 0.04° + AROME Europe 1.3 km"
+    "prevision": "Open-Meteo — ECMWF IFS 0.04° + AROME Europe 1.3 km + Super-Ensemble (ECMWF+GFS+ICON+GEM)"
   },
   "estado": {
     "temp_ok": true,
@@ -672,14 +796,71 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T08:06:34.581Z",
-  "super_ensemble_entradas": {
-    "modelo_europeo_mm": 0,
-    "modelo_americano_mm": 0.4,
-    "modelo_aleman_mm": 0.1,
-    "modelo_canadiense_mm": 2.7,
-    "media_total_mm": 0.8,
-    "porcentaje_acuerdo_seco": 75,
-    "veredicto": "Riesgo de lluvia muy débil en algún momento del día. Estad atentos."
+  "fecha": "2026-04-21T08:40:21.843Z",
+  "super_ensemble_dias": {
+    "2026-04-24": {
+      "tipo_dia": "musics",
+      "modelo_europeo_max_mm": 0,
+      "modelo_americano_max_mm": 0.1,
+      "modelo_aleman_max_mm": 0,
+      "modelo_canadiense_max_mm": 1.4,
+      "modelo_europeo_total_mm": 0,
+      "modelo_americano_total_mm": 0.1,
+      "modelo_aleman_total_mm": 0,
+      "modelo_canadiense_total_mm": 5.4,
+      "media_pico_mm": 0.38,
+      "media_total_mm": 1.38,
+      "porcentaje_acuerdo_seco": 75,
+      "prob_sintetica_pct": 25,
+      "veredicto": "Riesgo moderado para la noche de los Músicos. Proteger instrumentos."
+    },
+    "2026-04-25": {
+      "tipo_dia": "entrades",
+      "modelo_europeo_max_mm": 0,
+      "modelo_americano_max_mm": 0.4,
+      "modelo_aleman_max_mm": 0.1,
+      "modelo_canadiense_max_mm": 2.7,
+      "modelo_europeo_total_mm": 0,
+      "modelo_americano_total_mm": 0.9,
+      "modelo_aleman_total_mm": 0.3,
+      "modelo_canadiense_total_mm": 38.4,
+      "media_pico_mm": 0.8,
+      "media_total_mm": 9.9,
+      "porcentaje_acuerdo_seco": 75,
+      "prob_sintetica_pct": 25,
+      "veredicto": "Riesgo alto de lluvia para el día de las Entradas. Mucha precaución."
+    },
+    "2026-04-26": {
+      "tipo_dia": "santjordi",
+      "modelo_europeo_max_mm": 0,
+      "modelo_americano_max_mm": 0,
+      "modelo_aleman_max_mm": 0,
+      "modelo_canadiense_max_mm": 0,
+      "modelo_europeo_total_mm": 0,
+      "modelo_americano_total_mm": 0,
+      "modelo_aleman_total_mm": 0,
+      "modelo_canadiense_total_mm": 0,
+      "media_pico_mm": 0,
+      "media_total_mm": 0,
+      "porcentaje_acuerdo_seco": 100,
+      "prob_sintetica_pct": 5,
+      "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia."
+    },
+    "2026-04-27": {
+      "tipo_dia": "alardo",
+      "modelo_europeo_max_mm": 0,
+      "modelo_americano_max_mm": 0,
+      "modelo_aleman_max_mm": 0,
+      "modelo_canadiense_max_mm": 0,
+      "modelo_europeo_total_mm": 0,
+      "modelo_americano_total_mm": 0,
+      "modelo_aleman_total_mm": 0,
+      "modelo_canadiense_total_mm": 0,
+      "media_pico_mm": 0,
+      "media_total_mm": 0,
+      "porcentaje_acuerdo_seco": 100,
+      "prob_sintetica_pct": 5,
+      "veredicto": "Alardo perfecto. Pólvora seca garantizada."
+    }
   }
 }
