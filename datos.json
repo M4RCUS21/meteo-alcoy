@@ -1,7 +1,7 @@
 {
-  "temp": 16.7,
-  "hum": 36,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042112/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 15.9,
+  "hum": 31,
+  "mapa_url": "N/D",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -241,69 +241,19 @@
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
       "tipus": "entraeta",
-      "temp_max": 27.1,
-      "icono": "☀️",
-      "prob": 0,
-      "litros": 0,
-      "horas": [
-        {
-          "hora": "08:00",
-          "temp": 14,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "11:00",
-          "temp": 22,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "14:00",
-          "temp": 27,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "17:00",
-          "temp": 26,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "20:00",
-          "temp": 24,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "23:00",
-          "temp": 18,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        },
-        {
-          "hora": "02:00",
-          "temp": 17,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
-        }
-      ],
-      "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
-      "modelo_fuente": "AROME",
-      "modelo_fuente_activo": "AROME",
-      "arome_disponible": true,
+      "temp_max": "N/D",
+      "icono": "❓",
+      "prob": "N/D",
+      "litros": "N/D",
+      "horas": [],
+      "consejo": "⚠️ Sin datos de temperatura disponibles",
+      "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
+      "modelo_fuente": "N/D",
+      "modelo_fuente_activo": "N/D",
+      "arome_disponible": false,
       "requiere_super_ensemble": false,
       "dias_restantes": 0,
-      "datos_disponibles": true
+      "datos_disponibles": false
     },
     {
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
@@ -447,13 +397,13 @@
       "tipus": "musics",
       "temp_max": 17.1,
       "icono": "🌤️",
-      "prob": 19,
-      "litros": 1.2,
+      "prob": 23,
+      "litros": 1.4,
       "horas": [
         {
           "hora": "08:00",
           "temp": 13,
-          "prob": 13,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
@@ -467,41 +417,41 @@
         {
           "hora": "14:00",
           "temp": 17,
-          "prob": 28,
+          "prob": 43,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         },
         {
           "hora": "17:00",
           "temp": 15,
-          "prob": 33,
+          "prob": 38,
           "litros": 0,
           "icono": "🌦️"
         },
         {
           "hora": "20:00",
           "temp": 14,
-          "prob": 33,
-          "litros": 0,
-          "icono": "🌦️"
-        },
-        {
-          "hora": "23:00",
-          "temp": 12,
-          "prob": 23,
+          "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
+          "hora": "23:00",
+          "temp": 12,
+          "prob": 12,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
           "hora": "02:00",
           "temp": 11,
-          "prob": 13,
+          "prob": 10,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~17°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.2 mm totales. Temp. media 4 modelos: 18.7ºC. Prob. media: 19%. El 25% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.4 mm totales. Temp. media 4 modelos: 18.7ºC. Prob. media: 23%. El 25% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -511,16 +461,16 @@
       "super_ensemble_datos": {
         "precip_ecmwf": 2.2,
         "precip_gfs": 0,
-        "precip_icon": 0.7,
+        "precip_icon": 1.5,
         "precip_gem": 1.8,
-        "media_precip_mm": 1.18,
+        "media_precip_mm": 1.38,
         "media_temp_c": 18.7,
-        "media_prob_pct": 19,
+        "media_prob_pct": 23,
         "porcentaje_acuerdo_seco": 25,
         "veredicto": "Riesgo moderado para la noche de los Músicos.",
         "tipo_dia": "musics",
-        "prob_sintetica_pct": 19,
-        "media_total_mm": 1.18,
+        "prob_sintetica_pct": 23,
+        "media_total_mm": 1.38,
         "temp_ecmwf_c": 16.7,
         "temp_gfs_c": 21.4,
         "temp_icon_c": 17,
@@ -532,62 +482,62 @@
       "fecha": "2026-04-25",
       "tipus": "entrades",
       "temp_max": 20.7,
-      "icono": "🌤️",
-      "prob": 19,
-      "litros": 1.4,
+      "icono": "☀️",
+      "prob": 14,
+      "litros": 1.2,
       "horas": [
         {
           "hora": "08:00",
           "temp": 10,
-          "prob": 15,
+          "prob": 13,
           "litros": 0.7,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 15,
-          "prob": 18,
+          "prob": 11,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 20,
-          "prob": 18,
+          "prob": 8,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 21,
-          "prob": 11,
+          "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 18,
-          "prob": 3,
+          "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 11,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 9,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~21°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.4 mm totales. Temp. media 4 modelos: 17.9ºC. Prob. media: 19%. El 50% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado de lluvia. Tened los plásticos a mano.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.2 mm totales. Temp. media 4 modelos: 17.9ºC. Prob. media: 14%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -597,16 +547,16 @@
       "super_ensemble_datos": {
         "precip_ecmwf": 0.3,
         "precip_gfs": 4.4,
-        "precip_icon": 0.9,
+        "precip_icon": 0,
         "precip_gem": 0,
-        "media_precip_mm": 1.4,
+        "media_precip_mm": 1.18,
         "media_temp_c": 17.9,
-        "media_prob_pct": 19,
-        "porcentaje_acuerdo_seco": 50,
+        "media_prob_pct": 14,
+        "porcentaje_acuerdo_seco": 75,
         "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
         "tipo_dia": "entrades",
-        "prob_sintetica_pct": 19,
-        "media_total_mm": 1.4,
+        "prob_sintetica_pct": 14,
+        "media_total_mm": 1.18,
         "temp_ecmwf_c": 15.9,
         "temp_gfs_c": 14,
         "temp_icon_c": 20.9,
@@ -625,35 +575,35 @@
         {
           "hora": "08:00",
           "temp": 7,
-          "prob": 5,
+          "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 17,
-          "prob": 5,
+          "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 22,
-          "prob": 4,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 23,
-          "prob": 3,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 19,
-          "prob": 3,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
@@ -788,8 +738,8 @@
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 23ºC. A més, l'oratge es preveu molt estable i sense rastre de pluja, ideal per a gaudir al carrer.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 23ºC. Además, la atmósfera se prevé muy estable y sin rastro de lluvia, ideal para disfrutar en la calle."
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 23ºC. S'aproxima inestabilitat. Caldrà seguir l'evolució d'aquest panell dia a dia.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 23ºC. Se aproxima inestabilidad. Habrá que seguir la evolución de este panel día a día."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -799,26 +749,26 @@
   "estado": {
     "temp_ok": true,
     "hum_ok": true,
-    "mapa_ok": true,
+    "mapa_ok": false,
     "ecmwf_ok": true,
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T21:00:56.264Z",
+  "fecha": "2026-04-21T22:01:01.229Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 2.2,
       "precip_gfs": 0,
-      "precip_icon": 0.7,
+      "precip_icon": 1.5,
       "precip_gem": 1.8,
-      "media_precip_mm": 1.18,
+      "media_precip_mm": 1.38,
       "media_temp_c": 18.7,
-      "media_prob_pct": 19,
+      "media_prob_pct": 23,
       "porcentaje_acuerdo_seco": 25,
       "veredicto": "Riesgo moderado para la noche de los Músicos.",
       "tipo_dia": "musics",
-      "prob_sintetica_pct": 19,
-      "media_total_mm": 1.18,
+      "prob_sintetica_pct": 23,
+      "media_total_mm": 1.38,
       "temp_ecmwf_c": 16.7,
       "temp_gfs_c": 21.4,
       "temp_icon_c": 17,
@@ -827,16 +777,16 @@
     "2026-04-25": {
       "precip_ecmwf": 0.3,
       "precip_gfs": 4.4,
-      "precip_icon": 0.9,
+      "precip_icon": 0,
       "precip_gem": 0,
-      "media_precip_mm": 1.4,
+      "media_precip_mm": 1.18,
       "media_temp_c": 17.9,
-      "media_prob_pct": 19,
-      "porcentaje_acuerdo_seco": 50,
+      "media_prob_pct": 14,
+      "porcentaje_acuerdo_seco": 75,
       "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 19,
-      "media_total_mm": 1.4,
+      "prob_sintetica_pct": 14,
+      "media_total_mm": 1.18,
       "temp_ecmwf_c": 15.9,
       "temp_gfs_c": 14,
       "temp_icon_c": 20.9,
