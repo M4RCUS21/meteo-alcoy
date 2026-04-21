@@ -1,6 +1,6 @@
 {
-  "temp": 11.6,
-  "hum": 42,
+  "temp": 11.3,
+  "hum": 43,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -334,7 +334,7 @@
       "tipus": "vespra",
       "temp_max": 19.3,
       "icono": "☀️",
-      "prob": 3,
+      "prob": 0,
       "litros": 0,
       "horas": [
         {
@@ -368,14 +368,14 @@
         {
           "hora": "20:00",
           "temp": 15,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 13,
-          "prob": 1,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
@@ -399,8 +399,8 @@
       "tipus": "musics",
       "temp_max": 15.6,
       "icono": "🌦️",
-      "prob": 40,
-      "litros": 3.6,
+      "prob": 35,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
@@ -419,41 +419,41 @@
         {
           "hora": "14:00",
           "temp": 16,
-          "prob": 38,
-          "litros": 0.6,
+          "prob": 35,
+          "litros": 0,
           "icono": "🌦️"
         },
         {
           "hora": "17:00",
           "temp": 16,
-          "prob": 39,
-          "litros": 0.6,
-          "icono": "🌦️"
-        },
-        {
-          "hora": "20:00",
-          "temp": 14,
-          "prob": 33,
-          "litros": 0,
-          "icono": "🌦️"
-        },
-        {
-          "hora": "23:00",
-          "temp": 12,
-          "prob": 26,
+          "prob": 27,
           "litros": 0,
           "icono": "🌤️"
         },
         {
+          "hora": "20:00",
+          "temp": 14,
+          "prob": 15,
+          "litros": 0,
+          "icono": "🌤️"
+        },
+        {
+          "hora": "23:00",
+          "temp": 12,
+          "prob": 14,
+          "litros": 0,
+          "icono": "☀️"
+        },
+        {
           "hora": "02:00",
           "temp": 11,
-          "prob": 18,
+          "prob": 15,
           "litros": 0,
           "icono": "🌤️"
         }
       ],
       "consejo": "🧣 Fresco. Lleva abrigo o térmica bajo el traje",
-      "analisis_tecnico": "Tenemos un 40% de probabilidad de lluvia, pero fíjate en la cantidad: solo 3.6 mm. Aunque el porcentaje imponga un poco de respeto, la cantidad de agua prevista es tan escasa que, de caer algo, sería una llovizna débil que no debería estropear los actos. Será un día bastante fresco, con máximas de solo 16ºC. Ideal para no sudar nada en las Entradas, pero hará falta abrigarse bien en cuanto caiga el sol.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. Será un día bastante fresco, con máximas de solo 16ºC. Ideal para no sudar nada en las Entradas, pero hará falta abrigarse bien en cuanto caiga el sol.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 3,
       "datos_disponibles": true
@@ -463,62 +463,62 @@
       "fecha": "2026-04-25",
       "tipus": "entrades",
       "temp_max": 23.3,
-      "icono": "🌦️",
-      "prob": 40,
+      "icono": "🌤️",
+      "prob": 26,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 11,
-          "prob": 13,
+          "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 17,
-          "prob": 20,
+          "prob": 15,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "14:00",
           "temp": 22,
-          "prob": 30,
+          "prob": 23,
           "litros": 0,
-          "icono": "🌦️"
+          "icono": "🌤️"
         },
         {
           "hora": "17:00",
           "temp": 23,
-          "prob": 40,
+          "prob": 26,
           "litros": 0,
-          "icono": "🌦️"
+          "icono": "🌤️"
         },
         {
           "hora": "20:00",
           "temp": 21,
-          "prob": 33,
+          "prob": 25,
           "litros": 0,
-          "icono": "🌦️"
+          "icono": "🌤️"
         },
         {
           "hora": "23:00",
           "temp": 15,
-          "prob": 32,
+          "prob": 18,
           "litros": 0,
-          "icono": "🌦️"
+          "icono": "🌤️"
         },
         {
           "hora": "02:00",
           "temp": 13,
-          "prob": 33,
+          "prob": 6,
           "litros": 0,
-          "icono": "🌦️"
+          "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~23°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Tenemos un 40% de probabilidad de lluvia, pero fíjate en la cantidad: solo 0.0 mm. Aunque el porcentaje imponga un poco de respeto, la cantidad de agua prevista es tan escasa que, de caer algo, sería una llovizna débil que no debería estropear los actos. En cuanto al termómetro, como mucho llegaremos a los 23ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🏆 Condiciones inmejorables para la Entrada. Los trajes y boatos lucirán espectaculares.",
+      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. En cuanto al termómetro, como mucho llegaremos a los 23ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🏆 Condiciones inmejorables para la Entrada. Los trajes y boatos lucirán espectaculares.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 4,
       "datos_disponibles": true
@@ -528,62 +528,62 @@
       "fecha": "2026-04-26",
       "tipus": "santjordi",
       "temp_max": 24.9,
-      "icono": "🌦️",
-      "prob": 33,
+      "icono": "☀️",
+      "prob": 13,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 11,
-          "prob": 21,
+          "prob": 7,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 20,
-          "prob": 13,
+          "prob": 9,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 24,
-          "prob": 8,
+          "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 25,
-          "prob": 9,
+          "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 21,
-          "prob": 13,
+          "prob": 9,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 14,
-          "prob": 17,
+          "prob": 9,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 11,
-          "prob": 20,
+          "prob": 8,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ⚔️ Día del Patrón perfecto para la Reliquia y la Procesión General.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ⚔️ Día del Patrón perfecto para la Reliquia y la Procesión General.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 5,
       "datos_disponibles": true
@@ -593,62 +593,62 @@
       "fecha": "2026-04-27",
       "tipus": "alardo",
       "temp_max": 24.8,
-      "icono": "🌤️",
-      "prob": 20,
+      "icono": "☀️",
+      "prob": 8,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 10,
-          "prob": 17,
+          "prob": 8,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 21,
-          "prob": 14,
+          "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 25,
-          "prob": 13,
+          "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 24,
-          "prob": 14,
+          "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 21,
-          "prob": 16,
+          "prob": 5,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 14,
-          "prob": 18,
+          "prob": 3,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 13,
-          "prob": 7,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
       "modelo_fuente": "ECMWF",
       "dias_restantes": 6,
       "datos_disponibles": true
@@ -656,8 +656,8 @@
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 25ºC. No obstant això, s'aproxima un front que podria portar un poc de fred i aigua, pel que caldrà seguir l'evolució d'aquest panell dia a dia.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 25ºC. No obstante, se aproxima un frente que podría traer algo de frío y lluvia, por lo que habrá que seguir la evolución de este panel día a día."
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 25ºC. Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa i no hauria d'espatllar els actes.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 25ºC. Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa y no debería estropear los actos."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -672,5 +672,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T03:00:27.125Z"
+  "fecha": "2026-04-21T04:00:31.745Z"
 }
