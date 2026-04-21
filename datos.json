@@ -1,5 +1,5 @@
 {
-  "temp": 20.9,
+  "temp": 21.6,
   "hum": 33,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042100/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
@@ -446,62 +446,62 @@
       "fecha": "2026-04-24",
       "tipus": "musics",
       "temp_max": 18.4,
-      "icono": "🌤️",
-      "prob": 25,
+      "icono": "☀️",
+      "prob": 6,
       "litros": 1.4,
       "horas": [
         {
           "hora": "08:00",
           "temp": 13,
-          "prob": 5,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 15,
-          "prob": 22,
+          "prob": 10,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 18,
-          "prob": 35,
+          "prob": 18,
           "litros": 0,
-          "icono": "🌦️"
+          "icono": "🌤️"
         },
         {
           "hora": "17:00",
           "temp": 18,
-          "prob": 27,
+          "prob": 22,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
           "temp": 17,
-          "prob": 15,
+          "prob": 23,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
           "temp": 13,
-          "prob": 14,
+          "prob": 19,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "02:00",
           "temp": 11,
-          "prob": 15,
+          "prob": 13,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.4 mm totales. Pico máximo medio horario: 0.4 mm/h. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos. Proteger instrumentos.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.4 mm totales. Temp. media 4 modelos: 19.9ºC. Prob. media: 6%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -509,20 +509,22 @@
       "dias_restantes": 3,
       "datos_disponibles": true,
       "super_ensemble_datos": {
-        "tipo_dia": "musics",
-        "modelo_europeo_max_mm": 0,
-        "modelo_americano_max_mm": 0.1,
-        "modelo_aleman_max_mm": 0,
-        "modelo_canadiense_max_mm": 1.4,
-        "modelo_europeo_total_mm": 0,
-        "modelo_americano_total_mm": 0.1,
-        "modelo_aleman_total_mm": 0,
-        "modelo_canadiense_total_mm": 5.4,
-        "media_pico_mm": 0.38,
-        "media_total_mm": 1.38,
+        "precip_ecmwf": 0,
+        "precip_gfs": 0.1,
+        "precip_icon": 0,
+        "precip_gem": 5.4,
+        "media_precip_mm": 1.38,
+        "media_temp_c": 19.9,
+        "media_prob_pct": 6,
         "porcentaje_acuerdo_seco": 75,
-        "prob_sintetica_pct": 25,
-        "veredicto": "Riesgo moderado para la noche de los Músicos. Proteger instrumentos."
+        "veredicto": "Riesgo moderado para la noche de los Músicos.",
+        "tipo_dia": "musics",
+        "prob_sintetica_pct": 6,
+        "media_total_mm": 1.38,
+        "temp_ecmwf_c": null,
+        "temp_gfs_c": 21.9,
+        "temp_icon_c": 18.4,
+        "temp_gem_c": 19.3
       }
     },
     {
@@ -531,7 +533,7 @@
       "tipus": "entrades",
       "temp_max": 25.6,
       "icono": "🌤️",
-      "prob": 25,
+      "prob": 20,
       "litros": 9.9,
       "horas": [
         {
@@ -544,48 +546,48 @@
         {
           "hora": "11:00",
           "temp": 20,
-          "prob": 15,
+          "prob": 13,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 25,
-          "prob": 23,
+          "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
           "temp": 26,
-          "prob": 26,
+          "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
           "temp": 23,
-          "prob": 25,
+          "prob": 15,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "23:00",
           "temp": 16,
-          "prob": 18,
+          "prob": 9,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 14,
-          "prob": 6,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 9.9 mm totales. Pico máximo medio horario: 0.8 mm/h. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas. Mucha precaución.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 9.9 mm totales. Temp. media 4 modelos: 18.9ºC. Prob. media: 20%. El 50% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -593,20 +595,22 @@
       "dias_restantes": 4,
       "datos_disponibles": true,
       "super_ensemble_datos": {
+        "precip_ecmwf": 0,
+        "precip_gfs": 0.9,
+        "precip_icon": 0.3,
+        "precip_gem": 38.4,
+        "media_precip_mm": 9.9,
+        "media_temp_c": 18.9,
+        "media_prob_pct": 20,
+        "porcentaje_acuerdo_seco": 50,
+        "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
         "tipo_dia": "entrades",
-        "modelo_europeo_max_mm": 0,
-        "modelo_americano_max_mm": 0.4,
-        "modelo_aleman_max_mm": 0.1,
-        "modelo_canadiense_max_mm": 2.7,
-        "modelo_europeo_total_mm": 0,
-        "modelo_americano_total_mm": 0.9,
-        "modelo_aleman_total_mm": 0.3,
-        "modelo_canadiense_total_mm": 38.4,
-        "media_pico_mm": 0.8,
+        "prob_sintetica_pct": 20,
         "media_total_mm": 9.9,
-        "porcentaje_acuerdo_seco": 75,
-        "prob_sintetica_pct": 25,
-        "veredicto": "Riesgo alto de lluvia para el día de las Entradas. Mucha precaución."
+        "temp_ecmwf_c": null,
+        "temp_gfs_c": 18.9,
+        "temp_icon_c": 25.8,
+        "temp_gem_c": 11.9
       }
     },
     {
@@ -615,13 +619,13 @@
       "tipus": "santjordi",
       "temp_max": 27,
       "icono": "☀️",
-      "prob": 5,
+      "prob": 8,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
           "temp": 14,
-          "prob": 7,
+          "prob": 6,
           "litros": 0,
           "icono": "☀️"
         },
@@ -669,7 +673,7 @@
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Pico máximo medio horario: 0.0 mm/h. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 21.4ºC. Prob. media: 8%. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -677,20 +681,22 @@
       "dias_restantes": 5,
       "datos_disponibles": true,
       "super_ensemble_datos": {
-        "tipo_dia": "santjordi",
-        "modelo_europeo_max_mm": 0,
-        "modelo_americano_max_mm": 0,
-        "modelo_aleman_max_mm": 0,
-        "modelo_canadiense_max_mm": 0,
-        "modelo_europeo_total_mm": 0,
-        "modelo_americano_total_mm": 0,
-        "modelo_aleman_total_mm": 0,
-        "modelo_canadiense_total_mm": 0,
-        "media_pico_mm": 0,
-        "media_total_mm": 0,
+        "precip_ecmwf": 0,
+        "precip_gfs": 0,
+        "precip_icon": 0,
+        "precip_gem": 0,
+        "media_precip_mm": 0,
+        "media_temp_c": 21.4,
+        "media_prob_pct": 8,
         "porcentaje_acuerdo_seco": 100,
-        "prob_sintetica_pct": 5,
-        "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia."
+        "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
+        "tipo_dia": "santjordi",
+        "prob_sintetica_pct": 8,
+        "media_total_mm": 0,
+        "temp_ecmwf_c": null,
+        "temp_gfs_c": 22.9,
+        "temp_icon_c": 26.9,
+        "temp_gem_c": 14.5
       }
     },
     {
@@ -699,7 +705,7 @@
       "tipus": "alardo",
       "temp_max": 26.9,
       "icono": "☀️",
-      "prob": 5,
+      "prob": 4,
       "litros": 0,
       "horas": [
         {
@@ -753,7 +759,7 @@
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Pico máximo medio horario: 0.0 mm/h. El 100% de los modelos coincide en un día seco (< 0.5 mm). Alardo perfecto. Pólvora seca garantizada.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 23.7ºC. Prob. media: 4%. El 100% de los modelos coincide en un día seco (< 0.5 mm). Alardo perfecto. Pólvora seca garantizada.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -761,20 +767,22 @@
       "dias_restantes": 6,
       "datos_disponibles": true,
       "super_ensemble_datos": {
-        "tipo_dia": "alardo",
-        "modelo_europeo_max_mm": 0,
-        "modelo_americano_max_mm": 0,
-        "modelo_aleman_max_mm": 0,
-        "modelo_canadiense_max_mm": 0,
-        "modelo_europeo_total_mm": 0,
-        "modelo_americano_total_mm": 0,
-        "modelo_aleman_total_mm": 0,
-        "modelo_canadiense_total_mm": 0,
-        "media_pico_mm": 0,
-        "media_total_mm": 0,
+        "precip_ecmwf": 0,
+        "precip_gfs": 0,
+        "precip_icon": 0,
+        "precip_gem": 0,
+        "media_precip_mm": 0,
+        "media_temp_c": 23.7,
+        "media_prob_pct": 4,
         "porcentaje_acuerdo_seco": 100,
-        "prob_sintetica_pct": 5,
-        "veredicto": "Alardo perfecto. Pólvora seca garantizada."
+        "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
+        "tipo_dia": "alardo",
+        "prob_sintetica_pct": 4,
+        "media_total_mm": 0,
+        "temp_ecmwf_c": null,
+        "temp_gfs_c": 25.5,
+        "temp_icon_c": 26.8,
+        "temp_gem_c": 18.9
       }
     }
   ],
@@ -796,71 +804,79 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T09:03:44.123Z",
+  "fecha": "2026-04-21T09:17:38.893Z",
   "super_ensemble_dias": {
     "2026-04-24": {
-      "tipo_dia": "musics",
-      "modelo_europeo_max_mm": 0,
-      "modelo_americano_max_mm": 0.1,
-      "modelo_aleman_max_mm": 0,
-      "modelo_canadiense_max_mm": 1.4,
-      "modelo_europeo_total_mm": 0,
-      "modelo_americano_total_mm": 0.1,
-      "modelo_aleman_total_mm": 0,
-      "modelo_canadiense_total_mm": 5.4,
-      "media_pico_mm": 0.38,
-      "media_total_mm": 1.38,
+      "precip_ecmwf": 0,
+      "precip_gfs": 0.1,
+      "precip_icon": 0,
+      "precip_gem": 5.4,
+      "media_precip_mm": 1.38,
+      "media_temp_c": 19.9,
+      "media_prob_pct": 6,
       "porcentaje_acuerdo_seco": 75,
-      "prob_sintetica_pct": 25,
-      "veredicto": "Riesgo moderado para la noche de los Músicos. Proteger instrumentos."
+      "veredicto": "Riesgo moderado para la noche de los Músicos.",
+      "tipo_dia": "musics",
+      "prob_sintetica_pct": 6,
+      "media_total_mm": 1.38,
+      "temp_ecmwf_c": null,
+      "temp_gfs_c": 21.9,
+      "temp_icon_c": 18.4,
+      "temp_gem_c": 19.3
     },
     "2026-04-25": {
+      "precip_ecmwf": 0,
+      "precip_gfs": 0.9,
+      "precip_icon": 0.3,
+      "precip_gem": 38.4,
+      "media_precip_mm": 9.9,
+      "media_temp_c": 18.9,
+      "media_prob_pct": 20,
+      "porcentaje_acuerdo_seco": 50,
+      "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
       "tipo_dia": "entrades",
-      "modelo_europeo_max_mm": 0,
-      "modelo_americano_max_mm": 0.4,
-      "modelo_aleman_max_mm": 0.1,
-      "modelo_canadiense_max_mm": 2.7,
-      "modelo_europeo_total_mm": 0,
-      "modelo_americano_total_mm": 0.9,
-      "modelo_aleman_total_mm": 0.3,
-      "modelo_canadiense_total_mm": 38.4,
-      "media_pico_mm": 0.8,
+      "prob_sintetica_pct": 20,
       "media_total_mm": 9.9,
-      "porcentaje_acuerdo_seco": 75,
-      "prob_sintetica_pct": 25,
-      "veredicto": "Riesgo alto de lluvia para el día de las Entradas. Mucha precaución."
+      "temp_ecmwf_c": null,
+      "temp_gfs_c": 18.9,
+      "temp_icon_c": 25.8,
+      "temp_gem_c": 11.9
     },
     "2026-04-26": {
-      "tipo_dia": "santjordi",
-      "modelo_europeo_max_mm": 0,
-      "modelo_americano_max_mm": 0,
-      "modelo_aleman_max_mm": 0,
-      "modelo_canadiense_max_mm": 0,
-      "modelo_europeo_total_mm": 0,
-      "modelo_americano_total_mm": 0,
-      "modelo_aleman_total_mm": 0,
-      "modelo_canadiense_total_mm": 0,
-      "media_pico_mm": 0,
-      "media_total_mm": 0,
+      "precip_ecmwf": 0,
+      "precip_gfs": 0,
+      "precip_icon": 0,
+      "precip_gem": 0,
+      "media_precip_mm": 0,
+      "media_temp_c": 21.4,
+      "media_prob_pct": 8,
       "porcentaje_acuerdo_seco": 100,
-      "prob_sintetica_pct": 5,
-      "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia."
+      "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
+      "tipo_dia": "santjordi",
+      "prob_sintetica_pct": 8,
+      "media_total_mm": 0,
+      "temp_ecmwf_c": null,
+      "temp_gfs_c": 22.9,
+      "temp_icon_c": 26.9,
+      "temp_gem_c": 14.5
     },
     "2026-04-27": {
-      "tipo_dia": "alardo",
-      "modelo_europeo_max_mm": 0,
-      "modelo_americano_max_mm": 0,
-      "modelo_aleman_max_mm": 0,
-      "modelo_canadiense_max_mm": 0,
-      "modelo_europeo_total_mm": 0,
-      "modelo_americano_total_mm": 0,
-      "modelo_aleman_total_mm": 0,
-      "modelo_canadiense_total_mm": 0,
-      "media_pico_mm": 0,
-      "media_total_mm": 0,
+      "precip_ecmwf": 0,
+      "precip_gfs": 0,
+      "precip_icon": 0,
+      "precip_gem": 0,
+      "media_precip_mm": 0,
+      "media_temp_c": 23.7,
+      "media_prob_pct": 4,
       "porcentaje_acuerdo_seco": 100,
-      "prob_sintetica_pct": 5,
-      "veredicto": "Alardo perfecto. Pólvora seca garantizada."
+      "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
+      "tipo_dia": "alardo",
+      "prob_sintetica_pct": 4,
+      "media_total_mm": 0,
+      "temp_ecmwf_c": null,
+      "temp_gfs_c": 25.5,
+      "temp_icon_c": 26.8,
+      "temp_gem_c": 18.9
     }
   }
 }
