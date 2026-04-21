@@ -1,6 +1,6 @@
 {
-  "temp": 11.1,
-  "hum": 50,
+  "temp": 13.6,
+  "hum": 45,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042100/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -672,5 +672,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T06:00:30.950Z"
+  "fecha": "2026-04-21T07:00:27.705Z"
 }
