@@ -1,7 +1,7 @@
 {
   "temp": 11.1,
-  "hum": 46,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
+  "hum": 50,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042100/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -202,14 +202,14 @@
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
       "tipus": "entraeta",
-      "temp_max": 27.1,
+      "temp_max": 27.3,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -251,7 +251,7 @@
         },
         {
           "hora": "02:00",
-          "temp": 18,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -267,10 +267,10 @@
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
       "tipus": "entraeta",
-      "temp_max": 28.4,
+      "temp_max": 28.3,
       "icono": "🌦️",
       "prob": 35,
-      "litros": 0.7,
+      "litros": 0.4,
       "horas": [
         {
           "hora": "08:00",
@@ -281,14 +281,14 @@
         },
         {
           "hora": "11:00",
-          "temp": 24,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 28,
+          "temp": 27,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -302,28 +302,28 @@
         },
         {
           "hora": "20:00",
-          "temp": 23,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️"
+          "temp": 22,
+          "prob": 35,
+          "litros": 0.1,
+          "icono": "🌦️"
         },
         {
           "hora": "23:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 15,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.7 mm. Esto significa que hay opciones de que caiga algo, pero 0.7 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. Hará bastante calor, alcanzando los 28ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 🟡 Cielos nubosos. Como mucho caerán 2 o 3 gotas sin importancia. A disfrutar de la noche.",
+      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.4 mm. Esto significa que hay opciones de que caiga algo, pero 0.4 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. Hará bastante calor, alcanzando los 28ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 🟡 Cielos nubosos. Como mucho caerán 2 o 3 gotas sin importancia. A disfrutar de la noche.",
       "modelo_fuente": "AROME",
       "dias_restantes": 1,
       "datos_disponibles": true
@@ -672,5 +672,5 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T05:00:28.983Z"
+  "fecha": "2026-04-21T06:00:30.950Z"
 }
