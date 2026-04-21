@@ -1,7 +1,7 @@
 {
-  "temp": 15.4,
-  "hum": 35,
-  "mapa_url": "N/D",
+  "temp": 14.4,
+  "hum": 37,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -15,7 +15,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -12,
+      "dias_restantes": -13,
       "datos_disponibles": false
     },
     {
@@ -30,7 +30,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -11,
+      "dias_restantes": -12,
       "datos_disponibles": false
     },
     {
@@ -45,7 +45,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -10,
+      "dias_restantes": -11,
       "datos_disponibles": false
     },
     {
@@ -60,7 +60,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -9,
+      "dias_restantes": -10,
       "datos_disponibles": false
     },
     {
@@ -75,7 +75,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -8,
+      "dias_restantes": -9,
       "datos_disponibles": false
     },
     {
@@ -90,7 +90,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -7,
+      "dias_restantes": -8,
       "datos_disponibles": false
     },
     {
@@ -105,7 +105,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -6,
+      "dias_restantes": -7,
       "datos_disponibles": false
     },
     {
@@ -120,7 +120,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -5,
+      "dias_restantes": -6,
       "datos_disponibles": false
     },
     {
@@ -135,7 +135,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -4,
+      "dias_restantes": -5,
       "datos_disponibles": false
     },
     {
@@ -150,7 +150,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -3,
+      "dias_restantes": -4,
       "datos_disponibles": false
     },
     {
@@ -165,7 +165,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -2,
+      "dias_restantes": -3,
       "datos_disponibles": false
     },
     {
@@ -180,7 +180,7 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": -1,
+      "dias_restantes": -2,
       "datos_disponibles": false
     },
     {
@@ -195,14 +195,14 @@
       "consejo": "⚠️ Sin datos de temperatura disponibles",
       "analisis_tecnico": "⚠️ Datos meteorológicos temporalmente no disponibles para esta fecha. Ambos modelos (ECMWF y AROME) están fuera de rango o han devuelto error. Consulta directamente AVAMET (https://www.avamet.org) o la AEMET.",
       "modelo_fuente": "N/D",
-      "dias_restantes": 0,
+      "dias_restantes": -1,
       "datos_disponibles": false
     },
     {
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
       "tipus": "entraeta",
-      "temp_max": 26.9,
+      "temp_max": 27.4,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -216,7 +216,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -230,7 +230,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 26,
+          "temp": 27,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -244,14 +244,14 @@
         },
         {
           "hora": "23:00",
-          "temp": 17,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -260,17 +260,17 @@
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
       "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 27ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
       "modelo_fuente": "AROME",
-      "dias_restantes": 1,
+      "dias_restantes": 0,
       "datos_disponibles": true
     },
     {
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
       "tipus": "entraeta",
-      "temp_max": 29,
-      "icono": "🌤️",
-      "prob": 20,
-      "litros": 0.3,
+      "temp_max": 28.7,
+      "icono": "☀️",
+      "prob": 0,
+      "litros": 0,
       "horas": [
         {
           "hora": "08:00",
@@ -281,51 +281,51 @@
         },
         {
           "hora": "11:00",
-          "temp": 25,
+          "temp": 23,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 28,
-          "prob": 10,
+          "temp": 27,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 29,
-          "prob": 15,
-          "litros": 0.1,
-          "icono": "🌤️"
+          "temp": 28,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 26,
-          "prob": 3,
+          "temp": 25,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 18,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 14,
+          "temp": "N/D",
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Los modelos marcan un 20% de probabilidad de lluvia con apenas 0.3 mm. Esto significa que hay opciones de que caiga algo, pero 0.3 mm es poquísima cantidad. Lo más seguro es que, si llueve, sean 4 gotas mal contadas o que finalmente ni siquiera llegue a caer esa cantidad. Hará bastante calor, alcanzando los 29ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 🟡 Cielos nubosos. Como mucho caerán 2 o 3 gotas sin importancia. A disfrutar de la noche.",
-      "modelo_fuente": "ECMWF",
-      "dias_restantes": 2,
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. Hará bastante calor, alcanzando los 29ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ✅ Noche perfecta para la entraeta. La calle estará espectacular.",
+      "modelo_fuente": "AROME",
+      "dias_restantes": 1,
       "datos_disponibles": true
     },
     {
@@ -390,7 +390,7 @@
       "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
       "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 19ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 3,
+      "dias_restantes": 2,
       "datos_disponibles": true
     },
     {
@@ -455,7 +455,7 @@
       "consejo": "🧣 Fresco. Lleva abrigo o térmica bajo el traje",
       "analisis_tecnico": "Tenemos un 40% de probabilidad de lluvia, pero fíjate en la cantidad: solo 3.6 mm. Aunque el porcentaje imponga un poco de respeto, la cantidad de agua prevista es tan escasa que, de caer algo, sería una llovizna débil que no debería estropear los actos. Será un día bastante fresco, con máximas de solo 16ºC. Ideal para no sudar nada en las Entradas, pero hará falta abrigarse bien en cuanto caiga el sol.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 4,
+      "dias_restantes": 3,
       "datos_disponibles": true
     },
     {
@@ -520,7 +520,7 @@
       "consejo": "👕 Temperatura ideal (~23°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
       "analisis_tecnico": "Tenemos un 40% de probabilidad de lluvia, pero fíjate en la cantidad: solo 0.0 mm. Aunque el porcentaje imponga un poco de respeto, la cantidad de agua prevista es tan escasa que, de caer algo, sería una llovizna débil que no debería estropear los actos. En cuanto al termómetro, como mucho llegaremos a los 23ºC en las horas centrales. Es una temperatura ideal en Fiestas: se estará perfecto con el traje sin llegar a pasar ni frío ni un calor agobiante. 🏆 Condiciones inmejorables para la Entrada. Los trajes y boatos lucirán espectaculares.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 5,
+      "dias_restantes": 4,
       "datos_disponibles": true
     },
     {
@@ -585,7 +585,7 @@
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
       "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. ⚔️ Día del Patrón perfecto para la Reliquia y la Procesión General.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 6,
+      "dias_restantes": 5,
       "datos_disponibles": true
     },
     {
@@ -641,8 +641,8 @@
         },
         {
           "hora": "02:00",
-          "temp": 12,
-          "prob": 12,
+          "temp": 13,
+          "prob": 7,
           "litros": 0,
           "icono": "☀️"
         }
@@ -650,7 +650,7 @@
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
       "analisis_tecnico": "Las temperaturas en altura indican que tendremos nubes e intervalos de claros, pero no hay previsión de lluvia en este momento. Hará bastante calor, alcanzando los 25ºC de máxima, así que tocará hidratarse bien porque bajo el traje se notará el bochorno. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
       "modelo_fuente": "ECMWF",
-      "dias_restantes": 7,
+      "dias_restantes": 6,
       "datos_disponibles": true
     }
   ],
@@ -667,10 +667,10 @@
   "estado": {
     "temp_ok": true,
     "hum_ok": true,
-    "mapa_ok": false,
+    "mapa_ok": true,
     "ecmwf_ok": true,
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-20T23:00:24.277Z"
+  "fecha": "2026-04-21T00:00:26.771Z"
 }
