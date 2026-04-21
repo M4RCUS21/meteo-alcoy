@@ -1,6 +1,6 @@
 {
-  "temp": 26.2,
-  "hum": 22,
+  "temp": 25.2,
+  "hum": 30,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042106/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -241,7 +241,7 @@
       "dia": "Dimarts 21 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-21",
       "tipus": "entraeta",
-      "temp_max": 26.7,
+      "temp_max": 26.6,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -309,21 +309,21 @@
       "dia": "Dimecres 22 · Entraetes (desfiles nocturnos)",
       "fecha": "2026-04-22",
       "tipus": "entraeta",
-      "temp_max": 28,
-      "icono": "🌦️",
-      "prob": 35,
-      "litros": 0.3,
+      "temp_max": 28.1,
+      "icono": "🌧️",
+      "prob": 70,
+      "litros": 1.6,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 25,
+          "temp": 24,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -344,14 +344,14 @@
         },
         {
           "hora": "20:00",
-          "temp": 24,
-          "prob": 35,
-          "litros": 0.3,
-          "icono": "🌦️"
+          "temp": 23,
+          "prob": 70,
+          "litros": 1.6,
+          "icono": "🌧️"
         },
         {
           "hora": "23:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -365,7 +365,7 @@
         }
       ],
       "consejo": "🌙 Noche con temperatura muy agradable, perfecta para hacer la entraeta",
-      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.3 mm. Esto significa que hay opciones de que caiga algo, pero 0.3 mm es poquísima cantidad. Hará bastante calor, alcanzando los 28ºC de máxima. 🟡 Cielos nubosos. Como mucho caerán 2 o 3 gotas sin importancia.",
+      "analisis_tecnico": "Situación inestable con un 70% de probabilidad y precipitaciones que podrían superar los 1.6 mm. Riesgo alto de lluvias continuadas. Hará bastante calor, alcanzando los 28ºC de máxima. 🔴 Riesgo alto de lluvia. Protocolos de la Asociación en alerta.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T13:00:54.649Z",
+  "fecha": "2026-04-21T14:00:57.632Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 2.7,
