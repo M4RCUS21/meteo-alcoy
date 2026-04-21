@@ -1,6 +1,6 @@
 {
-  "temp": 23.4,
-  "hum": 31,
+  "temp": 23.3,
+  "hum": 25,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042106/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -453,42 +453,42 @@
         {
           "hora": "08:00",
           "temp": 13,
-          "prob": 3,
+          "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 15,
-          "prob": 10,
+          "prob": 20,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "14:00",
           "temp": 17,
-          "prob": 18,
+          "prob": 28,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
           "temp": 17,
-          "prob": 22,
+          "prob": 33,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         },
         {
           "hora": "20:00",
           "temp": 15,
-          "prob": 23,
+          "prob": 33,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         },
         {
           "hora": "23:00",
           "temp": 12,
-          "prob": 19,
+          "prob": 23,
           "litros": 0,
           "icono": "🌤️"
         },
@@ -533,22 +533,22 @@
       "tipus": "entrades",
       "temp_max": 23.7,
       "icono": "🌤️",
-      "prob": 24,
+      "prob": 20,
       "litros": 10.7,
       "horas": [
         {
           "hora": "08:00",
           "temp": 10,
-          "prob": 8,
-          "litros": 0,
-          "icono": "☀️"
+          "prob": 15,
+          "litros": 0.7,
+          "icono": "🌤️"
         },
         {
           "hora": "11:00",
           "temp": 18,
-          "prob": 13,
+          "prob": 18,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "14:00",
@@ -560,34 +560,34 @@
         {
           "hora": "17:00",
           "temp": 23,
-          "prob": 18,
+          "prob": 11,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 20,
-          "prob": 15,
+          "prob": 3,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 13,
-          "prob": 9,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 11,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~24°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 10.7 mm totales. Temp. media 4 modelos: 17.3ºC. Prob. media: 24%. El 50% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 10.7 mm totales. Temp. media 4 modelos: 17.3ºC. Prob. media: 20%. El 50% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -601,11 +601,11 @@
         "precip_gem": 38.4,
         "media_precip_mm": 10.7,
         "media_temp_c": 17.3,
-        "media_prob_pct": 24,
+        "media_prob_pct": 20,
         "porcentaje_acuerdo_seco": 50,
         "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
         "tipo_dia": "entrades",
-        "prob_sintetica_pct": 24,
+        "prob_sintetica_pct": 20,
         "media_total_mm": 10.7,
         "temp_ecmwf_c": 17.3,
         "temp_gfs_c": 16,
@@ -619,61 +619,61 @@
       "tipus": "santjordi",
       "temp_max": 27,
       "icono": "☀️",
-      "prob": 10,
+      "prob": 9,
       "litros": 0.2,
       "horas": [
         {
           "hora": "08:00",
           "temp": 11,
-          "prob": 6,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 21,
-          "prob": 9,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 26,
-          "prob": 10,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 27,
-          "prob": 10,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 22,
-          "prob": 9,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 15,
-          "prob": 9,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 13,
-          "prob": 8,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "🕶️ Bastante calor. Hidratación y protección solar recomendados durante el desfile.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.1 mm totales. Temp. media 4 modelos: 20.5ºC. Prob. media: 10%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo muy leve. La Reliquia podrá procesionar con normalidad.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.1 mm totales. Temp. media 4 modelos: 20.5ºC. Prob. media: 9%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo muy leve. La Reliquia podrá procesionar con normalidad.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -687,11 +687,11 @@
         "precip_gem": 0,
         "media_precip_mm": 0.15,
         "media_temp_c": 20.5,
-        "media_prob_pct": 10,
+        "media_prob_pct": 9,
         "porcentaje_acuerdo_seco": 75,
         "veredicto": "Riesgo muy leve. La Reliquia podrá procesionar con normalidad.",
         "tipo_dia": "santjordi",
-        "prob_sintetica_pct": 10,
+        "prob_sintetica_pct": 9,
         "media_total_mm": 0.15,
         "temp_ecmwf_c": 20.6,
         "temp_gfs_c": 19.8,
@@ -711,49 +711,49 @@
         {
           "hora": "08:00",
           "temp": 13,
-          "prob": 8,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 22,
-          "prob": 8,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 26,
-          "prob": 8,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 27,
-          "prob": 7,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 23,
-          "prob": 5,
+          "prob": 1,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 16,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
           "temp": 14,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-21T15:00:56.221Z",
+  "fecha": "2026-04-21T16:00:58.494Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 2.7,
@@ -831,11 +831,11 @@
       "precip_gem": 38.4,
       "media_precip_mm": 10.7,
       "media_temp_c": 17.3,
-      "media_prob_pct": 24,
+      "media_prob_pct": 20,
       "porcentaje_acuerdo_seco": 50,
       "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 24,
+      "prob_sintetica_pct": 20,
       "media_total_mm": 10.7,
       "temp_ecmwf_c": 17.3,
       "temp_gfs_c": 16,
@@ -849,11 +849,11 @@
       "precip_gem": 0,
       "media_precip_mm": 0.15,
       "media_temp_c": 20.5,
-      "media_prob_pct": 10,
+      "media_prob_pct": 9,
       "porcentaje_acuerdo_seco": 75,
       "veredicto": "Riesgo muy leve. La Reliquia podrá procesionar con normalidad.",
       "tipo_dia": "santjordi",
-      "prob_sintetica_pct": 10,
+      "prob_sintetica_pct": 9,
       "media_total_mm": 0.15,
       "temp_ecmwf_c": 20.6,
       "temp_gfs_c": 19.8,
