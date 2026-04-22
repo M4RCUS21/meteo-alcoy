@@ -5715,29 +5715,13 @@
                             h(
                               "span",
                               { style: { marginLeft: 5 } },
-                              "Mapa AROME · Precipitació Animada",
+                              "Mapa Precipitació · Animació",
                             ),
                           ),
-                          h(
-                            "p",
-                            {
-                              style: {
-                                fontFamily: "Crimson Pro,serif",
-                                fontStyle: "italic",
-                                fontSize: ".86rem",
-                                color: "var(--text-m)",
-                                lineHeight: 1.65,
-                                marginBottom: 10,
-                                paddingLeft: 2,
-                              },
-                            },
-                            "El model AROME és el de major resolució disponible per a la zona d'Alcoi. Aquest mapa animat s'anirà actualitzant els dies de Festa per oferir la previsió de precipitació més precisa hora a hora sobre el Barranc del Cint i la Serra de Mariola.",
-                          ),
                           h("img", {
-                            src: "./animcax3.gif",
+                            src: "https://images.meteociel.fr/im/19/25945/animcax3.gif",
                             alt: "Mapa Precipitació Animat",
-                            loading: "eager",
-                            decoding: "async",
+                            loading: "lazy",
                             style: {
                               width: "100%",
                               maxWidth: 480,
