@@ -2824,9 +2824,9 @@
         /* ── Data extraction (v10.1 + retrocompat v10.0) ── */
         const {
           precip_ecmwf = data.modelo_europeo_total_mm ?? 0,
-          precip_gfs   = data.modelo_americano_total_mm ?? 0,
-          precip_icon  = data.modelo_aleman_total_mm ?? 0,
-          precip_gem   = data.modelo_canadiense_total_mm ?? 0,
+          precip_gfs = data.modelo_americano_total_mm ?? 0,
+          precip_icon = data.modelo_aleman_total_mm ?? 0,
+          precip_gem = data.modelo_canadiense_total_mm ?? 0,
           media_precip_mm = data.media_total_mm ?? 0,
           media_temp_c = null,
           media_prob_pct = null,
@@ -2835,46 +2835,65 @@
         } = data;
 
         const models = [
-          { lbl: "ECMWF",  flag: "🇪🇺", val: precip_ecmwf, sub: "European" },
-          { lbl: "GFS",    flag: "🇺🇸", val: precip_gfs,   sub: "American" },
-          { lbl: "ICON",   flag: "🇩🇪", val: precip_icon,  sub: "German" },
-          { lbl: "GEM",    flag: "🇨🇦", val: precip_gem,   sub: "Canadian" },
+          { lbl: "ECMWF", flag: "🇪🇺", val: precip_ecmwf, sub: "European" },
+          { lbl: "GFS", flag: "🇺🇸", val: precip_gfs, sub: "American" },
+          { lbl: "ICON", flag: "🇩🇪", val: precip_icon, sub: "German" },
+          { lbl: "GEM", flag: "🇨🇦", val: precip_gem, sub: "Canadian" },
         ];
 
         /* ── Color helpers ── */
-        const maxMm = Math.max(...models.map(m => m.val), 0.1);
+        const maxMm = Math.max(...models.map((m) => m.val), 0.1);
         const barScale = Math.max(maxMm, media_precip_mm, 1); // ensure avg line is visible
 
         const sevColor = (mm) =>
-          mm === 0 ? "#22c55e" : mm <= 1 ? "#eab308" : mm <= 3 ? "#f97316" : "#ef4444";
+          mm === 0
+            ? "#22c55e"
+            : mm <= 1
+              ? "#eab308"
+              : mm <= 3
+                ? "#f97316"
+                : "#ef4444";
 
         const probColor = (p) =>
           p < 20 ? "#22c55e" : p < 50 ? "#eab308" : "#ef4444";
 
         const verdictCol = sevColor(media_precip_mm);
-        const acordCol = porcentaje_acuerdo_seco >= 75
-          ? "#22c55e" : porcentaje_acuerdo_seco >= 50 ? "#eab308" : "#ef4444";
+        const acordCol =
+          porcentaje_acuerdo_seco >= 75
+            ? "#22c55e"
+            : porcentaje_acuerdo_seco >= 50
+              ? "#eab308"
+              : "#ef4444";
 
         /* ── Average line position as % ── */
         const avgPct = Math.min(100, (media_precip_mm / barScale) * 100);
 
         /* ── Donut SVG for probability ── */
-        const donutR = 28, donutStroke = 5;
+        const donutR = 28,
+          donutStroke = 5;
         const donutCirc = 2 * Math.PI * donutR;
         const probVal = media_prob_pct ?? 0;
         const donutFill = (probVal / 100) * donutCirc;
         const donutColor = probColor(probVal);
 
         /* ── Thermometer icon (inline SVG) ── */
-        const thermoSvg = h("svg", {
-          width: 16, height: 16, viewBox: "0 0 24 24", fill: "none",
-          style: { flexShrink: 0 }
-        },
+        const thermoSvg = h(
+          "svg",
+          {
+            width: 16,
+            height: 16,
+            viewBox: "0 0 24 24",
+            fill: "none",
+            style: { flexShrink: 0 },
+          },
           h("path", {
             d: "M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z",
-            stroke: "currentColor", strokeWidth: 1.6,
-            strokeLinecap: "round", strokeLinejoin: "round",
-            fill: "currentColor", fillOpacity: 0.1,
+            stroke: "currentColor",
+            strokeWidth: 1.6,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fill: "currentColor",
+            fillOpacity: 0.1,
           }),
           h("circle", { cx: 11.5, cy: 17.5, r: 1.5, fill: "currentColor" }),
         );
@@ -2898,165 +2917,261 @@
           h("div", {
             style: {
               height: 3,
-              background: "linear-gradient(90deg, var(--gold-d), var(--gold), var(--gold-l), var(--gold))",
+              background:
+                "linear-gradient(90deg, var(--gold-d), var(--gold), var(--gold-l), var(--gold))",
               borderRadius: "16px 16px 0 0",
             },
           }),
 
           /* ═══ HEADER ═══ */
-          h("div", {
-            style: {
-              padding: "12px 16px 0",
-              display: "flex", alignItems: "center", justifyContent: "space-between",
-              gap: 8, flexWrap: "wrap",
+          h(
+            "div",
+            {
+              style: {
+                padding: "12px 16px 0",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: 8,
+                flexWrap: "wrap",
+              },
             },
-          },
-            h("div", { style: { display: "flex", alignItems: "center", gap: 6 } },
+            h(
+              "div",
+              { style: { display: "flex", alignItems: "center", gap: 6 } },
               h("div", {
                 style: {
-                  width: 7, height: 7, borderRadius: "50%",
+                  width: 7,
+                  height: 7,
+                  borderRadius: "50%",
                   background: verdictCol,
-                  boxShadow: "0 0 10px " + verdictCol + ", 0 0 20px " + verdictCol + "40",
-                  animation: media_precip_mm > 0 ? "livePulse 2s infinite" : "none",
+                  boxShadow:
+                    "0 0 10px " +
+                    verdictCol +
+                    ", 0 0 20px " +
+                    verdictCol +
+                    "40",
+                  animation:
+                    media_precip_mm > 0 ? "livePulse 2s infinite" : "none",
                   flexShrink: 0,
                 },
               }),
-              h("span", {
-                style: {
-                  fontSize: ".42rem", fontWeight: 800,
-                  letterSpacing: ".18em", textTransform: "uppercase",
-                  color: "var(--gold)",
+              h(
+                "span",
+                {
+                  style: {
+                    fontSize: ".42rem",
+                    fontWeight: 800,
+                    letterSpacing: ".18em",
+                    textTransform: "uppercase",
+                    color: "var(--gold)",
+                  },
                 },
-              }, "Super-Ensemble · 4 Models Globals"),
+                "Super-Ensemble · 4 Models Globals",
+              ),
             ),
-            h("div", {
-              style: {
-                fontSize: ".39rem", fontWeight: 700,
-                letterSpacing: ".1em", textTransform: "uppercase",
-                color: acordCol,
-                background: "rgba(0,0,0,0.03)",
-                border: "1px solid var(--border)",
-                borderRadius: 20, padding: "3px 10px",
-                whiteSpace: "nowrap",
+            h(
+              "div",
+              {
+                style: {
+                  fontSize: ".39rem",
+                  fontWeight: 700,
+                  letterSpacing: ".1em",
+                  textTransform: "uppercase",
+                  color: acordCol,
+                  background: "rgba(0,0,0,0.03)",
+                  border: "1px solid var(--border)",
+                  borderRadius: 20,
+                  padding: "3px 10px",
+                  whiteSpace: "nowrap",
+                },
               },
-            }, porcentaje_acuerdo_seco + "% " + (t?.seAcord || "modelos secos")),
+              porcentaje_acuerdo_seco + "% " + (t?.seAcord || "modelos secos"),
+            ),
           ),
 
           /* ═══ MAIN CONTENT GRID ═══ */
-          h("div", {
-            style: {
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 12,
-              padding: "14px 16px 12px",
-              alignItems: "stretch",
+          h(
+            "div",
+            {
+              style: {
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 12,
+                padding: "14px 16px 12px",
+                alignItems: "stretch",
+              },
             },
-          },
 
             /* ─── LEFT: Bar Chart ─── */
-            h("div", { style: { minWidth: 220, flex: "1 1 50%" } },
+            h(
+              "div",
+              { style: { minWidth: 220, flex: "1 1 50%" } },
               /* Section label */
-              h("div", {
-                style: {
-                  fontSize: ".36rem", fontWeight: 700,
-                  letterSpacing: ".2em", textTransform: "uppercase",
-                  color: "var(--text-s)", marginBottom: 8,
+              h(
+                "div",
+                {
+                  style: {
+                    fontSize: ".36rem",
+                    fontWeight: 700,
+                    letterSpacing: ".2em",
+                    textTransform: "uppercase",
+                    color: "var(--text-s)",
+                    marginBottom: 8,
+                  },
                 },
-              }, "Precipitació per Model (mm)"),
+                "Precipitació per Model (mm)",
+              ),
 
               /* Bar chart container with avg line */
-              h("div", {
-                style: { position: "relative", paddingRight: 44 },
-              },
+              h(
+                "div",
+                {
+                  style: { position: "relative", paddingRight: 44 },
+                },
                 /* Average vertical dashed line */
-                avgPct > 0 && avgPct < 100 && h("div", {
-                  style: {
-                    position: "absolute",
-                    left: "calc(" + avgPct + "% - " + (avgPct * 44 / 100) + "px)",
-                    top: -2, bottom: -2,
-                    width: 0,
-                    borderLeft: "1.5px dashed var(--gold)",
-                    opacity: 0.6,
-                    zIndex: 2,
-                    pointerEvents: "none",
-                  },
-                }),
+                avgPct > 0 &&
+                  avgPct < 100 &&
+                  h("div", {
+                    style: {
+                      position: "absolute",
+                      left:
+                        "calc(" + avgPct + "% - " + (avgPct * 44) / 100 + "px)",
+                      top: -2,
+                      bottom: -2,
+                      width: 0,
+                      borderLeft: "1.5px dashed var(--gold)",
+                      opacity: 0.6,
+                      zIndex: 2,
+                      pointerEvents: "none",
+                    },
+                  }),
                 /* Average label */
-                avgPct > 0 && h("div", {
-                  style: {
-                    position: "absolute",
-                    left: "calc(" + Math.min(avgPct, 90) + "% - " + (Math.min(avgPct, 90) * 44 / 100) + "px)",
-                    top: -11,
-                    fontSize: ".32rem", fontWeight: 700,
-                    fontFamily: "DM Mono,monospace",
-                    color: "var(--gold)",
-                    letterSpacing: ".05em",
-                    zIndex: 3,
-                    whiteSpace: "nowrap",
-                  },
-                }, "μ " + media_precip_mm + " mm"),
+                avgPct > 0 &&
+                  h(
+                    "div",
+                    {
+                      style: {
+                        position: "absolute",
+                        left:
+                          "calc(" +
+                          Math.min(avgPct, 90) +
+                          "% - " +
+                          (Math.min(avgPct, 90) * 44) / 100 +
+                          "px)",
+                        top: -11,
+                        fontSize: ".32rem",
+                        fontWeight: 700,
+                        fontFamily: "DM Mono,monospace",
+                        color: "var(--gold)",
+                        letterSpacing: ".05em",
+                        zIndex: 3,
+                        whiteSpace: "nowrap",
+                      },
+                    },
+                    "μ " + media_precip_mm + " mm",
+                  ),
 
                 /* Model bars */
-                h("div", {
-                  style: {
-                    display: "flex", flexDirection: "column", gap: 6,
-                    paddingTop: avgPct > 0 ? 4 : 0,
+                h(
+                  "div",
+                  {
+                    style: {
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 6,
+                      paddingTop: avgPct > 0 ? 4 : 0,
+                    },
                   },
-                },
                   models.map((m, i) => {
                     const pct = Math.min(100, (m.val / barScale) * 100);
                     const bc = sevColor(m.val);
-                    return h("div", {
-                      key: i,
-                      style: {
-                        display: "flex", alignItems: "center", gap: 6,
-                      },
-                    },
-                      /* Flag + label */
-                      h("div", {
+                    return h(
+                      "div",
+                      {
+                        key: i,
                         style: {
-                          width: 62, flexShrink: 0,
-                          display: "flex", alignItems: "center", gap: 3,
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 6,
                         },
                       },
-                        h("span", { style: { fontSize: ".6rem", lineHeight: 1 } }, m.flag),
-                        h("span", {
+                      /* Flag + label */
+                      h(
+                        "div",
+                        {
                           style: {
-                            fontSize: ".44rem", fontWeight: 700,
-                            color: "var(--text-m)",
-                            letterSpacing: ".04em",
+                            width: 62,
+                            flexShrink: 0,
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 3,
                           },
-                        }, m.lbl),
+                        },
+                        h(
+                          "span",
+                          { style: { fontSize: ".6rem", lineHeight: 1 } },
+                          m.flag,
+                        ),
+                        h(
+                          "span",
+                          {
+                            style: {
+                              fontSize: ".44rem",
+                              fontWeight: 700,
+                              color: "var(--text-m)",
+                              letterSpacing: ".04em",
+                            },
+                          },
+                          m.lbl,
+                        ),
                       ),
                       /* Bar track */
-                      h("div", {
-                        style: {
-                          flex: 1, height: 8,
-                          background: "var(--border)",
-                          borderRadius: 4, overflow: "hidden",
-                          position: "relative",
+                      h(
+                        "div",
+                        {
+                          style: {
+                            flex: 1,
+                            height: 8,
+                            background: "var(--border)",
+                            borderRadius: 4,
+                            overflow: "hidden",
+                            position: "relative",
+                          },
                         },
-                      },
                         h("div", {
                           style: {
                             height: "100%",
                             width: pct + "%",
-                            background: "linear-gradient(90deg, " + bc + "cc, " + bc + ")",
+                            background:
+                              "linear-gradient(90deg, " +
+                              bc +
+                              "cc, " +
+                              bc +
+                              ")",
                             borderRadius: 4,
                             transition: "width .8s cubic-bezier(.22,.68,0,1)",
-                            boxShadow: m.val > 0 ? "0 0 8px " + bc + "40" : "none",
+                            boxShadow:
+                              m.val > 0 ? "0 0 8px " + bc + "40" : "none",
                           },
                         }),
                       ),
                       /* Value */
-                      h("span", {
-                        style: {
-                          fontSize: ".46rem",
-                          fontFamily: "DM Mono,monospace",
-                          color: bc, fontWeight: 700,
-                          width: 38, textAlign: "right", flexShrink: 0,
+                      h(
+                        "span",
+                        {
+                          style: {
+                            fontSize: ".46rem",
+                            fontFamily: "DM Mono,monospace",
+                            color: bc,
+                            fontWeight: 700,
+                            width: 38,
+                            textAlign: "right",
+                            flexShrink: 0,
+                          },
                         },
-                      }, m.val === 0 ? "0 mm" : m.val.toFixed(1) + "mm"),
+                        m.val === 0 ? "0 mm" : m.val.toFixed(1) + "mm",
+                      ),
                     );
                   }),
                 ),
@@ -3065,220 +3180,359 @@
 
             /* ─── RIGHT: Metric Cards ─── */
             (media_temp_c !== null || media_prob_pct !== null) &&
-            h("div", {
-              style: {
-                display: "flex", flexDirection: "row", flexWrap: "wrap", gap: 8,
-                alignItems: "stretch", minWidth: 160, flex: "1 1 30%",
-              },
-            },
-              /* Temperature Card */
-              media_temp_c !== null && h("div", {
-                style: {
-                  background: "linear-gradient(135deg, rgba(122,82,21,0.06), rgba(122,82,21,0.02))",
-                  border: "1px solid var(--border)",
-                  borderRadius: 12,
-                  padding: "10px 12px",
-                  textAlign: "center",
-                  flex: "1 1 120px",
-                  position: "relative",
-                  overflow: "hidden",
-                  display: "flex", flexDirection: "column", justifyContent: "center"
-                },
-              },
-                /* Subtle accent */
-                h("div", {
+              h(
+                "div",
+                {
                   style: {
-                    position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                    background: "linear-gradient(90deg, transparent, var(--gold-l), transparent)",
-                    opacity: 0.5,
-                  },
-                }),
-                /* Label */
-                h("div", {
-                  style: {
-                    fontSize: ".32rem", fontWeight: 700,
-                    letterSpacing: ".18em", textTransform: "uppercase",
-                    color: "var(--text-s)", marginBottom: 5,
-                    display: "flex", alignItems: "center",
-                    justifyContent: "center", gap: 4,
+                    display: "flex",
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                    gap: 8,
+                    alignItems: "stretch",
+                    minWidth: 160,
+                    flex: "1 1 30%",
                   },
                 },
-                  thermoSvg,
-                  "Temp",
-                ),
-                /* Big number */
-                h("div", {
-                  style: {
-                    fontFamily: "Playfair Display,serif",
-                    fontSize: "1.3rem", fontWeight: 900,
-                    color: "var(--text)", lineHeight: 1,
-                    letterSpacing: "-.02em",
-                  },
-                }, Math.round(media_temp_c * 10) / 10 + "°"),
-                h("div", {
-                  style: {
-                    fontSize: ".34rem", color: "var(--text-s)",
-                    fontWeight: 600, marginTop: 2,
-                    letterSpacing: ".08em",
-                  },
-                }, "MEDIA 4 MODELS"),
-              ),
-
-              /* Probability Card with Donut */
-              media_prob_pct !== null && h("div", {
-                style: {
-                  background: "linear-gradient(135deg, rgba(122,82,21,0.06), rgba(122,82,21,0.02))",
-                  border: "1px solid var(--border)",
-                  borderRadius: 12,
-                  padding: "10px 12px",
-                  textAlign: "center",
-                  flex: "1 1 120px",
-                  position: "relative",
-                  overflow: "hidden",
-                  display: "flex", flexDirection: "column", justifyContent: "center"
-                },
-              },
-                h("div", {
-                  style: {
-                    position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                    background: "linear-gradient(90deg, transparent, " + donutColor + "80, transparent)",
-                    opacity: 0.5,
-                  },
-                }),
-                h("div", {
-                  style: {
-                    fontSize: ".32rem", fontWeight: 700,
-                    letterSpacing: ".18em", textTransform: "uppercase",
-                    color: "var(--text-s)", marginBottom: 6,
-                  },
-                }, "Prob. Pluja"),
-                /* SVG Donut */
-                h("div", {
-                  style: { position: "relative", width: 66, height: 66, margin: "0 auto" },
-                },
-                  h("svg", {
-                    width: 66, height: 66, viewBox: "0 0 66 66",
-                    style: { transform: "rotate(-90deg)" },
-                  },
-                    /* Track */
-                    h("circle", {
-                      cx: 33, cy: 33, r: donutR,
-                      fill: "none", stroke: "var(--border)",
-                      strokeWidth: donutStroke,
-                    }),
-                    /* Fill */
-                    h("circle", {
-                      cx: 33, cy: 33, r: donutR,
-                      fill: "none", stroke: donutColor,
-                      strokeWidth: donutStroke,
-                      strokeDasharray: donutCirc,
-                      strokeDashoffset: donutCirc - donutFill,
-                      strokeLinecap: "round",
+                /* Temperature Card */
+                media_temp_c !== null &&
+                  h(
+                    "div",
+                    {
                       style: {
-                        transition: "stroke-dashoffset .8s cubic-bezier(.22,.68,0,1)",
-                        filter: "drop-shadow(0 0 4px " + donutColor + "60)",
+                        background:
+                          "linear-gradient(135deg, rgba(122,82,21,0.06), rgba(122,82,21,0.02))",
+                        border: "1px solid var(--border)",
+                        borderRadius: 12,
+                        padding: "10px 12px",
+                        textAlign: "center",
+                        flex: "1 1 120px",
+                        position: "relative",
+                        overflow: "hidden",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      },
+                    },
+                    /* Subtle accent */
+                    h("div", {
+                      style: {
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        height: 2,
+                        background:
+                          "linear-gradient(90deg, transparent, var(--gold-l), transparent)",
+                        opacity: 0.5,
                       },
                     }),
+                    /* Label */
+                    h(
+                      "div",
+                      {
+                        style: {
+                          fontSize: ".32rem",
+                          fontWeight: 700,
+                          letterSpacing: ".18em",
+                          textTransform: "uppercase",
+                          color: "var(--text-s)",
+                          marginBottom: 5,
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          gap: 4,
+                        },
+                      },
+                      thermoSvg,
+                      "Temp",
+                    ),
+                    /* Big number */
+                    h(
+                      "div",
+                      {
+                        style: {
+                          fontFamily: "Playfair Display,serif",
+                          fontSize: "1.3rem",
+                          fontWeight: 900,
+                          color: "var(--text)",
+                          lineHeight: 1,
+                          letterSpacing: "-.02em",
+                        },
+                      },
+                      Math.round(media_temp_c * 10) / 10 + "°",
+                    ),
+                    h(
+                      "div",
+                      {
+                        style: {
+                          fontSize: ".34rem",
+                          color: "var(--text-s)",
+                          fontWeight: 600,
+                          marginTop: 2,
+                          letterSpacing: ".08em",
+                        },
+                      },
+                      "MEDIA 4 MODELS",
+                    ),
                   ),
-                  /* Center number */
-                  h("div", {
-                    style: {
-                      position: "absolute",
-                      top: "50%", left: "50%",
-                      transform: "translate(-50%,-50%)",
-                      fontFamily: "Playfair Display,serif",
-                      fontSize: ".95rem", fontWeight: 900,
-                      color: donutColor, lineHeight: 1,
+
+                /* Probability Card with Donut */
+                media_prob_pct !== null &&
+                  h(
+                    "div",
+                    {
+                      style: {
+                        background:
+                          "linear-gradient(135deg, rgba(122,82,21,0.06), rgba(122,82,21,0.02))",
+                        border: "1px solid var(--border)",
+                        borderRadius: 12,
+                        padding: "10px 12px",
+                        textAlign: "center",
+                        flex: "1 1 120px",
+                        position: "relative",
+                        overflow: "hidden",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      },
                     },
-                  }, probVal + "%"),
-                ),
-                h("div", {
-                  style: {
-                    fontSize: ".34rem", color: "var(--text-s)",
-                    fontWeight: 600, marginTop: 4,
-                    letterSpacing: ".08em",
-                  },
-                }, "MEDIA 4 MODELS"),
+                    h("div", {
+                      style: {
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        height: 2,
+                        background:
+                          "linear-gradient(90deg, transparent, " +
+                          donutColor +
+                          "80, transparent)",
+                        opacity: 0.5,
+                      },
+                    }),
+                    h(
+                      "div",
+                      {
+                        style: {
+                          fontSize: ".32rem",
+                          fontWeight: 700,
+                          letterSpacing: ".18em",
+                          textTransform: "uppercase",
+                          color: "var(--text-s)",
+                          marginBottom: 6,
+                        },
+                      },
+                      "Prob. Pluja",
+                    ),
+                    /* SVG Donut */
+                    h(
+                      "div",
+                      {
+                        style: {
+                          position: "relative",
+                          width: 66,
+                          height: 66,
+                          margin: "0 auto",
+                        },
+                      },
+                      h(
+                        "svg",
+                        {
+                          width: 66,
+                          height: 66,
+                          viewBox: "0 0 66 66",
+                          style: { transform: "rotate(-90deg)" },
+                        },
+                        /* Track */
+                        h("circle", {
+                          cx: 33,
+                          cy: 33,
+                          r: donutR,
+                          fill: "none",
+                          stroke: "var(--border)",
+                          strokeWidth: donutStroke,
+                        }),
+                        /* Fill */
+                        h("circle", {
+                          cx: 33,
+                          cy: 33,
+                          r: donutR,
+                          fill: "none",
+                          stroke: donutColor,
+                          strokeWidth: donutStroke,
+                          strokeDasharray: donutCirc,
+                          strokeDashoffset: donutCirc - donutFill,
+                          strokeLinecap: "round",
+                          style: {
+                            transition:
+                              "stroke-dashoffset .8s cubic-bezier(.22,.68,0,1)",
+                            filter: "drop-shadow(0 0 4px " + donutColor + "60)",
+                          },
+                        }),
+                      ),
+                      /* Center number */
+                      h(
+                        "div",
+                        {
+                          style: {
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%,-50%)",
+                            fontFamily: "Playfair Display,serif",
+                            fontSize: ".95rem",
+                            fontWeight: 900,
+                            color: donutColor,
+                            lineHeight: 1,
+                          },
+                        },
+                        probVal + "%",
+                      ),
+                    ),
+                    h(
+                      "div",
+                      {
+                        style: {
+                          fontSize: ".34rem",
+                          color: "var(--text-s)",
+                          fontWeight: 600,
+                          marginTop: 4,
+                          letterSpacing: ".08em",
+                        },
+                      },
+                      "MEDIA 4 MODELS",
+                    ),
+                  ),
               ),
-            ),
           ),
 
           /* ═══ VERDICT ALERT BOX ═══ */
-          veredicto && h("div", {
-            style: {
-              margin: "0 14px 14px",
-              padding: "10px 13px",
-              background: "linear-gradient(90deg, " + verdictCol + "08, transparent)",
-              borderLeft: "3px solid " + verdictCol,
-              borderRadius: "0 8px 8px 0",
-              display: "flex", alignItems: "center", gap: 8,
-            },
-          },
-            /* Severity dot */
-            h("div", {
-              style: {
-                width: 8, height: 8, borderRadius: "50%",
-                background: verdictCol, flexShrink: 0,
-                boxShadow: "0 0 6px " + verdictCol + "80",
+          veredicto &&
+            h(
+              "div",
+              {
+                style: {
+                  margin: "0 14px 14px",
+                  padding: "10px 13px",
+                  background:
+                    "linear-gradient(90deg, " + verdictCol + "08, transparent)",
+                  borderLeft: "3px solid " + verdictCol,
+                  borderRadius: "0 8px 8px 0",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                },
               },
-            }),
-            h("div", {
-              style: {
-                fontFamily: "Crimson Pro,serif",
-                fontSize: ".82rem", fontStyle: "italic",
-                color: "var(--text-m)", lineHeight: 1.5,
-              },
-            }, veredicto),
-          ),
+              /* Severity dot */
+              h("div", {
+                style: {
+                  width: 8,
+                  height: 8,
+                  borderRadius: "50%",
+                  background: verdictCol,
+                  flexShrink: 0,
+                  boxShadow: "0 0 6px " + verdictCol + "80",
+                },
+              }),
+              h(
+                "div",
+                {
+                  style: {
+                    fontFamily: "Crimson Pro,serif",
+                    fontSize: ".82rem",
+                    fontStyle: "italic",
+                    color: "var(--text-m)",
+                    lineHeight: 1.5,
+                  },
+                },
+                veredicto,
+              ),
+            ),
 
           /* ═══ BOTTOM SUMMARY BAR ═══ */
-          h("div", {
-            style: {
-              padding: "8px 16px 10px",
-              borderTop: "1px solid var(--border)",
-              display: "flex", justifyContent: "space-between",
-              alignItems: "center", gap: 8, flexWrap: "wrap",
-            },
-          },
-            /* Left: avg precip */
-            h("div", {
-              style: { display: "flex", alignItems: "baseline", gap: 5 },
-            },
-              h("span", {
-                style: {
-                  fontSize: ".35rem", fontWeight: 700,
-                  letterSpacing: ".14em", textTransform: "uppercase",
-                  color: "var(--text-s)",
-                },
-              }, t?.seMitja || "Mitjana"),
-              h("span", {
-                style: {
-                  fontFamily: "Playfair Display,serif",
-                  fontSize: ".92rem", fontWeight: 900,
-                  color: verdictCol,
-                },
-              }, media_precip_mm === 0 ? "0 mm" : media_precip_mm.toFixed(1) + " mm"),
-            ),
-            /* Right: compact metrics */
-            h("div", {
+          h(
+            "div",
+            {
               style: {
-                display: "flex", gap: 10, alignItems: "center",
+                padding: "8px 16px 10px",
+                borderTop: "1px solid var(--border)",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                gap: 8,
+                flexWrap: "wrap",
               },
             },
-              media_temp_c !== null && h("span", {
-                style: {
-                  fontSize: ".44rem", fontWeight: 700,
-                  color: "var(--text-m)",
-                  fontFamily: "DM Mono,monospace",
+            /* Left: avg precip */
+            h(
+              "div",
+              {
+                style: { display: "flex", alignItems: "baseline", gap: 5 },
+              },
+              h(
+                "span",
+                {
+                  style: {
+                    fontSize: ".35rem",
+                    fontWeight: 700,
+                    letterSpacing: ".14em",
+                    textTransform: "uppercase",
+                    color: "var(--text-s)",
+                  },
                 },
-              }, "🌡 " + (Math.round(media_temp_c * 10) / 10) + "°C"),
-              media_prob_pct !== null && h("span", {
-                style: {
-                  fontSize: ".44rem", fontWeight: 700,
-                  color: donutColor,
-                  fontFamily: "DM Mono,monospace",
+                t?.seMitja || "Mitjana",
+              ),
+              h(
+                "span",
+                {
+                  style: {
+                    fontFamily: "Playfair Display,serif",
+                    fontSize: ".92rem",
+                    fontWeight: 900,
+                    color: verdictCol,
+                  },
                 },
-              }, "💧 " + probVal + "%"),
+                media_precip_mm === 0
+                  ? "0 mm"
+                  : media_precip_mm.toFixed(1) + " mm",
+              ),
+            ),
+            /* Right: compact metrics */
+            h(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  gap: 10,
+                  alignItems: "center",
+                },
+              },
+              media_temp_c !== null &&
+                h(
+                  "span",
+                  {
+                    style: {
+                      fontSize: ".44rem",
+                      fontWeight: 700,
+                      color: "var(--text-m)",
+                      fontFamily: "DM Mono,monospace",
+                    },
+                  },
+                  "🌡 " + Math.round(media_temp_c * 10) / 10 + "°C",
+                ),
+              media_prob_pct !== null &&
+                h(
+                  "span",
+                  {
+                    style: {
+                      fontSize: ".44rem",
+                      fontWeight: 700,
+                      color: donutColor,
+                      fontFamily: "DM Mono,monospace",
+                    },
+                  },
+                  "💧 " + probVal + "%",
+                ),
             ),
           ),
         );
@@ -4520,7 +4774,6 @@
 
         /* ── PATCH: Extract super_ensemble_entradas ── */
 
-
         let summaryTxt = "";
         if (meteo?.resumen_grans) {
           const lang = t.today === "HOY" ? "es" : "ca";
@@ -4820,7 +5073,9 @@
                           className:
                             "hcard" +
                             (oor ? " oor" : "") +
-                            (f.requiere_super_ensemble ? " entrades-special" : ""),
+                            (f.requiere_super_ensemble
+                              ? " entrades-special"
+                              : ""),
                           onClick: () => !oor && setSelDay(f),
                         },
                         /* Badge */
@@ -5442,12 +5697,61 @@
                             "Meteograma T850 + T500 + Precipitació · GEFS",
                           ),
                         ),
+                        /* ── GIF Mapa Precipitació ── */
+                        h(
+                          "div",
+                          {
+                            style: {
+                              marginBottom: 12,
+                            },
+                          },
+                          h(
+                            "div",
+                            {
+                              className: "sec-lbl",
+                              style: { marginBottom: 8 },
+                            },
+                            h(Ico, { n: "rain", sz: 11, col: "var(--gold)" }),
+                            h(
+                              "span",
+                              { style: { marginLeft: 5 } },
+                              "Mapa Precipitació · Animació",
+                            ),
+                          ),
+                          h("img", {
+                            src: "https://images.meteociel.fr/im/19/25945/animcax3.gif",
+                            alt: "Mapa Precipitació Animat",
+                            loading: "lazy",
+                            style: {
+                              width: "100%",
+                              maxWidth: 480,
+                              display: "block",
+                              margin: "0 auto",
+                              borderRadius: 8,
+                              border: "1px solid var(--border)",
+                            },
+                          }),
+                        ),
+                        /* ── Meteograma GEFS ── */
+                        h(
+                          "div",
+                          { className: "sec-lbl", style: { marginBottom: 8 } },
+                          h(Ico, { n: "meteo", sz: 11, col: "var(--gold)" }),
+                          h(
+                            "span",
+                            { style: { marginLeft: 5 } },
+                            "Meteograma T850 + T500 + Precipitació · GEFS",
+                          ),
+                        ),
                         h("img", {
                           src: meteo.mapa_url,
                           alt: "Meteograma",
                           loading: "lazy",
                           style: {
                             width: "100%",
+                            maxWidth: 520,
+                            display: "block",
+                            margin: "0 auto",
                             borderRadius: 8,
                             border: "1px solid var(--border)",
                           },
