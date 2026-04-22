@@ -1,6 +1,6 @@
 {
-  "temp": 28.8,
-  "hum": 24,
+  "temp": 28.4,
+  "hum": 26,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042206/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -754,7 +754,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-22T14:01:04.664Z",
+  "fecha": "2026-04-22T15:00:57.646Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 7.2,
