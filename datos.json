@@ -1,7 +1,7 @@
 {
-  "temp": 23.1,
-  "hum": 38,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042200/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 24.1,
+  "hum": 37,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042206/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -395,10 +395,10 @@
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
       "tipus": "musics",
-      "temp_max": 15.5,
-      "icono": "🌦️",
-      "prob": 32,
-      "litros": 3,
+      "temp_max": 16.1,
+      "icono": "🌤️",
+      "prob": 28,
+      "litros": 1.6,
       "horas": [
         {
           "hora": "08:00",
@@ -416,23 +416,23 @@
         },
         {
           "hora": "14:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 20,
-          "litros": 0.5,
+          "litros": 0.4,
           "icono": "🌤️"
         },
         {
           "hora": "17:00",
-          "temp": 14,
+          "temp": 15,
           "prob": 28,
-          "litros": 0.8,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "20:00",
-          "temp": 13,
+          "temp": 14,
           "prob": 20,
-          "litros": 0.3,
+          "litros": 0,
           "icono": "🌤️"
         },
         {
@@ -450,8 +450,8 @@
           "icono": "☀️"
         }
       ],
-      "consejo": "🧣 Fresco. Lleva abrigo o térmica bajo el traje",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 3.0 mm totales. Temp. media 4 modelos: 16.7ºC. Prob. media: 32%. El 0% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
+      "consejo": "👕 Temperatura ideal (~16°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 1.6 mm totales. Temp. media 4 modelos: 16.7ºC. Prob. media: 28%. El 0% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -461,16 +461,16 @@
       "super_ensemble_datos": {
         "precip_ecmwf": 1.9,
         "precip_gfs": 1.1,
-        "precip_icon": 7.9,
+        "precip_icon": 2.3,
         "precip_gem": 0.9,
-        "media_precip_mm": 2.95,
+        "media_precip_mm": 1.55,
         "media_temp_c": 16.7,
-        "media_prob_pct": 32,
+        "media_prob_pct": 28,
         "porcentaje_acuerdo_seco": 0,
         "veredicto": "Riesgo moderado para la noche de los Músicos.",
         "tipo_dia": "musics",
-        "prob_sintetica_pct": 32,
-        "media_total_mm": 2.95,
+        "prob_sintetica_pct": 28,
+        "media_total_mm": 1.55,
         "temp_ecmwf_c": 16.2,
         "temp_gfs_c": 17.4,
         "temp_icon_c": 15.8,
@@ -481,62 +481,62 @@
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
       "tipus": "entrades",
-      "temp_max": 17.6,
+      "temp_max": 19.8,
       "icono": "☀️",
       "prob": 10,
       "litros": 0.1,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 11,
+          "temp": 10,
           "prob": 18,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "11:00",
-          "temp": 14,
+          "temp": 15,
           "prob": 16,
           "litros": 0,
           "icono": "🌤️"
         },
         {
           "hora": "14:00",
-          "temp": 17,
+          "temp": 19,
           "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
-          "temp": 17,
+          "temp": 20,
           "prob": 11,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 9,
+          "temp": 10,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         }
       ],
-      "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "consejo": "👕 Temperatura ideal (~20°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
       "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.1 mm totales. Temp. media 4 modelos: 18.8ºC. Prob. media: 16%. El 100% de los modelos coincide en un día seco (< 0.5 mm). Día perfecto y seco. Riesgo nulo para las Entradas.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
@@ -567,28 +567,28 @@
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
       "tipus": "santjordi",
-      "temp_max": 21.8,
+      "temp_max": 22,
       "icono": "☀️",
       "prob": 10,
       "litros": 0,
       "horas": [
         {
           "hora": "08:00",
-          "temp": 7,
+          "temp": 10,
           "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 7,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 3,
           "litros": 0,
           "icono": "☀️"
@@ -609,14 +609,14 @@
         },
         {
           "hora": "23:00",
-          "temp": 13,
+          "temp": 14,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "02:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -738,8 +738,8 @@
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 24ºC. S'aproxima inestabilitat. Caldrà seguir l'evolució d'aquest panell dia a dia.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 24ºC. Se aproxima inestabilidad. Habrá que seguir la evolución de este panel día a día."
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 24ºC. Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 24ºC. Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -754,21 +754,21 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-22T10:16:55.093Z",
+  "fecha": "2026-04-22T11:00:57.561Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 1.9,
       "precip_gfs": 1.1,
-      "precip_icon": 7.9,
+      "precip_icon": 2.3,
       "precip_gem": 0.9,
-      "media_precip_mm": 2.95,
+      "media_precip_mm": 1.55,
       "media_temp_c": 16.7,
-      "media_prob_pct": 32,
+      "media_prob_pct": 28,
       "porcentaje_acuerdo_seco": 0,
       "veredicto": "Riesgo moderado para la noche de los Músicos.",
       "tipo_dia": "musics",
-      "prob_sintetica_pct": 32,
-      "media_total_mm": 2.95,
+      "prob_sintetica_pct": 28,
+      "media_total_mm": 1.55,
       "temp_ecmwf_c": 16.2,
       "temp_gfs_c": 17.4,
       "temp_icon_c": 15.8,
