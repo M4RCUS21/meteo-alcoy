@@ -1,6 +1,6 @@
 {
-  "temp": 28.4,
-  "hum": 26,
+  "temp": 28.2,
+  "hum": 24,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042206/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -397,61 +397,61 @@
       "tipus": "musics",
       "temp_max": 16.1,
       "icono": "🌦️",
-      "prob": 31,
+      "prob": 35,
       "litros": 2.8,
       "horas": [
         {
           "hora": "08:00",
           "temp": 13,
-          "prob": 3,
+          "prob": 10,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 15,
-          "prob": 3,
+          "prob": 25,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "14:00",
           "temp": 16,
-          "prob": 20,
-          "litros": 0.4,
-          "icono": "🌤️"
+          "prob": 43,
+          "litros": 0,
+          "icono": "🌦️"
         },
         {
           "hora": "17:00",
           "temp": 15,
-          "prob": 28,
-          "litros": 0,
-          "icono": "🌤️"
+          "prob": 50,
+          "litros": 0.1,
+          "icono": "🌦️"
         },
         {
           "hora": "20:00",
           "temp": 14,
-          "prob": 20,
+          "prob": 33,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         },
         {
           "hora": "23:00",
           "temp": 12,
-          "prob": 10,
+          "prob": 18,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "02:00",
           "temp": 11,
-          "prob": 13,
+          "prob": 15,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~16°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 2.8 mm totales. Temp. media 4 modelos: 16.7ºC. Prob. media: 31%. El 0% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 2.8 mm totales. Temp. media 4 modelos: 16.7ºC. Prob. media: 35%. El 0% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado para la noche de los Músicos.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -465,11 +465,11 @@
         "precip_gem": 0.9,
         "media_precip_mm": 2.75,
         "media_temp_c": 16.7,
-        "media_prob_pct": 31,
+        "media_prob_pct": 35,
         "porcentaje_acuerdo_seco": 0,
         "veredicto": "Riesgo moderado para la noche de los Músicos.",
         "tipo_dia": "musics",
-        "prob_sintetica_pct": 31,
+        "prob_sintetica_pct": 35,
         "media_total_mm": 2.75,
         "temp_ecmwf_c": 15.9,
         "temp_gfs_c": 17.4,
@@ -482,42 +482,42 @@
       "fecha": "2026-04-25",
       "tipus": "entrades",
       "temp_max": 19.8,
-      "icono": "☀️",
-      "prob": 14,
+      "icono": "🌤️",
+      "prob": 17,
       "litros": 3.9,
       "horas": [
         {
           "hora": "08:00",
           "temp": 10,
-          "prob": 18,
+          "prob": 30,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         },
         {
           "hora": "11:00",
           "temp": 15,
-          "prob": 16,
+          "prob": 33,
           "litros": 0,
-          "icono": "🌤️"
+          "icono": "🌦️"
         },
         {
           "hora": "14:00",
           "temp": 19,
-          "prob": 13,
+          "prob": 35,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌦️"
         },
         {
           "hora": "17:00",
           "temp": 20,
-          "prob": 11,
+          "prob": 25,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "20:00",
           "temp": 16,
-          "prob": 10,
+          "prob": 13,
           "litros": 0,
           "icono": "☀️"
         },
@@ -537,7 +537,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~20°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 3.9 mm totales. Temp. media 4 modelos: 19.2ºC. Prob. media: 14%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 3.9 mm totales. Temp. media 4 modelos: 19.2ºC. Prob. media: 17%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo alto de lluvia para el día de las Entradas.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -551,11 +551,11 @@
         "precip_gem": 0,
         "media_precip_mm": 3.93,
         "media_temp_c": 19.2,
-        "media_prob_pct": 14,
+        "media_prob_pct": 17,
         "porcentaje_acuerdo_seco": 75,
         "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
         "tipo_dia": "entrades",
-        "prob_sintetica_pct": 14,
+        "prob_sintetica_pct": 17,
         "media_total_mm": 3.93,
         "temp_ecmwf_c": 16.4,
         "temp_gfs_c": 20.1,
@@ -575,28 +575,28 @@
         {
           "hora": "08:00",
           "temp": 10,
-          "prob": 10,
+          "prob": 8,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 17,
-          "prob": 7,
+          "prob": 15,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "14:00",
           "temp": 22,
-          "prob": 3,
+          "prob": 20,
           "litros": 0,
-          "icono": "☀️"
+          "icono": "🌤️"
         },
         {
           "hora": "17:00",
           "temp": 22,
-          "prob": 1,
+          "prob": 11,
           "litros": 0,
           "icono": "☀️"
         },
@@ -617,7 +617,7 @@
         {
           "hora": "02:00",
           "temp": 12,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         }
@@ -661,42 +661,42 @@
         {
           "hora": "08:00",
           "temp": 11,
-          "prob": 4,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "11:00",
           "temp": 18,
-          "prob": 3,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "14:00",
           "temp": 23,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "17:00",
           "temp": 24,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "20:00",
           "temp": 20,
-          "prob": 3,
+          "prob": 1,
           "litros": 0,
           "icono": "☀️"
         },
         {
           "hora": "23:00",
           "temp": 14,
-          "prob": 3,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️"
         },
@@ -754,7 +754,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-22T15:00:57.646Z",
+  "fecha": "2026-04-22T16:00:58.112Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 7.2,
@@ -763,11 +763,11 @@
       "precip_gem": 0.9,
       "media_precip_mm": 2.75,
       "media_temp_c": 16.7,
-      "media_prob_pct": 31,
+      "media_prob_pct": 35,
       "porcentaje_acuerdo_seco": 0,
       "veredicto": "Riesgo moderado para la noche de los Músicos.",
       "tipo_dia": "musics",
-      "prob_sintetica_pct": 31,
+      "prob_sintetica_pct": 35,
       "media_total_mm": 2.75,
       "temp_ecmwf_c": 15.9,
       "temp_gfs_c": 17.4,
@@ -781,11 +781,11 @@
       "precip_gem": 0,
       "media_precip_mm": 3.93,
       "media_temp_c": 19.2,
-      "media_prob_pct": 14,
+      "media_prob_pct": 17,
       "porcentaje_acuerdo_seco": 75,
       "veredicto": "Riesgo alto de lluvia para el día de las Entradas.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 14,
+      "prob_sintetica_pct": 17,
       "media_total_mm": 3.93,
       "temp_ecmwf_c": 16.4,
       "temp_gfs_c": 20.1,
