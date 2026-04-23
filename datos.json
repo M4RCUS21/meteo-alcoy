@@ -1,6 +1,6 @@
 {
-  "temp": 16,
-  "hum": 74,
+  "temp": 15.3,
+  "hum": 76,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042306/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -277,7 +277,7 @@
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
       "tipus": "vespra",
-      "temp_max": 18.5,
+      "temp_max": 18.7,
       "icono": "☁️",
       "prob": 0,
       "litros": 0,
@@ -372,7 +372,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -380,7 +380,7 @@
         },
         {
           "hora": "12:00",
-          "temp": 17,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -388,15 +388,15 @@
         },
         {
           "hora": "13:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "14:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -404,7 +404,7 @@
         },
         {
           "hora": "15:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -488,10 +488,10 @@
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
       "tipus": "musics",
-      "temp_max": 18.2,
+      "temp_max": 18.5,
       "icono": "🌦️",
       "prob": 70,
-      "litros": 2.9,
+      "litros": 2.7,
       "horas": [
         {
           "hora": "00:00",
@@ -551,7 +551,7 @@
         },
         {
           "hora": "07:00",
-          "temp": 12,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -583,7 +583,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -607,6 +607,14 @@
         },
         {
           "hora": "14:00",
+          "temp": 19,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
+        },
+        {
+          "hora": "15:00",
           "temp": 18,
           "prob": 35,
           "litros": 0.1,
@@ -614,16 +622,8 @@
           "wmo": 51
         },
         {
-          "hora": "15:00",
-          "temp": 17,
-          "prob": 35,
-          "litros": 0.2,
-          "icono": "🌦️",
-          "wmo": 51
-        },
-        {
           "hora": "16:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 35,
           "litros": 0.6,
           "icono": "🌦️",
@@ -631,7 +631,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 14,
+          "temp": 15,
           "prob": 35,
           "litros": 0.9,
           "icono": "🌦️",
@@ -641,15 +641,15 @@
           "hora": "18:00",
           "temp": 14,
           "prob": 35,
-          "litros": 0.6,
+          "litros": 0.7,
           "icono": "🌦️",
           "wmo": 53
         },
         {
           "hora": "19:00",
-          "temp": 14,
+          "temp": 15,
           "prob": 35,
-          "litros": 0.4,
+          "litros": 0.2,
           "icono": "🌦️",
           "wmo": 51
         },
@@ -681,13 +681,13 @@
           "hora": "23:00",
           "temp": 14,
           "prob": 35,
-          "litros": 0.1,
+          "litros": 0.2,
           "icono": "🌦️",
           "wmo": 51
         }
       ],
-      "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Situación inestable con un 70% de probabilidad y precipitaciones que podrían superar los 2.9 mm. Riesgo alto de lluvias continuadas. En cuanto al termómetro, como mucho llegaremos a los 18ºC. Temperatura ideal en Fiestas. 🎺🔴 Riesgo serio de lluvia que podría afectar al Passodoble.",
+      "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Situación inestable con un 70% de probabilidad y precipitaciones que podrían superar los 2.7 mm. Riesgo alto de lluvias continuadas. En cuanto al termómetro, como mucho llegaremos a los 19ºC. Temperatura ideal en Fiestas. 🎺🔴 Riesgo serio de lluvia que podría afectar al Passodoble.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -1401,7 +1401,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-23T13:00:33.649Z",
+  "fecha": "2026-04-23T14:00:36.219Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 5.3,
