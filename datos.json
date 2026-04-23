@@ -1,6 +1,6 @@
 {
-  "temp": 14.9,
-  "hum": 76,
+  "temp": 14.8,
+  "hum": 74,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042306/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -701,7 +701,7 @@
       "tipus": "entrades",
       "temp_max": 19.4,
       "icono": "🌤️",
-      "prob": 16,
+      "prob": 15,
       "litros": 2,
       "horas": [
         {
@@ -715,7 +715,7 @@
         {
           "hora": "01:00",
           "temp": 12,
-          "prob": 33,
+          "prob": 23,
           "litros": 0.1,
           "icono": "🌧️",
           "wmo": 61
@@ -723,7 +723,7 @@
         {
           "hora": "02:00",
           "temp": 12,
-          "prob": 20,
+          "prob": 28,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -731,7 +731,7 @@
         {
           "hora": "03:00",
           "temp": 12,
-          "prob": 18,
+          "prob": 20,
           "litros": 0.1,
           "icono": "🌧️",
           "wmo": 61
@@ -739,7 +739,7 @@
         {
           "hora": "04:00",
           "temp": 12,
-          "prob": 18,
+          "prob": 25,
           "litros": 0.1,
           "icono": "🌧️",
           "wmo": 61
@@ -747,7 +747,7 @@
         {
           "hora": "05:00",
           "temp": 12,
-          "prob": 8,
+          "prob": 28,
           "litros": 0,
           "icono": "🌫️",
           "wmo": 45
@@ -755,7 +755,7 @@
         {
           "hora": "06:00",
           "temp": 12,
-          "prob": 10,
+          "prob": 30,
           "litros": 0,
           "icono": "🌫️",
           "wmo": 45
@@ -771,7 +771,7 @@
         {
           "hora": "08:00",
           "temp": 12,
-          "prob": 20,
+          "prob": 25,
           "litros": 0,
           "icono": "🌫️",
           "wmo": 45
@@ -779,7 +779,7 @@
         {
           "hora": "09:00",
           "temp": 13,
-          "prob": 21,
+          "prob": 25,
           "litros": 0,
           "icono": "🌫️",
           "wmo": 45
@@ -787,7 +787,7 @@
         {
           "hora": "10:00",
           "temp": 14,
-          "prob": 21,
+          "prob": 20,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -795,7 +795,7 @@
         {
           "hora": "11:00",
           "temp": 15,
-          "prob": 20,
+          "prob": 25,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -803,7 +803,7 @@
         {
           "hora": "12:00",
           "temp": 17,
-          "prob": 20,
+          "prob": 25,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -811,7 +811,7 @@
         {
           "hora": "13:00",
           "temp": 18,
-          "prob": 19,
+          "prob": 25,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -819,7 +819,7 @@
         {
           "hora": "14:00",
           "temp": 19,
-          "prob": 18,
+          "prob": 25,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -827,7 +827,7 @@
         {
           "hora": "15:00",
           "temp": 19,
-          "prob": 17,
+          "prob": 23,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -835,7 +835,7 @@
         {
           "hora": "16:00",
           "temp": 19,
-          "prob": 15,
+          "prob": 19,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -843,7 +843,7 @@
         {
           "hora": "17:00",
           "temp": 18,
-          "prob": 13,
+          "prob": 15,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -859,7 +859,7 @@
         {
           "hora": "19:00",
           "temp": 17,
-          "prob": 7,
+          "prob": 4,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -867,7 +867,7 @@
         {
           "hora": "20:00",
           "temp": 16,
-          "prob": 5,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -875,7 +875,7 @@
         {
           "hora": "21:00",
           "temp": 14,
-          "prob": 4,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -883,7 +883,7 @@
         {
           "hora": "22:00",
           "temp": 13,
-          "prob": 5,
+          "prob": 1,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -891,14 +891,14 @@
         {
           "hora": "23:00",
           "temp": 12,
-          "prob": 5,
+          "prob": 3,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
         }
       ],
       "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 2.0 mm totales. Temp. media 4 modelos: 18.3ºC. Prob. media: 16%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado de lluvia. Tened los plásticos a mano.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 2.0 mm totales. Temp. media 4 modelos: 18.3ºC. Prob. media: 15%. El 75% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -912,11 +912,11 @@
         "precip_gem": 0,
         "media_precip_mm": 2.03,
         "media_temp_c": 18.3,
-        "media_prob_pct": 16,
+        "media_prob_pct": 15,
         "porcentaje_acuerdo_seco": 75,
         "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
         "tipo_dia": "entrades",
-        "prob_sintetica_pct": 16,
+        "prob_sintetica_pct": 15,
         "media_total_mm": 2.03,
         "temp_ecmwf_c": 16.6,
         "temp_gfs_c": 16.3,
@@ -930,7 +930,7 @@
       "tipus": "santjordi",
       "temp_max": 22.4,
       "icono": "☀️",
-      "prob": 6,
+      "prob": 5,
       "litros": 0,
       "horas": [
         {
@@ -952,7 +952,7 @@
         {
           "hora": "02:00",
           "temp": 10,
-          "prob": 3,
+          "prob": 5,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -960,7 +960,7 @@
         {
           "hora": "03:00",
           "temp": 10,
-          "prob": 3,
+          "prob": 6,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -968,7 +968,7 @@
         {
           "hora": "04:00",
           "temp": 10,
-          "prob": 3,
+          "prob": 8,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -976,7 +976,7 @@
         {
           "hora": "05:00",
           "temp": 9,
-          "prob": 3,
+          "prob": 8,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -984,7 +984,7 @@
         {
           "hora": "06:00",
           "temp": 9,
-          "prob": 3,
+          "prob": 7,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -992,7 +992,7 @@
         {
           "hora": "07:00",
           "temp": 8,
-          "prob": 3,
+          "prob": 4,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -1008,7 +1008,7 @@
         {
           "hora": "09:00",
           "temp": 11,
-          "prob": 3,
+          "prob": 4,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -1016,7 +1016,7 @@
         {
           "hora": "10:00",
           "temp": 14,
-          "prob": 2,
+          "prob": 7,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1024,7 +1024,7 @@
         {
           "hora": "11:00",
           "temp": 17,
-          "prob": 2,
+          "prob": 8,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1032,7 +1032,7 @@
         {
           "hora": "12:00",
           "temp": 19,
-          "prob": 1,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1040,7 +1040,7 @@
         {
           "hora": "13:00",
           "temp": 20,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1048,7 +1048,7 @@
         {
           "hora": "14:00",
           "temp": 22,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1056,7 +1056,7 @@
         {
           "hora": "15:00",
           "temp": 22,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -1064,7 +1064,7 @@
         {
           "hora": "16:00",
           "temp": 22,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -1072,7 +1072,7 @@
         {
           "hora": "17:00",
           "temp": 22,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -1080,7 +1080,7 @@
         {
           "hora": "18:00",
           "temp": 22,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1088,7 +1088,7 @@
         {
           "hora": "19:00",
           "temp": 21,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1096,7 +1096,7 @@
         {
           "hora": "20:00",
           "temp": 19,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1104,7 +1104,7 @@
         {
           "hora": "21:00",
           "temp": 17,
-          "prob": 0,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1112,7 +1112,7 @@
         {
           "hora": "22:00",
           "temp": 15,
-          "prob": 0,
+          "prob": 4,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1120,14 +1120,14 @@
         {
           "hora": "23:00",
           "temp": 13,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
         }
       ],
       "consejo": "👕 Temperatura ideal (~22°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 21.4ºC. Prob. media: 6%. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 21.4ºC. Prob. media: 5%. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -1141,11 +1141,11 @@
         "precip_gem": 0,
         "media_precip_mm": 0,
         "media_temp_c": 21.4,
-        "media_prob_pct": 6,
+        "media_prob_pct": 5,
         "porcentaje_acuerdo_seco": 100,
         "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
         "tipo_dia": "santjordi",
-        "prob_sintetica_pct": 6,
+        "prob_sintetica_pct": 5,
         "media_total_mm": 0,
         "temp_ecmwf_c": 18.7,
         "temp_gfs_c": 21.6,
@@ -1165,7 +1165,7 @@
         {
           "hora": "00:00",
           "temp": 12,
-          "prob": 0,
+          "prob": 1,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1173,7 +1173,7 @@
         {
           "hora": "01:00",
           "temp": 12,
-          "prob": 0,
+          "prob": 1,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1245,7 +1245,7 @@
         {
           "hora": "10:00",
           "temp": 15,
-          "prob": 0,
+          "prob": 1,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1253,7 +1253,7 @@
         {
           "hora": "11:00",
           "temp": 17,
-          "prob": 0,
+          "prob": 2,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1261,7 +1261,7 @@
         {
           "hora": "12:00",
           "temp": 19,
-          "prob": 0,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1269,7 +1269,7 @@
         {
           "hora": "13:00",
           "temp": 21,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1277,7 +1277,7 @@
         {
           "hora": "14:00",
           "temp": 22,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1285,7 +1285,7 @@
         {
           "hora": "15:00",
           "temp": 23,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1293,7 +1293,7 @@
         {
           "hora": "16:00",
           "temp": 24,
-          "prob": 0,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1301,7 +1301,7 @@
         {
           "hora": "17:00",
           "temp": 23,
-          "prob": 0,
+          "prob": 2,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1309,7 +1309,7 @@
         {
           "hora": "18:00",
           "temp": 23,
-          "prob": 0,
+          "prob": 1,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1401,7 +1401,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-23T15:00:34.072Z",
+  "fecha": "2026-04-23T16:00:35.062Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 5.3,
@@ -1410,11 +1410,11 @@
       "precip_gem": 1.5,
       "media_precip_mm": 2.9,
       "media_temp_c": 17.1,
-      "media_prob_pct": 34,
+      "media_prob_pct": 35,
       "porcentaje_acuerdo_seco": 0,
       "veredicto": "Riesgo moderado para la noche de los Músicos.",
       "tipo_dia": "musics",
-      "prob_sintetica_pct": 34,
+      "prob_sintetica_pct": 35,
       "media_total_mm": 2.9,
       "temp_ecmwf_c": 15.3,
       "temp_gfs_c": 18.5,
@@ -1428,11 +1428,11 @@
       "precip_gem": 0,
       "media_precip_mm": 2.03,
       "media_temp_c": 18.3,
-      "media_prob_pct": 16,
+      "media_prob_pct": 15,
       "porcentaje_acuerdo_seco": 75,
       "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 16,
+      "prob_sintetica_pct": 15,
       "media_total_mm": 2.03,
       "temp_ecmwf_c": 16.6,
       "temp_gfs_c": 16.3,
@@ -1446,11 +1446,11 @@
       "precip_gem": 0,
       "media_precip_mm": 0,
       "media_temp_c": 21.4,
-      "media_prob_pct": 6,
+      "media_prob_pct": 5,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "tipo_dia": "santjordi",
-      "prob_sintetica_pct": 6,
+      "prob_sintetica_pct": 5,
       "media_total_mm": 0,
       "temp_ecmwf_c": 18.7,
       "temp_gfs_c": 21.6,
