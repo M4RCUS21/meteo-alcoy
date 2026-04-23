@@ -1,7 +1,7 @@
 {
-  "temp": 11.6,
+  "temp": 11.7,
   "hum": 90,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042312/graphe3_1000___-0.472_38.696_.gif",
+  "mapa_url": "N/D",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -508,8 +508,8 @@
       "tipus": "entrades",
       "temp_max": 18.7,
       "icono": "☀️",
-      "prob": 14,
-      "litros": 2.5,
+      "prob": 9,
+      "litros": 2.2,
       "horas": [
         {
           "hora": "00:00",
@@ -705,7 +705,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 2.5 mm totales. Temp. media 4 modelos: 17.2ºC. Prob. media: 14%. El 0% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado de lluvia. Tened los plásticos a mano.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 2.2 mm totales. Temp. media 4 modelos: 17.6ºC. Prob. media: 9%. El 25% de los modelos coincide en un día seco (< 0.5 mm). Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -715,19 +715,19 @@
       "super_ensemble_datos": {
         "precip_ecmwf": 2,
         "precip_gfs": 4.5,
-        "precip_icon": 0.9,
+        "precip_icon": 0,
         "precip_gem": 2.4,
-        "media_precip_mm": 2.45,
-        "media_temp_c": 17.2,
-        "media_prob_pct": 14,
-        "porcentaje_acuerdo_seco": 0,
+        "media_precip_mm": 2.23,
+        "media_temp_c": 17.6,
+        "media_prob_pct": 9,
+        "porcentaje_acuerdo_seco": 25,
         "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
         "tipo_dia": "entrades",
-        "prob_sintetica_pct": 14,
-        "media_total_mm": 2.45,
+        "prob_sintetica_pct": 9,
+        "media_total_mm": 2.23,
         "temp_ecmwf_c": 16,
         "temp_gfs_c": 15.9,
-        "temp_icon_c": 17.3,
+        "temp_icon_c": 19,
         "temp_gem_c": 19.5
       }
     },
@@ -934,7 +934,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~23°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 21.0ºC. Prob. media: 4%. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 21.2ºC. Prob. media: 4%. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -947,7 +947,7 @@
         "precip_icon": 0,
         "precip_gem": 0,
         "media_precip_mm": 0,
-        "media_temp_c": 21,
+        "media_temp_c": 21.2,
         "media_prob_pct": 4,
         "porcentaje_acuerdo_seco": 100,
         "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
@@ -956,7 +956,7 @@
         "media_total_mm": 0,
         "temp_ecmwf_c": 19.1,
         "temp_gfs_c": 20.5,
-        "temp_icon_c": 22,
+        "temp_icon_c": 22.8,
         "temp_gem_c": 22.4
       }
     },
@@ -1163,7 +1163,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~24°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 22.2ºC. Prob. media: 2%. El 100% de los modelos coincide en un día seco (< 0.5 mm). Alardo perfecto. Pólvora seca garantizada.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 22.4ºC. Prob. media: 2%. El 100% de los modelos coincide en un día seco (< 0.5 mm). Alardo perfecto. Pólvora seca garantizada.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -1176,7 +1176,7 @@
         "precip_icon": 0,
         "precip_gem": 0,
         "media_precip_mm": 0,
-        "media_temp_c": 22.2,
+        "media_temp_c": 22.4,
         "media_prob_pct": 2,
         "porcentaje_acuerdo_seco": 100,
         "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
@@ -1185,7 +1185,7 @@
         "media_total_mm": 0,
         "temp_ecmwf_c": 20.4,
         "temp_gfs_c": 21.4,
-        "temp_icon_c": 23.5,
+        "temp_icon_c": 24.2,
         "temp_gem_c": 23.4
       }
     }
@@ -1203,47 +1203,47 @@
   "estado": {
     "temp_ok": true,
     "hum_ok": true,
-    "mapa_ok": true,
+    "mapa_ok": false,
     "ecmwf_ok": true,
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-23T22:00:34.149Z",
+  "fecha": "2026-04-23T23:00:32.560Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 6.9,
       "precip_gfs": 2.2,
-      "precip_icon": 1.5,
+      "precip_icon": 2.2,
       "precip_gem": 5.1,
-      "media_precip_mm": 3.93,
+      "media_precip_mm": 4.1,
       "media_temp_c": 17.5,
-      "media_prob_pct": 36,
+      "media_prob_pct": 41,
       "porcentaje_acuerdo_seco": 0,
       "veredicto": "Alto riesgo de lluvia para el Día de los Músicos.",
       "tipo_dia": "musics",
-      "prob_sintetica_pct": 36,
-      "media_total_mm": 3.93,
+      "prob_sintetica_pct": 41,
+      "media_total_mm": 4.1,
       "temp_ecmwf_c": 16.5,
       "temp_gfs_c": 17.4,
-      "temp_icon_c": 17.4,
+      "temp_icon_c": 17.5,
       "temp_gem_c": 18.5
     },
     "2026-04-25": {
       "precip_ecmwf": 2,
       "precip_gfs": 4.5,
-      "precip_icon": 0.9,
+      "precip_icon": 0,
       "precip_gem": 2.4,
-      "media_precip_mm": 2.45,
-      "media_temp_c": 17.2,
-      "media_prob_pct": 14,
-      "porcentaje_acuerdo_seco": 0,
+      "media_precip_mm": 2.23,
+      "media_temp_c": 17.6,
+      "media_prob_pct": 9,
+      "porcentaje_acuerdo_seco": 25,
       "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 14,
-      "media_total_mm": 2.45,
+      "prob_sintetica_pct": 9,
+      "media_total_mm": 2.23,
       "temp_ecmwf_c": 16,
       "temp_gfs_c": 15.9,
-      "temp_icon_c": 17.3,
+      "temp_icon_c": 19,
       "temp_gem_c": 19.5
     },
     "2026-04-26": {
@@ -1252,7 +1252,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 21,
+      "media_temp_c": 21.2,
       "media_prob_pct": 4,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
@@ -1261,7 +1261,7 @@
       "media_total_mm": 0,
       "temp_ecmwf_c": 19.1,
       "temp_gfs_c": 20.5,
-      "temp_icon_c": 22,
+      "temp_icon_c": 22.8,
       "temp_gem_c": 22.4
     },
     "2026-04-27": {
@@ -1270,7 +1270,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 22.2,
+      "media_temp_c": 22.4,
       "media_prob_pct": 2,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
@@ -1279,7 +1279,7 @@
       "media_total_mm": 0,
       "temp_ecmwf_c": 20.4,
       "temp_gfs_c": 21.4,
-      "temp_icon_c": 23.5,
+      "temp_icon_c": 24.2,
       "temp_gem_c": 23.4
     }
   }
