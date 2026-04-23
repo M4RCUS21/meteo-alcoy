@@ -1,5 +1,5 @@
 {
-  "temp": 13.7,
+  "temp": 14,
   "hum": 87,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
@@ -277,7 +277,7 @@
       "dia": "Dijous 23 · Día de la Víspera / Preparativos",
       "fecha": "2026-04-23",
       "tipus": "vespra",
-      "temp_max": 19.6,
+      "temp_max": 19.2,
       "icono": "☀️",
       "prob": 0,
       "litros": 0,
@@ -332,8 +332,8 @@
           "icono": "☀️"
         }
       ],
-      "consejo": "👕 Temperatura ideal (~20°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 20ºC. Temperatura ideal en Fiestas.",
+      "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 19ºC. Temperatura ideal en Fiestas.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -346,9 +346,9 @@
       "fecha": "2026-04-24",
       "tipus": "musics",
       "temp_max": 18.2,
-      "icono": "🌧️",
-      "prob": 70,
-      "litros": 1,
+      "icono": "🌦️",
+      "prob": 35,
+      "litros": 0.1,
       "horas": [
         {
           "hora": "08:00",
@@ -380,7 +380,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
@@ -394,14 +394,14 @@
         },
         {
           "hora": "02:00",
-          "temp": "N/D",
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️"
         }
       ],
       "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Situación inestable con un 70% de probabilidad y precipitaciones que podrían superar los 1.0 mm. Riesgo alto de lluvias continuadas. En cuanto al termómetro, como mucho llegaremos a los 18ºC. Temperatura ideal en Fiestas. 🎺🔴 Riesgo serio de lluvia que podría afectar al Passodoble.",
+      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.1 mm. Esto significa que hay opciones de que caiga algo, pero 0.1 mm es poquísima cantidad. En cuanto al termómetro, como mucho llegaremos a los 18ºC. Temperatura ideal en Fiestas. 🎺🟡 Alguna nube, pero la noche de los músicos se podrá disfrutar sin problemas.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -670,8 +670,8 @@
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 20ºC. S'aproxima inestabilitat. Caldrà seguir l'evolució d'aquest panell dia a dia.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 20ºC. Se aproxima inestabilidad. Habrá que seguir la evolución de este panel día a día."
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 20ºC. Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 20ºC. Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -686,7 +686,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-23T01:00:56.423Z",
+  "fecha": "2026-04-23T02:01:00.202Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 8.5,
