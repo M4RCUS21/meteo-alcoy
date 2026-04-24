@@ -1,6 +1,6 @@
 {
-  "temp": 15.9,
-  "hum": 69,
+  "temp": 14.4,
+  "hum": 79,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042406/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -725,7 +725,7 @@
         {
           "hora": "00:00",
           "temp": 12,
-          "prob": 10,
+          "prob": 3,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -733,7 +733,7 @@
         {
           "hora": "01:00",
           "temp": 11,
-          "prob": 5,
+          "prob": 0,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -741,7 +741,7 @@
         {
           "hora": "02:00",
           "temp": 11,
-          "prob": 5,
+          "prob": 3,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -749,7 +749,7 @@
         {
           "hora": "03:00",
           "temp": 10,
-          "prob": 3,
+          "prob": 5,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -757,7 +757,7 @@
         {
           "hora": "04:00",
           "temp": 9,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -765,7 +765,7 @@
         {
           "hora": "05:00",
           "temp": 9,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -781,7 +781,7 @@
         {
           "hora": "07:00",
           "temp": 8,
-          "prob": 5,
+          "prob": 3,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -797,7 +797,7 @@
         {
           "hora": "09:00",
           "temp": 10,
-          "prob": 2,
+          "prob": 3,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -805,7 +805,7 @@
         {
           "hora": "10:00",
           "temp": 13,
-          "prob": 1,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -813,7 +813,7 @@
         {
           "hora": "11:00",
           "temp": 14,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -821,7 +821,7 @@
         {
           "hora": "12:00",
           "temp": 16,
-          "prob": 0,
+          "prob": 5,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -829,7 +829,7 @@
         {
           "hora": "13:00",
           "temp": 18,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -837,7 +837,7 @@
         {
           "hora": "14:00",
           "temp": 19,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -845,7 +845,7 @@
         {
           "hora": "15:00",
           "temp": 20,
-          "prob": 5,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -853,7 +853,7 @@
         {
           "hora": "16:00",
           "temp": 20,
-          "prob": 7,
+          "prob": 2,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
@@ -861,7 +861,7 @@
         {
           "hora": "17:00",
           "temp": 19,
-          "prob": 8,
+          "prob": 3,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -869,7 +869,7 @@
         {
           "hora": "18:00",
           "temp": 19,
-          "prob": 7,
+          "prob": 4,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -885,7 +885,7 @@
         {
           "hora": "20:00",
           "temp": 17,
-          "prob": 3,
+          "prob": 5,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -893,7 +893,7 @@
         {
           "hora": "21:00",
           "temp": 16,
-          "prob": 2,
+          "prob": 5,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -901,7 +901,7 @@
         {
           "hora": "22:00",
           "temp": 14,
-          "prob": 1,
+          "prob": 4,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -909,7 +909,7 @@
         {
           "hora": "23:00",
           "temp": 13,
-          "prob": 0,
+          "prob": 3,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -954,7 +954,7 @@
         {
           "hora": "00:00",
           "temp": 12,
-          "prob": 0,
+          "prob": 2,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -962,7 +962,7 @@
         {
           "hora": "01:00",
           "temp": 12,
-          "prob": 0,
+          "prob": 1,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -1034,7 +1034,7 @@
         {
           "hora": "10:00",
           "temp": 15,
-          "prob": 1,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -1042,7 +1042,7 @@
         {
           "hora": "11:00",
           "temp": 17,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -1050,7 +1050,7 @@
         {
           "hora": "12:00",
           "temp": 18,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -1058,7 +1058,7 @@
         {
           "hora": "13:00",
           "temp": 19,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
@@ -1066,7 +1066,7 @@
         {
           "hora": "14:00",
           "temp": 20,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1074,7 +1074,7 @@
         {
           "hora": "15:00",
           "temp": 21,
-          "prob": 3,
+          "prob": 0,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1082,7 +1082,7 @@
         {
           "hora": "16:00",
           "temp": 21,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1090,7 +1090,7 @@
         {
           "hora": "17:00",
           "temp": 21,
-          "prob": 2,
+          "prob": 0,
           "litros": 0,
           "icono": "🌤️",
           "wmo": 1
@@ -1098,7 +1098,7 @@
         {
           "hora": "18:00",
           "temp": 21,
-          "prob": 1,
+          "prob": 0,
           "litros": 0,
           "icono": "☀️",
           "wmo": 0
@@ -1190,21 +1190,21 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-24T15:00:34.730Z",
+  "fecha": "2026-04-24T16:00:35.457Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 4.9,
       "precip_gfs": 4.8,
-      "precip_icon": 2.7,
+      "precip_icon": 2.4,
       "precip_gem": 1.2,
-      "media_precip_mm": 3.4,
+      "media_precip_mm": 3.33,
       "media_temp_c": 17.9,
-      "media_prob_pct": 37,
+      "media_prob_pct": 36,
       "porcentaje_acuerdo_seco": 0,
       "veredicto": "Alto riesgo de lluvia para el Día de los Músicos.",
       "tipo_dia": "musics",
-      "prob_sintetica_pct": 37,
-      "media_total_mm": 3.4,
+      "prob_sintetica_pct": 36,
+      "media_total_mm": 3.33,
       "temp_ecmwf_c": 16.1,
       "temp_gfs_c": 17.9,
       "temp_icon_c": 17.4,
@@ -1213,16 +1213,16 @@
     "2026-04-25": {
       "precip_ecmwf": 0.8,
       "precip_gfs": 1.4,
-      "precip_icon": 0.3,
+      "precip_icon": 0.1,
       "precip_gem": 0,
-      "media_precip_mm": 0.63,
+      "media_precip_mm": 0.58,
       "media_temp_c": 19.1,
-      "media_prob_pct": 13,
+      "media_prob_pct": 12,
       "porcentaje_acuerdo_seco": 50,
       "veredicto": "Riesgo de lluvia muy débil. Estad atentos.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 13,
-      "media_total_mm": 0.63,
+      "prob_sintetica_pct": 12,
+      "media_total_mm": 0.58,
       "temp_ecmwf_c": 18,
       "temp_gfs_c": 19.9,
       "temp_icon_c": 18.4,
