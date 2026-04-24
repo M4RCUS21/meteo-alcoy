@@ -1,6 +1,6 @@
 {
-  "temp": 11.2,
-  "hum": 93,
+  "temp": 11.1,
+  "hum": 94,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -295,10 +295,10 @@
       "dia": "Divendres 24 · Día de los Músicos",
       "fecha": "2026-04-24",
       "tipus": "musics",
-      "temp_max": 16.3,
+      "temp_max": 16.4,
       "icono": "🌦️",
-      "prob": 35,
-      "litros": 0.7,
+      "prob": 70,
+      "litros": 2.2,
       "horas": [
         {
           "hora": "00:00",
@@ -407,53 +407,13 @@
         {
           "hora": "13:00",
           "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
+          "prob": 35,
+          "litros": 0.1,
+          "icono": "🌦️",
+          "wmo": 51
         },
         {
           "hora": "14:00",
-          "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "15:00",
-          "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "16:00",
-          "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "17:00",
-          "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "18:00",
-          "temp": 16,
-          "prob": 35,
-          "litros": 0.5,
-          "icono": "🌦️",
-          "wmo": 53
-        },
-        {
-          "hora": "19:00",
           "temp": 16,
           "prob": 35,
           "litros": 0.1,
@@ -461,8 +421,48 @@
           "wmo": 51
         },
         {
-          "hora": "20:00",
+          "hora": "15:00",
           "temp": 16,
+          "prob": 35,
+          "litros": 0.3,
+          "icono": "🌦️",
+          "wmo": 51
+        },
+        {
+          "hora": "16:00",
+          "temp": 16,
+          "prob": 35,
+          "litros": 0.9,
+          "icono": "🌦️",
+          "wmo": 53
+        },
+        {
+          "hora": "17:00",
+          "temp": 16,
+          "prob": 35,
+          "litros": 0.6,
+          "icono": "🌦️",
+          "wmo": 53
+        },
+        {
+          "hora": "18:00",
+          "temp": 16,
+          "prob": 35,
+          "litros": 0.2,
+          "icono": "🌦️",
+          "wmo": 51
+        },
+        {
+          "hora": "19:00",
+          "temp": 15,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
+        },
+        {
+          "hora": "20:00",
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -470,7 +470,7 @@
         },
         {
           "hora": "21:00",
-          "temp": 15,
+          "temp": 14,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -478,11 +478,11 @@
         },
         {
           "hora": "22:00",
-          "temp": 15,
-          "prob": 35,
-          "litros": 0.1,
-          "icono": "🌦️",
-          "wmo": 51
+          "temp": 14,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "23:00",
@@ -494,7 +494,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~16°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.7 mm. Esto significa que hay opciones de que caiga algo, pero 0.7 mm es poquísima cantidad. Será un día bastante fresco, con máximas de solo 16ºC. 🎺🟡 Alguna nube, pero la noche de los músicos se podrá disfrutar sin problemas.",
+      "analisis_tecnico": "Situación inestable con un 70% de probabilidad y precipitaciones que podrían superar los 2.2 mm. Riesgo alto de lluvias continuadas. Será un día bastante fresco, con máximas de solo 16ºC. 🎺🔴 Riesgo serio de lluvia que podría afectar al Passodoble.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -506,10 +506,10 @@
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
       "tipus": "entrades",
-      "temp_max": 18.7,
+      "temp_max": 19.8,
       "icono": "🌦️",
-      "prob": 35,
-      "litros": 0.5,
+      "prob": 70,
+      "litros": 1.1,
       "horas": [
         {
           "hora": "00:00",
@@ -521,7 +521,7 @@
         },
         {
           "hora": "01:00",
-          "temp": 13,
+          "temp": 14,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -530,34 +530,34 @@
         {
           "hora": "02:00",
           "temp": 13,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "03:00",
-          "temp": 13,
           "prob": 35,
-          "litros": 0.1,
+          "litros": 0.4,
           "icono": "🌦️",
           "wmo": 51
         },
         {
-          "hora": "04:00",
-          "temp": 12,
+          "hora": "03:00",
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
           "wmo": 3
         },
         {
+          "hora": "04:00",
+          "temp": 13,
+          "prob": 35,
+          "litros": 0.2,
+          "icono": "🌦️",
+          "wmo": 51
+        },
+        {
           "hora": "05:00",
           "temp": 12,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
+          "prob": 35,
+          "litros": 0.5,
+          "icono": "🌦️",
+          "wmo": 53
         },
         {
           "hora": "06:00",
@@ -570,10 +570,10 @@
         {
           "hora": "07:00",
           "temp": 12,
-          "prob": 35,
-          "litros": 0.3,
-          "icono": "🌦️",
-          "wmo": 51
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "08:00",
@@ -586,14 +586,14 @@
         {
           "hora": "09:00",
           "temp": 13,
-          "prob": 35,
-          "litros": 0.1,
-          "icono": "🌦️",
-          "wmo": 51
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "10:00",
-          "temp": 13,
+          "temp": 14,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -609,7 +609,7 @@
         },
         {
           "hora": "12:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -617,7 +617,7 @@
         },
         {
           "hora": "13:00",
-          "temp": 15,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -625,22 +625,6 @@
         },
         {
           "hora": "14:00",
-          "temp": 17,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "15:00",
-          "temp": 17,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "16:00",
           "temp": 18,
           "prob": 0,
           "litros": 0,
@@ -648,8 +632,24 @@
           "wmo": 3
         },
         {
-          "hora": "17:00",
+          "hora": "15:00",
           "temp": 19,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
+        },
+        {
+          "hora": "16:00",
+          "temp": 20,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
+        },
+        {
+          "hora": "17:00",
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -660,12 +660,12 @@
           "temp": 19,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "19:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "🌤️",
@@ -673,27 +673,27 @@
         },
         {
           "hora": "20:00",
-          "temp": 17,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
-        },
-        {
-          "hora": "21:00",
-          "temp": 16,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "⛅",
           "wmo": 2
         },
         {
+          "hora": "21:00",
+          "temp": 16,
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
+        },
+        {
           "hora": "22:00",
           "temp": 15,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "23:00",
@@ -704,8 +704,8 @@
           "wmo": 3
         }
       ],
-      "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.5 mm. Esto significa que hay opciones de que caiga algo, pero 0.5 mm es poquísima cantidad. En cuanto al termómetro, como mucho llegaremos a los 19ºC. Temperatura ideal en Fiestas. 🟡 Habrá nubes y ratos de sol. Ningún riesgo real para los trajes ni los boatos.",
+      "consejo": "👕 Temperatura ideal (~20°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Situación inestable con un 70% de probabilidad y precipitaciones que podrían superar los 1.1 mm. Riesgo alto de lluvias continuadas. En cuanto al termómetro, como mucho llegaremos a los 20ºC. Temperatura ideal en Fiestas. 🔴 Peligro serio de lluvia continua. Situación muy comprometida para los boatos de seda y metal.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -1174,8 +1174,8 @@
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 24ºC. Tot i que algun model marca un poc d'inestabilitat, si arribara a caure alguna gota seria molt escassa.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 24ºC. Aunque algún modelo marca algo de inestabilidad, si llegara a caer alguna gota sería muy escasa."
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 24ºC. S'aproxima inestabilitat. Caldrà seguir l'evolució d'aquest panell dia a dia.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 24ºC. Se aproxima inestabilidad. Habrá que seguir la evolución de este panel día a día."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -1190,7 +1190,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-24T02:00:33.459Z",
+  "fecha": "2026-04-24T03:00:34.221Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 4.9,
