@@ -1,6 +1,6 @@
 {
-  "temp": 11.7,
-  "hum": 90,
+  "temp": 11.3,
+  "hum": 92,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -936,7 +936,7 @@
         "tipo_dia": "santjordi",
         "prob_sintetica_pct": 4,
         "media_total_mm": 0,
-        "temp_ecmwf_c": 19.1,
+        "temp_ecmwf_c": 18.9,
         "temp_gfs_c": 20.2,
         "temp_icon_c": 22.8,
         "temp_gem_c": 22.4
@@ -1190,7 +1190,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-24T00:00:35.717Z",
+  "fecha": "2026-04-24T01:00:33.321Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 4.9,
@@ -1198,14 +1198,14 @@
       "precip_icon": 2.2,
       "precip_gem": 5.1,
       "media_precip_mm": 3.4,
-      "media_temp_c": 17.7,
-      "media_prob_pct": 41,
+      "media_temp_c": 17.5,
+      "media_prob_pct": 37,
       "porcentaje_acuerdo_seco": 0,
       "veredicto": "Alto riesgo de lluvia para el Día de los Músicos.",
       "tipo_dia": "musics",
-      "prob_sintetica_pct": 41,
+      "prob_sintetica_pct": 37,
       "media_total_mm": 3.4,
-      "temp_ecmwf_c": 16.5,
+      "temp_ecmwf_c": 16,
       "temp_gfs_c": 18.1,
       "temp_icon_c": 17.5,
       "temp_gem_c": 18.5
@@ -1216,14 +1216,14 @@
       "precip_icon": 0,
       "precip_gem": 2.4,
       "media_precip_mm": 1.13,
-      "media_temp_c": 18.5,
+      "media_temp_c": 18.4,
       "media_prob_pct": 9,
       "porcentaje_acuerdo_seco": 25,
       "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
       "prob_sintetica_pct": 9,
       "media_total_mm": 1.13,
-      "temp_ecmwf_c": 16,
+      "temp_ecmwf_c": 15.9,
       "temp_gfs_c": 19.3,
       "temp_icon_c": 19,
       "temp_gem_c": 19.5
@@ -1241,7 +1241,7 @@
       "tipo_dia": "santjordi",
       "prob_sintetica_pct": 4,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.1,
+      "temp_ecmwf_c": 18.9,
       "temp_gfs_c": 20.2,
       "temp_icon_c": 22.8,
       "temp_gem_c": 22.4
