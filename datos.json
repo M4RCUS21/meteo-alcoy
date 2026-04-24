@@ -1,7 +1,7 @@
 {
-  "temp": 13.7,
-  "hum": 78,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042406/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 13.4,
+  "hum": 76,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042412/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -719,7 +719,7 @@
       "tipus": "santjordi",
       "temp_max": 22.3,
       "icono": "☀️",
-      "prob": 4,
+      "prob": 3,
       "litros": 0,
       "horas": [
         {
@@ -916,7 +916,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~22°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 21.5ºC. Prob. media: 4%. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 21.5ºC. Prob. media: 3%. El 100% de los modelos coincide en un día seco (< 0.5 mm). San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -930,16 +930,16 @@
         "precip_gem": 0,
         "media_precip_mm": 0,
         "media_temp_c": 21.5,
-        "media_prob_pct": 4,
+        "media_prob_pct": 3,
         "porcentaje_acuerdo_seco": 100,
         "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
         "tipo_dia": "santjordi",
-        "prob_sintetica_pct": 4,
+        "prob_sintetica_pct": 3,
         "media_total_mm": 0,
         "temp_ecmwf_c": 19.2,
-        "temp_gfs_c": 20.4,
+        "temp_gfs_c": 21.9,
         "temp_icon_c": 22.6,
-        "temp_gem_c": 23.6
+        "temp_gem_c": 22.2
       }
     },
     {
@@ -1166,9 +1166,9 @@
         "prob_sintetica_pct": 2,
         "media_total_mm": 0,
         "temp_ecmwf_c": 20.2,
-        "temp_gfs_c": 21.6,
+        "temp_gfs_c": 22,
         "temp_icon_c": 23.4,
-        "temp_gem_c": 24
+        "temp_gem_c": 23.5
       }
     }
   ],
@@ -1190,43 +1190,43 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-24T17:00:34.228Z",
+  "fecha": "2026-04-24T18:00:34.284Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 4.9,
-      "precip_gfs": 4.8,
+      "precip_gfs": 2.9,
       "precip_icon": 2.4,
-      "precip_gem": 1.2,
-      "media_precip_mm": 3.33,
-      "media_temp_c": 17.9,
+      "precip_gem": 0.6,
+      "media_precip_mm": 2.7,
+      "media_temp_c": 17.5,
       "media_prob_pct": 36,
       "porcentaje_acuerdo_seco": 0,
-      "veredicto": "Alto riesgo de lluvia para el Día de los Músicos.",
+      "veredicto": "Riesgo moderado para la noche de los Músicos.",
       "tipo_dia": "musics",
       "prob_sintetica_pct": 36,
-      "media_total_mm": 3.33,
+      "media_total_mm": 2.7,
       "temp_ecmwf_c": 16.1,
-      "temp_gfs_c": 17.9,
+      "temp_gfs_c": 17,
       "temp_icon_c": 17.3,
-      "temp_gem_c": 20.3
+      "temp_gem_c": 19.5
     },
     "2026-04-25": {
       "precip_ecmwf": 0.8,
-      "precip_gfs": 1.4,
+      "precip_gfs": 0.9,
       "precip_icon": 0.1,
       "precip_gem": 0,
-      "media_precip_mm": 0.58,
+      "media_precip_mm": 0.45,
       "media_temp_c": 19.4,
-      "media_prob_pct": 12,
+      "media_prob_pct": 13,
       "porcentaje_acuerdo_seco": 50,
       "veredicto": "Riesgo de lluvia muy débil. Estad atentos.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 12,
-      "media_total_mm": 0.58,
+      "prob_sintetica_pct": 13,
+      "media_total_mm": 0.45,
       "temp_ecmwf_c": 18,
-      "temp_gfs_c": 19.9,
+      "temp_gfs_c": 20.2,
       "temp_icon_c": 19.5,
-      "temp_gem_c": 20.1
+      "temp_gem_c": 20
     },
     "2026-04-26": {
       "precip_ecmwf": 0,
@@ -1235,16 +1235,16 @@
       "precip_gem": 0,
       "media_precip_mm": 0,
       "media_temp_c": 21.5,
-      "media_prob_pct": 4,
+      "media_prob_pct": 3,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "tipo_dia": "santjordi",
-      "prob_sintetica_pct": 4,
+      "prob_sintetica_pct": 3,
       "media_total_mm": 0,
       "temp_ecmwf_c": 19.2,
-      "temp_gfs_c": 20.4,
+      "temp_gfs_c": 21.9,
       "temp_icon_c": 22.6,
-      "temp_gem_c": 23.6
+      "temp_gem_c": 22.2
     },
     "2026-04-27": {
       "precip_ecmwf": 0,
@@ -1260,9 +1260,9 @@
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
       "temp_ecmwf_c": 20.2,
-      "temp_gfs_c": 21.6,
+      "temp_gfs_c": 22,
       "temp_icon_c": 23.4,
-      "temp_gem_c": 24
+      "temp_gem_c": 23.5
     }
   }
 }
