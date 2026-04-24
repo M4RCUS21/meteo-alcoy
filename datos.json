@@ -1,6 +1,6 @@
 {
-  "temp": 11.3,
-  "hum": 92,
+  "temp": 11.2,
+  "hum": 93,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -298,7 +298,7 @@
       "temp_max": 16.3,
       "icono": "🌦️",
       "prob": 35,
-      "litros": 0.3,
+      "litros": 0.7,
       "horas": [
         {
           "hora": "00:00",
@@ -439,26 +439,26 @@
         {
           "hora": "17:00",
           "temp": 16,
-          "prob": 35,
-          "litros": 0.2,
-          "icono": "🌦️",
-          "wmo": 51
+          "prob": 0,
+          "litros": 0,
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "18:00",
           "temp": 16,
           "prob": 35,
-          "litros": 0.1,
+          "litros": 0.5,
           "icono": "🌦️",
-          "wmo": 51
+          "wmo": 53
         },
         {
           "hora": "19:00",
           "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
+          "prob": 35,
+          "litros": 0.1,
+          "icono": "🌦️",
+          "wmo": 51
         },
         {
           "hora": "20:00",
@@ -479,10 +479,10 @@
         {
           "hora": "22:00",
           "temp": 15,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
+          "prob": 35,
+          "litros": 0.1,
+          "icono": "🌦️",
+          "wmo": 51
         },
         {
           "hora": "23:00",
@@ -494,7 +494,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~16°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.3 mm. Esto significa que hay opciones de que caiga algo, pero 0.3 mm es poquísima cantidad. Será un día bastante fresco, con máximas de solo 16ºC. 🎺🟡 Alguna nube, pero la noche de los músicos se podrá disfrutar sin problemas.",
+      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.7 mm. Esto significa que hay opciones de que caiga algo, pero 0.7 mm es poquísima cantidad. Será un día bastante fresco, con máximas de solo 16ºC. 🎺🟡 Alguna nube, pero la noche de los músicos se podrá disfrutar sin problemas.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -506,10 +506,10 @@
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
       "tipus": "entrades",
-      "temp_max": 18.4,
+      "temp_max": 18.7,
       "icono": "🌦️",
       "prob": 35,
-      "litros": 0.2,
+      "litros": 0.5,
       "horas": [
         {
           "hora": "00:00",
@@ -538,14 +538,14 @@
         {
           "hora": "03:00",
           "temp": 13,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
+          "prob": 35,
+          "litros": 0.1,
+          "icono": "🌦️",
+          "wmo": 51
         },
         {
           "hora": "04:00",
-          "temp": 13,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -571,7 +571,7 @@
           "hora": "07:00",
           "temp": 12,
           "prob": 35,
-          "litros": 0.1,
+          "litros": 0.3,
           "icono": "🌦️",
           "wmo": 51
         },
@@ -609,7 +609,7 @@
         },
         {
           "hora": "12:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -617,7 +617,7 @@
         },
         {
           "hora": "13:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -633,7 +633,7 @@
         },
         {
           "hora": "15:00",
-          "temp": 18,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -649,7 +649,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -657,7 +657,7 @@
         },
         {
           "hora": "18:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "⛅",
@@ -668,8 +668,8 @@
           "temp": 18,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "20:00",
@@ -692,8 +692,8 @@
           "temp": 15,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "☀️",
+          "wmo": 0
         },
         {
           "hora": "23:00",
@@ -704,8 +704,8 @@
           "wmo": 3
         }
       ],
-      "consejo": "👕 Temperatura ideal (~18°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.2 mm. Esto significa que hay opciones de que caiga algo, pero 0.2 mm es poquísima cantidad. En cuanto al termómetro, como mucho llegaremos a los 18ºC. Temperatura ideal en Fiestas. 🟡 Habrá nubes y ratos de sol. Ningún riesgo real para los trajes ni los boatos.",
+      "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Los modelos marcan un 35% de probabilidad de lluvia con apenas 0.5 mm. Esto significa que hay opciones de que caiga algo, pero 0.5 mm es poquísima cantidad. En cuanto al termómetro, como mucho llegaremos a los 19ºC. Temperatura ideal en Fiestas. 🟡 Habrá nubes y ratos de sol. Ningún riesgo real para los trajes ni los boatos.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -1190,7 +1190,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-24T01:00:33.321Z",
+  "fecha": "2026-04-24T02:00:33.459Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 4.9,
