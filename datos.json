@@ -1,6 +1,6 @@
 {
-  "temp": 17.4,
-  "hum": 58,
+  "temp": 17.3,
+  "hum": 61,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042506/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -972,7 +972,7 @@
         "tipo_dia": "alardo",
         "prob_sintetica_pct": 2,
         "media_total_mm": 0,
-        "temp_ecmwf_c": 19.7,
+        "temp_ecmwf_c": 19.5,
         "temp_gfs_c": 22.7,
         "temp_icon_c": 22.9,
         "temp_gem_c": 23.2
@@ -997,7 +997,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-25T12:00:37.017Z",
+  "fecha": "2026-04-25T13:00:36.256Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -1018,19 +1018,19 @@
       "temp_gem_c": null
     },
     "2026-04-25": {
-      "precip_ecmwf": 4.3,
+      "precip_ecmwf": 2.3,
       "precip_gfs": 1.5,
       "precip_icon": 1.9,
       "precip_gem": 0,
-      "media_precip_mm": 1.92,
-      "media_temp_c": 18.6,
+      "media_precip_mm": 1.42,
+      "media_temp_c": 18.5,
       "media_prob_pct": 21,
       "porcentaje_acuerdo_seco": 25,
       "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
       "prob_sintetica_pct": 21,
-      "media_total_mm": 1.92,
-      "temp_ecmwf_c": 18.4,
+      "media_total_mm": 1.42,
+      "temp_ecmwf_c": 17.9,
       "temp_gfs_c": 20.6,
       "temp_icon_c": 17.5,
       "temp_gem_c": 17.8
@@ -1048,7 +1048,7 @@
       "tipo_dia": "santjordi",
       "prob_sintetica_pct": 5,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.7,
+      "temp_ecmwf_c": 19.5,
       "temp_gfs_c": 22.1,
       "temp_icon_c": 21.9,
       "temp_gem_c": 17.6
@@ -1066,7 +1066,7 @@
       "tipo_dia": "alardo",
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.7,
+      "temp_ecmwf_c": 19.5,
       "temp_gfs_c": 22.7,
       "temp_icon_c": 22.9,
       "temp_gem_c": 23.2
