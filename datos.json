@@ -1,6 +1,6 @@
 {
-  "temp": 17.3,
-  "hum": 61,
+  "temp": 17.2,
+  "hum": 62,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042506/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -331,7 +331,7 @@
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
       "tipus": "entrades",
-      "temp_max": 19.1,
+      "temp_max": 19.2,
       "icono": "🌧️",
       "prob": 95,
       "litros": 5.4,
@@ -442,7 +442,7 @@
         },
         {
           "hora": "13:00",
-          "temp": 17,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -450,7 +450,7 @@
         },
         {
           "hora": "14:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -485,32 +485,32 @@
           "temp": 19,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "19:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
-          "icono": "🌤️",
-          "wmo": 1
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "20:00",
           "temp": 17,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "21:00",
           "temp": 16,
           "prob": 0,
           "litros": 0,
-          "icono": "🌤️",
-          "wmo": 1
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "22:00",
@@ -542,7 +542,7 @@
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
       "tipus": "santjordi",
-      "temp_max": 21.6,
+      "temp_max": 21.5,
       "icono": "☁️",
       "prob": 0,
       "litros": 0,
@@ -592,24 +592,24 @@
           "temp": 11,
           "prob": 0,
           "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "06:00",
-          "temp": 11,
+          "temp": 10,
           "prob": 0,
           "litros": 0,
-          "icono": "🌤️",
-          "wmo": 1
+          "icono": "⛅",
+          "wmo": 2
         },
         {
           "hora": "07:00",
           "temp": 11,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "08:00",
@@ -624,8 +624,8 @@
           "temp": 13,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "10:00",
@@ -645,7 +645,7 @@
         },
         {
           "hora": "12:00",
-          "temp": 17,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -997,7 +997,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-25T13:00:36.256Z",
+  "fecha": "2026-04-25T14:00:37.752Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -1024,11 +1024,11 @@
       "precip_gem": 0,
       "media_precip_mm": 1.42,
       "media_temp_c": 18.5,
-      "media_prob_pct": 21,
+      "media_prob_pct": 20,
       "porcentaje_acuerdo_seco": 25,
       "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 21,
+      "prob_sintetica_pct": 20,
       "media_total_mm": 1.42,
       "temp_ecmwf_c": 17.9,
       "temp_gfs_c": 20.6,
