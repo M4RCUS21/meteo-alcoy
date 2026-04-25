@@ -1,5 +1,5 @@
 {
-  "temp": 11.3,
+  "temp": 11,
   "hum": 84,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
@@ -952,7 +952,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~23°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 22.4ºC. Prob. media: 2%. El 100% de los modelos coincide en un día seco (< 0.5 mm). Alardo perfecto. Pólvora seca garantizada.",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: 22.3ºC. Prob. media: 2%. El 100% de los modelos coincide en un día seco (< 0.5 mm). Alardo perfecto. Pólvora seca garantizada.",
       "modelo_fuente": "Super-Ensemble",
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
@@ -965,14 +965,14 @@
         "precip_icon": 0,
         "precip_gem": 0,
         "media_precip_mm": 0,
-        "media_temp_c": 22.4,
+        "media_temp_c": 22.3,
         "media_prob_pct": 2,
         "porcentaje_acuerdo_seco": 100,
         "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
         "tipo_dia": "alardo",
         "prob_sintetica_pct": 2,
         "media_total_mm": 0,
-        "temp_ecmwf_c": 20.1,
+        "temp_ecmwf_c": 19.5,
         "temp_gfs_c": 23.4,
         "temp_icon_c": 22.6,
         "temp_gem_c": 23.5
@@ -997,7 +997,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-25T00:00:36.450Z",
+  "fecha": "2026-04-25T01:00:34.558Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -1018,19 +1018,19 @@
       "temp_gem_c": null
     },
     "2026-04-25": {
-      "precip_ecmwf": 0,
+      "precip_ecmwf": 4.8,
       "precip_gfs": 1.7,
       "precip_icon": 0.9,
       "precip_gem": 0,
-      "media_precip_mm": 0.65,
-      "media_temp_c": 20,
+      "media_precip_mm": 1.85,
+      "media_temp_c": 19.6,
       "media_prob_pct": 12,
-      "porcentaje_acuerdo_seco": 50,
-      "veredicto": "Riesgo de lluvia muy débil. Estad atentos.",
+      "porcentaje_acuerdo_seco": 25,
+      "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
       "prob_sintetica_pct": 12,
-      "media_total_mm": 0.65,
-      "temp_ecmwf_c": 19.3,
+      "media_total_mm": 1.85,
+      "temp_ecmwf_c": 17.6,
       "temp_gfs_c": 21.5,
       "temp_icon_c": 19.3,
       "temp_gem_c": 20
@@ -1048,7 +1048,7 @@
       "tipo_dia": "santjordi",
       "prob_sintetica_pct": 5,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.4,
+      "temp_ecmwf_c": 19.2,
       "temp_gfs_c": 22.4,
       "temp_icon_c": 21.7,
       "temp_gem_c": 22.2
@@ -1059,14 +1059,14 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 22.4,
+      "media_temp_c": 22.3,
       "media_prob_pct": 2,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
       "tipo_dia": "alardo",
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 20.1,
+      "temp_ecmwf_c": 19.5,
       "temp_gfs_c": 23.4,
       "temp_icon_c": 22.6,
       "temp_gem_c": 23.5
