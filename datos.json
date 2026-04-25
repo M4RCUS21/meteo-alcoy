@@ -1,6 +1,6 @@
 {
-  "temp": 10.4,
-  "hum": 84,
+  "temp": 9.4,
+  "hum": 83,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042512/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -331,212 +331,37 @@
       "dia": "Dissabte 25 · Día de las Entradas",
       "fecha": "2026-04-25",
       "tipus": "entrades",
-      "temp_max": 19.1,
-      "icono": "🌧️",
-      "prob": 95,
-      "litros": 5.4,
-      "horas": [
-        {
-          "hora": "00:00",
-          "temp": 14,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "01:00",
-          "temp": 13,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "02:00",
-          "temp": 13,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "03:00",
-          "temp": 13,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "04:00",
-          "temp": 13,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "05:00",
-          "temp": 13,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "06:00",
-          "temp": 12,
-          "prob": 35,
-          "litros": 0.3,
-          "icono": "🌦️",
-          "wmo": 51
-        },
-        {
-          "hora": "07:00",
-          "temp": 12,
-          "prob": 70,
-          "litros": 2.9,
-          "icono": "🌧️",
-          "wmo": 63
-        },
-        {
-          "hora": "08:00",
-          "temp": 12,
-          "prob": 35,
-          "litros": 0.2,
-          "icono": "🌦️",
-          "wmo": 51
-        },
-        {
-          "hora": "09:00",
-          "temp": 12,
-          "prob": 70,
-          "litros": 1.5,
-          "icono": "🌧️",
-          "wmo": 61
-        },
-        {
-          "hora": "10:00",
-          "temp": 13,
-          "prob": 35,
-          "litros": 0.5,
-          "icono": "🌦️",
-          "wmo": 53
-        },
-        {
-          "hora": "11:00",
-          "temp": 15,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "12:00",
-          "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "13:00",
-          "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "14:00",
-          "temp": 18,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "15:00",
-          "temp": 19,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "16:00",
-          "temp": 19,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "17:00",
-          "temp": 19,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "18:00",
-          "temp": 19,
-          "prob": 0,
-          "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
-        },
-        {
-          "hora": "19:00",
-          "temp": 19,
-          "prob": 0,
-          "litros": 0,
-          "icono": "🌤️",
-          "wmo": 1
-        },
-        {
-          "hora": "20:00",
-          "temp": 17,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
-        },
-        {
-          "hora": "21:00",
-          "temp": 16,
-          "prob": 0,
-          "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
-        },
-        {
-          "hora": "22:00",
-          "temp": 15,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        },
-        {
-          "hora": "23:00",
-          "temp": 14,
-          "prob": 0,
-          "litros": 0,
-          "icono": "☁️",
-          "wmo": 3
-        }
-      ],
-      "consejo": "👕 Temperatura ideal (~19°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Situación inestable con un 95% de probabilidad y precipitaciones que podrían superar los 5.4 mm. Riesgo alto de lluvias continuadas. En cuanto al termómetro, como mucho llegaremos a los 19ºC. Temperatura ideal en Fiestas. 🔴 Peligro serio de lluvia continua. Situación muy comprometida para los boatos de seda y metal.",
-      "modelo_fuente": "AROME",
-      "modelo_fuente_activo": "AROME",
-      "arome_disponible": true,
-      "requiere_super_ensemble": false,
+      "temp_max": "N/D",
+      "icono": "☀️",
+      "prob": 5,
+      "litros": 0,
+      "horas": [],
+      "consejo": "⚠️ Sin datos de temperatura disponibles",
+      "analisis_tecnico": "[Super-Ensemble — ECMWF+GFS+ICON+GEM] Media de precipitación de los 4 modelos globales: 0.0 mm totales. Temp. media 4 modelos: N/D. Prob. media: 5%. El 100% de los modelos coincide en un día seco (< 0.5 mm). Día perfecto y seco. Riesgo nulo para las Entradas.",
+      "modelo_fuente": "Super-Ensemble",
+      "modelo_fuente_activo": "Super-Ensemble",
+      "arome_disponible": false,
+      "requiere_super_ensemble": true,
       "dias_restantes": 0,
-      "datos_disponibles": true
+      "datos_disponibles": false,
+      "super_ensemble_datos": {
+        "precip_ecmwf": 0,
+        "precip_gfs": 0,
+        "precip_icon": 0,
+        "precip_gem": 0,
+        "media_precip_mm": 0,
+        "media_temp_c": null,
+        "media_prob_pct": 5,
+        "porcentaje_acuerdo_seco": 100,
+        "veredicto": "Día perfecto y seco. Riesgo nulo para las Entradas.",
+        "tipo_dia": "entrades",
+        "prob_sintetica_pct": 5,
+        "media_total_mm": 0,
+        "temp_ecmwf_c": null,
+        "temp_gfs_c": null,
+        "temp_icon_c": null,
+        "temp_gem_c": null
+      }
     },
     {
       "dia": "Diumenge 26 · Día de San Jorge",
@@ -753,7 +578,7 @@
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
       "tipus": "alardo",
-      "temp_max": 23.1,
+      "temp_max": 23,
       "icono": "☀️",
       "prob": 2,
       "litros": 0,
@@ -763,8 +588,8 @@
           "temp": 12,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "01:00",
@@ -792,23 +617,23 @@
         },
         {
           "hora": "04:00",
-          "temp": 10,
+          "temp": 9,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "05:00",
-          "temp": 10,
+          "temp": 9,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "06:00",
-          "temp": 10,
+          "temp": 8,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -816,7 +641,7 @@
         },
         {
           "hora": "07:00",
-          "temp": 9,
+          "temp": 7,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -824,7 +649,7 @@
         },
         {
           "hora": "08:00",
-          "temp": 9,
+          "temp": 7,
           "prob": 0,
           "litros": 0,
           "icono": "🌤️",
@@ -832,15 +657,15 @@
         },
         {
           "hora": "09:00",
-          "temp": 12,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
-          "icono": "🌤️",
-          "wmo": 1
+          "icono": "☀️",
+          "wmo": 0
         },
         {
           "hora": "10:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -848,15 +673,15 @@
         },
         {
           "hora": "11:00",
-          "temp": 18,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
-          "icono": "🌤️",
-          "wmo": 1
+          "icono": "☀️",
+          "wmo": 0
         },
         {
           "hora": "12:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -891,24 +716,24 @@
           "temp": 23,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "⛅",
+          "wmo": 2
         },
         {
           "hora": "17:00",
           "temp": 23,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "⛅",
+          "wmo": 2
         },
         {
           "hora": "18:00",
           "temp": 22,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "19:00",
@@ -939,12 +764,12 @@
           "temp": 14,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "23:00",
-          "temp": 12,
+          "temp": 13,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -974,15 +799,15 @@
         "media_total_mm": 0,
         "temp_ecmwf_c": 19.2,
         "temp_gfs_c": 23.2,
-        "temp_icon_c": 22.9,
+        "temp_icon_c": 23.1,
         "temp_gem_c": 22.5
       }
     }
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 23ºC. S'aproxima inestabilitat. Caldrà seguir l'evolució d'aquest panell dia a dia.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 23ºC. Se aproxima inestabilidad. Habrá que seguir la evolución de este panel día a día."
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 23ºC. A més, l'oratge es preveu molt estable i sense rastre de pluja, ideal per a gaudir al carrer.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 23ºC. Además, la atmósfera se prevé muy estable y sin rastro de lluvia, ideal para disfrutar en la calle."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -997,7 +822,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-25T21:00:35.277Z",
+  "fecha": "2026-04-25T22:00:37.093Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -1018,22 +843,22 @@
       "temp_gem_c": null
     },
     "2026-04-25": {
-      "precip_ecmwf": 2.7,
-      "precip_gfs": 1.5,
-      "precip_icon": 0.6,
+      "precip_ecmwf": 0,
+      "precip_gfs": 0,
+      "precip_icon": 0,
       "precip_gem": 0,
-      "media_precip_mm": 1.2,
-      "media_temp_c": 19.6,
-      "media_prob_pct": 19,
-      "porcentaje_acuerdo_seco": 25,
-      "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
+      "media_precip_mm": 0,
+      "media_temp_c": null,
+      "media_prob_pct": 5,
+      "porcentaje_acuerdo_seco": 100,
+      "veredicto": "Día perfecto y seco. Riesgo nulo para las Entradas.",
       "tipo_dia": "entrades",
-      "prob_sintetica_pct": 19,
-      "media_total_mm": 1.2,
-      "temp_ecmwf_c": 17.7,
-      "temp_gfs_c": 20.6,
-      "temp_icon_c": 19.5,
-      "temp_gem_c": 20.7
+      "prob_sintetica_pct": 5,
+      "media_total_mm": 0,
+      "temp_ecmwf_c": null,
+      "temp_gfs_c": null,
+      "temp_icon_c": null,
+      "temp_gem_c": null
     },
     "2026-04-26": {
       "precip_ecmwf": 0,
@@ -1041,7 +866,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 21.5,
+      "media_temp_c": 21.4,
       "media_prob_pct": 3,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
@@ -1050,7 +875,7 @@
       "media_total_mm": 0,
       "temp_ecmwf_c": 18.6,
       "temp_gfs_c": 22.4,
-      "temp_icon_c": 22,
+      "temp_icon_c": 21.7,
       "temp_gem_c": 22.9
     },
     "2026-04-27": {
@@ -1068,7 +893,7 @@
       "media_total_mm": 0,
       "temp_ecmwf_c": 19.2,
       "temp_gfs_c": 23.2,
-      "temp_icon_c": 22.9,
+      "temp_icon_c": 23.1,
       "temp_gem_c": 22.5
     }
   }
