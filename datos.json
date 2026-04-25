@@ -1,6 +1,6 @@
 {
-  "temp": 8.9,
-  "hum": 92,
+  "temp": 9.3,
+  "hum": 90,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042500/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -972,7 +972,7 @@
         "tipo_dia": "alardo",
         "prob_sintetica_pct": 2,
         "media_total_mm": 0,
-        "temp_ecmwf_c": 19.5,
+        "temp_ecmwf_c": 19.7,
         "temp_gfs_c": 21.8,
         "temp_icon_c": 22.5,
         "temp_gem_c": 23.2
@@ -997,7 +997,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-25T06:00:39.218Z",
+  "fecha": "2026-04-25T07:00:35.889Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -1018,19 +1018,19 @@
       "temp_gem_c": null
     },
     "2026-04-25": {
-      "precip_ecmwf": 4.8,
+      "precip_ecmwf": 4.3,
       "precip_gfs": 1.6,
       "precip_icon": 0.6,
       "precip_gem": 0,
-      "media_precip_mm": 1.75,
-      "media_temp_c": 19.1,
+      "media_precip_mm": 1.63,
+      "media_temp_c": 19.3,
       "media_prob_pct": 17,
       "porcentaje_acuerdo_seco": 25,
       "veredicto": "Riesgo moderado de lluvia. Tened los plásticos a mano.",
       "tipo_dia": "entrades",
       "prob_sintetica_pct": 17,
-      "media_total_mm": 1.75,
-      "temp_ecmwf_c": 17.6,
+      "media_total_mm": 1.63,
+      "temp_ecmwf_c": 18.4,
       "temp_gfs_c": 21.3,
       "temp_icon_c": 19.6,
       "temp_gem_c": 17.8
@@ -1041,14 +1041,14 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 20.2,
+      "media_temp_c": 20.4,
       "media_prob_pct": 5,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "tipo_dia": "santjordi",
       "prob_sintetica_pct": 5,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.2,
+      "temp_ecmwf_c": 19.7,
       "temp_gfs_c": 22.3,
       "temp_icon_c": 21.8,
       "temp_gem_c": 17.6
@@ -1066,7 +1066,7 @@
       "tipo_dia": "alardo",
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.5,
+      "temp_ecmwf_c": 19.7,
       "temp_gfs_c": 21.8,
       "temp_icon_c": 22.5,
       "temp_gem_c": 23.2
