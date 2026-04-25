@@ -1,7 +1,7 @@
 {
-  "temp": 9.4,
-  "hum": 83,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042512/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 8.9,
+  "hum": 79,
+  "mapa_url": "N/D",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -817,12 +817,12 @@
   "estado": {
     "temp_ok": true,
     "hum_ok": true,
-    "mapa_ok": true,
+    "mapa_ok": false,
     "ecmwf_ok": true,
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-25T22:00:37.093Z",
+  "fecha": "2026-04-25T23:00:34.246Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
