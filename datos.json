@@ -1,6 +1,6 @@
 {
-  "temp": 13.6,
-  "hum": 75,
+  "temp": 12.1,
+  "hum": 79,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042512/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -490,7 +490,7 @@
         },
         {
           "hora": "19:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "🌤️",
@@ -542,7 +542,7 @@
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
       "tipus": "santjordi",
-      "temp_max": 21.6,
+      "temp_max": 21.5,
       "icono": "☁️",
       "prob": 0,
       "litros": 0,
@@ -621,7 +621,7 @@
         },
         {
           "hora": "09:00",
-          "temp": 13,
+          "temp": 14,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -637,7 +637,7 @@
         },
         {
           "hora": "11:00",
-          "temp": 16,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -997,7 +997,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-25T19:00:34.486Z",
+  "fecha": "2026-04-25T20:00:34.659Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
