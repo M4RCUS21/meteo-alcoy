@@ -1,6 +1,6 @@
 {
-  "temp": 8.1,
-  "hum": 79,
+  "temp": 7.5,
+  "hum": 80,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T00:00:38.227Z",
+  "fecha": "2026-04-26T01:00:34.826Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -848,14 +848,14 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 21.3,
+      "media_temp_c": 21.5,
       "media_prob_pct": 3,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "tipo_dia": "santjordi",
       "prob_sintetica_pct": 3,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 18.6,
+      "temp_ecmwf_c": 19.1,
       "temp_gfs_c": 22.1,
       "temp_icon_c": 21.7,
       "temp_gem_c": 22.9
@@ -873,7 +873,7 @@
       "tipo_dia": "alardo",
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.2,
+      "temp_ecmwf_c": 19.4,
       "temp_gfs_c": 23.2,
       "temp_icon_c": 23.1,
       "temp_gem_c": 22.5
