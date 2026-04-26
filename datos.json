@@ -1,6 +1,6 @@
 {
-  "temp": 15,
-  "hum": 65,
+  "temp": 13.6,
+  "hum": 74,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042612/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -777,7 +777,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~22°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 22ºC. Temperatura ideal en Fiestas. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 22ºC. Temperatura ideal en Fiestas. 🟡 Riesgo muy bajo. Vigilar de mantener la pólvora tapada por precaución.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T19:00:36.252Z",
+  "fecha": "2026-04-26T20:00:34.248Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -848,14 +848,14 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 21.3,
+      "media_temp_c": 21.4,
       "media_prob_pct": 1,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
       "tipo_dia": "santjordi",
       "prob_sintetica_pct": 1,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 18.9,
+      "temp_ecmwf_c": 19.2,
       "temp_gfs_c": 21.6,
       "temp_icon_c": 22.1,
       "temp_gem_c": 22.7
@@ -866,14 +866,14 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 21.8,
+      "media_temp_c": 22,
       "media_prob_pct": 2,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
       "tipo_dia": "alardo",
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.3,
+      "temp_ecmwf_c": 19.9,
       "temp_gfs_c": 22.5,
       "temp_icon_c": 22.6,
       "temp_gem_c": 22.9
