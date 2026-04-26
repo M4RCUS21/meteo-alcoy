@@ -1,6 +1,6 @@
 {
-  "temp": 19.6,
-  "hum": 29,
+  "temp": 18.8,
+  "hum": 40,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042606/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -521,48 +521,48 @@
           "temp": 21,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "🌤️",
+          "wmo": 1
         },
         {
           "hora": "19:00",
           "temp": 20,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "21:00",
           "temp": 17,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "22:00",
           "temp": 15,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "23:00",
           "temp": 14,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         }
       ],
       "consejo": "👕 Temperatura ideal (~21°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
@@ -578,8 +578,8 @@
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
       "tipus": "alardo",
-      "temp_max": 21.7,
-      "icono": "☀️",
+      "temp_max": 21.8,
+      "icono": "☁️",
       "prob": 0,
       "litros": 0,
       "horas": [
@@ -588,16 +588,16 @@
           "temp": 13,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "01:00",
           "temp": 13,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "⛅",
+          "wmo": 2
         },
         {
           "hora": "02:00",
@@ -633,7 +633,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 10,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -641,7 +641,7 @@
         },
         {
           "hora": "07:00",
-          "temp": 10,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -769,7 +769,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 15,
+          "temp": 16,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T16:00:37.006Z",
+  "fecha": "2026-04-26T17:00:35.352Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -848,7 +848,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 21,
+      "media_temp_c": 21.2,
       "media_prob_pct": 2,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
@@ -857,7 +857,7 @@
       "media_total_mm": 0,
       "temp_ecmwf_c": 18.9,
       "temp_gfs_c": 21.7,
-      "temp_icon_c": 21.5,
+      "temp_icon_c": 22.1,
       "temp_gem_c": 22.1
     },
     "2026-04-27": {
@@ -866,7 +866,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 22.1,
+      "media_temp_c": 22.2,
       "media_prob_pct": 2,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
@@ -875,7 +875,7 @@
       "media_total_mm": 0,
       "temp_ecmwf_c": 19.3,
       "temp_gfs_c": 22.9,
-      "temp_icon_c": 22.2,
+      "temp_icon_c": 22.6,
       "temp_gem_c": 23.8
     }
   }
