@@ -1,6 +1,6 @@
 {
-  "temp": 6.8,
-  "hum": 81,
+  "temp": 6.5,
+  "hum": 82,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -367,7 +367,7 @@
       "dia": "Diumenge 26 · Día de San Jorge",
       "fecha": "2026-04-26",
       "tipus": "santjordi",
-      "temp_max": 21.8,
+      "temp_max": 21.7,
       "icono": "☁️",
       "prob": 0,
       "litros": 0,
@@ -390,7 +390,7 @@
         },
         {
           "hora": "02:00",
-          "temp": 12,
+          "temp": 11,
           "prob": 0,
           "litros": 0,
           "icono": "☁️",
@@ -409,8 +409,8 @@
           "temp": 11,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "05:00",
@@ -425,16 +425,16 @@
           "temp": 11,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "07:00",
           "temp": 11,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "⛅",
+          "wmo": 2
         },
         {
           "hora": "08:00",
@@ -457,28 +457,28 @@
           "temp": 16,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "⛅",
+          "wmo": 2
         },
         {
           "hora": "11:00",
           "temp": 17,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "12:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "⛅",
+          "wmo": 2
         },
         {
           "hora": "13:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -510,7 +510,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -550,7 +550,7 @@
         },
         {
           "hora": "22:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -578,8 +578,8 @@
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
       "tipus": "alardo",
-      "temp_max": 22.5,
-      "icono": "⛅",
+      "temp_max": 22.4,
+      "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
@@ -609,7 +609,7 @@
         },
         {
           "hora": "03:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -641,7 +641,7 @@
         },
         {
           "hora": "07:00",
-          "temp": 9,
+          "temp": 10,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -681,7 +681,7 @@
         },
         {
           "hora": "12:00",
-          "temp": 19,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -708,16 +708,16 @@
           "temp": 22,
           "prob": 0,
           "litros": 0,
-          "icono": "🌤️",
-          "wmo": 1
+          "icono": "☀️",
+          "wmo": 0
         },
         {
           "hora": "16:00",
-          "temp": 23,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "☀️",
+          "wmo": 0
         },
         {
           "hora": "17:00",
@@ -729,7 +729,7 @@
         },
         {
           "hora": "18:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -776,8 +776,8 @@
           "wmo": 0
         }
       ],
-      "consejo": "👕 Temperatura ideal (~23°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 23ºC. Temperatura ideal en Fiestas. 🟡 Riesgo muy bajo. Vigilar de mantener la pólvora tapada por precaución.",
+      "consejo": "👕 Temperatura ideal (~22°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 22ºC. Temperatura ideal en Fiestas. 🟡 Riesgo muy bajo. Vigilar de mantener la pólvora tapada por precaución.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -788,8 +788,8 @@
   ],
   "estacion": "Alcoi — Estació c27m009e08",
   "resumen_grans": {
-    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 23ºC. A més, l'oratge es preveu molt estable i sense rastre de pluja, ideal per a gaudir al carrer.",
-    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 23ºC. Además, la atmósfera se prevé muy estable y sin rastro de lluvia, ideal para disfrutar en la calle."
+    "ca": "Aquest any ens lliurem de les fortes calors. Tindrem temperatures molt agradables per a la Festa, amb màximes d'uns 22ºC. A més, l'oratge es preveu molt estable i sense rastre de pluja, ideal per a gaudir al carrer.",
+    "es": "Este año nos libramos de los fuertes calores. Tendremos temperaturas muy agradables para la Fiesta, con máximas de unos 22ºC. Además, la atmósfera se prevé muy estable y sin rastro de lluvia, ideal para disfrutar en la calle."
   },
   "fuentes": {
     "tiempo_real": "https://www.avamet.org/mx-mxo.php?id=c27m009e08",
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T02:00:34.594Z",
+  "fecha": "2026-04-26T03:00:34.956Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
