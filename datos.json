@@ -1,6 +1,6 @@
 {
-  "temp": 9.8,
-  "hum": 73,
+  "temp": 13.7,
+  "hum": 61,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042600/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -777,7 +777,7 @@
         }
       ],
       "consejo": "👕 Temperatura ideal (~22°C). Se estará genial con los trajes de fiesta sin pasar calor ni frío.",
-      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 22ºC. Temperatura ideal en Fiestas. 🟡 Riesgo muy bajo. Vigilar de mantener la pólvora tapada por precaución.",
+      "analisis_tecnico": "Atmósfera muy estable. Tendremos un sol radiante y cielos despejados sin rastro de lluvia. En cuanto al termómetro, como mucho llegaremos a los 22ºC. Temperatura ideal en Fiestas. 💥 Condiciones ideales para el Alardo. Pólvora seca y mucho ruido.",
       "modelo_fuente": "AROME",
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T07:00:36.341Z",
+  "fecha": "2026-04-26T08:00:42.371Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
