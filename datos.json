@@ -1,6 +1,6 @@
 {
   "temp": 19.1,
-  "hum": 44,
+  "hum": 43,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042606/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T12:00:36.862Z",
+  "fecha": "2026-04-26T13:00:37.052Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -855,7 +855,7 @@
       "tipo_dia": "santjordi",
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 18.8,
+      "temp_ecmwf_c": 18.9,
       "temp_gfs_c": 21.7,
       "temp_icon_c": 21.5,
       "temp_gem_c": 22.1
@@ -873,7 +873,7 @@
       "tipo_dia": "alardo",
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
-      "temp_ecmwf_c": 19.5,
+      "temp_ecmwf_c": 19.3,
       "temp_gfs_c": 22.9,
       "temp_icon_c": 22.2,
       "temp_gem_c": 23.8
