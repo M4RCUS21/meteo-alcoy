@@ -1,7 +1,7 @@
 {
-  "temp": 18.8,
-  "hum": 40,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042606/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 17.1,
+  "hum": 48,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042612/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T17:00:35.352Z",
+  "fecha": "2026-04-26T18:00:35.723Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -848,7 +848,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 21.2,
+      "media_temp_c": 21.3,
       "media_prob_pct": 2,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "San Jorge perfecto. Procesión sin riesgo de lluvia.",
@@ -856,9 +856,9 @@
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
       "temp_ecmwf_c": 18.9,
-      "temp_gfs_c": 21.7,
+      "temp_gfs_c": 21.6,
       "temp_icon_c": 22.1,
-      "temp_gem_c": 22.1
+      "temp_gem_c": 22.7
     },
     "2026-04-27": {
       "precip_ecmwf": 0,
@@ -866,7 +866,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 22.2,
+      "media_temp_c": 21.8,
       "media_prob_pct": 2,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
@@ -874,9 +874,9 @@
       "prob_sintetica_pct": 2,
       "media_total_mm": 0,
       "temp_ecmwf_c": 19.3,
-      "temp_gfs_c": 22.9,
+      "temp_gfs_c": 22.5,
       "temp_icon_c": 22.6,
-      "temp_gem_c": 23.8
+      "temp_gem_c": 22.9
     }
   }
 }
