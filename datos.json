@@ -1,6 +1,6 @@
 {
-  "temp": 19.1,
-  "hum": 43,
+  "temp": 19.4,
+  "hum": 37,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042606/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -481,8 +481,8 @@
           "temp": 19,
           "prob": 0,
           "litros": 0,
-          "icono": "☀️",
-          "wmo": 0
+          "icono": "☁️",
+          "wmo": 3
         },
         {
           "hora": "14:00",
@@ -534,7 +534,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 18,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -633,7 +633,7 @@
         },
         {
           "hora": "06:00",
-          "temp": 11,
+          "temp": 10,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -665,7 +665,7 @@
         },
         {
           "hora": "10:00",
-          "temp": 14,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -721,7 +721,7 @@
         },
         {
           "hora": "17:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -804,7 +804,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T13:00:37.052Z",
+  "fecha": "2026-04-26T14:00:38.508Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
