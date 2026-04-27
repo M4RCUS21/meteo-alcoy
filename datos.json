@@ -1,6 +1,6 @@
 {
-  "temp": 7.5,
-  "hum": 73,
+  "temp": 6.8,
+  "hum": 76,
   "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
@@ -629,7 +629,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-27T04:00:37.679Z",
+  "fecha": "2026-04-27T05:00:38.747Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -691,7 +691,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 22,
+      "media_temp_c": 22.1,
       "media_prob_pct": 3,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
@@ -700,7 +700,7 @@
       "media_total_mm": 0,
       "temp_ecmwf_c": 19.9,
       "temp_gfs_c": 22.5,
-      "temp_icon_c": 22.6,
+      "temp_icon_c": 23.1,
       "temp_gem_c": 22.9
     }
   }
