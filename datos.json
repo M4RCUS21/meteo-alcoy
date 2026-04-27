@@ -1,7 +1,7 @@
 {
-  "temp": 6.8,
-  "hum": 76,
-  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
+  "temp": 7.3,
+  "hum": 71,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/2026042700/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -514,7 +514,7 @@
         },
         {
           "hora": "13:00",
-          "temp": 21,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -522,7 +522,7 @@
         },
         {
           "hora": "14:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -554,7 +554,7 @@
         },
         {
           "hora": "18:00",
-          "temp": 22,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -570,7 +570,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 20,
+          "temp": 19,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -578,7 +578,7 @@
         },
         {
           "hora": "21:00",
-          "temp": 18,
+          "temp": 17,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -629,7 +629,7 @@
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-27T05:00:38.747Z",
+  "fecha": "2026-04-27T06:00:39.119Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
@@ -691,7 +691,7 @@
       "precip_icon": 0,
       "precip_gem": 0,
       "media_precip_mm": 0,
-      "media_temp_c": 22.1,
+      "media_temp_c": 22.2,
       "media_prob_pct": 3,
       "porcentaje_acuerdo_seco": 100,
       "veredicto": "Alardo perfecto. Pólvora seca garantizada.",
@@ -701,7 +701,7 @@
       "temp_ecmwf_c": 19.9,
       "temp_gfs_c": 22.5,
       "temp_icon_c": 23.1,
-      "temp_gem_c": 22.9
+      "temp_gem_c": 23.3
     }
   }
 }
