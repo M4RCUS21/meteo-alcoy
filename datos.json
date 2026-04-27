@@ -1,7 +1,7 @@
 {
-  "temp": 10.1,
-  "hum": 63,
-  "mapa_url": "N/D",
+  "temp": 9.4,
+  "hum": 67,
+  "mapa_url": "https://modeles16.meteociel.fr/modeles/gensp/runs/1969123118/graphe3_1000___-0.472_38.696_.gif",
   "fiestas": [
     {
       "dia": "Dimecres 8 · Entraetes (desfiles nocturnos)",
@@ -18,7 +18,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -18,
+      "dias_restantes": -19,
       "datos_disponibles": false
     },
     {
@@ -36,7 +36,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -17,
+      "dias_restantes": -18,
       "datos_disponibles": false
     },
     {
@@ -54,7 +54,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -16,
+      "dias_restantes": -17,
       "datos_disponibles": false
     },
     {
@@ -72,7 +72,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -15,
+      "dias_restantes": -16,
       "datos_disponibles": false
     },
     {
@@ -90,7 +90,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -14,
+      "dias_restantes": -15,
       "datos_disponibles": false
     },
     {
@@ -108,7 +108,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -13,
+      "dias_restantes": -14,
       "datos_disponibles": false
     },
     {
@@ -126,7 +126,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -12,
+      "dias_restantes": -13,
       "datos_disponibles": false
     },
     {
@@ -144,7 +144,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -11,
+      "dias_restantes": -12,
       "datos_disponibles": false
     },
     {
@@ -162,7 +162,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -10,
+      "dias_restantes": -11,
       "datos_disponibles": false
     },
     {
@@ -180,7 +180,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -9,
+      "dias_restantes": -10,
       "datos_disponibles": false
     },
     {
@@ -198,7 +198,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -8,
+      "dias_restantes": -9,
       "datos_disponibles": false
     },
     {
@@ -216,7 +216,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -7,
+      "dias_restantes": -8,
       "datos_disponibles": false
     },
     {
@@ -234,7 +234,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -6,
+      "dias_restantes": -7,
       "datos_disponibles": false
     },
     {
@@ -252,7 +252,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -5,
+      "dias_restantes": -6,
       "datos_disponibles": false
     },
     {
@@ -270,7 +270,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -4,
+      "dias_restantes": -5,
       "datos_disponibles": false
     },
     {
@@ -288,7 +288,7 @@
       "modelo_fuente_activo": "N/D",
       "arome_disponible": false,
       "requiere_super_ensemble": false,
-      "dias_restantes": -3,
+      "dias_restantes": -4,
       "datos_disponibles": false
     },
     {
@@ -306,7 +306,7 @@
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
       "requiere_super_ensemble": true,
-      "dias_restantes": -2,
+      "dias_restantes": -3,
       "datos_disponibles": false,
       "super_ensemble_datos": {
         "precip_ecmwf": 0,
@@ -342,7 +342,7 @@
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
       "requiere_super_ensemble": true,
-      "dias_restantes": -1,
+      "dias_restantes": -2,
       "datos_disponibles": false,
       "super_ensemble_datos": {
         "precip_ecmwf": 0,
@@ -378,7 +378,7 @@
       "modelo_fuente_activo": "Super-Ensemble",
       "arome_disponible": false,
       "requiere_super_ensemble": true,
-      "dias_restantes": 0,
+      "dias_restantes": -1,
       "datos_disponibles": false,
       "super_ensemble_datos": {
         "precip_ecmwf": 0,
@@ -403,8 +403,8 @@
       "dia": "Dilluns 27 · L'Alardo (Día de los Truenos)",
       "fecha": "2026-04-27",
       "tipus": "alardo",
-      "temp_max": 22,
-      "icono": "⛅",
+      "temp_max": 22.2,
+      "icono": "☀️",
       "prob": 0,
       "litros": 0,
       "horas": [
@@ -413,8 +413,8 @@
           "temp": 14,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "☀️",
+          "wmo": 0
         },
         {
           "hora": "01:00",
@@ -450,7 +450,7 @@
         },
         {
           "hora": "05:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -466,7 +466,7 @@
         },
         {
           "hora": "07:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -474,7 +474,7 @@
         },
         {
           "hora": "08:00",
-          "temp": 11,
+          "temp": 12,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -482,7 +482,7 @@
         },
         {
           "hora": "09:00",
-          "temp": 14,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -490,7 +490,7 @@
         },
         {
           "hora": "10:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -514,7 +514,7 @@
         },
         {
           "hora": "13:00",
-          "temp": 20,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -522,7 +522,7 @@
         },
         {
           "hora": "14:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -541,12 +541,12 @@
           "temp": 22,
           "prob": 0,
           "litros": 0,
-          "icono": "⛅",
-          "wmo": 2
+          "icono": "☀️",
+          "wmo": 0
         },
         {
           "hora": "17:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -554,7 +554,7 @@
         },
         {
           "hora": "18:00",
-          "temp": 21,
+          "temp": 22,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -562,7 +562,7 @@
         },
         {
           "hora": "19:00",
-          "temp": 20,
+          "temp": 21,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -570,7 +570,7 @@
         },
         {
           "hora": "20:00",
-          "temp": 19,
+          "temp": 20,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -578,7 +578,7 @@
         },
         {
           "hora": "21:00",
-          "temp": 17,
+          "temp": 18,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -594,7 +594,7 @@
         },
         {
           "hora": "23:00",
-          "temp": 16,
+          "temp": 15,
           "prob": 0,
           "litros": 0,
           "icono": "☀️",
@@ -607,7 +607,7 @@
       "modelo_fuente_activo": "AROME",
       "arome_disponible": true,
       "requiere_super_ensemble": false,
-      "dias_restantes": 1,
+      "dias_restantes": 0,
       "datos_disponibles": true
     }
   ],
@@ -624,12 +624,12 @@
   "estado": {
     "temp_ok": true,
     "hum_ok": true,
-    "mapa_ok": false,
+    "mapa_ok": true,
     "ecmwf_ok": true,
     "arome_ok": true,
     "modelos_ok": true
   },
-  "fecha": "2026-04-26T23:00:33.032Z",
+  "fecha": "2026-04-27T00:00:38.761Z",
   "super_ensemble_dias": {
     "2026-04-24": {
       "precip_ecmwf": 0,
